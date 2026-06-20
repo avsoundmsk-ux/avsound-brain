@@ -40,3 +40,27 @@ venv/
 # Temporary
 *.tmp
 *.swp
+
+# Claude Code internals
+.claude/
+.agents/
+.firecrawl/
+.obsidian/
+skills-lock.json
+
+# Session logs (могут содержать секреты)
+logs/
+
+# Obsidian DB
+*.base
+
+# Secrets — никогда в репо
+*StringSession*
+*session.json
+*.session
+
+# Canvas (Obsidian)
+*.canvas
+
+# Отдельный репо — не включаем
+avtozvuk-agent/

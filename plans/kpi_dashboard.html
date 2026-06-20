@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVSound — KPI Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; min-height: 100vh; padding: 24px; }
+  h1 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .subtitle { color: #666; font-size: 13px; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; }
+  .card h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 16px; }
+  .metric { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .metric label { font-size: 13px; color: #aaa; flex: 1; }
+  .metric-right { display: flex; align-items: center; gap: 8px; }
+  .metric input { width: 120px; background: #242424; border: 1px solid #333; border-radius: 6px; padding: 6px 10px; color: #fff; font-size: 14px; text-align: right; outline: none; transition: border-color 0.2s; }
+  .metric input:focus { border-color: #3b82f6; }
+  .delta { font-size: 11px; min-width: 44px; text-align: right; font-weight: 600; }
+  .delta.up { color: #22c55e; }
+  .delta.down { color: #ef4444; }
+  .delta.flat { color: #666; }
+  .btn { background: #3b82f6; color: #fff; border: none; border-radius: 8px; padding: 10px 20px; font-size: 14px; cursor: pointer; font-weight: 600; transition: background 0.2s; }
+  .btn:hover { background: #2563eb; }
+  .btn-secondary { background: #242424; border: 1px solid #333; margin-left: 8px; }
+  .btn-secondary:hover { background: #2a2a2a; }
+  .actions { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; }
+  .week-selector { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; padding: 8px 14px; color: #e0e0e0; font-size: 14px; outline: none; cursor: pointer; }
+  .summary { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 20px; margin-bottom: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+  .summary-item { text-align: center; }
+  .summary-item .val { font-size: 26px; font-weight: 700; color: #fff; }
+  .summary-item .lbl { font-size: 12px; color: #666; margin-top: 4px; }
+  .summary-item .chg { font-size: 12px; font-weight: 600; margin-top: 2px; }
+  .toast { position: fixed; bottom: 24px; right: 24px; background: #22c55e; color: #fff; padding: 12px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+  .history-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .history-table th { text-align: left; padding: 8px 12px; color: #666; font-weight: 500; border-bottom: 1px solid #2a2a2a; }
+  .history-table td { padding: 8px 12px; border-bottom: 1px solid #1e1e1e; }
+  .history-table tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .badge.green { background: #14532d; color: #22c55e; }
+  .badge.red { background: #450a0a; color: #ef4444; }
+</style>
+</head>
+<body>
+
+<h1>AVSound — KPI</h1>
+<p class="subtitle">Обновляй раз в неделю. Данные хранятся в браузере.</p>
+
+<div class="summary" id="summary">
+  <div class="summary-item"><div class="val" id="s-revenue">—</div><div class="lbl">Выручка (₽)</div><div class="chg" id="s-revenue-chg"></div></div>
+  <div class="summary-item"><div class="val" id="s-margin">—</div><div class="lbl">Прибыль (₽)</div><div class="chg" id="s-margin-chg"></div></div>
+  <div class="summary-item"><div class="val" id="s-cars">—</div><div class="lbl">Машин в студии</div><div class="chg" id="s-cars-chg"></div></div>
+  <div class="summary-item"><div class="val" id="s-orders">—</div><div class="lbl">Заказов магазин</div><div class="chg" id="s-orders-chg"></div></div>
+</div>
+
+<div class="actions">
+  <select class="week-selector" id="weekSelect" onchange="loadWeek(this.value)"></select>
+  <button class="btn" onclick="saveWeek()">Сохранить неделю</button>
+  <button class="btn btn-secondary" onclick="newWeek()">+ Новая неделя</button>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Студия — установка</h2>
+    <div class="metric"><label>Машин за неделю</label><div class="metric-right"><span class="delta" id="d-cars"></span><input type="number" id="m-cars" placeholder="0" oninput="calcDelta('cars')"></div></div>
+    <div class="metric"><label>Средний чек установки (₽)</label><div class="metric-right"><span class="delta" id="d-avg-studio"></span><input type="number" id="m-avg-studio" placeholder="0" oninput="calcDelta('avg-studio')"></div></div>
+    <div class="metric"><label>Выручка студии (₽)</label><div class="metric-right"><span class="delta" id="d-rev-studio"></span><input type="number" id="m-rev-studio" placeholder="0" oninput="calcDelta('rev-studio')"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Магазин / маркетплейсы</h2>
+    <div class="metric"><label>Заказов всего</label><div class="metric-right"><span class="delta" id="d-orders"></span><input type="number" id="m-orders" placeholder="0" oninput="calcDelta('orders')"></div></div>
+    <div class="metric"><label>Выручка магазин (₽)</label><div class="metric-right"><span class="delta" id="d-rev-shop"></span><input type="number" id="m-rev-shop" placeholder="0" oninput="calcDelta('rev-shop')"></div></div>
+    <div class="metric"><label>Avito лиды (звонки)</label><div class="metric-right"><span class="delta" id="d-avito"></span><input type="number" id="m-avito" placeholder="0" oninput="calcDelta('avito')"></div></div>
+    <div class="metric"><label>Ozon заказы</label><div class="metric-right"><span class="delta" id="d-ozon"></span><input type="number" id="m-ozon" placeholder="0" oninput="calcDelta('ozon')"></div></div>
+    <div class="metric"><label>WB заказы</label><div class="metric-right"><span class="delta" id="d-wb"></span><input type="number" id="m-wb" placeholder="0" oninput="calcDelta('wb')"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Финансы</h2>
+    <div class="metric"><label>Выручка общая (₽)</label><div class="metric-right"><span class="delta" id="d-revenue"></span><input type="number" id="m-revenue" placeholder="0" oninput="calcDelta('revenue')"></div></div>
+    <div class="metric"><label>Расходы закупки (₽)</label><div class="metric-right"><span class="delta" id="d-purchase"></span><input type="number" id="m-purchase" placeholder="0" oninput="calcDelta('purchase')"></div></div>
+    <div class="metric"><label>Зарплаты (₽)</label><div class="metric-right"><span class="delta" id="d-salary"></span><input type="number" id="m-salary" placeholder="0" oninput="calcDelta('salary')"></div></div>
+    <div class="metric"><label>Чистая прибыль (₽)</label><div class="metric-right"><span class="delta" id="d-profit"></span><input type="number" id="m-profit" placeholder="0" oninput="calcDelta('profit')"></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Маркетинг</h2>
+    <div class="metric"><label>Telegram подписчики</label><div class="metric-right"><span class="delta" id="d-tg"></span><input type="number" id="m-tg" placeholder="0" oninput="calcDelta('tg')"></div></div>
+    <div class="metric"><label>Instagram подписчики</label><div class="metric-right"><span class="delta" id="d-ig"></span><input type="number" id="m-ig" placeholder="0" oninput="calcDelta('ig')"></div></div>
+    <div class="metric"><label>TikTok подписчики</label><div class="metric-right"><span class="delta" id="d-tt"></span><input type="number" id="m-tt" placeholder="0" oninput="calcDelta('tt')"></div></div>
+    <div class="metric"><label>Яндекс Карты рейтинг</label><div class="metric-right"><span class="delta" id="d-maps"></span><input type="number" id="m-maps" step="0.1" placeholder="0.0" oninput="calcDelta('maps')"></div></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>История по неделям</h2>
+  <div id="historyContainer" style="margin-top:12px;overflow-x:auto;"></div>
+</div>
+
+<div class="toast" id="toast">Сохранено ✓</div>
+
+<script>
+const KEYS = ['cars','avg-studio','rev-studio','orders','rev-shop','avito','ozon','wb','revenue','purchase','salary','profit','tg','ig','tt','maps'];
+
+function getWeekLabel(date) {
+  const d = date || new Date();
+  const start = new Date(d);
+  start.setDate(d.getDate() - d.getDay() + 1);
+  const end = new Date(start); end.setDate(start.getDate() + 6);
+  const fmt = (x) => x.toLocaleDateString('ru-RU', {day:'2-digit',month:'2-digit'});
+  return `${fmt(start)}–${fmt(end)}`;
+}
+
+function getAllData() {
+  return JSON.parse(localStorage.getItem('avsound_kpi') || '{}');
+}
+
+function saveAllData(data) {
+  localStorage.setItem('avsound_kpi', JSON.stringify(data));
+}
+
+function getWeeks() {
+  return Object.keys(getAllData()).sort();
+}
+
+function populateWeekSelect() {
+  const sel = document.getElementById('weekSelect');
+  const weeks = getWeeks();
+  const current = sel.value;
+  sel.innerHTML = '';
+  if (weeks.length === 0) {
+    const opt = document.createElement('option');
+    opt.value = getWeekLabel();
+    opt.textContent = getWeekLabel() + ' (текущая)';
+    sel.appendChild(opt);
+  } else {
+    weeks.forEach(w => {
+      const opt = document.createElement('option');
+      opt.value = w;
+      opt.textContent = w;
+      sel.appendChild(opt);
+    });
+  }
+  if (current && [...sel.options].some(o => o.value === current)) {
+    sel.value = current;
+  } else {
+    sel.value = sel.options[sel.options.length - 1]?.value;
+  }
+}
+
+function loadWeek(week) {
+  const data = getAllData();
+  const entry = data[week] || {};
+  KEYS.forEach(k => {
+    const el = document.getElementById('m-' + k);
+    if (el) el.value = entry[k] !== undefined ? entry[k] : '';
+  });
+  updateDeltas(week);
+  updateSummary();
+}
+
+function saveWeek() {
+  const week = document.getElementById('weekSelect').value;
+  const data = getAllData();
+  const entry = {};
+  KEYS.forEach(k => {
+    const v = document.getElementById('m-' + k)?.value;
+    if (v !== '' && v !== undefined) entry[k] = parseFloat(v);
+  });
+  data[week] = entry;
+  saveAllData(data);
+  populateWeekSelect();
+  updateDeltas(week);
+  updateSummary();
+  renderHistory();
+  showToast();
+}
+
+function newWeek() {
+  const label = getWeekLabel();
+  const data = getAllData();
+  if (!data[label]) data[label] = {};
+  saveAllData(data);
+  populateWeekSelect();
+  document.getElementById('weekSelect').value = label;
+  loadWeek(label);
+}
+
+function getPrevWeek(week) {
+  const weeks = getWeeks();
+  const idx = weeks.indexOf(week);
+  return idx > 0 ? weeks[idx - 1] : null;
+}
+
+function calcDelta(key) { updateSummary(); }
+
+function updateDeltas(currentWeek) {
+  const data = getAllData();
+  const prev = getPrevWeek(currentWeek);
+  const prevEntry = prev ? (data[prev] || {}) : null;
+  KEYS.forEach(k => {
+    const el = document.getElementById('d-' + k);
+    if (!el) return;
+    const cur = parseFloat(document.getElementById('m-' + k)?.value);
+    if (!prevEntry || isNaN(cur)) { el.textContent = ''; el.className = 'delta flat'; return; }
+    const p = prevEntry[k];
+    if (p === undefined || p === 0) { el.textContent = ''; el.className = 'delta flat'; return; }
+    const pct = Math.round((cur - p) / p * 100);
+    el.textContent = (pct > 0 ? '+' : '') + pct + '%';
+    el.className = 'delta ' + (pct > 0 ? 'up' : pct < 0 ? 'down' : 'flat');
+  });
+}
+
+function updateSummary() {
+  const get = (id) => parseFloat(document.getElementById('m-' + id)?.value) || 0;
+  const revS = get('rev-studio'), revSh = get('rev-shop');
+  const total = revS + revSh || get('revenue');
+  const profit = get('profit');
+  const cars = get('cars');
+  const orders = get('orders');
+
+  const set = (id, val, suffix) => {
+    document.getElementById(id).textContent = val ? val.toLocaleString('ru-RU') + (suffix||'') : '—';
+  };
+  set('s-revenue', total || null, ' ₽');
+  set('s-margin', profit || null, ' ₽');
+  set('s-cars', cars || null, '');
+  set('s-orders', orders || null, '');
+}
+
+function renderHistory() {
+  const data = getAllData();
+  const weeks = getWeeks().slice(-8).reverse();
+  if (weeks.length === 0) { document.getElementById('historyContainer').innerHTML = '<p style="color:#666;font-size:13px;">Нет данных</p>'; return; }
+  let html = '<table class="history-table"><thead><tr><th>Неделя</th><th>Выручка</th><th>Прибыль</th><th>Машин</th><th>Заказов</th><th>Avito лиды</th></tr></thead><tbody>';
+  weeks.forEach((w, i) => {
+    const e = data[w] || {};
+    const rev = ((e['rev-studio']||0) + (e['rev-shop']||0)) || e['revenue'] || 0;
+    const profit = e['profit'] || 0;
+    const profitBadge = profit > 0 ? `<span class="badge green">+${profit.toLocaleString('ru-RU')}</span>` : profit < 0 ? `<span class="badge red">${profit.toLocaleString('ru-RU')}</span>` : '—';
+    html += `<tr>
+      <td style="color:#aaa">${w}</td>
+      <td>${rev ? rev.toLocaleString('ru-RU') + ' ₽' : '—'}</td>
+      <td>${profitBadge}</td>
+      <td>${e['cars'] || '—'}</td>
+      <td>${e['orders'] || '—'}</td>
+      <td>${e['avito'] || '—'}</td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  document.getElementById('historyContainer').innerHTML = html;
+}
+
+function showToast() {
+  const t = document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+// init
+populateWeekSelect();
+const weeks = getWeeks();
+if (weeks.length > 0) {
+  loadWeek(weeks[weeks.length - 1]);
+} else {
+  newWeek();
+}
+renderHistory();
+</script>
+</body>
+</html>

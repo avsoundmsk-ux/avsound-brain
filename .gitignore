@@ -64,3 +64,6 @@ logs/
 
 # Отдельный репо — не включаем
 avtozvuk-agent/
+
+# Obsidian vault (бинарные файлы, кэш)
+obsidian/

@@ -8,7 +8,12 @@ export default function DropZone({ onFile }) {
     e.preventDefault()
     setDragging(false)
     const file = e.dataTransfer.files[0]
-    if (file) onFile(file)
+    if (!file) return
+    if (!file.name.toLowerCase().endsWith('.xlsx')) {
+      alert('Нужен файл .xlsx')
+      return
+    }
+    onFile(file)
   }
 
   function handleChange(e) {

@@ -19,8 +19,20 @@ export async function parseSalesFile(file) {
   const dataRows = rows.slice(2).filter(r => r[2] !== '')
 
   return dataRows.map(r => {
-    const date = String(r[0] || '').trim()
-    const rawAmount = String(r[2] || '0').replace(',', '.')
+    const rawDate = r[0]
+    let date = ''
+    if (rawDate instanceof Date) {
+      const d = rawDate
+      date = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`
+    } else if (typeof rawDate === 'number') {
+      // Excel serial date: days since 1900-01-01 (with Lotus bug: +1900-01-00 offset)
+      const excelEpoch = new Date(1899, 11, 30)
+      const d = new Date(excelEpoch.getTime() + rawDate * 86400000)
+      date = `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')}.${d.getFullYear()}`
+    } else {
+      date = String(rawDate || '').trim()
+    }
+    const rawAmount = String(r[2] || '0').replace(/\s/g, '').replace(',', '.')
     const реализация = parseFloat(rawAmount) || 0
     const tags = String(r[6] || '').trim()
     const comment = String(r[7] || '').trim()

@@ -30,7 +30,7 @@ export default function App() {
           <ChannelBreakdown items={items} />
           <SalesTable items={items} />
           <button
-            onClick={() => setItems(null)}
+            onClick={() => { setItems(null); setError(null) }}
             className="mt-4 text-sm text-gray-400 hover:text-gray-600 underline"
           >
             Загрузить другой файл

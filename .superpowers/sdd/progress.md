@@ -9,5 +9,5 @@ Plan: docs/superpowers/plans/2026-06-22-avsound-finance-phase1.md
 - [x] Task 1: Scaffold project (commits 3b13435..90837cf, review clean)
 - [x] Task 2: parseSales utility (commits 90837cf..f671466, review clean)
 - [x] Task 3: DropZone component (commits f671466..ec706df, review clean)
-- [ ] Task 4: SalesTable component
+- [x] Task 4: SalesTable component (commits ec706df..313cf7d, fix: totals маржа color + composite key, review clean)
 - [ ] Task 5: SummaryCards + ChannelBreakdown

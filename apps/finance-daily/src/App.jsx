@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import DropZone from './components/DropZone.jsx'
+import SalesTable from './components/SalesTable.jsx'
 import { parseSalesFile } from './utils/parseSales.js'
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
       <h1 className="text-2xl font-bold text-gray-800 mb-6">AVSound — Учёт дня</h1>
       <DropZone onFile={handleFile} />
       {error && <p className="mt-4 text-red-600">{error}</p>}
-      {items && <p className="mt-4 text-green-600">Загружено строк: {items.length}</p>}
+      {items && <SalesTable items={items} />}
     </div>
   )
 }

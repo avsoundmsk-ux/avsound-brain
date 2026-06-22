@@ -6,7 +6,7 @@ Plan: docs/superpowers/plans/2026-06-22-avsound-finance-phase1.md
 
 ## Tasks
 
-- [ ] Task 1: Scaffold project
+- [x] Task 1: Scaffold project (commits 3b13435..90837cf, review clean)
 - [ ] Task 2: parseSales utility
 - [ ] Task 3: DropZone component
 - [ ] Task 4: SalesTable component

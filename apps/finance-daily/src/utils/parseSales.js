@@ -16,7 +16,7 @@ function parseAmount(raw) {
   return parseFloat(String(raw || '0').replace(/\s/g, '').replace(',', '.')) || 0
 }
 
-// Returns { type: 'продажи'|'работа'|'unknown', items }
+// Returns { type: 'продажи'|'работа'|'расходы'|'unknown', items }
 export async function parseFile(file) {
   const buffer = await file.arrayBuffer()
   const wb = XLSX.read(buffer, { type: 'array' })
@@ -26,15 +26,16 @@ export async function parseFile(file) {
   const title = String(rows[0]?.[0] || '').toLowerCase()
   const dataRows = rows.slice(2).filter(r => r[2] !== '')
 
-  if (title.includes('установка')) {
-    return {
-      type: 'работа',
-      items: dataRows.map(r => ({
-        date: parseDate(r[0]),
-        comment: String(r[7] || '').trim(),
-        сумма: parseAmount(r[2]),
-      }))
-    }
+  const simpleItems = () => dataRows.map(r => ({
+    date: parseDate(r[0]),
+    comment: String(r[7] || '').trim(),
+    сумма: parseAmount(r[2]),
+  }))
+
+  if (title.includes('установка')) return { type: 'работа', items: simpleItems() }
+
+  if (title.includes('рабочие покупки') || title.includes('зарплата') || title.includes('закупка')) {
+    return { type: 'расходы', items: simpleItems() }
   }
 
   if (title.includes('продажи')) {

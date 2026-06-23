@@ -5,6 +5,7 @@ import ChannelBreakdown from './components/ChannelBreakdown.jsx'
 import SalesTable from './components/SalesTable.jsx'
 import WorkSection from './components/WorkSection.jsx'
 import ExpensesSection from './components/ExpensesSection.jsx'
+import CashRegister from './components/CashRegister.jsx'
 import { parseFile } from './utils/parseSales.js'
 
 const SLOTS = [
@@ -18,30 +19,42 @@ const SLOTS = [
 export default function App() {
   const [data, setData] = useState({})
   const [error, setError] = useState(null)
+  const [tab, setTab] = useState('отчёт')
 
   async function handleFile(file) {
     try {
       setError(null)
       const result = await parseFile(file)
-      if (result.type === 'unknown') {
-        setError('Неизвестный тип файла: ' + file.name)
-        return
-      }
+      if (result.type === 'unknown') { setError('Неизвестный тип: ' + file.name); return }
       setData(prev => ({ ...prev, [result.type]: result.items }))
     } catch (e) {
-      setError('Ошибка парсинга: ' + e.message)
+      setError('Ошибка: ' + e.message)
     }
   }
 
   const hasAny = Object.keys(data).length > 0
   const g = key => data[key] || []
 
-  function reset() { setData({}); setError(null) }
+  const totals = {
+    реализация: g('продажи').reduce((s, i) => s + i.реализация, 0),
+    работа:     g('работа').reduce((s, i) => s + i.сумма, 0),
+    расходы:    g('расходы').reduce((s, i) => s + i.сумма, 0),
+    зарплата:   g('зарплата').reduce((s, i) => s + i.сумма, 0),
+    закупка:    g('закупка').reduce((s, i) => s + i.сумма, 0),
+  }
+
+  function reset() { setData({}); setError(null); setTab('отчёт') }
+
+  const tabs = [
+    { key: 'отчёт', label: 'Отчёт' },
+    { key: 'касса', label: 'Касса' },
+  ]
 
   return (
     <div className="min-h-screen bg-gray-50 p-6 max-w-5xl mx-auto">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">AVSound — Учёт дня</h1>
 
+      {/* Слоты загрузки */}
       <div className="grid grid-cols-5 gap-3 mb-6">
         {SLOTS.map(s => (
           <DropZone key={s.key} label={s.label} onFile={handleFile} loaded={!!data[s.key]} />
@@ -50,7 +63,25 @@ export default function App() {
 
       {error && <p className="mb-4 text-red-600">{error}</p>}
 
-      {hasAny && (
+      {/* Вкладки */}
+      <div className="flex gap-1 mb-6 bg-gray-200 p-1 rounded-xl w-fit">
+        {tabs.map(t => (
+          <button
+            key={t.key}
+            onClick={() => setTab(t.key)}
+            className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors ${
+              tab === t.key
+                ? 'bg-white text-gray-900 shadow-sm'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Вкладка: Отчёт */}
+      {tab === 'отчёт' && hasAny && (
         <>
           <SummaryCards
             salesItems={g('продажи')}
@@ -65,10 +96,16 @@ export default function App() {
           {data.закупка  && <ExpensesSection items={g('закупка')} title="Закупка оборудования" color="purple" />}
           {data.продажи  && <ChannelBreakdown items={g('продажи')} />}
           {data.продажи  && <SalesTable items={g('продажи')} />}
-          <button onClick={reset} className="mt-4 text-sm text-gray-400 hover:text-gray-600 underline">
-            Сбросить
-          </button>
         </>
+      )}
+
+      {/* Вкладка: Касса */}
+      {tab === 'касса' && <CashRegister totals={totals} />}
+
+      {hasAny && (
+        <button onClick={reset} className="mt-6 text-sm text-gray-400 hover:text-gray-600 underline">
+          Сбросить
+        </button>
       )}
     </div>
   )

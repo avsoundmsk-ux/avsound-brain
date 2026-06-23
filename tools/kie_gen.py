@@ -45,6 +45,28 @@ def balance():
     return _req("GET", CREDIT_URL).get("data")
 
 
+import base64, mimetypes
+
+UPLOAD_URL = "https://api.kie.ai/api/file-base64-upload"
+
+
+def upload_file(path, upload_path="avsound"):
+    """Залить локальный файл в KIE → вернуть публичный URL (живёт 3 дня)."""
+    mime = mimetypes.guess_type(path)[0] or "application/octet-stream"
+    with open(path, "rb") as f:
+        b64 = base64.b64encode(f.read()).decode()
+    payload = {
+        "base64Data": f"data:{mime};base64,{b64}",
+        "uploadPath": upload_path,
+        "fileName": os.path.basename(path),
+    }
+    r = _req("POST", UPLOAD_URL, payload)
+    url = (r.get("data") or {}).get("downloadUrl")
+    if not url:
+        print("Аплоад не вернул URL:", r); sys.exit(1)
+    return url
+
+
 def estimate(res, mode, dur):
     rate = RATES.get((res, mode))
     if not rate:

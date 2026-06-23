@@ -2,7 +2,13 @@ function fmt(n) {
   return n.toLocaleString('ru-RU') + ' ₽'
 }
 
-function Card({ label, value, color }) {
+function Card({ label, value, color, dark }) {
+  if (dark) return (
+    <div className="bg-gray-900 rounded-xl p-4 col-span-1">
+      <p className="text-xs text-gray-400 uppercase tracking-wide">{label}</p>
+      <p className={`text-2xl font-bold mt-1 ${color}`}>{value}</p>
+    </div>
+  )
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-4">
       <p className="text-xs text-gray-500 uppercase tracking-wide">{label}</p>
@@ -11,30 +17,33 @@ function Card({ label, value, color }) {
   )
 }
 
-export default function SummaryCards({ salesItems, workItems, expenseItems }) {
-  const реализация = salesItems.reduce((s, i) => s + i.реализация, 0)
-  const закупка = salesItems.reduce((s, i) => s + i.закупка, 0)
-  const маржаПродаж = реализация - закупка
-  const работа = workItems.reduce((s, i) => s + i.сумма, 0)
-  const расходы = expenseItems.reduce((s, i) => s + i.сумма, 0)
-  const чистая = маржаПродаж + работа - расходы
-  const pct = реализация ? Math.round((маржаПродаж / реализация) * 100) : 0
+export default function SummaryCards({ salesItems, workItems, expenseItems, salaryItems, stockItems }) {
+  const реализация  = salesItems.reduce((s, i) => s + i.реализация, 0)
+  const закупкаСеб  = salesItems.reduce((s, i) => s + i.закупка, 0)
+  const маржа       = реализация - закупкаСеб
+  const работа      = workItems.reduce((s, i) => s + i.сумма, 0)
+  const расходы     = expenseItems.reduce((s, i) => s + i.сумма, 0)
+  const зарплата    = salaryItems.reduce((s, i) => s + i.сумма, 0)
+  const закупка     = stockItems.reduce((s, i) => s + i.сумма, 0)
+  const pct         = реализация ? Math.round((маржа / реализация) * 100) : 0
+  const чистая      = маржа + работа - расходы - зарплата
 
   return (
     <div className="mb-6 space-y-3">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      {/* Доходы */}
+      <div className="grid grid-cols-4 gap-3">
         <Card label="Реализация" value={fmt(реализация)} />
-        <Card label="Себестоимость" value={fmt(закупка)} color="text-gray-500" />
-        <Card label="Маржа продаж" value={fmt(маржаПродаж)} color={маржаПродаж >= 0 ? 'text-green-600' : 'text-red-500'} />
+        <Card label="Себестоимость" value={fmt(закупкаСеб)} color="text-gray-500" />
+        <Card label="Маржа продаж" value={fmt(маржа)} color={маржа >= 0 ? 'text-green-600' : 'text-red-500'} />
         <Card label="% маржи" value={pct + '%'} color={pct >= 30 ? 'text-green-600' : pct >= 15 ? 'text-yellow-600' : 'text-red-500'} />
       </div>
-      <div className="grid grid-cols-3 gap-3">
+      {/* Расходы + итог */}
+      <div className="grid grid-cols-5 gap-3">
         <Card label="Работа студии" value={fmt(работа)} color="text-blue-600" />
         <Card label="Расходы" value={fmt(расходы)} color="text-red-500" />
-        <div className="bg-gray-900 rounded-xl p-4">
-          <p className="text-xs text-gray-400 uppercase tracking-wide">Чистая прибыль</p>
-          <p className={`text-2xl font-bold mt-1 ${чистая >= 0 ? 'text-green-400' : 'text-red-400'}`}>{fmt(чистая)}</p>
-        </div>
+        <Card label="Зарплата" value={fmt(зарплата)} color="text-orange-500" />
+        <Card label="Закупка склад" value={fmt(закупка)} color="text-purple-600" />
+        <Card label="Чистая прибыль" value={fmt(чистая)} color={чистая >= 0 ? 'text-green-400' : 'text-red-400'} dark />
       </div>
     </div>
   )

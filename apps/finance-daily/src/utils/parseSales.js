@@ -16,7 +16,7 @@ function parseAmount(raw) {
   return parseFloat(String(raw || '0').replace(/\s/g, '').replace(',', '.')) || 0
 }
 
-// Returns { type: 'продажи'|'работа'|'расходы'|'unknown', items }
+// Types: 'продажи' | 'работа' | 'расходы' | 'зарплата' | 'закупка' | 'unknown'
 export async function parseFile(file) {
   const buffer = await file.arrayBuffer()
   const wb = XLSX.read(buffer, { type: 'array' })
@@ -32,11 +32,10 @@ export async function parseFile(file) {
     сумма: parseAmount(r[2]),
   }))
 
-  if (title.includes('установка')) return { type: 'работа', items: simpleItems() }
-
-  if (title.includes('рабочие покупки') || title.includes('зарплата') || title.includes('закупка')) {
-    return { type: 'расходы', items: simpleItems() }
-  }
+  if (title.includes('установка'))      return { type: 'работа',   items: simpleItems() }
+  if (title.includes('зарплата'))        return { type: 'зарплата', items: simpleItems() }
+  if (title.includes('закупка'))         return { type: 'закупка',  items: simpleItems() }
+  if (title.includes('рабочие покупки')) return { type: 'расходы',  items: simpleItems() }
 
   if (title.includes('продажи')) {
     return {

@@ -19,10 +19,11 @@ from PIL import Image
 PROMPT_BASE = (
     "Place THIS exact product (a car audio amplifier) on a premium dark studio background. "
     "Keep the product 100% identical — same shape, logo, text, knobs, terminals, colors and details, "
-    "do not redesign or add anything. Deep dark charcoal-to-black radial gradient background, clean and "
-    "uniform, subtle soft reflection under the device. Product perfectly centered, professional e-commerce "
-    "catalog shot, square 1:1 composition, photorealistic, sharp focus, high detail, soft studio lighting. "
-    "No watermark, no extra text, no logos other than the ones on the product itself."
+    "do not redesign or add anything. The background MUST be very dark — deep black to dark charcoal radial "
+    "gradient, NOT white, NOT light grey, NOT a bright studio. Clean uniform dark backdrop with a subtle soft "
+    "reflection under the device. Product perfectly centered, professional e-commerce catalog shot, "
+    "square 1:1 composition, photorealistic, sharp focus, high detail, soft studio lighting on the product "
+    "against the dark background. No watermark, no extra text, no logos other than the ones on the product itself."
 )
 PROMPT_HERO = PROMPT_BASE + (" Hero shot: slightly more dramatic top-down key light and a faint rim light "
     "to make the product pop against the dark background.")

@@ -17,9 +17,11 @@ import kie_gen as k
 from PIL import Image
 
 PROMPT_BASE = (
-    "Place THIS exact product (a car audio amplifier) on a premium dark studio background. "
-    "Keep the product 100% identical — same shape, logo, text, knobs, terminals, colors and details, "
-    "do not redesign or add anything. The background MUST be very dark — deep black to dark charcoal radial "
+    "Place THIS exact product ({ptype}) on a premium dark studio background. "
+    "Keep the product 100% identical — same shape, logo, text, knobs, terminals, cables, connectors, colors "
+    "and details, keep exactly the same number of parts/connectors/cables as in the photo, "
+    "do not redesign, do not turn it into a different device, do not add or remove anything. "
+    "The background MUST be very dark — deep black to dark charcoal radial "
     "gradient, NOT white, NOT light grey, NOT a bright studio. Clean uniform dark backdrop with a subtle soft "
     "reflection under the device. Product perfectly centered, professional e-commerce catalog shot, "
     "square 1:1 composition, photorealistic, sharp focus, high detail, soft studio lighting on the product "
@@ -39,14 +41,15 @@ def pad_square(src, dst, bg=(255, 255, 255)):
     return dst
 
 
-def run(src, out, hero=False):
+def run(src, out, hero=False, ptype="a car audio product"):
     os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
     sq = src + ".sq.jpg"
     pad_square(src, sq)
     print("Заливаю:", os.path.basename(sq))
     url = k.upload_file(sq, "avsound/prod")
     print("  ->", url)
-    inp = {"prompt": PROMPT_HERO if hero else PROMPT_BASE,
+    prompt = (PROMPT_HERO if hero else PROMPT_BASE).format(ptype=ptype)
+    inp = {"prompt": prompt,
            "image_urls": [url], "output_format": "png"}
     resp = k._req("POST", k.BASE + "/createTask",
                   {"model": "google/nano-banana-edit", "input": inp})
@@ -89,9 +92,10 @@ def main():
     p.add_argument("src")
     p.add_argument("--out", default="media/generated/product.png")
     p.add_argument("--hero", action="store_true")
+    p.add_argument("--type", default="a car audio product", help="что за товар: 'a car audio amplifier', 'an RCA Y-splitter cable with connectors', 'a car audio ANL fuse' и т.д.")
     a = p.parse_args()
     bal = k.balance(); print(f"Баланс: {bal} cr (~${bal*k.USD_PER_CREDIT:.2f})")
-    run(a.src, a.out, a.hero)
+    run(a.src, a.out, a.hero, a.type)
     b = k.balance(); print(f"Остаток: {b} cr (~${b*k.USD_PER_CREDIT:.2f})  (потрачено {bal-b:.0f} cr)")
 
 

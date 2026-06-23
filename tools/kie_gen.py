@@ -34,6 +34,7 @@ def _req(method, url, payload=None):
     req = urllib.request.Request(url, data=data, method=method)
     req.add_header("Authorization", "Bearer " + API_KEY)
     req.add_header("Content-Type", "application/json")
+    req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36")
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             return json.loads(r.read().decode())
@@ -47,7 +48,7 @@ def balance():
 
 import base64, mimetypes
 
-UPLOAD_URL = "https://api.kie.ai/api/file-base64-upload"
+UPLOAD_URL = "https://kieai.redpandaai.co/api/file-base64-upload"
 
 
 def upload_file(path, upload_path="avsound"):
@@ -76,6 +77,10 @@ def estimate(res, mode, dur):
 
 
 def create(args):
+    if args.image and os.path.exists(args.image):
+        print("Заливаю фото:", os.path.basename(args.image))
+        args.image = upload_file(args.image, "avsound/img")
+        print("  ->", args.image)
     mode = "i2v" if args.image else "t2v"
     inp = {
         "prompt": args.prompt,

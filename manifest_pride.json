@@ -1,0 +1,36 @@
+[
+  {
+    "id": 47902,
+    "name": "Предохранители Pride ANL FUSE 300A",
+    "type": "a car audio wiring accessory",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 47901,
+    "name": "Предохранители Pride ANL FUSE 400A",
+    "type": "a car audio wiring accessory",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 47897,
+    "name": "Предохранители Pride ANL FUSE 250A",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/0a8/0a838d304d739ecb418ba21fba4f00ca.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41561,
+    "name": "Моноблок Pride Mille",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/653/0nk4csb2zcu3oo8i15rsxx8uz066io97.jpg",
+      "https://shop-bear.ru/upload/iblock/bc2/x9vm6acvmh4zo5j2don27dm3lfanxt4i.jpg",
+      "https://shop-bear.ru/upload/iblock/ff1/yswj6qc14qp6c31tnlkrpboafpwdqdv2.jpg"
+    ],
+    "clean_wm": true
+  }
+]

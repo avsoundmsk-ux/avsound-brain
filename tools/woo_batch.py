@@ -88,26 +88,32 @@ def cmd_source(a):
         name = p["name"]
         q = f"{name} site:shop-bear.ru"
         # быстрый поиск страницы товара
-        import subprocess, tempfile
-        tmp = tempfile.mktemp(suffix=".md")
-        subprocess.run(f'firecrawl search "{name} shop-bear" -o "{tmp}"',
-                       shell=True, capture_output=True, timeout=90)
-        page = None
-        if os.path.exists(tmp):
-            txt = open(tmp, encoding="utf-8", errors="ignore").read()
-            os.remove(tmp)
-            m = re.search(r'https://shop-bear\.ru/catalog/\S+/', txt)
-            if m:
-                page = m.group(0).rstrip(").,")
         srcs = []
-        if page:
-            imgs = firecrawl_imgs(page)
-            srcs = [u for u in imgs if big_enough(u)][:4]
+        try:
+            import subprocess, tempfile
+            tmp = tempfile.mktemp(suffix=".md")
+            try:
+                subprocess.run(f'firecrawl search "{name} shop-bear" -o "{tmp}"',
+                               shell=True, capture_output=True, timeout=90)
+            except subprocess.TimeoutExpired:
+                pass
+            page = None
+            if os.path.exists(tmp):
+                txt = open(tmp, encoding="utf-8", errors="ignore").read()
+                os.remove(tmp)
+                m = re.search(r'https://shop-bear\.ru/catalog/\S+/', txt)
+                if m:
+                    page = m.group(0).rstrip(").,")
+            if page:
+                imgs = firecrawl_imgs(page)
+                srcs = [u for u in imgs if big_enough(u)][:4]
+            clean = bool(page and "shop-bear" in (page or ""))
+        except Exception as e:
+            logline(f"source ERR {p['id']}: {type(e).__name__}"); clean = False
         out.append({"id": p["id"], "name": name,
-                    "type": guess_type(name), "sources": srcs,
-                    "clean_wm": bool(page and "shop-bear" in (page or ""))})
+                    "type": guess_type(name), "sources": srcs, "clean_wm": clean})
         logline(f"source {p['id']} {name}: {len(srcs)} фото")
-    json.dump(out, open(a.out, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        json.dump(out, open(a.out, "w", encoding="utf-8"), ensure_ascii=False, indent=2)  # инкрементально
     print(f"\nГотово: {a.out} ({len(out)} товаров). Проверь sources перед run.")
 
 

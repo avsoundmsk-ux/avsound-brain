@@ -19,6 +19,22 @@
 - Что было в прошлых сессиях → читай `logs/`
 - Вопрос про бота / агентов / сервер / Telegram-бот / avtozvuk-agent → читай memory в `C:\Users\avsou\.claude\projects\C--Users-avsou-OneDrive-Desktop-claude\memory\avtozvuk-agent-project.md`
 - Вопрос про API ключи / токены / сервисы → читай `C:\Users\avsou\.claude\projects\C--Users-avsou-OneDrive-Desktop-claude\memory\api-keys.md`
+- Вопрос про MCP-серверы / github / notion / playwright / что подключено → читай memory `...\memory\mcp-servers.md`
+
+## MCP-серверы → второй мозг (обмен инфой)
+
+MCP сами не синхронятся. Ты — шина: тянешь данные из MCP и кладёшь в файлы знаний. После работы через MCP **обязательно** запиши результат в нужный файл, не оставляй только в чате.
+
+| MCP | Тянуть | Писать в |
+|---|---|---|
+| github | коммиты/issues/PR avtozvuk-agent | `ai/`, `logs/` |
+| Notion | заметки/задачи/базы | `plans/tasks.md`, `business/` |
+| playwright | проверка av-sound.ru, скрины, цены конкурентов | `marketing/`, `business/competitors.md` |
+| firecrawl | парсинг сайтов | `business/competitors.md`, `marketing/` |
+| Gmail | письма клиентов/поставщиков | `business/clients_crm.md` |
+| context7 | дока библиотек | в код (не в знания) |
+
+github + Notion требуют OAuth — Михаил логинится сам через `/mcp`.
 
 ## автовыбор плагинов
 

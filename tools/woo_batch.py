@@ -56,8 +56,8 @@ def firecrawl_imgs(url):
     """Скачать страницу через firecrawl CLI, вытащить крупные картинки товара."""
     import subprocess, tempfile
     tmp = tempfile.mktemp(suffix=".html")
-    subprocess.run(["firecrawl", "scrape", url, "--format", "rawHtml", "-o", tmp],
-                   capture_output=True, timeout=120)
+    subprocess.run(f'firecrawl scrape "{url}" --format rawHtml -o "{tmp}"',
+                   shell=True, capture_output=True, timeout=120)
     if not os.path.exists(tmp):
         return []
     html = open(tmp, encoding="utf-8", errors="ignore").read()
@@ -87,8 +87,8 @@ def cmd_source(a):
         # быстрый поиск страницы товара
         import subprocess, tempfile
         tmp = tempfile.mktemp(suffix=".md")
-        subprocess.run(["firecrawl", "search", name + " shop-bear", "-o", tmp],
-                       capture_output=True, timeout=90)
+        subprocess.run(f'firecrawl search "{name} shop-bear" -o "{tmp}"',
+                       shell=True, capture_output=True, timeout=90)
         page = None
         if os.path.exists(tmp):
             txt = open(tmp, encoding="utf-8", errors="ignore").read()

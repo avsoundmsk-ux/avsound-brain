@@ -134,7 +134,9 @@ def download(url, task_id):
     os.makedirs(OUT_DIR, exist_ok=True)
     ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     path = os.path.join(OUT_DIR, f"{ts}_{task_id[-8:]}.mp4")
-    urllib.request.urlretrieve(url, path)
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36"})
+    with urllib.request.urlopen(req, timeout=120) as r, open(path, "wb") as f:
+        f.write(r.read())
     return os.path.abspath(path)
 
 

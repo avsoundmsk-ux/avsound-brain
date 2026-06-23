@@ -38,6 +38,9 @@ export default function CashRegister({ totals }) {
   const [приходОзон, setПриходОзон] = useState(0)
   const [приходЯндекс, setПриходЯндекс] = useState(0)
   const [saveStatus, setSaveStatus] = useState(null) // null | 'saving' | 'ok' | 'error'
+  const today = new Date()
+  const defaultDate = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`
+  const [selectedDate, setSelectedDate] = useState(defaultDate)
 
   const set = key => val => setCash(p => ({ ...p, [key]: val }))
 
@@ -54,8 +57,8 @@ export default function CashRegister({ totals }) {
 
   async function saveToSheets() {
     setSaveStatus('saving')
-    const today = new Date()
-    const дата = `${String(today.getDate()).padStart(2,'0')}.${String(today.getMonth()+1).padStart(2,'0')}.${today.getFullYear()}`
+    const [y, m, d] = selectedDate.split('-')
+    const дата = `${d}.${m}.${y}`
     const payload = {
       дата,
       реализация,
@@ -159,8 +162,17 @@ export default function CashRegister({ totals }) {
         </div>
       </div>
 
-      {/* Кнопка сохранения */}
+      {/* Дата + кнопка сохранения */}
       <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-500 uppercase tracking-wide">Дата отчёта</label>
+          <input
+            type="date"
+            value={selectedDate}
+            onChange={e => setSelectedDate(e.target.value)}
+            className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-400"
+          />
+        </div>
         <button
           onClick={saveToSheets}
           disabled={saveStatus === 'saving'}

@@ -69,5 +69,81 @@
     "type": "a car audio amplifier",
     "sources": [],
     "clean_wm": true
+  },
+  {
+    "id": 41553,
+    "name": "Усилитель Pride Quattro plus",
+    "type": "a car audio amplifier",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41552,
+    "name": "Сабвуфер Pride S.4 12 D4",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41551,
+    "name": "Сабвуфер Pride M.9 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41550,
+    "name": "Сабвуфер Pride M.12 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/1b2/3mf1bsezl68hqjltvyo861ubpc63hk7m.jpg",
+      "https://shop-bear.ru/upload/iblock/891/df83l6np9nejf2wx0zx697vv4zsvjb3x.jpg",
+      "https://shop-bear.ru/upload/iblock/e05/40zldevorc2cdhkobed3ybk4v9lqdg6u.jpg",
+      "https://shop-bear.ru/upload/iblock/e27/qlsqxjela9dyti8248hfug2c720h9obm.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41549,
+    "name": "Сабвуфер Pride M.6 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41548,
+    "name": "Pride M.9 10 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41547,
+    "name": "Сабвуфер Pride M.12 15 D 1.8",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/a11/a1187c2e14609b6d8fc02b5a37d3e95b.jpeg",
+      "https://shop-bear.ru/upload/iblock/ef1/ef17f7ae5bf8aca43b3b68e8f6a7e2c5.jpeg",
+      "https://shop-bear.ru/upload/iblock/f59/f5959626140624d6e779a8e94adc737d.jpeg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41544,
+    "name": "Pride Y-3000 (2M1F)",
+    "type": "a car audio wiring accessory",
+    "sources": [],
+    "clean_wm": false
+  },
+  {
+    "id": 41543,
+    "name": "Pride Y-5000(1M2F)",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/550/5506739a9e00de0245087742d27489bb.jpg",
+      "https://shop-bear.ru/upload/iblock/8b9/8b9292e5a67834ddc96ca04f7d0ba578.jpg",
+      "https://shop-bear.ru/upload/iblock/a8c/a8c7f3f877b57beea770e833b4ab9529.jpg"
+    ],
+    "clean_wm": true
   }
 ]

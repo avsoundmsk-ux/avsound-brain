@@ -1,0 +1,14 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: AVSound · Склад
+        - heading "Что дозаказать · остатки" [level=1] [ref=e6]
+    - generic [ref=e10] [cursor=pointer]:
+      - generic [ref=e11]: 📦
+      - generic [ref=e12]: Перетащи сюда файл склада .xlsx
+      - text: или нажми и выбери файл — данные остаются на этом компьютере, никуда не отправляются
+    - contentinfo [ref=e13]:
+      - text: AVSound · инструмент склада. Файл обрабатывается локально в браузере.
+      - text: "Колонки берутся автоматически: название, количество, закуп. Бренд = строка-секция в файле."
+  - generic: Скопировано

@@ -7,3 +7,8 @@
 02:17:21  OK 41556 Pride uno: 3 фото
 02:18:04  OK 41559 pride Quattro: 2 фото
 02:18:21  === ИТОГ: {'ok': 2} | KIE потрачено 40 cr (~$0.20) ===
+02:34:31  source 47902 Предохранители Pride ANL FUSE 300A: 0 фото
+02:35:01  source 47901 Предохранители Pride ANL FUSE 400A: 0 фото
+02:35:12  source 47897 Предохранители Pride ANL FUSE 250A: 1 фото
+02:35:25  source 41561 Моноблок Pride Mille: 3 фото
+02:35:37  source 41558 Моноблок Pride mezzo: 3 фото

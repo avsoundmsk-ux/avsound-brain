@@ -8,15 +8,14 @@ FRIEND = r"C:\Users\avsou\Downloads\Telegram Desktop\photo_2026-06-19_00-23-10.j
 SCENE  = r"C:\Users\avsou\Downloads\Telegram Desktop\photo_2026-06-18_22-15-23.jpg"   # офис/поза
 
 PROMPT = (
-    "FACE AND IDENTITY SWAP. In the office scene (second image), completely REPLACE the seated asian man "
-    "with the man from the FIRST image — the smiling European man wearing a camouflage jacket. "
-    "The final person MUST have the EXACT face, head shape, hairstyle and heavier/fuller body build of the "
-    "man from the first image, fully recognizable. Do NOT keep any features of the original asian man. "
-    "He now sits at the glass office desk wearing a well-tailored grey business suit, white shirt and tie, "
-    "in the same confident pose, same camera angle and same bright window lighting as the office photo. "
-    "Make the suit fit his real heavier body type naturally. Photorealistic high-end corporate portrait, "
-    "sharp focus, natural skin texture, European facial features, rounder fuller face. The result must "
-    "clearly be the man from the first image, NOT the original man."
+    "Professional high-end corporate portrait of THIS exact man. Keep his face, head shape, hairstyle, "
+    "skin tone and his fuller/heavier body build 100% identical and clearly recognizable — do not slim him, "
+    "do not beautify or change his face. Re-dress him in an elegant well-tailored grey business suit with a "
+    "crisp white shirt and a light blue tie that fits his real heavier body naturally. He sits confidently "
+    "at a glossy white office desk in a modern bright high-rise office, floor-to-ceiling windows with a "
+    "blurred city skyline behind him, a black leather executive chair, shelves with folders. Warm friendly "
+    "confident expression, one hand resting on the desk. Photorealistic, high-end soft studio lighting, "
+    "sharp focus, natural skin texture, magazine-quality business headshot, 4k."
 )
 
 
@@ -26,11 +25,7 @@ def main():
     print("Заливаю фото друга...")
     u_friend = k.upload_file(FRIEND, "avsound/face")
     print("  ->", u_friend)
-    print("Заливаю фото-сцену...")
-    u_scene = k.upload_file(SCENE, "avsound/face")
-    print("  ->", u_scene)
-
-    inp = {"prompt": PROMPT, "image_urls": [u_friend, u_scene], "output_format": "png"}
+    inp = {"prompt": PROMPT, "image_urls": [u_friend], "output_format": "png"}
     print("Создаю задачу Nano Banana Edit...")
     resp = k._req("POST", k.BASE + "/createTask", {"model": "google/nano-banana-edit", "input": inp})
     task_id = (resp.get("data") or {}).get("taskId")

@@ -17,3 +17,7 @@
 02:44:00  source 47901 Предохранители Pride ANL FUSE 400A: 0 фото
 02:44:05  source 47897 Предохранители Pride ANL FUSE 250A: 1 фото
 02:44:32  source 41561 Моноблок Pride Mille: 3 фото
+02:44:41  source 41558 Моноблок Pride mezzo: 3 фото
+02:44:49  source 41557 Усилитель Pride Quattro XL: 4 фото
+02:45:12  source 41555 Моноблок pride uno XL: 0 фото
+02:45:25  source 41554 Усилитель Pride Quattro plus ver.2: 0 фото

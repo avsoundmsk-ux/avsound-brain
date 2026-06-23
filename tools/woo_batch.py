@@ -56,8 +56,11 @@ def firecrawl_imgs(url):
     """Скачать страницу через firecrawl CLI, вытащить крупные картинки товара."""
     import subprocess, tempfile
     tmp = tempfile.mktemp(suffix=".html")
-    subprocess.run(f'firecrawl scrape "{url}" --format rawHtml -o "{tmp}"',
-                   shell=True, capture_output=True, timeout=120)
+    try:
+        subprocess.run(f'firecrawl scrape "{url}" --format rawHtml -o "{tmp}"',
+                       shell=True, capture_output=True, timeout=90)
+    except subprocess.TimeoutExpired:
+        return []
     if not os.path.exists(tmp):
         return []
     html = open(tmp, encoding="utf-8", errors="ignore").read()

@@ -23,14 +23,22 @@
     "id": 41463,
     "name": "Solo 300",
     "type": "a car audio midrange speaker",
-    "sources": [],
-    "clean_wm": true
+    "sources": [
+      "https://www.loudsound.ru/upload/iblock/387/tqs930okpxc4sjd2a46ooro5spkuoq4d/1.jpg",
+      "https://www.loudsound.ru/upload/iblock/4d2/kemix6d5w1rw8jnsu0oe5nsza8t43io9/4.jpg",
+      "https://www.loudsound.ru/upload/iblock/645/9a8wno57ijr8oznxumgocszriza96h4s/srednechastotnyy_estradnyy_dinamik_midreyndzh_6_5_pride_solo_300_6_5_competition_4om_loudsound.jpg"
+    ],
+    "clean_wm": false
   },
   {
     "id": 41458,
     "name": "Solo 300",
     "type": "a car audio midrange speaker",
-    "sources": [],
-    "clean_wm": true
+    "sources": [
+      "https://www.loudsound.ru/upload/iblock/387/tqs930okpxc4sjd2a46ooro5spkuoq4d/1.jpg",
+      "https://www.loudsound.ru/upload/iblock/4d2/kemix6d5w1rw8jnsu0oe5nsza8t43io9/4.jpg",
+      "https://www.loudsound.ru/upload/iblock/645/9a8wno57ijr8oznxumgocszriza96h4s/srednechastotnyy_estradnyy_dinamik_midreyndzh_6_5_pride_solo_300_6_5_competition_4om_loudsound.jpg"
+    ],
+    "clean_wm": false
   }
 ]

@@ -275,3 +275,14 @@
 11:55:58  source 41520 Pride Solo 300 8 competition: 4 фото
 11:57:01  source 41519 Pride Solo Neo 300: 4 фото
 11:58:00  source 41518 Pride Solo 300 competition: 4 фото
+12:26:04  === RUN 27 товаров, 4 воркеров ===
+12:26:05  SKIP 47901 Предохранители Pride ANL FUSE 400A: нет источников
+12:26:05  SKIP 47902 Предохранители Pride ANL FUSE 300A: нет источников
+12:26:05  SKIP 41554 Усилитель Pride Quattro plus ver.2: нет источников
+12:26:05  SKIP 41553 Усилитель Pride Quattro plus: нет источников
+12:26:05  SKIP 41552 Сабвуфер Pride S.4 12 D4: нет источников
+12:26:07  SKIP 47897 Предохранители Pride ANL FUSE 250A: уже обработан
+12:26:07  SKIP 41549 Сабвуфер Pride M.6 12 ver.2 D2: нет источников
+12:26:08  SKIP 41558 Моноблок Pride mezzo: уже обработан
+12:26:09  SKIP 41547 Сабвуфер Pride M.12 15 D 1.8: уже обработан
+12:26:10  SKIP 41544 Pride Y-3000 (2M1F): уже обработан

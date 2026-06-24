@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "studio": "remotion studio",
-    "render": "remotion render Montage"
+    "render": "remotion render src/index.jsx Montage"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

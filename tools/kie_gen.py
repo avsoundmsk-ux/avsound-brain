@@ -131,16 +131,18 @@ def _extract_url(d):
                 return urls[0]
         except Exception:
             pass
-    m = re.search(r"https?://[^\s\"']+\.mp4", json.dumps(d))
+    m = re.search(r"https?://[^\s\"']+\.(mp4|png|jpg|jpeg|webp|mp3|wav|gif)", json.dumps(d))
     return m.group(0) if m else None
 
 
 def download(url, task_id):
     os.makedirs(OUT_DIR, exist_ok=True)
     ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    path = os.path.join(OUT_DIR, f"{ts}_{task_id[-8:]}.mp4")
+    ext = re.search(r"\.(mp4|png|jpg|jpeg|webp|mp3|wav|gif)(?:\?|$)", url)
+    ext = ext.group(1) if ext else "bin"
+    path = os.path.join(OUT_DIR, f"{ts}_{task_id[-8:]}.{ext}")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36"})
-    with urllib.request.urlopen(req, timeout=120) as r, open(path, "wb") as f:
+    with urllib.request.urlopen(req, timeout=180) as r, open(path, "wb") as f:
         f.write(r.read())
     return os.path.abspath(path)
 
@@ -157,30 +159,125 @@ def log(model, mode, args, cr, usd, path):
         f.write(f"| {dt} | {model} | {mode} | {args.res} | {args.dur} | {cr_s} | {usd_s} | {os.path.basename(path)} | {args.prompt[:60]} |\n")
 
 
-def main():
-    p = argparse.ArgumentParser()
-    p.add_argument("prompt")
-    p.add_argument("--image", help="URL стартового кадра → режим i2v (дешевле)")
-    p.add_argument("--res", default="720p", choices=["480p", "720p", "1080p"])
-    p.add_argument("--dur", type=int, default=5)
-    p.add_argument("--aspect", default="16:9")
-    p.add_argument("--audio", action="store_true", help="генерить звук")
-    p.add_argument("--fast", action="store_true", help="seedance-2-fast (дешевле, до 720p)")
-    p.add_argument("--balance", action="store_true", help="только показать баланс")
-    args = p.parse_args()
+# ---------- Универсальный генератор (любая модель KIE) ----------
+# Подсказки: какие model_id считать видео-моделями (фото → first_frame_url/reference).
+VIDEO_HINT = ("seedance", "kling", "veo", "wan", "video", "hailuo", "minimax",
+              "runway", "sora", "pixverse", "luma", "vidu", "ltx")
 
-    if args.balance:
-        b = balance(); print(f"Баланс: {b} cr (~${b*USD_PER_CREDIT:.2f})"); return
 
-    task_id, model, mode, cr, usd = create(args)
+def _to_url(x: str) -> str:
+    """Локальный путь → загрузить в KIE и вернуть URL. Уже URL → как есть."""
+    if os.path.exists(x):
+        print("Заливаю:", os.path.basename(x))
+        u = upload_file(x, "avsound/gen")
+        print("  ->", u)
+        return u
+    return x
+
+
+def _parse_set(items):
+    """--set key=value → типизированный dict (int/float/bool/json/str)."""
+    out = {}
+    for it in items or []:
+        k, _, v = it.partition("=")
+        k, v = k.strip(), v.strip()
+        if v[:1] in "[{":
+            try:
+                out[k] = json.loads(v); continue
+            except Exception:
+                pass
+        if v.lower() in ("true", "false"):
+            out[k] = (v.lower() == "true"); continue
+        try:
+            out[k] = int(v); continue
+        except ValueError:
+            pass
+        try:
+            out[k] = float(v); continue
+        except ValueError:
+            pass
+        out[k] = v
+    return out
+
+
+def _log_generic(model, inp, spent, path):
+    os.makedirs(OUT_DIR, exist_ok=True)
+    new = not os.path.exists(LOG)
+    with open(LOG, "a", encoding="utf-8") as f:
+        if new:
+            f.write("# Лог генераций KIE\n\n| дата | модель | cr | $ | файл | промт |\n|---|---|---|---|---|---|\n")
+        dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        cr = f"{spent:.0f}" if spent else "?"
+        usd = f"{spent*USD_PER_CREDIT:.2f}" if spent else "?"
+        pr = (inp.get("prompt") or "")[:60].replace("\n", " ")
+        f.write(f"| {dt} | {model} | {cr} | {usd} | {os.path.basename(path)} | {pr} |\n")
+
+
+def generate_cmd(args):
+    images = [_to_url(x) for x in (args.image or [])]
+    videos = [_to_url(x) for x in (args.video or [])]
+    inp = {}
+    if args.prompt:
+        inp["prompt"] = args.prompt
+    is_video = any(h in args.model.lower() for h in VIDEO_HINT) or bool(videos)
+    if images:
+        if is_video:
+            if len(images) == 1:
+                inp["first_frame_url"] = images[0]
+            else:
+                inp["reference_image_urls"] = images
+        else:
+            inp["image_urls"] = images
+    if videos:
+        inp["reference_video_urls"] = videos
+    if args.audio:
+        inp["generate_audio"] = True
+    inp.update(_parse_set(args.set))  # passthrough/override любых полей
+
+    bal_before = balance()
+    print(f"Модель: {args.model}")
+    print("input:", json.dumps(inp, ensure_ascii=False)[:400])
+    print(f"Баланс до: {bal_before} cr (~${bal_before*USD_PER_CREDIT:.2f})")
+    if args.dry:
+        print("[dry-run] задача НЕ отправлена, списания нет.")
+        return
+
+    resp = _req("POST", BASE + "/createTask", {"model": args.model, "input": inp})
+    task_id = (resp.get("data") or {}).get("taskId")
+    if not task_id:
+        print("Нет taskId:", resp); sys.exit(1)
+    print("taskId:", task_id)
     url = poll(task_id)
     if not url:
-        print("Готово, но URL не найден."); sys.exit(1)
-    print("Видео:", url)
+        print("Готово, но URL результата не найден."); sys.exit(1)
+    print("Результат:", url)
     path = download(url, task_id)
-    log(model, mode, args, cr, usd, path)
+    bal_after = balance()
+    spent = (bal_before - bal_after) if (bal_before is not None and bal_after is not None) else None
+    _log_generic(args.model, inp, spent, path)
     print("Сохранено:", path)
-    b = balance(); print(f"Остаток: {b} cr (~${b*USD_PER_CREDIT:.2f})")
+    sp = f"{spent:.0f} cr (~${spent*USD_PER_CREDIT:.2f})" if spent else "?"
+    print(f"Списано: {sp} | Остаток: {bal_after} cr (~${bal_after*USD_PER_CREDIT:.2f})")
+
+
+def main():
+    p = argparse.ArgumentParser(description="KIE.ai генератор — любая модель с сайта")
+    sub = p.add_subparsers(dest="cmd")
+    g = sub.add_parser("generate", help="сгенерить любой моделью KIE")
+    g.add_argument("--model", required=True, help="model_id с KIE, напр. bytedance/seedance-2, google/nano-banana-edit")
+    g.add_argument("--prompt", default="")
+    g.add_argument("--image", action="append", help="локальный путь ИЛИ URL (можно несколько раз)")
+    g.add_argument("--video", action="append", help="локальный путь ИЛИ URL видео-референса (можно несколько раз)")
+    g.add_argument("--set", action="append", help="доп. параметр key=value (resolution=720p duration=8 aspect_ratio=9:16 ...)")
+    g.add_argument("--audio", action="store_true", help="generate_audio=true")
+    g.add_argument("--dry", action="store_true", help="сухой прогон: собрать payload + баланс, без списания")
+    sub.add_parser("balance", help="показать баланс")
+    args = p.parse_args()
+
+    if args.cmd in (None, "balance"):
+        b = balance(); print(f"Баланс: {b} cr (~${b*USD_PER_CREDIT:.2f})"); return
+    if args.cmd == "generate":
+        generate_cmd(args)
 
 
 if __name__ == "__main__":

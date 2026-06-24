@@ -160,3 +160,15 @@
 10:44:27  === FILL ИТОГ: добрано 1/5 ===
 10:44:53  === FILL: 28 товаров без источников ===
 10:45:15  fill 47902 Предохранители Pride ANL FUSE 300A: подходящая страница не найдена (гард)
+10:45:24  fill 47901 Предохранители Pride ANL FUSE 400A: og:image не найдено (https://pride.audio/product/fuse-anl-400a/?srsltid=AfmBOorCX6H6QqDfrj09YXgnNE-iweFoUQdHiRRgad8EmT6cukeLzu74)
+10:45:25  fill 41555 Моноблок pride uno XL: подходящая страница не найдена (гард)
+10:45:30  fill 41554 Усилитель Pride Quattro plus ver.2: og:image не найдено (https://shop-bear.ru/catalog/usiliteli/usilitel/pride-quattro-plus-ver-2/)
+10:45:32  fill 41553 Усилитель Pride Quattro plus: подходящая страница не найдена (гард)
+10:45:42  fill 41552 Сабвуфер Pride S.4 12 D4: 1 фото (pride.audio)
+10:45:45  fill 41551 Сабвуфер Pride M.9 12 ver.2 D2: og:image не найдено (https://pride.audio/product/m9-12/?srsltid=AfmBOor8WOxvhY8RQiRS5S8V1Ppx0prsHy-QS1yDLonR8gCyW1x8moaW)
+10:46:06  fill 41549 Сабвуфер Pride M.6 12 ver.2 D2: подходящая страница не найдена (гард)
+10:46:21  fill 41548 Pride M.9 10 ver.2 D2: og:image не найдено (https://pride.audio/product/m9-10ver2/?srsltid=AfmBOopR8E0P5NZB2mEcHIxZ-RxE_L5UImjpk1bci0KnvNRX0I7fHFe4)
+10:46:29  fill 41544 Pride Y-3000 (2M1F): og:image не найдено (https://pride.audio/product/rca-y-3000-1f2m/?srsltid=AfmBOoqZouDztgRG5oUPDfzUGI0hR88ZKVyAK3tEzwp3KjoOGUJpUeLo)
+10:47:05  fill 41541 Дистрибьютор Pride Diamond 2448: og:image не найдено (https://pride.audio/product/diamond2448/?srsltid=AfmBOopabl6f91zWlgYesIBDA4rlDdj-jMW8Zl4yzU3W-WV4muBH6KhF)
+10:47:26  fill 41540 Дистрибьютор Pride Emerald 1024: подходящая страница не найдена (гард)
+10:47:27  fill 41539 Колба Pride Sapphire 1024: подходящая страница не найдена (гард)

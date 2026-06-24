@@ -81,8 +81,11 @@
     "id": 41552,
     "name": "Сабвуфер Pride S.4 12 D4",
     "type": "a car audio subwoofer speaker driver",
-    "sources": [],
-    "clean_wm": true
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1210_1.jpg"
+    ],
+    "clean_wm": false,
+    "_src_page": "https://pride.audio/product/m12-10/?srsltid=AfmBOop4YDmxgbQMrmllKHgkEqJW7gGmO5BCBMsDuFigDlFZTaDElbvd"
   },
   {
     "id": 41551,

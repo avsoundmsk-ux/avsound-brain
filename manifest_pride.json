@@ -32,5 +32,31 @@
       "https://shop-bear.ru/upload/iblock/b56/ict8zvo1ps8g20l1tdgyt5ral2r4tzwf.jpg"
     ],
     "clean_wm": true
+  },
+  {
+    "id": 41555,
+    "name": "Моноблок pride uno XL",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2019/05/2024-06-10-15.26.53.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/F65EFDFE-5111-47F9-B8D9-658B6A036791.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/IMG_2018.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/IMG_2020.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41554,
+    "name": "Усилитель Pride Quattro plus ver.2",
+    "type": "a car audio amplifier",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41553,
+    "name": "Усилитель Pride Quattro plus",
+    "type": "a car audio amplifier",
+    "sources": [],
+    "clean_wm": true
   }
 ]

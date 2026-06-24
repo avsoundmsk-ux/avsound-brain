@@ -189,3 +189,57 @@
 10:48:52  fill 41396 Pride Onyx 5 ver.2: подходящая страница не найдена (гард)
 10:48:52  === FILL ИТОГ: добрано 5/28 ===
 10:57:16  === COLLECT: 28 товаров ===
+10:58:31  cand 47902 Предохранители Pride ANL FUSE 300A: 4 кандидатов из 2 стр.
+10:59:40  cand 47901 Предохранители Pride ANL FUSE 400A: 3 кандидатов из 2 стр.
+11:00:17  === RUN 46 товаров, 4 воркеров ===
+11:00:34  SKIP 47902 Предохранители Pride ANL FUSE 300A: нет источников
+11:00:34  SKIP 47901 Предохранители Pride ANL FUSE 400A: нет источников
+11:00:35  SKIP 41561 Моноблок Pride Mille: уже обработан
+11:00:35  SKIP 41555 Моноблок pride uno XL: нет источников
+11:00:35  SKIP 41554 Усилитель Pride Quattro plus ver.2: нет источников
+11:00:35  SKIP 41553 Усилитель Pride Quattro plus: нет источников
+11:00:35  SKIP 41552 Сабвуфер Pride S.4 12 D4: нет источников
+11:00:35  SKIP 41551 Сабвуфер Pride M.9 12 ver.2 D2: нет источников
+11:00:35  SKIP 41557 Усилитель Pride Quattro XL: уже обработан
+11:00:35  SKIP 41549 Сабвуфер Pride M.6 12 ver.2 D2: нет источников
+11:00:35  SKIP 41548 Pride M.9 10 ver.2 D2: нет источников
+11:00:36  SKIP 47897 Предохранители Pride ANL FUSE 250A: уже обработан
+11:00:36  SKIP 41544 Pride Y-3000 (2M1F): нет источников
+11:00:36  SKIP 41558 Моноблок Pride mezzo: уже обработан
+11:00:36  SKIP 41547 Сабвуфер Pride M.12 15 D 1.8: уже обработан
+11:00:36  SKIP 41541 Дистрибьютор Pride Diamond 2448: нет источников
+11:00:36  SKIP 41540 Дистрибьютор Pride Emerald 1024: нет источников
+11:00:36  SKIP 41539 Колба Pride Sapphire 1024: нет источников
+11:00:36  SKIP 41538 Колба Pride Sapphire 1414: нет источников
+11:00:36  SKIP 41537 Pride Вольтметр (синий логотип): нет источников
+11:00:36  SKIP 41536 Pride модуль Solo 100: нет источников
+11:00:37  SKIP 41550 Сабвуфер Pride M.12 12 ver.2 D2: уже обработан
+11:00:37  SKIP 41534 Pride RCA Sapphire 5 м: нет источников
+11:00:37  SKIP 41533 Pride RCA Diamond 5 м: нет источников
+11:00:37  SKIP 41542 Pride Y-9000 (1M2F): уже обработан
+11:00:37  SKIP 41543 Pride Y-5000(1M2F): уже обработан
+11:00:37  SKIP 41530 Pride RCA Diamond 0,5 м: нет источников
+11:00:38  SKIP 41535 Pride RCA Sapphire 3000 0.5 м: уже обработан
+11:00:38  SKIP 41528 Преобразователь Pride Transelectro PRO 8: нет источников
+11:00:38  SKIP 41527 Адаптер для твитера Pride Hyper Tone/Hyper Tone Plus: нет источников
+11:00:38  SKIP 41532 Pride RCA Diamond 2 м: уже обработан
+11:00:44  SKIP 41529 Pride RCA Diamond 0,2 м: уже обработан
+11:00:45  SKIP 41526 Pride Diamond 10: уже обработан
+11:00:46  SKIP 41524 Pride Ruby Voice 6,5 ver.2: уже обработан
+11:00:46  SKIP 41523 Pride Ruby AIR 8: уже обработан
+11:00:47  SKIP 41522 Pride Ruby AIR 8 ver.2: уже обработан
+11:00:47  SKIP 41520 Pride Solo 300 8 competition: нет источников
+11:00:47  SKIP 41519 Pride Solo Neo 300: нет источников
+11:00:47  SKIP 41518 Pride Solo 300 competition: нет источников
+11:00:47  SKIP 41517 Pride Solo 200 competition: нет источников
+11:00:47  SKIP 41463 Pride Solo 300: нет источников
+11:00:47  SKIP 41458 Pride Solo 300: нет источников
+11:00:47  SKIP 41396 Pride Onyx 5 ver.2: нет источников
+11:00:48  SKIP 41521 Твитеры Pride Hyper Tone: уже обработан
+11:01:04  SKIP 41525 Pride Ruby Performance 6.5: уже обработан
+11:01:23  SKIP 41531 Pride RCA Diamond 1 м: уже обработан
+11:01:23  === ИТОГ: {'no-src': 28, 'done': 18} | KIE потрачено 0 cr (~$0.00) ===
+11:01:24  cand 41555 Моноблок pride uno XL: 6 кандидатов из 2 стр.
+11:01:51  cand 41554 Усилитель Pride Quattro plus ver.2: 2 кандидатов из 1 стр.
+11:02:57  cand 41553 Усилитель Pride Quattro plus: 6 кандидатов из 2 стр.
+11:03:10  cand 41552 Сабвуфер Pride S.4 12 D4: 6 кандидатов из 1 стр.

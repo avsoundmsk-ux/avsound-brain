@@ -1,33 +1,35 @@
 [
   {
     "id": 47902,
-    "name": "47902",
+    "name": "ANL 300A",
     "type": "a car audio ANL fuse",
-    "sources": [],
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/68d/68dbb8823b5a05faeccd57a9dd69734b.jpg"
+    ],
     "clean_wm": true
   },
   {
     "id": 41396,
-    "name": "41396",
+    "name": "Onyx 5",
     "type": "a car audio speaker",
     "sources": [
       "https://shop-bear.ru/upload/iblock/247/24726934a5e80d0720631285ec1199ab.jpg",
-      "https://shop-bear.ru/upload/iblock/4ba/4ba9e9b8da3a15551b871935d97f1e02.jpg",
-      "https://shop-bear.ru/upload/iblock/62b/62bcd35eb4c1ac6474afa43cf2e1b0d3.jpg"
+      "https://shop-bear.ru/upload/iblock/62b/62bcd35eb4c1ac6474afa43cf2e1b0d3.jpg",
+      "https://shop-bear.ru/upload/iblock/d72/d725d5ed9186b23521735bd33cc68de7.jpg"
     ],
     "clean_wm": true
   },
   {
     "id": 41463,
-    "name": "41463",
-    "type": "a car audio tweeter",
+    "name": "Solo 300",
+    "type": "a car audio midrange speaker",
     "sources": [],
     "clean_wm": true
   },
   {
     "id": 41458,
-    "name": "41458",
-    "type": "a car audio tweeter",
+    "name": "Solo 300",
+    "type": "a car audio midrange speaker",
     "sources": [],
     "clean_wm": true
   }

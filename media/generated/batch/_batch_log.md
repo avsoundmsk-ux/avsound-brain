@@ -354,3 +354,9 @@
 14:47:26  === ИТОГ: {'ok': 4} | KIE потрачено 40 cr (~$0.20) ===
 16:54:47  source 47902 Предохранители Pride ANL FUSE 300A: 0 фото
 16:55:44  source 47901 Предохранители Pride ANL FUSE 400A: 2 фото
+17:01:01  source 47897 Предохранители Pride ANL FUSE 250A: 1 фото
+17:03:18  source 47896 Предохранители Pride ANL FUSE 200A: 4 фото
+17:03:52  source 45129 Предохранители Pride ANL FUSE 100A: 2 фото
+17:03:59  source 41562 Усилитель Pride DUE: 0 фото
+17:05:06  source 41561 Моноблок Pride Mille: 2 фото
+17:06:36  source 41560 Моноблок Pride Uno plus: 4 фото

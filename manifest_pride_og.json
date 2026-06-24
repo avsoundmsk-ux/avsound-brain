@@ -15,5 +15,65 @@
       "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-25.10.2019-v-22.07.jpg"
     ],
     "clean_wm": false
+  },
+  {
+    "id": 47897,
+    "name": "Предохранители Pride ANL FUSE 250A",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/0a8/0a838d304d739ecb418ba21fba4f00ca.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 47896,
+    "name": "Предохранители Pride ANL FUSE 200A",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/1218.jpg",
+      "https://pride.audio/wp-content/uploads/296-3.jpg",
+      "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-10.11.2019-v-18.50.jpg",
+      "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-25.10.2019-v-22.07.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 45129,
+    "name": "Предохранители Pride ANL FUSE 100A",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/3030_1.jpg",
+      "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-25.10.2019-v-22.07.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41562,
+    "name": "Усилитель Pride DUE",
+    "type": "a car audio amplifier",
+    "sources": [],
+    "clean_wm": false
+  },
+  {
+    "id": 41561,
+    "name": "Моноблок Pride Mille",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/bc2/x9vm6acvmh4zo5j2don27dm3lfanxt4i.jpg",
+      "https://shop-bear.ru/upload/iblock/ff1/yswj6qc14qp6c31tnlkrpboafpwdqdv2.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41560,
+    "name": "Моноблок Pride Uno plus",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2019/05/2024-06-10-15.24.28.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/2024-06-10-15.26.53.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/3024-567.webp",
+      "https://pride.audio/wp-content/uploads/2019/05/3025-570.webp"
+    ],
+    "clean_wm": false
   }
 ]

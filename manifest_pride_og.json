@@ -75,5 +75,14 @@
       "https://pride.audio/wp-content/uploads/2019/05/3025-570.webp"
     ],
     "clean_wm": false
+  },
+  {
+    "id": 41559,
+    "name": "Усилитель pride Quattro",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/387/bgagdje8s6nlsq6ihhgggvaglxoiek7v.jpg"
+    ],
+    "clean_wm": true
   }
 ]

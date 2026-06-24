@@ -95,5 +95,38 @@
       "https://shop-bear.ru/upload/iblock/b56/ict8zvo1ps8g20l1tdgyt5ral2r4tzwf.jpg"
     ],
     "clean_wm": true
+  },
+  {
+    "id": 41557,
+    "name": "Усилитель Pride Quattro XL",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/1fd/1fdec64522cc498aacdd0b6b28046efa.jpg",
+      "https://shop-bear.ru/upload/iblock/3f5/87sboxuzuoph66o5nu0tmo4trqj6fn2u.jpg",
+      "https://shop-bear.ru/upload/iblock/666/cvwthylfcl8lhc058z0vtxmdpawfqhuy.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41556,
+    "name": "Моноблок Pride uno",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/094/88u59cuegabllzy23v5i4be404tnsze8.jpg",
+      "https://shop-bear.ru/upload/iblock/4d7/elz4r925kl9iy43n3rea2svylqnfqk1a.jpg",
+      "https://shop-bear.ru/upload/iblock/f25/3t87v9p3gng9crbmzsbrqjpy1lho563o.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41555,
+    "name": "Моноблок pride uno XL",
+    "type": "a car audio amplifier",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/106/uwzf9j1cboiqows78tpw1w6jaa288gum.jpg",
+      "https://shop-bear.ru/upload/iblock/136/1360198513fd39acc9f2097f38cdf5ea.jpg",
+      "https://shop-bear.ru/upload/iblock/399/dadv3y89n0ctjd8ndc04hpp1t2xaifvq.jpg"
+    ],
+    "clean_wm": true
   }
 ]

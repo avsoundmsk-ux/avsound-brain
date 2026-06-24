@@ -154,3 +154,8 @@
 10:43:57  === FILL: 5 товаров без источников ===
 10:43:58  fill 41555 Моноблок pride uno XL: подходящая страница не найдена (гард)
 10:43:59  fill 41553 Усилитель Pride Quattro plus: подходящая страница не найдена (гард)
+10:44:21  fill 41551 Сабвуфер Pride M.9 12 ver.2 D2: og:image не найдено (https://pride.audio/product/m9-12/?srsltid=AfmBOor8WOxvhY8RQiRS5S8V1Ppx0prsHy-QS1yDLonR8gCyW1x8moaW)
+10:44:26  fill 41518 Pride Solo 300 competition: 1 фото (pride.audio)
+10:44:27  fill 41396 Pride Onyx 5 ver.2: подходящая страница не найдена (гард)
+10:44:27  === FILL ИТОГ: добрано 1/5 ===
+10:44:53  === FILL: 28 товаров без источников ===

@@ -58,5 +58,225 @@
     "type": "a car audio amplifier",
     "sources": [],
     "clean_wm": true
+  },
+  {
+    "id": 41552,
+    "name": "Сабвуфер Pride S.4 12 D4",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [],
+    "clean_wm": false
+  },
+  {
+    "id": 41551,
+    "name": "Сабвуфер Pride M.9 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1210_1.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1212_1.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m912_1.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m912_2.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41549,
+    "name": "Сабвуфер Pride M.6 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41548,
+    "name": "Pride M.9 10 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_1.jpg",
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_2.jpg",
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_3.jpg",
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_4.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41547,
+    "name": "Сабвуфер Pride M.12 15 D 1.8",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/a11/a1187c2e14609b6d8fc02b5a37d3e95b.jpeg",
+      "https://shop-bear.ru/upload/iblock/ef1/ef17f7ae5bf8aca43b3b68e8f6a7e2c5.jpeg",
+      "https://shop-bear.ru/upload/iblock/f59/f5959626140624d6e779a8e94adc737d.jpeg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41544,
+    "name": "Pride Y-3000 (2M1F)",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2019/05/IMG_2024-2.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/IMG_2026.jpg",
+      "https://pride.audio/wp-content/uploads/2024/05/1574.jpg",
+      "https://pride.audio/wp-content/uploads/2024/05/1575.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41541,
+    "name": "Дистрибьютор Pride Diamond 2448",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2019/07/distribyutor_raspredelitel_pitaniya_pride_diamond_2448_loudsound.jpg",
+      "https://pride.audio/wp-content/uploads/f-adapter.png",
+      "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-10.11.2019-v-18.50.jpg",
+      "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-25.10.2019-v-22.07.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41540,
+    "name": "Дистрибьютор Pride Emerald 1024",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/1.jpg",
+      "https://pride.audio/wp-content/uploads/2.jpg",
+      "https://pride.audio/wp-content/uploads/2019/05/503.jpg",
+      "https://pride.audio/wp-content/uploads/2019/09/IMG_1358.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41539,
+    "name": "Колба Pride Sapphire 1024",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/pride-subwoofer-sapphire12.jpeg",
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_1-scaled.jpg",
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_2-scaled.jpg",
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_3-scaled.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41538,
+    "name": "Колба Pride Sapphire 1414",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_1-scaled.jpg",
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_2-scaled.jpg",
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_3-scaled.jpg",
+      "https://pride.audio/wp-content/uploads/pride_sapphire_12_4-scaled.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41537,
+    "name": "Pride Вольтметр (синий логотип)",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2024/07/image-9.jpg",
+      "https://pride.audio/wp-content/uploads/2025/09/%D0%9A%D0%BE%D0%BF%D0%B8%D1%8F-tshirt_black_2.jpg",
+      "https://pride.audio/wp-content/uploads/2025/09/tshirt_pride_lion_1.jpg",
+      "https://pride.audio/wp-content/uploads/2025/09/tshirt_pride_mustang_1.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41536,
+    "name": "Pride модуль Solo 100",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/07/rec_mini-600x600-1-1.jpeg",
+      "https://pride.audio/wp-content/uploads/2024/08/Ruby-8-v3-13-scaled.jpg",
+      "https://pride.audio/wp-content/uploads/2024/09/IMG_9630.jpg",
+      "https://pride.audio/wp-content/uploads/2025/09/Pride-module-solo-200-6.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41534,
+    "name": "Pride RCA Sapphire 5 м",
+    "type": "a car audio wiring accessory",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41533,
+    "name": "Pride RCA Diamond 5 м",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/32a/32a5725bd4c52e080f331439b3d8510f.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41530,
+    "name": "Pride RCA Diamond 0,5 м",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/741/7415affd6992347339faf513c92f1129.jpg",
+      "https://shop-bear.ru/upload/iblock/b14/b149781eafaf798b8d63a0080bb4309f.jpg",
+      "https://shop-bear.ru/upload/iblock/d70/d70aebfb2a357da99a1de84a660cf127.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41528,
+    "name": "Преобразователь Pride Transelectro PRO 8",
+    "type": "a car audio product",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/1ac/1ac767e0a79ebf17102e3628ab243b63.jpg",
+      "https://shop-bear.ru/upload/iblock/323/323601d2d90881bead063ab0a6c8849b.jpg",
+      "https://shop-bear.ru/upload/iblock/7a9/7a92d7ad5a97320ad620d5e3cf68a1b3.jpg",
+      "https://shop-bear.ru/upload/iblock/7cf/7cfdb59b03e2c3c67fe5119354c28a66.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41527,
+    "name": "Адаптер для твитера Pride Hyper Tone/Hyper Tone Plus",
+    "type": "a car audio speaker",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2020/09/IMG_1352.jpg",
+      "https://pride.audio/wp-content/uploads/2021/04/9EF20CC8-C03B-4D2F-96B7-6B3DB1359205.jpg",
+      "https://pride.audio/wp-content/uploads/2021/04/C7D62BFB-7151-42CF-B865-EB08926392BB.jpg",
+      "https://pride.audio/wp-content/uploads/2022/05/tweeter_horn_hypertone_light_2.jpeg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41520,
+    "name": "Pride Solo 300 8 competition",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2019/05/Speakers_Ruby65-5.jpg",
+      "https://pride.audio/wp-content/uploads/2021/01/IMG_2042.jpg",
+      "https://pride.audio/wp-content/uploads/2024/05/solo300_8-1.jpg",
+      "https://pride.audio/wp-content/uploads/2024/05/solo300_8-2.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41519,
+    "name": "Pride Solo Neo 300",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/05/Pride-Solo-40-14.jpg",
+      "https://pride.audio/wp-content/uploads/2022/07/Pride-module-solo-300-6.5-6.jpg",
+      "https://pride.audio/wp-content/uploads/2024/09/Solo-300-6.5-competition-1-1.jpg",
+      "https://pride.audio/wp-content/uploads/2024/09/Solo-300-6.5-competition-10-1.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41518,
+    "name": "Pride Solo 300 competition",
+    "type": "a car audio product",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/05/Pride-Solo-40-14.jpg",
+      "https://pride.audio/wp-content/uploads/2022/07/Pride-module-solo-300-6.5-6.jpg",
+      "https://pride.audio/wp-content/uploads/2024/09/Solo-300-6.5-competition-1-1.jpg",
+      "https://pride.audio/wp-content/uploads/2024/09/Solo-300-6.5-competition-10-1.jpg"
+    ],
+    "clean_wm": false
   }
 ]

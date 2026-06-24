@@ -255,3 +255,23 @@
 11:37:12  source 41555 Моноблок pride uno XL: 4 фото
 11:38:58  source 41554 Усилитель Pride Quattro plus ver.2: 0 фото
 11:39:51  source 41553 Усилитель Pride Quattro plus: 0 фото
+11:46:13  source 41552 Сабвуфер Pride S.4 12 D4: 0 фото
+11:46:48  source 41551 Сабвуфер Pride M.9 12 ver.2 D2: 4 фото
+11:47:21  source 41549 Сабвуфер Pride M.6 12 ver.2 D2: 0 фото
+11:48:00  source 41548 Pride M.9 10 ver.2 D2: 4 фото
+11:48:36  source 41547 Сабвуфер Pride M.12 15 D 1.8: 3 фото
+11:49:40  source 41544 Pride Y-3000 (2M1F): 4 фото
+11:50:08  source 41541 Дистрибьютор Pride Diamond 2448: 4 фото
+11:51:06  source 41540 Дистрибьютор Pride Emerald 1024: 4 фото
+11:51:51  source 41539 Колба Pride Sapphire 1024: 4 фото
+11:53:05  source 41538 Колба Pride Sapphire 1414: 4 фото
+11:53:36  source 41537 Pride Вольтметр (синий логотип): 4 фото
+11:54:18  source 41536 Pride модуль Solo 100: 4 фото
+11:54:24  source 41534 Pride RCA Sapphire 5 м: 0 фото
+11:54:29  source 41533 Pride RCA Diamond 5 м: 1 фото
+11:54:40  source 41530 Pride RCA Diamond 0,5 м: 3 фото
+11:55:10  source 41528 Преобразователь Pride Transelectro PRO 8: 4 фото
+11:55:40  source 41527 Адаптер для твитера Pride Hyper Tone/Hyper Tone Plus: 4 фото
+11:55:58  source 41520 Pride Solo 300 8 competition: 4 фото
+11:57:01  source 41519 Pride Solo Neo 300: 4 фото
+11:58:00  source 41518 Pride Solo 300 competition: 4 фото

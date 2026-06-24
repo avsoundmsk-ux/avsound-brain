@@ -365,8 +365,11 @@
     "id": 41518,
     "name": "Pride Solo 300 competition",
     "type": "a car audio product",
-    "sources": [],
-    "clean_wm": false
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2024/09/Solo-300-6.5-competition-13-1.jpg"
+    ],
+    "clean_wm": false,
+    "_src_page": "https://pride.audio/product/sl300-65comp/?srsltid=AfmBOooehFKziIhBa_vdG0nyvq6qNjV5dgYUSHxxoOD0o_ziN7yL6Cnx"
   },
   {
     "id": 41517,

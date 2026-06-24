@@ -73,8 +73,17 @@ def og_image(page):
         return []
     html = open(tmp, encoding="utf-8", errors="ignore").read()
     os.remove(tmp)
-    m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', html)
-    return [m.group(1)] if m else []
+    for pat in (r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image',
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)',
+                r'"image"\s*:\s*"(https://[^"]+?\.(?:jpg|jpeg|png|webp))"',
+                r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)'):
+        m = re.search(pat, html)
+        if m:
+            u = m.group(1).replace("&#038;", "&")
+            if "logo" not in u.lower() and "placeholder" not in u.lower():
+                return [u]
+    return []
 
 
 def fill(entry):

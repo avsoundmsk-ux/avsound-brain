@@ -135,5 +135,66 @@
     "type": "a car audio amplifier",
     "sources": [],
     "clean_wm": true
+  },
+  {
+    "id": 41553,
+    "name": "Усилитель Pride Quattro plus",
+    "type": "a car audio amplifier",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41552,
+    "name": "Сабвуфер Pride S.4 12 D4",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1210_3.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1210_4.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1210_5.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1612_1.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41551,
+    "name": "Сабвуфер Pride M.9 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/228/g67qxbyyllfcidregwbav2h858i9syts.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41550,
+    "name": "Сабвуфер Pride M.12 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/d02/e7t7jbtcrmr7yii417o9a4whpski1fmi.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41549,
+    "name": "Сабвуфер Pride M.6 12 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m610_1.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m612_1.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m612_2.jpg",
+      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m612_3.jpg"
+    ],
+    "clean_wm": false
+  },
+  {
+    "id": 41548,
+    "name": "Pride M.9 10 ver.2 D2",
+    "type": "a car audio subwoofer speaker driver",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_1.jpg",
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_2.jpg",
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_3.jpg",
+      "https://pride.audio/wp-content/uploads/2025/08/Pride_subwoofer_m910_4.jpg"
+    ],
+    "clean_wm": false
   }
 ]

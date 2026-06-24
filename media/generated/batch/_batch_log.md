@@ -286,3 +286,63 @@
 12:26:08  SKIP 41558 Моноблок Pride mezzo: уже обработан
 12:26:09  SKIP 41547 Сабвуфер Pride M.12 15 D 1.8: уже обработан
 12:26:10  SKIP 41544 Pride Y-3000 (2M1F): уже обработан
+12:26:54    41551 KIE fail 1: RemoteDisconnected
+12:27:44    светлый фон, перегенерация 1/3: kie2.png
+12:28:26    41541 KIE fail 2: ConnectionResetError
+12:28:28    41548 KIE fail 3: ConnectionResetError
+12:29:01    41541 KIE fail 3: URLError
+12:29:18  UPLOAD ERR 41551: 400 woocommerce_product_image_upload_error
+12:29:19  OK 41548 Pride M.9 10 ver.2 D2: 3 фото
+12:29:33  UPLOAD ERR 41541: 400 woocommerce_product_image_upload_error
+12:31:00    41538 KIE fail 0: ConnectionResetError
+12:31:01    41539 KIE fail 0: ConnectionResetError
+12:31:14  UPLOAD ERR 41555: 400 woocommerce_product_image_upload_error
+12:31:42    светлый фон, перегенерация 1/3: kie1.png
+12:31:46    41540 KIE fail 2: URLError
+12:31:56    41538 KIE fail 1: ConnectionResetError
+12:32:02    41537 KIE fail 0: ConnectionResetError
+12:32:33  UPLOAD ERR 41540: 400 woocommerce_product_image_upload_error
+12:32:51    светлый фон, перегенерация 1/3: kie2.png
+12:32:52    41537 KIE fail 2: URLError
+12:33:11    светлый фон, перегенерация 1/3: kie3.png
+12:33:29  UPLOAD ERR 41537: 400 woocommerce_product_image_upload_error
+12:33:29  SKIP 41534 Pride RCA Sapphire 5 м: нет источников
+12:33:54    41536 KIE fail 2: URLError
+12:33:54    41539 KIE fail 3: ConnectionResetError
+12:34:17    41533 KIE fail 0: ConnectionResetError
+12:34:17  FAIL 41533 Pride RCA Diamond 5 м: нет результатов
+12:34:17    41536 KIE fail 3: URLError
+12:34:36    41530 KIE fail 0: ConnectionResetError
+12:34:55    41530 KIE fail 1: ConnectionResetError
+12:35:15    41530 KIE fail 2: ConnectionResetError
+12:35:15  FAIL 41530 Pride RCA Diamond 0,5 м: нет результатов
+12:35:34    41528 KIE fail 0: ConnectionResetError
+12:35:54    41528 KIE fail 1: ConnectionResetError
+12:35:54    41538 KIE fail 3: TimeoutError
+12:36:11  UPLOAD EXC 41539: RuntimeError
+12:36:13    41528 KIE fail 2: ConnectionResetError
+12:36:31  UPLOAD EXC 41536: RuntimeError
+12:36:31    41527 KIE fail 0: URLError
+12:36:32    41528 KIE fail 3: ConnectionResetError
+12:36:32  FAIL 41528 Преобразователь Pride Transelectro PRO 8: нет результатов
+12:36:51    41527 KIE fail 1: URLError
+12:36:51    41520 KIE fail 0: ConnectionResetError
+12:36:53    41519 KIE fail 0: URLError
+12:37:10    41527 KIE fail 2: URLError
+12:37:10    41520 KIE fail 1: URLError
+12:37:13    41519 KIE fail 1: URLError
+12:37:29    41527 KIE fail 3: ConnectionResetError
+12:37:29  FAIL 41527 Адаптер для твитера Pride Hyper Tone/Hyper Tone Plus: нет результатов
+12:37:32    41519 KIE fail 2: URLError
+12:37:50    41518 KIE fail 0: URLError
+12:37:52    41519 KIE fail 3: URLError
+12:37:52  FAIL 41519 Pride Solo Neo 300: нет результатов
+12:38:08  UPLOAD EXC 41538: RuntimeError
+12:38:09    41518 KIE fail 1: URLError
+12:38:11    41520 KIE fail 2: TimeoutError
+12:38:29    41518 KIE fail 2: URLError
+12:38:30    41520 KIE fail 3: ConnectionResetError
+12:38:30  FAIL 41520 Pride Solo 300 8 competition: нет результатов
+12:38:49    41518 KIE fail 3: URLError
+12:38:49  FAIL 41518 Pride Solo 300 competition: нет результатов
+12:38:49  === ИТОГ: {'no-src': 7, 'done': 4, 'upload-err': 5, 'ok': 1, 'fail': 7, 'exc': 3} | KIE потрачено 148 cr (~$0.74) ===

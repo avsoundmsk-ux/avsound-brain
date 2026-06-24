@@ -140,3 +140,11 @@
 10:18:31  OK 41525 Pride Ruby Performance 6.5: 4 фото
 10:19:59  OK 41521 Твитеры Pride Hyper Tone: 4 фото
 10:19:59  === ИТОГ: {'no-src': 29, 'ok': 18} | KIE потрачено 276 cr (~$1.38) ===
+10:38:41  === FILL: 2 товаров без источников ===
+10:38:57  fill 41539 Колба Pride Sapphire 1024: 3 фото (pride.audio)
+10:39:50  fill 41520 Pride Solo 300 8 competition: 2 фото (pride.audio)
+10:39:50  === FILL ИТОГ: добрано 2/2 ===
+10:41:31  === FILL: 5 товаров без источников ===
+10:41:34  fill 41555 Моноблок pride uno XL: подходящая страница не найдена (гард)
+10:41:36  fill 41553 Усилитель Pride Quattro plus: подходящая страница не найдена (гард)
+10:41:45  fill 41551 Сабвуфер Pride M.9 12 ver.2 D2: og:image не найдено (https://pride.audio/product/m9-12/?srsltid=AfmBOor8WOxvhY8RQiRS5S8V1Ppx0prsHy-QS1yDLonR8gCyW1x8moaW)

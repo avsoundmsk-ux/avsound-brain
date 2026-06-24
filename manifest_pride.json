@@ -176,7 +176,7 @@
     "name": "Колба Pride Sapphire 1024",
     "type": "a car audio product",
     "sources": [],
-    "clean_wm": false
+    "clean_wm": true
   },
   {
     "id": 41538,
@@ -352,7 +352,7 @@
     "name": "Pride Solo 300 8 competition",
     "type": "a car audio product",
     "sources": [],
-    "clean_wm": false
+    "clean_wm": true
   },
   {
     "id": 41519,

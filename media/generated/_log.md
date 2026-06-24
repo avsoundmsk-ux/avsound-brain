@@ -8,3 +8,5 @@
 | 2026-06-24 12:11 | google/nano-banana | 4 | 0.02 | 20260624_121151_89f1df17.png | Cinematic product shot of a premium car subwoofer glowing wi |
 | 2026-06-24 14:14 | google/nano-banana | 4 | 0.02 | 20260624_141413_604c5c2a.png | High-end fashion advertising photograph of an elegant adult  |
 | 2026-06-24 16:11 | google/nano-banana | 4 | 0.02 | 20260624_161130_ecc876a0.png | Cyberpunk car audio advertisement, vertical poster. A stylis |
+| 2026-06-24 18:12 | google/nano-banana-edit | 4 | 0.02 | 20260624_181253_5f9f9c3a.png | Photorealistic vertical shot of THIS exact woman waking up i |
+| 2026-06-24 18:15 | google/nano-banana-edit | 4 | 0.02 | 20260624_181503_9f11850b.png | Photorealistic vertical shot of THIS exact woman on a beauti |

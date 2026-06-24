@@ -70,6 +70,26 @@ def firecrawl_imgs(url):
     return [u for u in urls if "resize_cache" not in u and "logo" not in u.lower()]
 
 
+def og_image(url):
+    """Главное фото товара (og:image) — всегда родное, без 'похожих'. Надёжнее галереи."""
+    import subprocess, tempfile
+    tmp = tempfile.mktemp(suffix=".html")
+    try:
+        subprocess.run(f'firecrawl scrape "{url}" --format rawHtml -o "{tmp}"',
+                       shell=True, capture_output=True, timeout=90)
+    except subprocess.TimeoutExpired:
+        return None
+    if not os.path.exists(tmp):
+        return None
+    h = open(tmp, encoding="utf-8", errors="ignore").read(); os.remove(tmp)
+    m = re.search(r'og:image"[^>]*content="([^"]+)', h) or re.search(r'content="([^"]+)"[^>]*og:image', h)
+    u = m.group(1) if m else None
+    # отсечь логотипы/иконки магазина и соцсети
+    if u and not any(b in u.lower() for b in ["logo", "social", "/cmax/", "icon", "telegram", "whatsapp"]):
+        return u
+    return None
+
+
 def big_enough(url, minpx=600):
     try:
         d = requests.get(url, timeout=20, headers=UA).content

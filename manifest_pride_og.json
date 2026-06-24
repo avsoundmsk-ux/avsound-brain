@@ -5,5 +5,15 @@
     "type": "a car audio wiring accessory",
     "sources": [],
     "clean_wm": false
+  },
+  {
+    "id": 47901,
+    "name": "Предохранители Pride ANL FUSE 400A",
+    "type": "a car audio wiring accessory",
+    "sources": [
+      "https://pride.audio/wp-content/uploads/3030_1.jpg",
+      "https://pride.audio/wp-content/uploads/izobrazhenie-sdelano-25.10.2019-v-22.07.jpg"
+    ],
+    "clean_wm": false
   }
 ]

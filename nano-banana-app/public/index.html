@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nano Banana — генератор изображений</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🍌 <span>Nano Banana</span> <small>Gemini Image</small></div>
+    <div class="model-badge" id="modelBadge">…</div>
+  </header>
+
+  <main class="layout">
+    <section class="panel controls">
+      <div class="tabs">
+        <button class="tab active" data-mode="generate">Генерация</button>
+        <button class="tab" data-mode="edit">Редактирование</button>
+      </div>
+
+      <label class="field">
+        <span>Промпт</span>
+        <textarea id="prompt" rows="4" placeholder="Опиши картинку… напр.: премиум сабвуфер в неоне, тёмный багажник, 4k"></textarea>
+      </label>
+
+      <label class="field drop" id="dropZone">
+        <span id="uploadLabel">Исходное фото (опционально)</span>
+        <input type="file" id="imageInput" accept="image/*" hidden />
+        <div class="thumb" id="thumb">Перетащи фото или нажми</div>
+      </label>
+
+      <button class="primary" id="genBtn">Сгенерировать</button>
+      <div class="status" id="status"></div>
+    </section>
+
+    <section class="panel result">
+      <div class="result-box" id="resultBox">
+        <div class="placeholder">Результат появится здесь</div>
+      </div>
+      <a class="primary ghost" id="downloadBtn" download hidden>Скачать</a>
+    </section>
+  </main>
+
+  <section class="panel history">
+    <h3>История генераций</h3>
+    <div class="grid" id="historyGrid"></div>
+  </section>
+
+  <script src="/app.js"></script>
+</body>
+</html>

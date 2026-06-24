@@ -1,0 +1,21 @@
+{
+  "name": "nano-banana-app",
+  "version": "1.0.0",
+  "description": "Генератор изображений через Nano Banana (Gemini image) — official Google AI API",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

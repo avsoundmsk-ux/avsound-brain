@@ -1,0 +1,15 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audio": "track.mp3",
+  "items": [
+    { "src": "clip1.mp4", "type": "video", "durationInFrames": 450 },
+    { "src": "clip2.mp4", "type": "video", "durationInFrames": 450 },
+    { "src": "clip3.mp4", "type": "video", "durationInFrames": 450 }
+  ],
+  "captions": [
+    { "text": "лето, не спеши", "fromFrame": 60, "toFrame": 180 },
+    { "text": "AVSound", "fromFrame": 1200, "toFrame": 1320 }
+  ]
+}

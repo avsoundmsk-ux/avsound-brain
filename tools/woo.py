@@ -46,8 +46,22 @@ def _req(method, path, **kw):
 
 
 # ---------- временный хостинг для фото (WC скачивает src к себе) ----------
+def _to_jpg(path):
+    """PNG → JPG q88 (в ~30 раз легче, экономит диск REG.RU). Прочее отдаём как есть."""
+    if not path.lower().endswith(".png"):
+        return path
+    try:
+        from PIL import Image
+        j = path[:-4] + ".jpg"
+        Image.open(path).convert("RGB").save(j, quality=88, optimize=True)
+        return j
+    except Exception:
+        return path
+
+
 def upload_tmp(path):
-    """Залить локальный файл на tmpfiles.org → прямой URL для WC src."""
+    """Залить локальный файл на tmpfiles.org → прямой URL для WC src. PNG авто-конверт в JPG."""
+    path = _to_jpg(path)
     for a in range(RETRIES):
         try:
             with open(path, "rb") as f:

@@ -1,0 +1,607 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - text:    
+        - generic [ref=e7]:
+          - text:      
+          - link "Открыть мобильное меню" [ref=e10] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e11]: 
+          - link "Логотип сайта" [ref=e14] [cursor=pointer]:
+            - /url: https://av-sound.ru/
+          - link " 0" [ref=e17] [cursor=pointer]:
+            - /url: https://av-sound.ru/cart/
+            - generic [ref=e18]:
+              - text: 
+              - generic [ref=e19]: "0"
+    - main [ref=e23]:
+      - article [ref=e24]:
+        - generic [ref=e26]:
+          - generic [ref=e32]:
+            - generic [ref=e40]:
+              - heading "Раскрой силу звука" [level=4] [ref=e45]
+              - heading "Ваш звук. Ваш стиль." [level=4] [ref=e50]
+              - paragraph [ref=e54]: Широкий выбор аудиосистем, сабвуферов, усилителей и аксессуаров — мы поможем создать идеальное звучание вашего авто. Преобразите свою поездку с каждым аккордом!
+              - link "К ТОВАРАМ" [ref=e59] [cursor=pointer]:
+                - /url: https://av-sound.ru/shop/
+                - generic [ref=e60]: К ТОВАРАМ
+            - generic:
+              - generic:
+                - generic: 
+              - generic:
+                - generic: 
+          - generic [ref=e67]:
+            - generic [ref=e69]:
+              - generic [ref=e72]:
+                - link "Изображение категории" [ref=e74] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+                  - img "Заполнитель" [ref=e75]
+                - generic [ref=e76]:
+                  - heading "Автозвук" [level=3] [ref=e77]
+                  - link "7 товаров" [ref=e79] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+                - link "Категория товара %d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba" [ref=e80] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+              - generic [ref=e83]:
+                - link "Изображение категории" [ref=e85] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b/
+                  - img "Заполнитель" [ref=e86]
+                - generic [ref=e87]:
+                  - heading "Аксессуары" [level=3] [ref=e88]
+                  - link "32 товара" [ref=e90] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b/
+                - link "Категория товара %d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b" [ref=e91] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b/
+              - generic [ref=e94]:
+                - link "Изображение категории" [ref=e96] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f/
+                  - img "Заполнитель" [ref=e97]
+                - generic [ref=e98]:
+                  - heading "Виброшумоизоляция" [level=3] [ref=e99]
+                  - link "25 товаров" [ref=e101] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f/
+                - link "Категория товара %d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f" [ref=e102] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f/
+              - generic [ref=e105]:
+                - link "Изображение категории" [ref=e107] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+                  - img "Заполнитель" [ref=e108]
+                - generic [ref=e109]:
+                  - heading "Видеооборудование" [level=3] [ref=e110]
+                  - link "37 товаров" [ref=e112] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+                - link "Категория товара %d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5" [ref=e113] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+              - generic [ref=e116]:
+                - link "Изображение категории" [ref=e118] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b/
+                  - img "Заполнитель" [ref=e119]
+                - generic [ref=e120]:
+                  - heading "Кабели и разъёмы" [level=3] [ref=e121]
+                  - link "96 товаров" [ref=e123] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b/
+                - link "Категория товара %d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b" [ref=e124] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b/
+              - generic [ref=e127]:
+                - link "Изображение категории" [ref=e129] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5/
+                  - img "Заполнитель" [ref=e130]
+                - generic [ref=e131]:
+                  - heading "Питание" [level=3] [ref=e132]
+                  - link "64 товара" [ref=e134] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5/
+                - link "Категория товара %d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5" [ref=e135] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5/
+              - generic [ref=e138]:
+                - link "Изображение категории" [ref=e140] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                  - img "Заполнитель" [ref=e141]
+                - generic [ref=e142]:
+                  - heading "Автоакустика" [level=3] [ref=e143]
+                  - link "16 товаров" [ref=e145] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                - link "Категория товара %d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0" [ref=e146] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+              - generic [ref=e149]:
+                - link "Изображение категории" [ref=e151] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be/
+                  - img "Заполнитель" [ref=e152]
+                - generic [ref=e153]:
+                  - heading "Аксессуары для авто" [level=3] [ref=e154]
+                  - link "1 товар" [ref=e156] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be/
+                - link "Категория товара %d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be" [ref=e157] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be/
+              - generic [ref=e160]:
+                - link "Изображение категории" [ref=e162] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8/
+                  - img "Заполнитель" [ref=e163]
+                - generic [ref=e164]:
+                  - heading "Аксессуары для автоакустики" [level=3] [ref=e165]
+                  - link "20 товаров" [ref=e167] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8/
+                - link "Категория товара %d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8" [ref=e168] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8/
+              - generic [ref=e171]:
+                - link "Изображение категории" [ref=e173] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/accessories/
+                - generic [ref=e174]:
+                  - heading "Акустика" [level=3] [ref=e175]
+                  - link "540 товаров" [ref=e177] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                - link "Категория товара accessories" [ref=e178] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/accessories/
+              - generic [ref=e181]:
+                - link "Изображение категории" [ref=e183] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+                  - img "Магнитолы, Андроид" [ref=e184]
+                - generic [ref=e185]:
+                  - heading "Магнитолы" [level=3] [ref=e186]
+                  - link "287 товаров" [ref=e188] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+                - link "Категория товара %d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b" [ref=e189] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+              - generic [ref=e192]:
+                - link "Изображение категории" [ref=e194] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/subwufer/
+                - generic [ref=e195]:
+                  - heading "Сабвуферы" [level=3] [ref=e196]
+                  - link "241 товар" [ref=e198] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                - link "Категория товара subwufer" [ref=e199] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/subwufer/
+              - generic [ref=e202]:
+                - link "Изображение категории" [ref=e204] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/clocks/
+                - generic [ref=e205]:
+                  - heading "Усилители" [level=3] [ref=e206]
+                  - link "231 товар" [ref=e208] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/clocks/
+                - link "Категория товара clocks" [ref=e209] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/clocks/
+              - generic [ref=e212]:
+                - link "Изображение категории" [ref=e214] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                  - img "Штатная акустика" [ref=e215]
+                - generic [ref=e216]:
+                  - heading "Штатная акустика" [level=3] [ref=e217]
+                  - link "0 товаров" [ref=e219] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                - link "Категория товара %d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0" [ref=e220] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+            - generic:
+              - generic [ref=e222]: 
+              - generic [ref=e224] [cursor=pointer]: 
+          - generic [ref=e226]:
+            - generic [ref=e229]:
+              - heading "ПОПУЛЯРНЫЕ ТОВАРЫ" [level=4] [ref=e231]
+              - paragraph [ref=e233]: Мы предлагаем широкий ассортимент оборудования для автозвука, которое преобразит ваше автомобильное аудио.
+            - generic [ref=e237]:
+              - generic [ref=e239]:
+                - generic [ref=e240]:
+                  - link "Продано" [ref=e241] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-toyota-16%d1%81%d0%bc-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                    - generic [ref=e243]: Продано
+                  - generic [ref=e244]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e246] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - link "Прочитайте больше о “Aura Toyota 16см Фанера”" [ref=e248] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-toyota-16%d1%81%d0%bc-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                    - text: 
+                - heading "Aura Toyota 16см Фанера" [level=3] [ref=e249]:
+                  - link "Aura Toyota 16см Фанера" [ref=e250] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-toyota-16%d1%81%d0%bc-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                - generic [ref=e251]:
+                  - link "Акустика" [ref=e252] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e253] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e256]: 900,00 ₽
+              - generic [ref=e258]:
+                - generic [ref=e259]:
+                  - link [ref=e260] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-rng-ch-6-chevrolet-opel-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                  - generic [ref=e261]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e263] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Aura RNG-CH.6 CHEVROLET, OPEL 16см МДФ”" [ref=e265] [cursor=pointer]: 
+                - heading "Aura RNG-CH.6 CHEVROLET, OPEL 16см МДФ" [level=3] [ref=e266]:
+                  - link "Aura RNG-CH.6 CHEVROLET, OPEL 16см МДФ" [ref=e267] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-rng-ch-6-chevrolet-opel-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                - generic [ref=e268]:
+                  - link "Акустика" [ref=e269] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e270] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e273]: 650,00 ₽
+              - generic [ref=e275]:
+                - generic [ref=e276]:
+                  - link [ref=e277] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-priora-16%d1%81%d0%bc-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                  - generic [ref=e278]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e280] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Aura Priora 16см Фанера”" [ref=e282] [cursor=pointer]: 
+                - heading "Aura Priora 16см Фанера" [level=3] [ref=e283]:
+                  - link "Aura Priora 16см Фанера" [ref=e284] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-priora-16%d1%81%d0%bc-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                - generic [ref=e285]:
+                  - link "Акустика" [ref=e286] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e287] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e290]: 1.000,00 ₽
+              - generic [ref=e292]:
+                - generic [ref=e293]:
+                  - link [ref=e294] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-nissanhyundailogan2vesta-16%d1%81%d0%bc-%d1%84%d1%80%d0%be%d0%bd%d1%82-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                  - generic [ref=e295]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e297] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Aura NISSAN,Hyundai,Logan2,Vesta 16см Фронт/Фанера”" [ref=e299] [cursor=pointer]: 
+                - heading "Aura NISSAN,Hyundai,Logan2,Vesta 16см Фронт/Фанера" [level=3] [ref=e300]:
+                  - link "Aura NISSAN,Hyundai,Logan2,Vesta 16см Фронт/Фанера" [ref=e301] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-nissanhyundailogan2vesta-16%d1%81%d0%bc-%d1%84%d1%80%d0%be%d0%bd%d1%82-%d1%84%d0%b0%d0%bd%d0%b5%d1%80%d0%b0/
+                - generic [ref=e302]:
+                  - link "Акустика" [ref=e303] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e304] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e307]: 900,00 ₽
+              - generic [ref=e309]:
+                - generic [ref=e310]:
+                  - link "Продано" [ref=e311] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-rng-fo-6-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                    - generic [ref=e313]: Продано
+                  - generic [ref=e314]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e316] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - link "Прочитайте больше о “Aura RNG-FO.6 16см МДФ”" [ref=e318] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-rng-fo-6-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                    - text: 
+                - heading "Aura RNG-FO.6 16см МДФ" [level=3] [ref=e319]:
+                  - link "Aura RNG-FO.6 16см МДФ" [ref=e320] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-rng-fo-6-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                - generic [ref=e321]:
+                  - link "Акустика" [ref=e322] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e323] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e326]: 700,00 ₽
+              - generic [ref=e328]:
+                - generic [ref=e329]:
+                  - link [ref=e330] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0-%d0%bd%d0%b0-4%d1%80%d0%b5-%d1%83%d1%85%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%b8%d0%bd%d0%b0/
+                  - generic [ref=e331]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e333] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Проставочные кольца на 4ре уха для динамиков 16.5”" [ref=e335] [cursor=pointer]: 
+                - heading "Проставочные кольца на 4ре уха для динамиков 16.5" [level=3] [ref=e336]:
+                  - link "Проставочные кольца на 4ре уха для динамиков 16.5" [ref=e337] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0-%d0%bd%d0%b0-4%d1%80%d0%b5-%d1%83%d1%85%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%b8%d0%bd%d0%b0/
+                - generic [ref=e338]:
+                  - link "Акустика" [ref=e339] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e340] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e343]: 700,00 ₽
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - link [ref=e347] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-skoda-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                  - generic [ref=e348]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e350] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Aura Skoda 16см МДФ”" [ref=e352] [cursor=pointer]: 
+                - heading "Aura Skoda 16см МДФ" [level=3] [ref=e353]:
+                  - link "Aura Skoda 16см МДФ" [ref=e354] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/aura-skoda-16%d1%81%d0%bc-%d0%bc%d0%b4%d1%84/
+                - generic [ref=e355]:
+                  - link "Акустика" [ref=e356] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e357] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e360]: 750,00 ₽
+              - generic [ref=e362]:
+                - generic [ref=e363]:
+                  - link [ref=e364] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0-vag-%d0%bf%d0%be%d0%b4-16%d0%b5/
+                  - generic [ref=e365]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e367] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Проставочные кольца Vag под 16е”" [ref=e369] [cursor=pointer]: 
+                - heading "Проставочные кольца Vag под 16е" [level=3] [ref=e370]:
+                  - link "Проставочные кольца Vag под 16е" [ref=e371] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0-vag-%d0%bf%d0%be%d0%b4-16%d0%b5/
+                - generic [ref=e372]:
+                  - link "Акустика" [ref=e373] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                  - text: ","
+                  - link "Проставочные кольца" [ref=e374] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%be%d1%87%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bb%d1%8c%d1%86%d0%b0/
+                - generic [ref=e377]: 950,00 ₽
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - generic [ref=e383]:
+                - heading "КАЧЕСТВЕННЫЙ ЗВУК" [level=4] [ref=e385]:
+                  - text: КАЧЕСТВЕННЫЙ
+                  - text: ЗВУК
+                - paragraph [ref=e387]: Подготовьте своё авто к новым впечатлениям с нашей продукцией. Независимо от того, хотите ли вы улучшить базовую систему или создать настоящий звуковой концерт в салоне, у нас есть всё для автозвука
+              - generic [ref=e389]:
+                - link "О компании" [ref=e393] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e394]: О компании
+                - link "Каталог" [ref=e398] [cursor=pointer]:
+                  - /url: https://av-sound.ru/shop/
+                  - generic [ref=e399]: Каталог
+            - generic [ref=e403]:
+              - generic [ref=e407]: 
+              - link [ref=e408] [cursor=pointer]:
+                - /url: "#6a3aeae464733"
+          - generic [ref=e410]:
+            - generic [ref=e411]:
+              - generic [ref=e417]:
+                - heading "Pride Solo 300 competition" [level=4] [ref=e422]
+                - list [ref=e425]:
+                  - listitem [ref=e426]:
+                    - img [ref=e427]
+                    - generic [ref=e429]: Мощность - 300 Вт
+                  - listitem [ref=e430]:
+                    - img [ref=e431]
+                    - generic [ref=e433]: Чувствительность - 93 дБ
+                  - listitem [ref=e434]:
+                    - img [ref=e435]
+                    - generic [ref=e437]: Импеданс - 4 ОМ
+                - link "Подробнее" [ref=e441] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e442]: Подробнее
+              - generic [ref=e448]:
+                - heading "Активный сабвуфер Kicx AP301BPA" [level=4] [ref=e453]
+                - list [ref=e456]:
+                  - listitem [ref=e457]:
+                    - img [ref=e458]
+                    - generic [ref=e460]: Количество полос - 1
+                  - listitem [ref=e461]:
+                    - img [ref=e462]
+                    - generic [ref=e464]: Мощность - 300 Вт
+                  - listitem [ref=e465]:
+                    - img [ref=e466]
+                    - generic [ref=e468]: Чувствительность - 90 Дб
+                - link "Подробнее" [ref=e472] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e473]: Подробнее
+            - generic [ref=e474]:
+              - generic [ref=e480]:
+                - heading "Акустическая система Ural урал АС-М200" [level=4] [ref=e485]: Акустическая система Ural урал АС-М200
+                - list [ref=e488]:
+                  - listitem [ref=e489]:
+                    - img [ref=e490]
+                    - generic [ref=e492]: Мощность - 10 Вт
+                  - listitem [ref=e493]:
+                    - img [ref=e494]
+                    - generic [ref=e496]: Чувствительность - 95Дб
+                  - listitem [ref=e497]:
+                    - img [ref=e498]
+                    - generic [ref=e500]: Импеданс - 4 Ом
+                - link "О товаре" [ref=e504] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product/%d1%83%d1%80%d0%b0%d0%bb-%d0%b0%d1%81-%d0%bc200-%d0%bc%d0%be%d0%bb%d0%be%d1%82/
+                  - generic [ref=e505]: О товаре
+              - generic [ref=e511]:
+                - heading "Преобразователь Aura RHL-LD01" [level=4] [ref=e516]
+                - list [ref=e519]:
+                  - listitem [ref=e520]:
+                    - img [ref=e521]
+                    - generic [ref=e523]: Конвертер сигнала
+                - link "ПОДРОБНЕЕ" [ref=e527] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e528]: ПОДРОБНЕЕ
+          - generic [ref=e542]:
+            - heading "СИЛА И КРОСОТА" [level=4] [ref=e547]
+            - generic [ref=e550]:
+              - heading "В ОДНОМ КОМПЛЕКТЕ" [level=3] [ref=e552]
+              - paragraph [ref=e554]: У нас в студии мы объединяем мощь и стиль, предлагая высококачественные автозвуковые системы, которые подчеркнут индивидуальность вашего автомобиля. Мы уверены, что каждый автомобиль заслуживает своего идеального звучания!"
+            - paragraph [ref=e557]:
+              - emphasis [ref=e558]: “Откройте для себя эксклюзивные продукты, которые помогут вам создать аудиосистему мечты для вашего авто. Наши товары — это комбинация передовых технологий и безупречного дизайна..”
+            - paragraph [ref=e563]:
+              - strong [ref=e564]: Михаил Автономов
+          - generic [ref=e569]:
+            - generic [ref=e572]:
+              - heading "АКТУАЛЬНЫЕ НОВОСТИ" [level=4] [ref=e574]
+              - paragraph [ref=e576]: Следите за последними трендами, новинками оборудования и экспертными советами – чтобы ваш автомобиль звучал идеально!
+            - generic [ref=e580]:
+              - article [ref=e584]:
+                - generic [ref=e585]:
+                  - generic [ref=e586]:
+                    - figure [ref=e587]:
+                      - link [ref=e589] [cursor=pointer]:
+                        - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+                    - generic [ref=e590]:
+                      - generic [ref=e591]: "18"
+                      - generic [ref=e592]: Ноя
+                  - generic [ref=e593]:
+                    - link "Автозвук" [ref=e596] [cursor=pointer]:
+                      - /url: https://av-sound.ru/category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+                    - 'heading "Простая система автозвука: возможно ли качественное звучание в вашем авто?" [level=3] [ref=e597]':
+                      - 'link "Простая система автозвука: возможно ли качественное звучание в вашем авто?" [ref=e598] [cursor=pointer]':
+                        - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+                    - list [ref=e600]:
+                      - listitem:
+                        - time: 18 ноября, 2024
+                      - listitem [ref=e601]:
+                        - img "author-avatar" [ref=e602]
+                        - link "admin" [ref=e603] [cursor=pointer]:
+                          - /url: https://av-sound.ru/author/admin/
+                          - generic [ref=e604]: admin
+                      - listitem [ref=e605]:
+                        - link "0 " [ref=e606] [cursor=pointer]:
+                          - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/#respond
+                          - generic [ref=e607]: "0"
+                          - text: 
+                    - generic [ref=e608]: 
+                    - generic [ref=e609]: Автозвук – слово, которое знакомо практически каждому автовладельцу. Но что на самом дел...
+                    - paragraph [ref=e610]:
+                      - link "Продолжить чтение " [ref=e611] [cursor=pointer]:
+                        - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+              - generic:
+                - generic:
+                  - generic: 
+                - generic:
+                  - generic: 
+    - contentinfo [ref=e612]:
+      - complementary [ref=e614]:
+        - generic [ref=e618]:
+          - link "Ссылка на изображение" [ref=e622] [cursor=pointer]:
+            - /url: "#"
+            - img "Group 137" [ref=e623]
+          - paragraph [ref=e627]: Студия автозвука в Москве
+        - generic [ref=e629]:
+          - heading "Новости" [level=5] [ref=e630]
+          - list [ref=e631]:
+            - listitem [ref=e632]:
+              - link "Изображение записи" [ref=e633] [cursor=pointer]:
+                - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+              - generic [ref=e634]:
+                - 'link "Простая система автозвука: возможно ли качественное звучание в вашем авто?" [ref=e636] [cursor=pointer]':
+                  - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+                - time [ref=e637]: 18 ноября, 2024
+                - link "Нет комментариев" [ref=e638] [cursor=pointer]:
+                  - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/#respond
+        - generic [ref=e641]:
+          - heading "Компания" [level=5] [ref=e642]
+          - list [ref=e644]:
+            - listitem [ref=e645]:
+              - link "Политика конфендициальность" [ref=e646] [cursor=pointer]:
+                - /url: https://av-sound.ru/refund_returns
+            - listitem [ref=e647]:
+              - link "Блог" [ref=e648] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e652]:
+        - generic [ref=e653]: AV-SOUND 2025
+        - img "payments" [ref=e655]
+  - link "Кнопка наверх":
+    - /url: "#"
+    - text: 
+  - generic [ref=e656]:
+    - search [ref=e658]:
+      - textbox "Поиск" [ref=e659]
+      - button "Поиск " [ref=e660] [cursor=pointer]:
+        - generic: Поиск
+        - text: 
+    - list [ref=e661]:
+      - listitem [ref=e662]:
+        - link "Главная" [ref=e663] [cursor=pointer]:
+          - /url: https://av-sound.ru/
+          - generic [ref=e664]: Главная
+        - text: 
+      - listitem [ref=e665]:
+        - link "Каталог товара" [ref=e666] [cursor=pointer]:
+          - /url: https://av-sound.ru/shop/
+          - generic [ref=e667]: Каталог товара
+      - listitem [ref=e668]:
+        - link "Новости" [ref=e669] [cursor=pointer]:
+          - /url: https://av-sound.ru/blog/
+          - generic [ref=e670]: Новости
+      - listitem [ref=e671]:
+        - link "Кейсы" [ref=e672] [cursor=pointer]:
+          - /url: https://av-sound.ru/portfolio/
+          - generic [ref=e673]: Кейсы
+      - listitem [ref=e674]:
+        - link "О Компании" [ref=e675] [cursor=pointer]:
+          - /url: https://av-sound.ru/about-us/
+          - generic [ref=e676]: О Компании
+      - listitem [ref=e677]:
+        - link "Найти/Связаться" [ref=e678] [cursor=pointer]:
+          - /url: https://av-sound.ru/contact-us/
+          - generic [ref=e679]: Найти/Связаться
+      - listitem [ref=e680]:
+        - link " Избранное" [ref=e681] [cursor=pointer]:
+          - /url: https://av-sound.ru/wishlist/
+          - text: 
+          - generic [ref=e682]: Избранное
+      - listitem [ref=e683]:
+        - link " Сравнить" [ref=e684] [cursor=pointer]:
+          - /url: https://av-sound.ru/compare/
+      - listitem [ref=e685]:
+        - link " Вход / Регистрация" [ref=e686] [cursor=pointer]:
+          - /url: https://av-sound.ru/my-account/
+  - generic [ref=e687]:
+    - generic [ref=e688]:
+      - generic [ref=e689]: Корзина
+      - link " Закрыть" [ref=e691] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e696]:
+      - text: 
+      - paragraph [ref=e697]: Корзина пуста.
+      - link "Вернуться в магазин" [ref=e698] [cursor=pointer]:
+        - /url: https://av-sound.ru/shop/
+  - generic [ref=e700]:
+    - generic [ref=e701]:
+      - generic [ref=e702]: Войти
+      - link " Закрыть" [ref=e704] [cursor=pointer]:
+        - /url: "#"
+    - text: 
+    - generic [ref=e705]:
+      - text: 
+      - paragraph [ref=e706]: Еще нет аккаунта?
+      - link "Создать аккаунт" [ref=e707] [cursor=pointer]:
+        - /url: https://av-sound.ru/my-account/?action=register
+  - text:    
+  - generic [ref=e709]:
+    - generic [ref=e710]: Мы используем файлы cookie, чтобы улучшить ваше впечатление от нашего сайта. Просматривая этот сайт, вы соглашаетесь с использованием нами файлов cookie.
+    - link "Принять" [ref=e712] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e713]:
+    - link " Магазин" [ref=e715] [cursor=pointer]:
+      - /url: https://av-sound.ru/shop/
+      - generic [ref=e716]: 
+      - generic [ref=e717]: Магазин
+    - generic "Избранные товары" [ref=e718]:
+      - link " Избранное" [ref=e719] [cursor=pointer]:
+        - /url: https://av-sound.ru/wishlist/
+        - generic [ref=e720]: 
+        - generic [ref=e721]: Избранное
+    - generic "Корзина" [ref=e722]:
+      - link " 0 Корзина" [ref=e723] [cursor=pointer]:
+        - /url: https://av-sound.ru/cart/
+        - generic [ref=e724]:
+          - text: 
+          - generic [ref=e725]: "0"
+        - generic [ref=e726]: Корзина
+    - link " Мой аккаунт" [ref=e728] [cursor=pointer]:
+      - /url: https://av-sound.ru/my-account/
+      - generic [ref=e729]: 
+      - generic [ref=e730]: Мой аккаунт
+  - generic [ref=e731]: tablet
+  - status

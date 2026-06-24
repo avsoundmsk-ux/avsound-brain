@@ -108,6 +108,24 @@ def cmd_source(a):
                 imgs = firecrawl_imgs(page)
                 srcs = [u for u in imgs if big_enough(u)][:4]
             clean = bool(page and "shop-bear" in (page or ""))
+            # фолбэк: pride.audio (официальные фото, без чужих знаков)
+            if not srcs:
+                tmp2 = tempfile.mktemp(suffix=".md")
+                try:
+                    subprocess.run(f'firecrawl search "{name} pride.audio" -o "{tmp2}"',
+                                   shell=True, capture_output=True, timeout=90)
+                except subprocess.TimeoutExpired:
+                    pass
+                pa = None
+                if os.path.exists(tmp2):
+                    t2 = open(tmp2, encoding="utf-8", errors="ignore").read(); os.remove(tmp2)
+                    m2 = re.search(r'https://pride\.audio/product/\S+/', t2)
+                    if m2:
+                        pa = m2.group(0).rstrip(").,?")
+                if pa:
+                    imgs = firecrawl_imgs(pa)
+                    srcs = [u for u in imgs if big_enough(u, 400)][:4]
+                    clean = False  # pride.audio без чужих знаков, чистка не нужна
         except Exception as e:
             logline(f"source ERR {p['id']}: {type(e).__name__}"); clean = False
         out.append({"id": p["id"], "name": name,

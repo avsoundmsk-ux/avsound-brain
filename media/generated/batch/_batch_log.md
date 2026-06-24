@@ -365,3 +365,4 @@
 17:08:09  source 41557 Усилитель Pride Quattro XL: 3 фото
 17:09:07  source 41556 Моноблок Pride uno: 3 фото
 17:09:56  source 41555 Моноблок pride uno XL: 3 фото
+17:10:57  source 41554 Усилитель Pride Quattro plus ver.2: 0 фото

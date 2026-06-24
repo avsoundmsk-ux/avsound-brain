@@ -125,8 +125,12 @@ def cmd_source(a):
                 if m:
                     page = m.group(0).rstrip(").,")
             if page:
-                imgs = firecrawl_imgs(page)
-                srcs = [u for u in imgs if big_enough(u)][:4]
+                # og:image = родное фото товара (надёжно, без 'похожих' из карусели)
+                og = og_image(page)
+                if og and big_enough(og, 300):
+                    srcs = [og]
+                else:  # запасной путь: галерея (риск подмешать похожие — потом проверять глазами)
+                    srcs = [u for u in firecrawl_imgs(page) if big_enough(u)][:3]
             clean = bool(page and "shop-bear" in (page or ""))
             # фолбэк: pride.audio (официальные фото, без чужих знаков)
             if not srcs:

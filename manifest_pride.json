@@ -81,11 +81,8 @@
     "id": 41552,
     "name": "Сабвуфер Pride S.4 12 D4",
     "type": "a car audio subwoofer speaker driver",
-    "sources": [
-      "https://pride.audio/wp-content/uploads/2022/09/pride_subwoofer_m1210_1.jpg"
-    ],
-    "clean_wm": false,
-    "_src_page": "https://pride.audio/product/m12-10/?srsltid=AfmBOop4YDmxgbQMrmllKHgkEqJW7gGmO5BCBMsDuFigDlFZTaDElbvd"
+    "sources": [],
+    "clean_wm": true
   },
   {
     "id": 41551,
@@ -362,17 +359,14 @@
     "name": "Pride Solo Neo 300",
     "type": "a car audio product",
     "sources": [],
-    "clean_wm": false
+    "clean_wm": true
   },
   {
     "id": 41518,
     "name": "Pride Solo 300 competition",
     "type": "a car audio product",
-    "sources": [
-      "https://pride.audio/wp-content/uploads/2024/09/Solo-300-6.5-competition-13-1.jpg"
-    ],
-    "clean_wm": false,
-    "_src_page": "https://pride.audio/product/sl300-65comp/?srsltid=AfmBOooehFKziIhBa_vdG0nyvq6qNjV5dgYUSHxxoOD0o_ziN7yL6Cnx"
+    "sources": [],
+    "clean_wm": true
   },
   {
     "id": 41517,
@@ -386,14 +380,14 @@
     "name": "Pride Solo 300",
     "type": "a car audio product",
     "sources": [],
-    "clean_wm": false
+    "clean_wm": true
   },
   {
     "id": 41458,
     "name": "Pride Solo 300",
     "type": "a car audio product",
     "sources": [],
-    "clean_wm": false
+    "clean_wm": true
   },
   {
     "id": 41457,

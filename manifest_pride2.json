@@ -1,0 +1,34 @@
+[
+  {
+    "id": 47902,
+    "name": "47902",
+    "type": "a car audio ANL fuse",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41396,
+    "name": "41396",
+    "type": "a car audio speaker",
+    "sources": [
+      "https://shop-bear.ru/upload/iblock/247/24726934a5e80d0720631285ec1199ab.jpg",
+      "https://shop-bear.ru/upload/iblock/4ba/4ba9e9b8da3a15551b871935d97f1e02.jpg",
+      "https://shop-bear.ru/upload/iblock/62b/62bcd35eb4c1ac6474afa43cf2e1b0d3.jpg"
+    ],
+    "clean_wm": true
+  },
+  {
+    "id": 41463,
+    "name": "41463",
+    "type": "a car audio tweeter",
+    "sources": [],
+    "clean_wm": true
+  },
+  {
+    "id": 41458,
+    "name": "41458",
+    "type": "a car audio tweeter",
+    "sources": [],
+    "clean_wm": true
+  }
+]

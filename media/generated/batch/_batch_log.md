@@ -65,3 +65,78 @@
 10:01:38  SKIP 47901 Предохранители Pride ANL FUSE 400A: нет источников
 10:02:08    светлый фон, перегенерация 1/3: kie0.png
 10:02:13    светлый фон, перегенерация 1/3: kie0.png
+10:02:44    41558 fetch fail 1: URLError
+10:03:05    41558 fetch fail 2: URLError
+10:03:27  OK 41558 Моноблок Pride mezzo: 1 фото
+10:03:27  SKIP 41555 Моноблок pride uno XL: нет источников
+10:03:27  SKIP 41554 Усилитель Pride Quattro plus ver.2: нет источников
+10:03:27  SKIP 41553 Усилитель Pride Quattro plus: нет источников
+10:03:27  SKIP 41552 Сабвуфер Pride S.4 12 D4: нет источников
+10:03:27  SKIP 41551 Сабвуфер Pride M.9 12 ver.2 D2: нет источников
+10:03:54  OK 47897 Предохранители Pride ANL FUSE 250A: 1 фото
+10:03:54  SKIP 41549 Сабвуфер Pride M.6 12 ver.2 D2: нет источников
+10:03:54  SKIP 41548 Pride M.9 10 ver.2 D2: нет источников
+10:04:00    светлый фон, перегенерация 1/3: kie0.png
+10:04:18    светлый фон, перегенерация 1/3: kie0.png
+10:04:46    светлый фон, перегенерация 2/3: kie0.png
+10:04:51  OK 41561 Моноблок Pride Mille: 3 фото
+10:04:51  SKIP 41544 Pride Y-3000 (2M1F): нет источников
+10:04:54    светлый фон, перегенерация 2/3: kie0.png
+10:05:03    светлый фон, перегенерация 3/3: kie0.png
+10:05:06    41557 KIE fail 2: TimeoutError
+10:05:21    светлый фон, перегенерация 1/3: kie1.png
+10:06:19    41543 KIE fail 2: URLError
+10:06:36  OK 41557 Усилитель Pride Quattro XL: 3 фото
+10:06:58  OK 41543 Pride Y-5000(1M2F): 2 фото
+10:06:58  SKIP 41541 Дистрибьютор Pride Diamond 2448: нет источников
+10:06:58  SKIP 41540 Дистрибьютор Pride Emerald 1024: нет источников
+10:06:58  SKIP 41539 Колба Pride Sapphire 1024: нет источников
+10:06:58  SKIP 41538 Колба Pride Sapphire 1414: нет источников
+10:06:58  SKIP 41537 Pride Вольтметр (синий логотип): нет источников
+10:06:58  SKIP 41536 Pride модуль Solo 100: нет источников
+10:07:20    светлый фон, перегенерация 1/3: kie1.png
+10:07:42    41547 KIE fail 1: TimeoutError
+10:07:43    41550 KIE fail 1: TimeoutError
+10:08:06    41550 KIE fail 2: URLError
+10:08:37  OK 41535 Pride RCA Sapphire 3000 0.5 м: 2 фото
+10:08:37  SKIP 41534 Pride RCA Sapphire 5 м: нет источников
+10:08:37  SKIP 41533 Pride RCA Diamond 5 м: нет источников
+10:08:40    41542 fetch fail 2: TimeoutError
+10:08:45    41547 fetch fail 2: TimeoutError
+10:09:06  OK 41547 Сабвуфер Pride M.12 15 D 1.8: 1 фото
+10:09:15  OK 41550 Сабвуфер Pride M.12 12 ver.2 D2: 2 фото
+10:09:15  SKIP 41530 Pride RCA Diamond 0,5 м: нет источников
+10:09:26  OK 41542 Pride Y-9000 (1M2F): 2 фото
+10:09:26  SKIP 41528 Преобразователь Pride Transelectro PRO 8: нет источников
+10:09:26  SKIP 41527 Адаптер для твитера Pride Hyper Tone/Hyper Tone Plus: нет источников
+10:09:43    41532 KIE fail 1: URLError
+10:10:43  OK 41532 Pride RCA Diamond 2 м: 2 фото
+10:10:45    светлый фон, перегенерация 1/3: kie2.png
+10:11:48  OK 41531 Pride RCA Diamond 1 м: 3 фото
+10:12:11  OK 41529 Pride RCA Diamond 0,2 м: 3 фото
+10:13:13  OK 41526 Pride Diamond 10: 4 фото
+10:13:39    41524 KIE fail 1: ConnectionResetError
+10:14:00    светлый фон, перегенерация 1/3: kie2.png
+10:14:04    41523 KIE fail 0: RemoteDisconnected
+10:14:23    светлый фон, перегенерация 1/3: kie2.png
+10:14:37    светлый фон, перегенерация 2/3: kie2.png
+10:15:06    светлый фон, перегенерация 3/3: kie2.png
+10:15:39  OK 41523 Pride Ruby AIR 8: 2 фото
+10:15:54  OK 41524 Pride Ruby Voice 6,5 ver.2: 3 фото
+10:15:54  SKIP 41520 Pride Solo 300 8 competition: нет источников
+10:15:54  SKIP 41519 Pride Solo Neo 300: нет источников
+10:15:54  SKIP 41518 Pride Solo 300 competition: нет источников
+10:15:54  SKIP 41517 Pride Solo 200 competition: нет источников
+10:15:54  SKIP 41463 Pride Solo 300: нет источников
+10:15:54  SKIP 41458 Pride Solo 300: нет источников
+10:15:54  SKIP 41457 : нет источников
+10:15:54  SKIP 41396 Pride Onyx 5 ver.2: нет источников
+10:16:05  OK 41522 Pride Ruby AIR 8 ver.2: 3 фото
+10:16:37    светлый фон, перегенерация 1/3: kie1.png
+10:16:45    светлый фон, перегенерация 1/3: kie3.png
+10:17:00    светлый фон, перегенерация 2/3: kie3.png
+10:17:18    светлый фон, перегенерация 1/3: kie2.png
+10:18:00    светлый фон, перегенерация 1/3: kie3.png
+10:18:31  OK 41525 Pride Ruby Performance 6.5: 4 фото
+10:19:59  OK 41521 Твитеры Pride Hyper Tone: 4 фото
+10:19:59  === ИТОГ: {'no-src': 29, 'ok': 18} | KIE потрачено 276 cr (~$1.38) ===

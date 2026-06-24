@@ -1,0 +1,811 @@
+- generic [ref=e2]:
+  - navigation "Главное меню":
+    - link "Перейти к основному содержимому" [ref=e3] [cursor=pointer]:
+      - /url: "#wpbody-content"
+    - link "Перейти к верхней панели" [ref=e4] [cursor=pointer]:
+      - /url: "#wp-toolbar"
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link "Консоль" [ref=e9] [cursor=pointer]:
+          - /url: index.php
+          - generic [ref=e10]: 
+          - generic [ref=e11]: Консоль
+        - list [ref=e12]:
+          - listitem [ref=e13]: Консоль
+          - listitem [ref=e14]:
+            - link "Главная" [ref=e15] [cursor=pointer]:
+              - /url: index.php
+          - listitem [ref=e16]:
+            - link "Обновления 10" [ref=e17] [cursor=pointer]:
+              - /url: update-core.php
+              - text: Обновления
+              - generic [ref=e18]: "10"
+      - listitem [ref=e19]:
+        - link "Elementor" [ref=e20] [cursor=pointer]:
+          - /url: admin.php?page=elementor-home
+          - generic [ref=e22]: Elementor
+        - list [ref=e23]:
+          - listitem [ref=e24]: Elementor
+          - listitem [ref=e25]:
+            - link "Главная" [ref=e26] [cursor=pointer]:
+              - /url: admin.php?page=elementor-home
+          - listitem [ref=e27]:
+            - link "Редактор" [ref=e28] [cursor=pointer]:
+              - /url: admin.php?page=elementor
+          - listitem [ref=e29]:
+            - link "Конструктор тем" [ref=e30] [cursor=pointer]:
+              - /url: https://av-sound.ru/wp-admin/admin.php?page=elementor-app&ver=3.35.5&return_to=/wp-admin/#/site-editor
+          - listitem [ref=e31]:
+            - link "Заявки" [ref=e32] [cursor=pointer]:
+              - /url: admin.php?page=e-form-submissions
+          - listitem [ref=e33]:
+            - link "Обновить" [ref=e34] [cursor=pointer]:
+              - /url: admin.php?page=elementor-one-upgrade
+      - listitem [ref=e35]:
+        - link "Записи" [ref=e36] [cursor=pointer]:
+          - /url: edit.php
+          - generic [ref=e37]: 
+          - generic [ref=e38]: Записи
+        - list [ref=e39]:
+          - listitem [ref=e40]: Записи
+          - listitem [ref=e41]:
+            - link "Все записи" [ref=e42] [cursor=pointer]:
+              - /url: edit.php
+          - listitem [ref=e43]:
+            - link "Добавить запись" [ref=e44] [cursor=pointer]:
+              - /url: post-new.php
+          - listitem [ref=e45]:
+            - link "Рубрики" [ref=e46] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=category
+          - listitem [ref=e47]:
+            - link "Метки" [ref=e48] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=post_tag
+      - listitem [ref=e49]:
+        - link "Медиафайлы" [ref=e50] [cursor=pointer]:
+          - /url: upload.php
+          - generic [ref=e51]: 
+          - generic [ref=e52]: Медиафайлы
+        - list [ref=e53]:
+          - listitem [ref=e54]: Медиафайлы
+          - listitem [ref=e55]:
+            - link "Медиатека" [ref=e56] [cursor=pointer]:
+              - /url: upload.php
+          - listitem [ref=e57]:
+            - link "Добавить медиафайл" [ref=e58] [cursor=pointer]:
+              - /url: media-new.php
+      - listitem [ref=e59]:
+        - link "Страницы" [ref=e60] [cursor=pointer]:
+          - /url: edit.php?post_type=page
+          - generic [ref=e61]: 
+          - generic [ref=e62]: Страницы
+        - list [ref=e63]:
+          - listitem [ref=e64]: Страницы
+          - listitem [ref=e65]:
+            - link "Все страницы" [ref=e66] [cursor=pointer]:
+              - /url: edit.php?post_type=page
+          - listitem [ref=e67]:
+            - link "Добавить страницу" [ref=e68] [cursor=pointer]:
+              - /url: post-new.php?post_type=page
+      - listitem [ref=e69]:
+        - link "Комментарии 46 комментариев ждут одобрения" [ref=e70] [cursor=pointer]:
+          - /url: edit-comments.php
+          - generic [ref=e71]: 
+          - generic [ref=e72]:
+            - text: Комментарии
+            - generic [ref=e73]:
+              - text: "46"
+              - generic [ref=e74]: 46 комментариев ждут одобрения
+      - listitem [ref=e75]:
+        - link "Contact Form 7" [ref=e76] [cursor=pointer]:
+          - /url: admin.php?page=wpcf7
+          - generic [ref=e77]: 
+          - generic [ref=e78]: Contact Form 7
+        - list [ref=e79]:
+          - listitem [ref=e80]: Contact Form 7
+          - listitem [ref=e81]:
+            - link "Контактные формы" [ref=e82] [cursor=pointer]:
+              - /url: admin.php?page=wpcf7
+          - listitem [ref=e83]:
+            - link "Добавить контактную форму" [ref=e84] [cursor=pointer]:
+              - /url: admin.php?page=wpcf7-new
+          - listitem [ref=e85]:
+            - link "Интеграция" [ref=e86] [cursor=pointer]:
+              - /url: admin.php?page=wpcf7-integration
+      - listitem [ref=e87]
+      - listitem [ref=e89]:
+        - link "WoodMart" [ref=e90] [cursor=pointer]:
+          - /url: admin.php?page=xts_dashboard
+          - generic [ref=e91]: 
+          - generic [ref=e92]: WoodMart
+        - list [ref=e93]:
+          - listitem [ref=e94]: WoodMart
+          - listitem [ref=e95]:
+            - link "WoodMart" [ref=e96] [cursor=pointer]:
+              - /url: admin.php?page=xts_dashboard
+          - listitem [ref=e97]:
+            - link "Конструктор хедера" [ref=e98] [cursor=pointer]:
+              - /url: admin.php?page=xts_header_builder
+          - listitem [ref=e99]:
+            - link "Демо контент" [ref=e100] [cursor=pointer]:
+              - /url: admin.php?page=xts_prebuilt_websites
+          - listitem [ref=e101]:
+            - link "Лицензия темы" [ref=e102] [cursor=pointer]:
+              - /url: admin.php?page=xts_license
+          - listitem [ref=e103]:
+            - link "Плагины" [ref=e104] [cursor=pointer]:
+              - /url: admin.php?page=xts_plugins
+          - listitem [ref=e105]:
+            - link "Патчер" [ref=e106] [cursor=pointer]:
+              - /url: admin.php?page=xts_patcher
+          - listitem [ref=e107]:
+            - link "Статус" [ref=e108] [cursor=pointer]:
+              - /url: admin.php?page=xts_status
+          - listitem [ref=e109]:
+            - link "Список изменений" [ref=e110] [cursor=pointer]:
+              - /url: admin.php?page=xts_changelog
+          - listitem [ref=e111]:
+            - link "Настройки темы" [ref=e112] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings
+      - listitem [ref=e113]:
+        - link "Настройки темы" [ref=e114] [cursor=pointer]:
+          - /url: admin.php?page=xts_theme_settings
+          - generic [ref=e115]: 
+          - generic [ref=e116]: Настройки темы
+        - list [ref=e117]:
+          - listitem [ref=e118]: Настройки темы
+          - listitem [ref=e119]:
+            - link "Настройки темы" [ref=e120] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings
+          - listitem [ref=e121]:
+            - link "Основное" [ref=e122] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_parent_section
+          - listitem [ref=e123]:
+            - link "Заголовок страницы" [ref=e124] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=page_title_section
+          - listitem [ref=e125]:
+            - link "Футер" [ref=e126] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_footer_section
+          - listitem [ref=e127]:
+            - link "Шрифты" [ref=e128] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_typography_section
+          - listitem [ref=e129]:
+            - link "Стили и цвета" [ref=e130] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_styles_section
+          - listitem [ref=e131]:
+            - link "Блог" [ref=e132] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_blog_section
+          - listitem [ref=e133]:
+            - link "Портфолио" [ref=e134] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_portfolio_section
+          - listitem [ref=e135]:
+            - link "Магазин" [ref=e136] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_shop_section
+          - listitem [ref=e137]:
+            - link "Архив товаров" [ref=e138] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_product_archive_section
+          - listitem [ref=e139]:
+            - link "Отдельный товар" [ref=e140] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_single_product_section
+          - listitem [ref=e141]:
+            - link "Мой аккаунт" [ref=e142] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=my_account
+          - listitem [ref=e143]:
+            - link "Социальные профили" [ref=e144] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_social_profiles
+          - listitem [ref=e145]:
+            - link "Интеграция API" [ref=e146] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=api_integrations_section
+          - listitem [ref=e147]:
+            - link "Оптимизация" [ref=e148] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_performance
+          - listitem [ref=e149]:
+            - link "Обслуживание" [ref=e150] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=maintenance
+          - listitem [ref=e151]:
+            - link "Ребрендинг" [ref=e152] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=white_label_section
+          - listitem [ref=e153]:
+            - link "Произвольный CSS" [ref=e154] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=custom_css
+          - listitem [ref=e155]:
+            - link "Произвольный JS" [ref=e156] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=custom_js
+          - listitem [ref=e157]:
+            - link "Прочее" [ref=e158] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=other_section
+          - listitem [ref=e159]:
+            - link "Импорт / Экспорт / Сброс" [ref=e160] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=import_export
+      - listitem [ref=e161]:
+        - link "Макеты" [ref=e162] [cursor=pointer]:
+          - /url: edit.php?post_type=woodmart_layout
+          - generic [ref=e163]: 
+          - generic [ref=e164]: Макеты
+        - list [ref=e165]:
+          - listitem [ref=e166]: Макеты
+          - listitem [ref=e167]:
+            - link "Макеты" [ref=e168] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_layout
+          - listitem [ref=e169]:
+            - link "Добавить новый" [ref=e170] [cursor=pointer]:
+              - /url: post-new.php?post_type=woodmart_layout
+      - listitem [ref=e171]:
+        - link "HTML Блоки" [ref=e172] [cursor=pointer]:
+          - /url: edit.php?post_type=cms_block
+          - generic [ref=e173]: 
+          - generic [ref=e174]: HTML Блоки
+        - list [ref=e175]:
+          - listitem [ref=e176]: HTML Блоки
+          - listitem [ref=e177]:
+            - link "Все элементы" [ref=e178] [cursor=pointer]:
+              - /url: edit.php?post_type=cms_block
+          - listitem [ref=e179]:
+            - link "Добавить элемент" [ref=e180] [cursor=pointer]:
+              - /url: post-new.php?post_type=cms_block
+          - listitem [ref=e181]:
+            - link "Разделы" [ref=e182] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=cms_block_cat&post_type=cms_block
+      - listitem [ref=e183]:
+        - link "Слайдер" [ref=e184] [cursor=pointer]:
+          - /url: edit.php?post_type=woodmart_slide
+          - generic [ref=e185]: 
+          - generic [ref=e186]: Слайдер
+        - list [ref=e187]:
+          - listitem [ref=e188]: Слайдер
+          - listitem [ref=e189]:
+            - link "Все элементы" [ref=e190] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_slide
+          - listitem [ref=e191]:
+            - link "Добавить элемент" [ref=e192] [cursor=pointer]:
+              - /url: post-new.php?post_type=woodmart_slide
+          - listitem [ref=e193]:
+            - link "Слайдеры" [ref=e194] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=woodmart_slider&post_type=woodmart_slide
+      - listitem [ref=e195]:
+        - link "Сайдбары" [ref=e196] [cursor=pointer]:
+          - /url: edit.php?post_type=woodmart_sidebar
+          - generic [ref=e197]: 
+          - generic [ref=e198]: Сайдбары
+        - list [ref=e199]:
+          - listitem [ref=e200]: Сайдбары
+          - listitem [ref=e201]:
+            - link "Все элементы" [ref=e202] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_sidebar
+          - listitem [ref=e203]:
+            - link "Добавить элемент" [ref=e204] [cursor=pointer]:
+              - /url: post-new.php?post_type=woodmart_sidebar
+      - listitem [ref=e205]:
+        - link "Проекты" [ref=e206] [cursor=pointer]:
+          - /url: edit.php?post_type=portfolio
+          - generic [ref=e207]: 
+          - generic [ref=e208]: Проекты
+        - list [ref=e209]:
+          - listitem [ref=e210]: Проекты
+          - listitem [ref=e211]:
+            - link "Все элементы" [ref=e212] [cursor=pointer]:
+              - /url: edit.php?post_type=portfolio
+          - listitem [ref=e213]:
+            - link "Добавить элемент" [ref=e214] [cursor=pointer]:
+              - /url: post-new.php?post_type=portfolio
+          - listitem [ref=e215]:
+            - link "Разделы" [ref=e216] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=project-cat&post_type=portfolio
+      - listitem [ref=e217]
+      - listitem [ref=e219]:
+        - link "WooCommerce" [ref=e220] [cursor=pointer]:
+          - /url: admin.php?page=wc-admin
+          - generic [ref=e222]: WooCommerce
+        - list [ref=e223]:
+          - listitem [ref=e224]: WooCommerce
+          - listitem [ref=e225]:
+            - link "Обзор" [ref=e226] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin
+          - listitem [ref=e227]:
+            - link "Заказы" [ref=e228] [cursor=pointer]:
+              - /url: edit.php?post_type=shop_order
+          - listitem [ref=e229]:
+            - link "Клиенты" [ref=e230] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/customers
+          - listitem [ref=e231]:
+            - link "Отчёты" [ref=e232] [cursor=pointer]:
+              - /url: admin.php?page=wc-reports
+          - listitem [ref=e233]:
+            - link "Настройки" [ref=e234] [cursor=pointer]:
+              - /url: admin.php?page=wc-settings
+          - listitem [ref=e235]:
+            - link "Статус" [ref=e236] [cursor=pointer]:
+              - /url: admin.php?page=wc-status
+          - listitem [ref=e237]:
+            - link "Расширения" [ref=e238] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/extensions
+      - listitem [ref=e239]:
+        - link "Товары" [ref=e240] [cursor=pointer]:
+          - /url: edit.php?post_type=product
+          - generic [ref=e241]: 
+          - generic [ref=e242]: Товары
+        - list [ref=e243]:
+          - listitem [ref=e244]: Товары
+          - listitem [ref=e245]:
+            - link "Все товары" [ref=e246] [cursor=pointer]:
+              - /url: edit.php?post_type=product
+          - listitem [ref=e247]:
+            - link "Добавить товар" [ref=e248] [cursor=pointer]:
+              - /url: post-new.php?post_type=product
+          - listitem [ref=e249]:
+            - link "Бренды" [ref=e250] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+          - listitem [ref=e251]:
+            - link "Категории" [ref=e252] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+          - listitem [ref=e253]:
+            - link "Метки" [ref=e254] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+          - listitem [ref=e255]:
+            - link "Атрибуты" [ref=e256] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=product_attributes
+          - listitem [ref=e257]:
+            - link "Linked Variations" [ref=e258] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_woo_lv
+          - listitem [ref=e259]:
+            - link "Часто покупаемые вместе" [ref=e260] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_woo_fbt
+          - listitem [ref=e261]:
+            - link "Отзывы 58" [ref=e262] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=product-reviews
+              - text: Отзывы
+              - generic [ref=e263]: "58"
+          - listitem [ref=e264]:
+            - link "Wishlists" [ref=e265] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=xts-wishlist-settings-page
+          - listitem [ref=e266]:
+            - link "BEAR Массовый редактор" [ref=e267] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=woobe
+      - listitem [ref=e268]:
+        - link "Платежи" [ref=e269] [cursor=pointer]:
+          - /url: admin.php?page=wc-settings&tab=checkout&from=PAYMENTS_MENU_ITEM
+          - generic [ref=e271]: Платежи
+      - listitem [ref=e272]:
+        - link "Аналитика" [ref=e273] [cursor=pointer]:
+          - /url: admin.php?page=wc-admin&path=/analytics/overview
+          - generic [ref=e274]: 
+          - generic [ref=e275]: Аналитика
+        - list [ref=e276]:
+          - listitem [ref=e277]: Аналитика
+          - listitem [ref=e278]:
+            - link "Обзор" [ref=e279] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/overview
+          - listitem [ref=e280]:
+            - link "Товары" [ref=e281] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/products
+          - listitem [ref=e282]:
+            - link "Доход" [ref=e283] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/revenue
+          - listitem [ref=e284]:
+            - link "Заказы" [ref=e285] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/orders
+          - listitem [ref=e286]:
+            - link "Вариации" [ref=e287] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/variations
+          - listitem [ref=e288]:
+            - link "Категории" [ref=e289] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/categories
+          - listitem [ref=e290]:
+            - link "Купоны" [ref=e291] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/coupons
+          - listitem [ref=e292]:
+            - link "Налоги" [ref=e293] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/taxes
+          - listitem [ref=e294]:
+            - link "Загрузки" [ref=e295] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/downloads
+          - listitem [ref=e296]:
+            - link "Запасы" [ref=e297] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/stock
+          - listitem [ref=e298]:
+            - link "Настройки" [ref=e299] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/settings
+      - listitem [ref=e300]:
+        - link "Маркетинг" [ref=e301] [cursor=pointer]:
+          - /url: admin.php?page=wc-admin&path=/marketing
+          - generic [ref=e302]: 
+          - generic [ref=e303]: Маркетинг
+        - list [ref=e304]:
+          - listitem [ref=e305]: Маркетинг
+          - listitem [ref=e306]:
+            - link "Обзор" [ref=e307] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/marketing
+      - listitem [ref=e308]
+      - text:  
+      - listitem [ref=e310]:
+        - link "Элементы" [ref=e311] [cursor=pointer]:
+          - /url: admin.php?page=envato-elements
+          - generic [ref=e313]: Элементы
+        - list [ref=e314]:
+          - listitem [ref=e315]: Элементы
+          - listitem [ref=e316]:
+            - link "Добро пожаловать" [ref=e317] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements
+          - listitem [ref=e318]:
+            - link "Наборы шаблонов" [ref=e319] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/premium-kits
+          - listitem [ref=e320]:
+            - link "Бесплатные наборы" [ref=e321] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/free-kits
+          - listitem [ref=e322]:
+            - link "Бесплатные блоки" [ref=e323] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/free-blocks
+          - listitem [ref=e324]:
+            - link "Установленные наборы" [ref=e325] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/installed-kits
+          - listitem [ref=e326]:
+            - link "Фотографии" [ref=e327] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/photos
+          - listitem [ref=e328]:
+            - link "Настройки" [ref=e329] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/settings
+      - listitem [ref=e330]
+      - listitem [ref=e332]:
+        - link "Внешний вид" [ref=e333] [cursor=pointer]:
+          - /url: themes.php
+          - generic [ref=e334]: 
+          - generic [ref=e335]: Внешний вид
+        - list [ref=e336]:
+          - listitem [ref=e337]: Внешний вид
+          - listitem [ref=e338]:
+            - link "Темы 3" [ref=e339] [cursor=pointer]:
+              - /url: themes.php
+              - text: Темы
+              - generic [ref=e340]: "3"
+          - listitem [ref=e341]:
+            - link "Оформление" [ref=e342] [cursor=pointer]:
+              - /url: site-editor.php
+          - listitem [ref=e343]:
+            - link "Настроить" [ref=e344] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2F
+          - listitem [ref=e345]:
+            - link "Виджеты" [ref=e346] [cursor=pointer]:
+              - /url: widgets.php
+          - listitem [ref=e347]:
+            - link "Шрифты" [ref=e348] [cursor=pointer]:
+              - /url: font-library.php
+          - listitem [ref=e349]:
+            - link "Меню" [ref=e350] [cursor=pointer]:
+              - /url: nav-menus.php
+          - listitem [ref=e351]:
+            - link "Установка плагинов" [ref=e352] [cursor=pointer]:
+              - /url: themes.php?page=tgmpa-install-plugins
+          - listitem [ref=e353]:
+            - link "Редактор тем" [ref=e354] [cursor=pointer]:
+              - /url: theme-editor.php
+      - listitem [ref=e355]:
+        - link "Плагины 7" [ref=e356] [cursor=pointer]:
+          - /url: plugins.php
+          - generic [ref=e357]: 
+          - generic [ref=e358]:
+            - text: Плагины
+            - generic [ref=e359]: "7"
+        - list [ref=e360]:
+          - listitem [ref=e361]:
+            - text: Плагины
+            - generic [ref=e362]: "7"
+          - listitem [ref=e363]:
+            - link "Установленные" [ref=e364] [cursor=pointer]:
+              - /url: plugins.php
+          - listitem [ref=e365]:
+            - link "Добавить плагин" [ref=e366] [cursor=pointer]:
+              - /url: plugin-install.php
+          - listitem [ref=e367]:
+            - link "Редактор плагинов" [ref=e368] [cursor=pointer]:
+              - /url: plugin-editor.php
+      - listitem [ref=e369]:
+        - link "Пользователи" [ref=e370] [cursor=pointer]:
+          - /url: users.php
+          - generic [ref=e371]: 
+          - generic [ref=e372]: Пользователи
+        - list [ref=e373]:
+          - listitem [ref=e374]: Пользователи
+          - listitem [ref=e375]:
+            - link "Все пользователи" [ref=e376] [cursor=pointer]:
+              - /url: users.php
+          - listitem [ref=e377]:
+            - link "Добавить пользователя" [ref=e378] [cursor=pointer]:
+              - /url: user-new.php
+          - listitem [ref=e379]:
+            - link "Профиль" [ref=e380] [cursor=pointer]:
+              - /url: profile.php
+      - listitem [ref=e381]:
+        - link "Инструменты" [ref=e382] [cursor=pointer]:
+          - /url: tools.php
+          - generic [ref=e383]: 
+          - generic [ref=e384]: Инструменты
+        - list [ref=e385]:
+          - listitem [ref=e386]: Инструменты
+          - listitem [ref=e387]:
+            - link "Доступные инструменты" [ref=e388] [cursor=pointer]:
+              - /url: tools.php
+          - listitem [ref=e389]:
+            - link "Импорт" [ref=e390] [cursor=pointer]:
+              - /url: import.php
+          - listitem [ref=e391]:
+            - link "Экспорт" [ref=e392] [cursor=pointer]:
+              - /url: export.php
+          - listitem [ref=e393]:
+            - link "Здоровье сайта" [ref=e394] [cursor=pointer]:
+              - /url: site-health.php
+          - listitem [ref=e395]:
+            - link "Экспорт персональных данных" [ref=e396] [cursor=pointer]:
+              - /url: export-personal-data.php
+          - listitem [ref=e397]:
+            - link "Удаление персональных данных" [ref=e398] [cursor=pointer]:
+              - /url: erase-personal-data.php
+          - listitem [ref=e399]:
+            - link "Запланированные действия" [ref=e400] [cursor=pointer]:
+              - /url: tools.php?page=action-scheduler
+      - listitem [ref=e401]:
+        - link "All-in-One WP Migration" [ref=e402] [cursor=pointer]:
+          - /url: admin.php?page=ai1wm_export
+          - generic [ref=e404]: All-in-One WP Migration
+        - list [ref=e405]:
+          - listitem [ref=e406]: All-in-One WP Migration
+          - listitem [ref=e407]:
+            - link "Экспорт" [ref=e408] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_export
+          - listitem [ref=e409]:
+            - link "Импорт" [ref=e410] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_import
+          - listitem [ref=e411]:
+            - link "Резервные копии 1" [ref=e412] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_backups
+              - text: Резервные копии
+              - generic "У Вас 1 резервная копия" [ref=e413]: "1"
+          - listitem [ref=e414]:
+            - link "Сбросить хаб Premium" [ref=e415] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_reset
+              - text: Сбросить хаб
+              - generic [ref=e416]: Premium
+          - listitem [ref=e417]:
+            - link "Расписания Premium" [ref=e418] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_schedules
+              - text: Расписания
+              - generic [ref=e419]: Premium
+      - listitem [ref=e420]:
+        - link "Настройки" [ref=e421] [cursor=pointer]:
+          - /url: options-general.php
+          - generic [ref=e422]: 
+          - generic [ref=e423]: Настройки
+        - list [ref=e424]:
+          - listitem [ref=e425]: Настройки
+          - listitem [ref=e426]:
+            - link "Общие" [ref=e427] [cursor=pointer]:
+              - /url: options-general.php
+          - listitem [ref=e428]:
+            - link "Подключения" [ref=e429] [cursor=pointer]:
+              - /url: options-connectors.php
+          - listitem [ref=e430]:
+            - link "Написание" [ref=e431] [cursor=pointer]:
+              - /url: options-writing.php
+          - listitem [ref=e432]:
+            - link "Чтение" [ref=e433] [cursor=pointer]:
+              - /url: options-reading.php
+          - listitem [ref=e434]:
+            - link "Обсуждение" [ref=e435] [cursor=pointer]:
+              - /url: options-discussion.php
+          - listitem [ref=e436]:
+            - link "Медиафайлы" [ref=e437] [cursor=pointer]:
+              - /url: options-media.php
+          - listitem [ref=e438]:
+            - link "Постоянные ссылки" [ref=e439] [cursor=pointer]:
+              - /url: options-permalink.php
+          - listitem [ref=e440]:
+            - link "Приватность" [ref=e441] [cursor=pointer]:
+              - /url: options-privacy.php
+      - listitem [ref=e442]:
+        - link "SiteSEO" [ref=e443] [cursor=pointer]:
+          - /url: admin.php?page=siteseo
+          - generic [ref=e445]: SiteSEO
+        - list [ref=e446]:
+          - listitem [ref=e447]: SiteSEO
+          - listitem [ref=e448]:
+            - link "Dashboard" [ref=e449] [cursor=pointer]:
+              - /url: admin.php?page=siteseo
+          - listitem [ref=e450]:
+            - link "Titles & Metas" [ref=e451] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-titles
+          - listitem [ref=e452]:
+            - link "Sitemaps" [ref=e453] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-xml-sitemap
+          - listitem [ref=e454]:
+            - link "Social Networks" [ref=e455] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-social
+          - listitem [ref=e456]:
+            - link "Analytics" [ref=e457] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-google-analytics
+          - listitem [ref=e458]:
+            - link "Instant Indexing" [ref=e459] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-instant-indexing
+          - listitem [ref=e460]:
+            - link "Advanced" [ref=e461] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-advanced
+          - listitem [ref=e462]:
+            - link "Tools" [ref=e463] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-import-export
+          - listitem [ref=e464]:
+            - link "PRO" [ref=e465] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-pro-page
+          - listitem [ref=e466]:
+            - link "License" [ref=e467] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-license
+      - listitem [ref=e468]
+      - listitem [ref=e470]:
+        - link "Slider Revolution" [ref=e471] [cursor=pointer]:
+          - /url: admin.php?page=revslider
+          - generic [ref=e472]: 
+          - generic [ref=e473]: Slider Revolution
+        - list [ref=e474]:
+          - listitem [ref=e475]: Slider Revolution
+          - listitem [ref=e476]:
+            - link "Overview" [ref=e477] [cursor=pointer]:
+              - /url: admin.php?page=revslider
+          - listitem [ref=e478]:
+            - link "Getting Started" [ref=e479] [cursor=pointer]:
+              - /url: admin.php?page=revslider-documentation
+              - generic [ref=e480]: Getting Started
+          - listitem [ref=e481]:
+            - link "Help Center" [ref=e482] [cursor=pointer]:
+              - /url: admin.php?page=revslider-help-center
+              - generic [ref=e483]: Help Center
+          - listitem [ref=e484]:
+            - link "Templates" [ref=e485] [cursor=pointer]:
+              - /url: admin.php?page=revslider-templates
+              - generic [ref=e486]: Templates
+          - listitem [ref=e487]:
+            - link "Premium Support" [ref=e488] [cursor=pointer]:
+              - /url: admin.php?page=revslider-ticket
+              - generic [ref=e489]: Premium Support
+          - listitem [ref=e490]:
+            - link " Go Premium" [ref=e491] [cursor=pointer]:
+              - /url: admin.php?page=revslider-buy-license
+              - generic [ref=e492]:
+                - generic [ref=e493]: 
+                - text: Go Premium
+      - listitem [ref=e494]:
+        - link "SpeedyCache" [ref=e495] [cursor=pointer]:
+          - /url: admin.php?page=speedycache
+          - generic [ref=e497]: SpeedyCache
+      - listitem [ref=e498]:
+        - button "Развернуть главное меню" [ref=e499] [cursor=pointer]
+  - generic [ref=e501]:
+    - generic [ref=e502]:
+      - navigation "Верхняя панель":
+        - menu:
+          - group [ref=e503]:
+            - menuitem "О WordPress" [ref=e504] [cursor=pointer]:
+              - generic [ref=e506]: О WordPress
+          - group [ref=e507]:
+            - menuitem "AV-SOUND" [ref=e508] [cursor=pointer]
+          - group [ref=e509]:
+            - menuitem "Публичный" [ref=e510] [cursor=pointer]
+          - group [ref=e511]:
+            - menuitem "Доступно 10 обновлений" [ref=e512] [cursor=pointer]:
+              - generic [ref=e514]: "10"
+              - generic [ref=e515]: Доступно 10 обновлений
+          - group [ref=e516]:
+            - menuitem "Ctrl+K Открыть палитру команд" [ref=e517] [cursor=pointer]:
+              - generic [ref=e519]:
+                - text: Ctrl+K
+                - generic [ref=e520]: Открыть палитру команд
+          - group [ref=e521]:
+            - menuitem "46 комментариев ждут одобрения" [ref=e522] [cursor=pointer]:
+              - generic [ref=e524]: "46"
+              - generic [ref=e525]: 46 комментариев ждут одобрения
+          - group [ref=e526]:
+            - menuitem "Добавить" [ref=e527] [cursor=pointer]:
+              - generic [ref=e529]: Добавить
+          - group [ref=e530]:
+            - menuitem "SiteSEO" [ref=e531] [cursor=pointer]: SiteSEO
+          - group [ref=e533]:
+            - menuitem " WoodMart" [ref=e534] [cursor=pointer]
+            - text:                              
+          - group [ref=e535]:
+            - menuitem "BEAR Массовый редактор" [ref=e536] [cursor=pointer]
+          - group [ref=e537]:
+            - menuitem "SpeedyCache" [ref=e538]
+        - menu [ref=e539]:
+          - group [ref=e540]:
+            - menuitem "Привет, admin" [ref=e541] [cursor=pointer]
+    - main [ref=e542]:
+      - generic [ref=e543]:
+        - generic [ref=e544]:
+          - button "Настройки экрана" [ref=e546] [cursor=pointer]
+          - button "Помощь" [ref=e548] [cursor=pointer]
+        - generic [ref=e549]:
+          - heading "Консоль" [level=1] [ref=e550]
+          - generic [ref=e551]:
+            - paragraph [ref=e552]:
+              - text: Your SoftWP license has
+              - generic [ref=e553]: expired
+              - text: . Please contact your hosting provider to continue receiving uninterrupted updates and support for SpeedyCache.
+            - button "Скрыть это уведомление." [ref=e554] [cursor=pointer]:
+              - generic [ref=e555]: Скрыть это уведомление.
+          - text: 
+          - generic [ref=e557]:
+            - generic [ref=e559]:
+              - generic [ref=e561]:
+                - heading "Настройка WooCommerce" [level=2] [ref=e562]
+                - generic [ref=e563]:
+                  - button "Переместить вверх" [disabled] [ref=e564]:
+                    - generic [ref=e565]: Переместить вверх
+                  - button "Переместить вниз" [ref=e567] [cursor=pointer]:
+                    - generic [ref=e568]: Переместить вниз
+                  - 'button "Показать/скрыть панель: Настройка WooCommerce" [ref=e570] [cursor=pointer]':
+                    - generic [ref=e571]: "Показать/скрыть панель: Настройка WooCommerce"
+              - generic [ref=e573]:
+                - generic [ref=e574]:
+                  - heading "Elementor на виду" [level=2] [ref=e575]
+                  - generic [ref=e576]:
+                    - button "Переместить вверх" [ref=e577] [cursor=pointer]:
+                      - generic [ref=e578]: Переместить вверх
+                    - button "Переместить вниз" [ref=e580] [cursor=pointer]:
+                      - generic [ref=e581]: Переместить вниз
+                    - 'button "Показать/скрыть панель: Elementor на виду" [ref=e583] [cursor=pointer]':
+                      - generic [ref=e584]: "Показать/скрыть панель: Elementor на виду"
+                - text:        
+              - generic [ref=e587]:
+                - heading "Состояние здоровья сайта" [level=2] [ref=e588]
+                - generic [ref=e589]:
+                  - button "Переместить вверх" [ref=e590] [cursor=pointer]:
+                    - generic [ref=e591]: Переместить вверх
+                  - button "Переместить вниз" [ref=e593] [cursor=pointer]:
+                    - generic [ref=e594]: Переместить вниз
+                  - 'button "Показать/скрыть панель: Состояние здоровья сайта" [ref=e596] [cursor=pointer]':
+                    - generic [ref=e597]: "Показать/скрыть панель: Состояние здоровья сайта"
+              - generic [ref=e600]:
+                - heading "На виду" [level=2] [ref=e601]
+                - generic [ref=e602]:
+                  - button "Переместить вверх" [ref=e603] [cursor=pointer]:
+                    - generic [ref=e604]: Переместить вверх
+                  - button "Переместить вниз" [ref=e606] [cursor=pointer]:
+                    - generic [ref=e607]: Переместить вниз
+                  - 'button "Показать/скрыть панель: На виду" [ref=e609] [cursor=pointer]':
+                    - generic [ref=e610]: "Показать/скрыть панель: На виду"
+              - generic [ref=e613]:
+                - heading "Активность" [level=2] [ref=e614]
+                - generic [ref=e615]:
+                  - button "Переместить вверх" [ref=e616] [cursor=pointer]:
+                    - generic [ref=e617]: Переместить вверх
+                  - button "Переместить вниз" [ref=e619] [cursor=pointer]:
+                    - generic [ref=e620]: Переместить вниз
+                  - 'button "Показать/скрыть панель: Активность" [ref=e622] [cursor=pointer]':
+                    - generic [ref=e623]: "Показать/скрыть панель: Активность"
+            - generic [ref=e626]:
+              - generic [ref=e628]:
+                - heading "Быстрый черновик" [level=2] [ref=e629]:
+                  - generic [ref=e630]: Быстрый черновик
+                - generic [ref=e631]:
+                  - button "Переместить вверх" [ref=e632] [cursor=pointer]:
+                    - generic [ref=e633]: Переместить вверх
+                  - button "Переместить вниз" [ref=e635] [cursor=pointer]:
+                    - generic [ref=e636]: Переместить вниз
+                  - 'button "Показать/скрыть панель: Быстрый черновик" [ref=e638] [cursor=pointer]':
+                    - generic [ref=e639]:
+                      - text: "Показать/скрыть панель:"
+                      - generic [ref=e640]: Быстрый черновик
+              - generic [ref=e642]:
+                - generic [ref=e643]:
+                  - heading "Новости и мероприятия WordPress" [level=2] [ref=e644]
+                  - generic [ref=e645]:
+                    - button "Переместить вверх" [ref=e646] [cursor=pointer]:
+                      - generic [ref=e647]: Переместить вверх
+                    - button "Переместить вниз" [disabled] [ref=e649]:
+                      - generic [ref=e650]: Переместить вниз
+                    - 'button "Показать/скрыть панель: Новости и мероприятия WordPress" [ref=e652] [cursor=pointer]':
+                      - generic [ref=e653]: "Показать/скрыть панель: Новости и мероприятия WordPress"
+                - text:    
+  - contentinfo [ref=e655]:
+    - paragraph [ref=e656]:
+      - generic [ref=e658]:
+        - text: Спасибо вам за творчество с
+        - link "WordPress" [ref=e659] [cursor=pointer]:
+          - /url: https://ru.wordpress.org/
+        - text: .
+    - paragraph [ref=e660]: Версия 7.0

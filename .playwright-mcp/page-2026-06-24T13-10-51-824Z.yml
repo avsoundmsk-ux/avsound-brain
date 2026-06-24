@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - heading "Войти" [level=1] [ref=e2]
+  - generic [ref=e3]:
+    - link "Сайт работает на WordPress" [ref=e4] [cursor=pointer]:
+      - /url: https://ru.wordpress.org/
+    - generic [ref=e5]:
+      - paragraph [ref=e6]:
+        - generic [ref=e7]: Имя пользователя или email
+        - textbox "Имя пользователя или email" [ref=e8]
+      - generic [ref=e9]:
+        - generic [ref=e10]: Пароль
+        - generic [ref=e11]:
+          - textbox "Пароль" [ref=e12]
+          - button "Показать пароль" [ref=e13] [cursor=pointer]:
+            - generic [ref=e14]: 
+      - paragraph [ref=e15]:
+        - checkbox "Запомнить меня" [ref=e16] [cursor=pointer]
+        - generic [ref=e17]: Запомнить меня
+      - paragraph:
+        - button "Войти" [ref=e18] [cursor=pointer]
+    - paragraph [ref=e19]:
+      - link "Забыли пароль?" [ref=e20] [cursor=pointer]:
+        - /url: https://av-sound.ru/wp-login.php?action=lostpassword
+    - paragraph [ref=e21]:
+      - link "← Перейти к AV-SOUND" [ref=e22] [cursor=pointer]:
+        - /url: https://av-sound.ru/
+  - generic [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]: 
+      - generic [ref=e27]: Язык
+    - combobox "Язык" [ref=e28] [cursor=pointer]:
+      - option "English (United States)"
+      - option "Русский" [selected]
+    - button "Изменить" [ref=e29] [cursor=pointer]

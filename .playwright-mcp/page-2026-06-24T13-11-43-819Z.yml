@@ -1,0 +1,1463 @@
+- generic [ref=e2]:
+  - navigation "Главное меню":
+    - link "Перейти к основному содержимому" [ref=e3] [cursor=pointer]:
+      - /url: "#wpbody-content"
+    - link "Перейти к верхней панели" [ref=e4] [cursor=pointer]:
+      - /url: "#wp-toolbar"
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link "Консоль" [ref=e9] [cursor=pointer]:
+          - /url: index.php
+          - generic [ref=e10]: 
+          - generic [ref=e11]: Консоль
+        - list [ref=e12]:
+          - listitem [ref=e13]: Консоль
+          - listitem [ref=e14]:
+            - link "Главная" [ref=e15] [cursor=pointer]:
+              - /url: index.php
+          - listitem [ref=e16]:
+            - link "Обновления 11" [ref=e17] [cursor=pointer]:
+              - /url: update-core.php
+              - text: Обновления
+              - generic [ref=e18]: "11"
+      - listitem [ref=e19]:
+        - link "Elementor" [ref=e20] [cursor=pointer]:
+          - /url: admin.php?page=elementor-home
+          - generic [ref=e22]: Elementor
+        - list [ref=e23]:
+          - listitem [ref=e24]: Elementor
+          - listitem [ref=e25]:
+            - link "Главная" [ref=e26] [cursor=pointer]:
+              - /url: admin.php?page=elementor-home
+          - listitem [ref=e27]:
+            - link "Редактор" [ref=e28] [cursor=pointer]:
+              - /url: admin.php?page=elementor
+          - listitem [ref=e29]:
+            - link "Конструктор тем" [ref=e30] [cursor=pointer]:
+              - /url: https://av-sound.ru/wp-admin/admin.php?page=elementor-app&ver=3.35.5&return_to=/wp-admin/plugins.php#/site-editor
+          - listitem [ref=e31]:
+            - link "Заявки" [ref=e32] [cursor=pointer]:
+              - /url: admin.php?page=e-form-submissions
+          - listitem [ref=e33]:
+            - link "Обновить" [ref=e34] [cursor=pointer]:
+              - /url: admin.php?page=elementor-one-upgrade
+      - listitem [ref=e35]:
+        - link "Записи" [ref=e36] [cursor=pointer]:
+          - /url: edit.php
+          - generic [ref=e37]: 
+          - generic [ref=e38]: Записи
+        - list [ref=e39]:
+          - listitem [ref=e40]: Записи
+          - listitem [ref=e41]:
+            - link "Все записи" [ref=e42] [cursor=pointer]:
+              - /url: edit.php
+          - listitem [ref=e43]:
+            - link "Добавить запись" [ref=e44] [cursor=pointer]:
+              - /url: post-new.php
+          - listitem [ref=e45]:
+            - link "Рубрики" [ref=e46] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=category
+          - listitem [ref=e47]:
+            - link "Метки" [ref=e48] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=post_tag
+      - listitem [ref=e49]:
+        - link "Медиафайлы" [ref=e50] [cursor=pointer]:
+          - /url: upload.php
+          - generic [ref=e51]: 
+          - generic [ref=e52]: Медиафайлы
+        - list [ref=e53]:
+          - listitem [ref=e54]: Медиафайлы
+          - listitem [ref=e55]:
+            - link "Медиатека" [ref=e56] [cursor=pointer]:
+              - /url: upload.php
+          - listitem [ref=e57]:
+            - link "Добавить медиафайл" [ref=e58] [cursor=pointer]:
+              - /url: media-new.php
+      - listitem [ref=e59]:
+        - link "Страницы" [ref=e60] [cursor=pointer]:
+          - /url: edit.php?post_type=page
+          - generic [ref=e61]: 
+          - generic [ref=e62]: Страницы
+        - list [ref=e63]:
+          - listitem [ref=e64]: Страницы
+          - listitem [ref=e65]:
+            - link "Все страницы" [ref=e66] [cursor=pointer]:
+              - /url: edit.php?post_type=page
+          - listitem [ref=e67]:
+            - link "Добавить страницу" [ref=e68] [cursor=pointer]:
+              - /url: post-new.php?post_type=page
+      - listitem [ref=e69]:
+        - link "Комментарии 46 комментариев ждут одобрения" [ref=e70] [cursor=pointer]:
+          - /url: edit-comments.php
+          - generic [ref=e71]: 
+          - generic [ref=e72]:
+            - text: Комментарии
+            - generic [ref=e73]:
+              - text: "46"
+              - generic [ref=e74]: 46 комментариев ждут одобрения
+      - listitem [ref=e75]:
+        - link "Contact Form 7" [ref=e76] [cursor=pointer]:
+          - /url: admin.php?page=wpcf7
+          - generic [ref=e77]: 
+          - generic [ref=e78]: Contact Form 7
+        - list [ref=e79]:
+          - listitem [ref=e80]: Contact Form 7
+          - listitem [ref=e81]:
+            - link "Контактные формы" [ref=e82] [cursor=pointer]:
+              - /url: admin.php?page=wpcf7
+          - listitem [ref=e83]:
+            - link "Добавить контактную форму" [ref=e84] [cursor=pointer]:
+              - /url: admin.php?page=wpcf7-new
+          - listitem [ref=e85]:
+            - link "Интеграция" [ref=e86] [cursor=pointer]:
+              - /url: admin.php?page=wpcf7-integration
+      - listitem [ref=e87]
+      - listitem [ref=e89]:
+        - link "WoodMart" [ref=e90] [cursor=pointer]:
+          - /url: admin.php?page=xts_dashboard
+          - generic [ref=e91]: 
+          - generic [ref=e92]: WoodMart
+        - list [ref=e93]:
+          - listitem [ref=e94]: WoodMart
+          - listitem [ref=e95]:
+            - link "WoodMart" [ref=e96] [cursor=pointer]:
+              - /url: admin.php?page=xts_dashboard
+          - listitem [ref=e97]:
+            - link "Конструктор хедера" [ref=e98] [cursor=pointer]:
+              - /url: admin.php?page=xts_header_builder
+          - listitem [ref=e99]:
+            - link "Демо контент" [ref=e100] [cursor=pointer]:
+              - /url: admin.php?page=xts_prebuilt_websites
+          - listitem [ref=e101]:
+            - link "Лицензия темы" [ref=e102] [cursor=pointer]:
+              - /url: admin.php?page=xts_license
+          - listitem [ref=e103]:
+            - link "Плагины" [ref=e104] [cursor=pointer]:
+              - /url: admin.php?page=xts_plugins
+          - listitem [ref=e105]:
+            - link "Патчер" [ref=e106] [cursor=pointer]:
+              - /url: admin.php?page=xts_patcher
+          - listitem [ref=e107]:
+            - link "Статус" [ref=e108] [cursor=pointer]:
+              - /url: admin.php?page=xts_status
+          - listitem [ref=e109]:
+            - link "Список изменений" [ref=e110] [cursor=pointer]:
+              - /url: admin.php?page=xts_changelog
+          - listitem [ref=e111]:
+            - link "Настройки темы" [ref=e112] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings
+      - listitem [ref=e113]:
+        - link "Настройки темы" [ref=e114] [cursor=pointer]:
+          - /url: admin.php?page=xts_theme_settings
+          - generic [ref=e115]: 
+          - generic [ref=e116]: Настройки темы
+        - list [ref=e117]:
+          - listitem [ref=e118]: Настройки темы
+          - listitem [ref=e119]:
+            - link "Настройки темы" [ref=e120] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings
+          - listitem [ref=e121]:
+            - link "Основное" [ref=e122] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_parent_section
+          - listitem [ref=e123]:
+            - link "Заголовок страницы" [ref=e124] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=page_title_section
+          - listitem [ref=e125]:
+            - link "Футер" [ref=e126] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_footer_section
+          - listitem [ref=e127]:
+            - link "Шрифты" [ref=e128] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_typography_section
+          - listitem [ref=e129]:
+            - link "Стили и цвета" [ref=e130] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_styles_section
+          - listitem [ref=e131]:
+            - link "Блог" [ref=e132] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_blog_section
+          - listitem [ref=e133]:
+            - link "Портфолио" [ref=e134] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_portfolio_section
+          - listitem [ref=e135]:
+            - link "Магазин" [ref=e136] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_shop_section
+          - listitem [ref=e137]:
+            - link "Архив товаров" [ref=e138] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_product_archive_section
+          - listitem [ref=e139]:
+            - link "Отдельный товар" [ref=e140] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_single_product_section
+          - listitem [ref=e141]:
+            - link "Мой аккаунт" [ref=e142] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=my_account
+          - listitem [ref=e143]:
+            - link "Социальные профили" [ref=e144] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_social_profiles
+          - listitem [ref=e145]:
+            - link "Интеграция API" [ref=e146] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=api_integrations_section
+          - listitem [ref=e147]:
+            - link "Оптимизация" [ref=e148] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=general_performance
+          - listitem [ref=e149]:
+            - link "Обслуживание" [ref=e150] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=maintenance
+          - listitem [ref=e151]:
+            - link "Ребрендинг" [ref=e152] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=white_label_section
+          - listitem [ref=e153]:
+            - link "Произвольный CSS" [ref=e154] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=custom_css
+          - listitem [ref=e155]:
+            - link "Произвольный JS" [ref=e156] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=custom_js
+          - listitem [ref=e157]:
+            - link "Прочее" [ref=e158] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=other_section
+          - listitem [ref=e159]:
+            - link "Импорт / Экспорт / Сброс" [ref=e160] [cursor=pointer]:
+              - /url: admin.php?page=xts_theme_settings&tab=import_export
+      - listitem [ref=e161]:
+        - link "Макеты" [ref=e162] [cursor=pointer]:
+          - /url: edit.php?post_type=woodmart_layout
+          - generic [ref=e163]: 
+          - generic [ref=e164]: Макеты
+        - list [ref=e165]:
+          - listitem [ref=e166]: Макеты
+          - listitem [ref=e167]:
+            - link "Макеты" [ref=e168] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_layout
+          - listitem [ref=e169]:
+            - link "Добавить новый" [ref=e170] [cursor=pointer]:
+              - /url: post-new.php?post_type=woodmart_layout
+      - listitem [ref=e171]:
+        - link "HTML Блоки" [ref=e172] [cursor=pointer]:
+          - /url: edit.php?post_type=cms_block
+          - generic [ref=e173]: 
+          - generic [ref=e174]: HTML Блоки
+        - list [ref=e175]:
+          - listitem [ref=e176]: HTML Блоки
+          - listitem [ref=e177]:
+            - link "Все элементы" [ref=e178] [cursor=pointer]:
+              - /url: edit.php?post_type=cms_block
+          - listitem [ref=e179]:
+            - link "Добавить элемент" [ref=e180] [cursor=pointer]:
+              - /url: post-new.php?post_type=cms_block
+          - listitem [ref=e181]:
+            - link "Разделы" [ref=e182] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=cms_block_cat&post_type=cms_block
+      - listitem [ref=e183]:
+        - link "Слайдер" [ref=e184] [cursor=pointer]:
+          - /url: edit.php?post_type=woodmart_slide
+          - generic [ref=e185]: 
+          - generic [ref=e186]: Слайдер
+        - list [ref=e187]:
+          - listitem [ref=e188]: Слайдер
+          - listitem [ref=e189]:
+            - link "Все элементы" [ref=e190] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_slide
+          - listitem [ref=e191]:
+            - link "Добавить элемент" [ref=e192] [cursor=pointer]:
+              - /url: post-new.php?post_type=woodmart_slide
+          - listitem [ref=e193]:
+            - link "Слайдеры" [ref=e194] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=woodmart_slider&post_type=woodmart_slide
+      - listitem [ref=e195]:
+        - link "Сайдбары" [ref=e196] [cursor=pointer]:
+          - /url: edit.php?post_type=woodmart_sidebar
+          - generic [ref=e197]: 
+          - generic [ref=e198]: Сайдбары
+        - list [ref=e199]:
+          - listitem [ref=e200]: Сайдбары
+          - listitem [ref=e201]:
+            - link "Все элементы" [ref=e202] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_sidebar
+          - listitem [ref=e203]:
+            - link "Добавить элемент" [ref=e204] [cursor=pointer]:
+              - /url: post-new.php?post_type=woodmart_sidebar
+      - listitem [ref=e205]:
+        - link "Проекты" [ref=e206] [cursor=pointer]:
+          - /url: edit.php?post_type=portfolio
+          - generic [ref=e207]: 
+          - generic [ref=e208]: Проекты
+        - list [ref=e209]:
+          - listitem [ref=e210]: Проекты
+          - listitem [ref=e211]:
+            - link "Все элементы" [ref=e212] [cursor=pointer]:
+              - /url: edit.php?post_type=portfolio
+          - listitem [ref=e213]:
+            - link "Добавить элемент" [ref=e214] [cursor=pointer]:
+              - /url: post-new.php?post_type=portfolio
+          - listitem [ref=e215]:
+            - link "Разделы" [ref=e216] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=project-cat&post_type=portfolio
+      - listitem [ref=e217]
+      - listitem [ref=e219]:
+        - link "WooCommerce" [ref=e220] [cursor=pointer]:
+          - /url: admin.php?page=wc-admin
+          - generic [ref=e222]: WooCommerce
+        - list [ref=e223]:
+          - listitem [ref=e224]: WooCommerce
+          - listitem [ref=e225]:
+            - link "Обзор" [ref=e226] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin
+          - listitem [ref=e227]:
+            - link "Заказы" [ref=e228] [cursor=pointer]:
+              - /url: edit.php?post_type=shop_order
+          - listitem [ref=e229]:
+            - link "Клиенты" [ref=e230] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/customers
+          - listitem [ref=e231]:
+            - link "Отчёты" [ref=e232] [cursor=pointer]:
+              - /url: admin.php?page=wc-reports
+          - listitem [ref=e233]:
+            - link "Настройки" [ref=e234] [cursor=pointer]:
+              - /url: admin.php?page=wc-settings
+          - listitem [ref=e235]:
+            - link "Статус" [ref=e236] [cursor=pointer]:
+              - /url: admin.php?page=wc-status
+          - listitem [ref=e237]:
+            - link "Расширения" [ref=e238] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/extensions
+      - listitem [ref=e239]:
+        - link "Товары" [ref=e240] [cursor=pointer]:
+          - /url: edit.php?post_type=product
+          - generic [ref=e241]: 
+          - generic [ref=e242]: Товары
+        - list [ref=e243]:
+          - listitem [ref=e244]: Товары
+          - listitem [ref=e245]:
+            - link "Все товары" [ref=e246] [cursor=pointer]:
+              - /url: edit.php?post_type=product
+          - listitem [ref=e247]:
+            - link "Добавить товар" [ref=e248] [cursor=pointer]:
+              - /url: post-new.php?post_type=product
+          - listitem [ref=e249]:
+            - link "Бренды" [ref=e250] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=product_brand&post_type=product
+          - listitem [ref=e251]:
+            - link "Категории" [ref=e252] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=product_cat&post_type=product
+          - listitem [ref=e253]:
+            - link "Метки" [ref=e254] [cursor=pointer]:
+              - /url: edit-tags.php?taxonomy=product_tag&post_type=product
+          - listitem [ref=e255]:
+            - link "Атрибуты" [ref=e256] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=product_attributes
+          - listitem [ref=e257]:
+            - link "Linked Variations" [ref=e258] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_woo_lv
+          - listitem [ref=e259]:
+            - link "Часто покупаемые вместе" [ref=e260] [cursor=pointer]:
+              - /url: edit.php?post_type=woodmart_woo_fbt
+          - listitem [ref=e261]:
+            - link "Отзывы 58" [ref=e262] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=product-reviews
+              - text: Отзывы
+              - generic [ref=e263]: "58"
+          - listitem [ref=e264]:
+            - link "Wishlists" [ref=e265] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=xts-wishlist-settings-page
+          - listitem [ref=e266]:
+            - link "BEAR Массовый редактор" [ref=e267] [cursor=pointer]:
+              - /url: edit.php?post_type=product&page=woobe
+      - listitem [ref=e268]:
+        - link "Платежи" [ref=e269] [cursor=pointer]:
+          - /url: admin.php?page=wc-settings&tab=checkout&from=PAYMENTS_MENU_ITEM
+          - generic [ref=e271]: Платежи
+      - listitem [ref=e272]:
+        - link "Аналитика" [ref=e273] [cursor=pointer]:
+          - /url: admin.php?page=wc-admin&path=/analytics/overview
+          - generic [ref=e274]: 
+          - generic [ref=e275]: Аналитика
+        - list [ref=e276]:
+          - listitem [ref=e277]: Аналитика
+          - listitem [ref=e278]:
+            - link "Обзор" [ref=e279] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/overview
+          - listitem [ref=e280]:
+            - link "Товары" [ref=e281] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/products
+          - listitem [ref=e282]:
+            - link "Доход" [ref=e283] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/revenue
+          - listitem [ref=e284]:
+            - link "Заказы" [ref=e285] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/orders
+          - listitem [ref=e286]:
+            - link "Вариации" [ref=e287] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/variations
+          - listitem [ref=e288]:
+            - link "Категории" [ref=e289] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/categories
+          - listitem [ref=e290]:
+            - link "Купоны" [ref=e291] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/coupons
+          - listitem [ref=e292]:
+            - link "Налоги" [ref=e293] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/taxes
+          - listitem [ref=e294]:
+            - link "Загрузки" [ref=e295] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/downloads
+          - listitem [ref=e296]:
+            - link "Запасы" [ref=e297] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/stock
+          - listitem [ref=e298]:
+            - link "Настройки" [ref=e299] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/analytics/settings
+      - listitem [ref=e300]:
+        - link "Маркетинг" [ref=e301] [cursor=pointer]:
+          - /url: admin.php?page=wc-admin&path=/marketing
+          - generic [ref=e302]: 
+          - generic [ref=e303]: Маркетинг
+        - list [ref=e304]:
+          - listitem [ref=e305]: Маркетинг
+          - listitem [ref=e306]:
+            - link "Обзор" [ref=e307] [cursor=pointer]:
+              - /url: admin.php?page=wc-admin&path=/marketing
+      - listitem [ref=e308]
+      - text:  
+      - listitem [ref=e310]:
+        - link "Элементы" [ref=e311] [cursor=pointer]:
+          - /url: admin.php?page=envato-elements
+          - generic [ref=e313]: Элементы
+        - list [ref=e314]:
+          - listitem [ref=e315]: Элементы
+          - listitem [ref=e316]:
+            - link "Добро пожаловать" [ref=e317] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements
+          - listitem [ref=e318]:
+            - link "Наборы шаблонов" [ref=e319] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/premium-kits
+          - listitem [ref=e320]:
+            - link "Бесплатные наборы" [ref=e321] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/free-kits
+          - listitem [ref=e322]:
+            - link "Бесплатные блоки" [ref=e323] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/free-blocks
+          - listitem [ref=e324]:
+            - link "Установленные наборы" [ref=e325] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/template-kits/installed-kits
+          - listitem [ref=e326]:
+            - link "Фотографии" [ref=e327] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/photos
+          - listitem [ref=e328]:
+            - link "Настройки" [ref=e329] [cursor=pointer]:
+              - /url: admin.php?page=envato-elements#/settings
+      - listitem [ref=e330]
+      - listitem [ref=e332]:
+        - link "Внешний вид" [ref=e333] [cursor=pointer]:
+          - /url: themes.php
+          - generic [ref=e334]: 
+          - generic [ref=e335]: Внешний вид
+        - list [ref=e336]:
+          - listitem [ref=e337]: Внешний вид
+          - listitem [ref=e338]:
+            - link "Темы 3" [ref=e339] [cursor=pointer]:
+              - /url: themes.php
+              - text: Темы
+              - generic [ref=e340]: "3"
+          - listitem [ref=e341]:
+            - link "Оформление" [ref=e342] [cursor=pointer]:
+              - /url: site-editor.php
+          - listitem [ref=e343]:
+            - link "Настроить" [ref=e344] [cursor=pointer]:
+              - /url: customize.php?return=%2Fwp-admin%2Fplugins.php
+          - listitem [ref=e345]:
+            - link "Виджеты" [ref=e346] [cursor=pointer]:
+              - /url: widgets.php
+          - listitem [ref=e347]:
+            - link "Шрифты" [ref=e348] [cursor=pointer]:
+              - /url: font-library.php
+          - listitem [ref=e349]:
+            - link "Меню" [ref=e350] [cursor=pointer]:
+              - /url: nav-menus.php
+          - listitem [ref=e351]:
+            - link "Установка плагинов" [ref=e352] [cursor=pointer]:
+              - /url: themes.php?page=tgmpa-install-plugins
+          - listitem [ref=e353]:
+            - link "Редактор тем" [ref=e354] [cursor=pointer]:
+              - /url: theme-editor.php
+      - listitem [ref=e355]:
+        - link "Плагины 8" [ref=e356] [cursor=pointer]:
+          - /url: plugins.php
+          - generic [ref=e357]: 
+          - generic [ref=e358]:
+            - text: Плагины
+            - generic [ref=e359]: "8"
+        - list [ref=e360]:
+          - listitem [ref=e361]:
+            - text: Плагины
+            - generic [ref=e362]: "7"
+          - listitem [ref=e363]:
+            - link "Установленные" [ref=e364] [cursor=pointer]:
+              - /url: plugins.php
+          - listitem [ref=e365]:
+            - link "Добавить плагин" [ref=e366] [cursor=pointer]:
+              - /url: plugin-install.php
+          - listitem [ref=e367]:
+            - link "Редактор плагинов" [ref=e368] [cursor=pointer]:
+              - /url: plugin-editor.php
+      - listitem [ref=e369]:
+        - link "Пользователи" [ref=e370] [cursor=pointer]:
+          - /url: users.php
+          - generic [ref=e371]: 
+          - generic [ref=e372]: Пользователи
+        - list [ref=e373]:
+          - listitem [ref=e374]: Пользователи
+          - listitem [ref=e375]:
+            - link "Все пользователи" [ref=e376] [cursor=pointer]:
+              - /url: users.php
+          - listitem [ref=e377]:
+            - link "Добавить пользователя" [ref=e378] [cursor=pointer]:
+              - /url: user-new.php
+          - listitem [ref=e379]:
+            - link "Профиль" [ref=e380] [cursor=pointer]:
+              - /url: profile.php
+      - listitem [ref=e381]:
+        - link "Инструменты" [ref=e382] [cursor=pointer]:
+          - /url: tools.php
+          - generic [ref=e383]: 
+          - generic [ref=e384]: Инструменты
+        - list [ref=e385]:
+          - listitem [ref=e386]: Инструменты
+          - listitem [ref=e387]:
+            - link "Доступные инструменты" [ref=e388] [cursor=pointer]:
+              - /url: tools.php
+          - listitem [ref=e389]:
+            - link "Импорт" [ref=e390] [cursor=pointer]:
+              - /url: import.php
+          - listitem [ref=e391]:
+            - link "Экспорт" [ref=e392] [cursor=pointer]:
+              - /url: export.php
+          - listitem [ref=e393]:
+            - link "Здоровье сайта" [ref=e394] [cursor=pointer]:
+              - /url: site-health.php
+          - listitem [ref=e395]:
+            - link "Экспорт персональных данных" [ref=e396] [cursor=pointer]:
+              - /url: export-personal-data.php
+          - listitem [ref=e397]:
+            - link "Удаление персональных данных" [ref=e398] [cursor=pointer]:
+              - /url: erase-personal-data.php
+          - listitem [ref=e399]:
+            - link "Запланированные действия" [ref=e400] [cursor=pointer]:
+              - /url: tools.php?page=action-scheduler
+      - listitem [ref=e401]:
+        - link "All-in-One WP Migration" [ref=e402] [cursor=pointer]:
+          - /url: admin.php?page=ai1wm_export
+          - generic [ref=e404]: All-in-One WP Migration
+        - list [ref=e405]:
+          - listitem [ref=e406]: All-in-One WP Migration
+          - listitem [ref=e407]:
+            - link "Экспорт" [ref=e408] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_export
+          - listitem [ref=e409]:
+            - link "Импорт" [ref=e410] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_import
+          - listitem [ref=e411]:
+            - link "Резервные копии 1" [ref=e412] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_backups
+              - text: Резервные копии
+              - generic "У Вас 1 резервная копия" [ref=e413]: "1"
+          - listitem [ref=e414]:
+            - link "Сбросить хаб Premium" [ref=e415] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_reset
+              - text: Сбросить хаб
+              - generic [ref=e416]: Premium
+          - listitem [ref=e417]:
+            - link "Расписания Premium" [ref=e418] [cursor=pointer]:
+              - /url: admin.php?page=ai1wm_schedules
+              - text: Расписания
+              - generic [ref=e419]: Premium
+      - listitem [ref=e420]:
+        - link "Настройки" [ref=e421] [cursor=pointer]:
+          - /url: options-general.php
+          - generic [ref=e422]: 
+          - generic [ref=e423]: Настройки
+        - list [ref=e424]:
+          - listitem [ref=e425]: Настройки
+          - listitem [ref=e426]:
+            - link "Общие" [ref=e427] [cursor=pointer]:
+              - /url: options-general.php
+          - listitem [ref=e428]:
+            - link "Подключения" [ref=e429] [cursor=pointer]:
+              - /url: options-connectors.php
+          - listitem [ref=e430]:
+            - link "Написание" [ref=e431] [cursor=pointer]:
+              - /url: options-writing.php
+          - listitem [ref=e432]:
+            - link "Чтение" [ref=e433] [cursor=pointer]:
+              - /url: options-reading.php
+          - listitem [ref=e434]:
+            - link "Обсуждение" [ref=e435] [cursor=pointer]:
+              - /url: options-discussion.php
+          - listitem [ref=e436]:
+            - link "Медиафайлы" [ref=e437] [cursor=pointer]:
+              - /url: options-media.php
+          - listitem [ref=e438]:
+            - link "Постоянные ссылки" [ref=e439] [cursor=pointer]:
+              - /url: options-permalink.php
+          - listitem [ref=e440]:
+            - link "Приватность" [ref=e441] [cursor=pointer]:
+              - /url: options-privacy.php
+      - listitem [ref=e442]:
+        - link "SiteSEO" [ref=e443] [cursor=pointer]:
+          - /url: admin.php?page=siteseo
+          - generic [ref=e445]: SiteSEO
+        - list [ref=e446]:
+          - listitem [ref=e447]: SiteSEO
+          - listitem [ref=e448]:
+            - link "Dashboard" [ref=e449] [cursor=pointer]:
+              - /url: admin.php?page=siteseo
+          - listitem [ref=e450]:
+            - link "Titles & Metas" [ref=e451] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-titles
+          - listitem [ref=e452]:
+            - link "Sitemaps" [ref=e453] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-xml-sitemap
+          - listitem [ref=e454]:
+            - link "Social Networks" [ref=e455] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-social
+          - listitem [ref=e456]:
+            - link "Analytics" [ref=e457] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-google-analytics
+          - listitem [ref=e458]:
+            - link "Instant Indexing" [ref=e459] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-instant-indexing
+          - listitem [ref=e460]:
+            - link "Advanced" [ref=e461] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-advanced
+          - listitem [ref=e462]:
+            - link "Tools" [ref=e463] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-import-export
+          - listitem [ref=e464]:
+            - link "PRO" [ref=e465] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-pro-page
+          - listitem [ref=e466]:
+            - link "License" [ref=e467] [cursor=pointer]:
+              - /url: admin.php?page=siteseo-license
+      - listitem [ref=e468]
+      - listitem [ref=e470]:
+        - link "Slider Revolution" [ref=e471] [cursor=pointer]:
+          - /url: admin.php?page=revslider
+          - generic [ref=e472]: 
+          - generic [ref=e473]: Slider Revolution
+        - list [ref=e474]:
+          - listitem [ref=e475]: Slider Revolution
+          - listitem [ref=e476]:
+            - link "Overview" [ref=e477] [cursor=pointer]:
+              - /url: admin.php?page=revslider
+          - listitem [ref=e478]:
+            - link "Getting Started" [ref=e479] [cursor=pointer]:
+              - /url: admin.php?page=revslider-documentation
+              - generic [ref=e480]: Getting Started
+          - listitem [ref=e481]:
+            - link "Help Center" [ref=e482] [cursor=pointer]:
+              - /url: admin.php?page=revslider-help-center
+              - generic [ref=e483]: Help Center
+          - listitem [ref=e484]:
+            - link "Templates" [ref=e485] [cursor=pointer]:
+              - /url: admin.php?page=revslider-templates
+              - generic [ref=e486]: Templates
+          - listitem [ref=e487]:
+            - link "Premium Support" [ref=e488] [cursor=pointer]:
+              - /url: admin.php?page=revslider-ticket
+              - generic [ref=e489]: Premium Support
+          - listitem [ref=e490]:
+            - link " Go Premium" [ref=e491] [cursor=pointer]:
+              - /url: admin.php?page=revslider-buy-license
+              - generic [ref=e492]:
+                - generic [ref=e493]: 
+                - text: Go Premium
+      - listitem [ref=e494]:
+        - link "SpeedyCache" [ref=e495] [cursor=pointer]:
+          - /url: admin.php?page=speedycache
+          - generic [ref=e497]: SpeedyCache
+      - listitem [ref=e498]:
+        - button "Развернуть главное меню" [ref=e499] [cursor=pointer]
+  - generic [ref=e501]:
+    - generic [ref=e502]:
+      - navigation "Верхняя панель":
+        - menu:
+          - group [ref=e503]:
+            - menuitem "О WordPress" [ref=e504] [cursor=pointer]:
+              - generic [ref=e506]: О WordPress
+          - group [ref=e507]:
+            - menuitem "AV-SOUND" [ref=e508] [cursor=pointer]
+          - group [ref=e509]:
+            - menuitem "Публичный" [ref=e510] [cursor=pointer]
+          - group [ref=e511]:
+            - menuitem "Доступно 11 обновлений" [ref=e512] [cursor=pointer]:
+              - generic [ref=e514]: "11"
+              - generic [ref=e515]: Доступно 11 обновлений
+          - group [ref=e516]:
+            - menuitem "Ctrl+K Открыть палитру команд" [ref=e517] [cursor=pointer]:
+              - generic [ref=e519]:
+                - text: Ctrl+K
+                - generic [ref=e520]: Открыть палитру команд
+          - group [ref=e521]:
+            - menuitem "46 комментариев ждут одобрения" [ref=e522] [cursor=pointer]:
+              - generic [ref=e524]: "46"
+              - generic [ref=e525]: 46 комментариев ждут одобрения
+          - group [ref=e526]:
+            - menuitem "Добавить" [ref=e527] [cursor=pointer]:
+              - generic [ref=e529]: Добавить
+          - group [ref=e530]:
+            - menuitem "SiteSEO" [ref=e531] [cursor=pointer]: SiteSEO
+          - group [ref=e533]:
+            - menuitem " WoodMart" [ref=e534] [cursor=pointer]
+            - text:                              
+          - group [ref=e535]:
+            - menuitem "BEAR Массовый редактор" [ref=e536] [cursor=pointer]
+          - group [ref=e537]:
+            - menuitem "SpeedyCache" [ref=e538]
+        - menu [ref=e539]:
+          - group [ref=e540]:
+            - menuitem "Привет, admin" [ref=e541] [cursor=pointer]
+    - main [ref=e542]:
+      - generic [ref=e543]:
+        - generic [ref=e544]:
+          - button "Настройки экрана" [ref=e546] [cursor=pointer]
+          - button "Помощь" [ref=e548] [cursor=pointer]
+        - generic [ref=e549]:
+          - heading "Плагины" [level=1] [ref=e550]
+          - link "Добавить плагин" [ref=e551] [cursor=pointer]:
+            - /url: https://av-sound.ru/wp-admin/plugin-install.php
+          - generic [ref=e552]:
+            - paragraph [ref=e553]:
+              - text: Your SoftWP license has
+              - generic [ref=e554]: expired
+              - text: . Please contact your hosting provider to continue receiving uninterrupted updates and support for SpeedyCache.
+            - button "Скрыть это уведомление." [ref=e555] [cursor=pointer]:
+              - generic [ref=e556]: Скрыть это уведомление.
+          - heading "Фильтровать список плагинов" [level=2] [ref=e557]
+          - list [ref=e558]:
+            - listitem [ref=e559]:
+              - link "Все (17)" [ref=e560] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=all
+              - text: "|"
+            - listitem [ref=e561]:
+              - link "Активные (15)" [ref=e562] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=active
+              - text: "|"
+            - listitem [ref=e563]:
+              - link "Неактивные (2)" [ref=e564] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=inactive
+              - text: "|"
+            - listitem [ref=e565]:
+              - link "Доступны обновления (8)" [ref=e566] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=upgrade
+              - text: "|"
+            - listitem [ref=e567]:
+              - link "Вкрапления (1)" [ref=e568] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=dropins
+              - text: "|"
+            - listitem [ref=e569]:
+              - link "Автоматические обновления отключены (17)" [ref=e570] [cursor=pointer]:
+                - /url: plugins.php?plugin_status=auto-update-disabled
+          - paragraph [ref=e571]:
+            - generic [ref=e572]: Поиск установленных плагинов
+            - searchbox "Поиск установленных плагинов" [ref=e573]
+          - generic [ref=e574]:
+            - generic [ref=e575]:
+              - generic [ref=e576]:
+                - generic [ref=e577]: Выберите массовое действие
+                - combobox "Выберите массовое действие" [ref=e578] [cursor=pointer]:
+                  - option "Действия" [selected]
+                  - option "Активировать"
+                  - option "Деактивировать"
+                  - option "Обновить"
+                  - option "Удалить"
+                  - option "Включить автоматические обновления"
+                  - option "Отключить автоматические обновления"
+                - button "Применить" [ref=e579] [cursor=pointer]
+              - generic [ref=e581]: 17 элементов
+            - heading "Список плагинов" [level=2] [ref=e582]
+            - table [ref=e583]:
+              - rowgroup [ref=e584]:
+                - row "Выделить все Плагин Описание Автоматические обновления" [ref=e585]:
+                  - cell "Выделить все" [ref=e586]:
+                    - checkbox "Выделить все" [ref=e587] [cursor=pointer]
+                    - generic [ref=e589]: Выделить все
+                  - columnheader "Плагин" [ref=e590]
+                  - columnheader "Описание" [ref=e591]
+                  - columnheader "Автоматические обновления" [ref=e592]
+              - rowgroup [ref=e593]:
+                - 'row "Выбрать All-in-One WP Migration and Backup All-in-One WP Migration and Backup Деактивировать All-in-One WP Migration and Backup All-in-One WP Migration упрощает перемещение всего сайта WordPress. Экспортируйте или импортируйте базу данных, медиа, плагины и темы всего за несколько щелчков. Версия 7.102 | Автор: ServMask | Подробности о All-in-One WP Migration and Backup | Связаться с поддержкой | Перевести Включить автоматические обновления" [ref=e594]':
+                  - rowheader "Выбрать All-in-One WP Migration and Backup" [ref=e595]:
+                    - generic [ref=e597]: Выбрать All-in-One WP Migration and Backup
+                    - checkbox "Выбрать All-in-One WP Migration and Backup" [ref=e598] [cursor=pointer]
+                  - cell "All-in-One WP Migration and Backup Деактивировать All-in-One WP Migration and Backup" [ref=e599]:
+                    - strong [ref=e600]: All-in-One WP Migration and Backup
+                    - link "Деактивировать All-in-One WP Migration and Backup" [ref=e603] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=all-in-one-wp-migration%2Fall-in-one-wp-migration.php&plugin_status=all&paged=1&s&_wpnonce=ab5f910dc6
+                      - text: Деактивировать
+                  - 'cell "All-in-One WP Migration упрощает перемещение всего сайта WordPress. Экспортируйте или импортируйте базу данных, медиа, плагины и темы всего за несколько щелчков. Версия 7.102 | Автор: ServMask | Подробности о All-in-One WP Migration and Backup | Связаться с поддержкой | Перевести" [ref=e604]':
+                    - paragraph [ref=e606]: All-in-One WP Migration упрощает перемещение всего сайта WordPress. Экспортируйте или импортируйте базу данных, медиа, плагины и темы всего за несколько щелчков.
+                    - generic [ref=e607]:
+                      - text: "Версия 7.102 | Автор:"
+                      - link "ServMask" [ref=e608] [cursor=pointer]:
+                        - /url: https://servmask.com/
+                      - text: "|"
+                      - link "Подробности о All-in-One WP Migration and Backup" [ref=e609] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-wp-migration&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                      - text: "|"
+                      - link "Связаться с поддержкой" [ref=e610] [cursor=pointer]:
+                        - /url: https://servmask.com/contact-support
+                      - text: "|"
+                      - link "Перевести" [ref=e611] [cursor=pointer]:
+                        - /url: https://translate.wordpress.org/projects/wp-plugins/all-in-one-wp-migration/
+                  - cell "Включить автоматические обновления" [ref=e612]:
+                    - button "Включить автоматические обновления" [ref=e613] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия All-in-One WP Migration and Backup. Можно Посмотреть информацию о All-in-One WP Migration and Backup версии 7.105 или Обновить All-in-One WP Migration and Backup сейчас." [ref=e614]:
+                  - cell "Доступна свежая версия All-in-One WP Migration and Backup. Можно Посмотреть информацию о All-in-One WP Migration and Backup версии 7.105 или Обновить All-in-One WP Migration and Backup сейчас." [ref=e615]:
+                    - paragraph [ref=e617]:
+                      - text: Доступна свежая версия All-in-One WP Migration and Backup. Можно
+                      - link "Посмотреть информацию о All-in-One WP Migration and Backup версии 7.105" [ref=e618] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=all-in-one-wp-migration&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: посмотреть информацию о версии 7.105
+                      - text: или
+                      - link "Обновить All-in-One WP Migration and Backup сейчас" [ref=e619] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=all-in-one-wp-migration%2Fall-in-one-wp-migration.php&_wpnonce=fc03e598a5
+                        - text: обновить сейчас
+                      - text: .
+                - 'row "Выбрать BEAR – Bulk Editor and Products Manager Professional for WooCommerce BEAR – Bulk Editor and Products Manager Professional for WooCommerce Редактор товаров | Документация | Go Pro! | Деактивировать BEAR – Bulk Editor and Products Manager Professional for WooCommerce Tools for managing and bulk editing WooCommerce Products data in a reliable and flexible way! Be a professional in managing your e-shop’s data! Версия 1.1.6 | Автор: realmag777 | Подробности о BEAR – Bulk Editor and Products Manager Professional for WooCommerce Требует: Подробности о WooCommerce Включить автоматические обновления" [ref=e620]':
+                  - rowheader "Выбрать BEAR – Bulk Editor and Products Manager Professional for WooCommerce" [ref=e621]:
+                    - generic [ref=e623]: Выбрать BEAR – Bulk Editor and Products Manager Professional for WooCommerce
+                    - checkbox "Выбрать BEAR – Bulk Editor and Products Manager Professional for WooCommerce" [ref=e624] [cursor=pointer]
+                  - cell "BEAR – Bulk Editor and Products Manager Professional for WooCommerce Редактор товаров | Документация | Go Pro! | Деактивировать BEAR – Bulk Editor and Products Manager Professional for WooCommerce" [ref=e625]:
+                    - strong [ref=e626]: BEAR – Bulk Editor and Products Manager Professional for WooCommerce
+                    - generic [ref=e627]:
+                      - generic [ref=e628]:
+                        - link "Редактор товаров" [ref=e629] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/edit.php?post_type=product&page=woobe
+                        - text: "|"
+                      - generic [ref=e630]:
+                        - link "Документация" [ref=e631] [cursor=pointer]:
+                          - /url: https://bulk-editor.com/
+                          - text: Документация
+                        - text: "|"
+                      - generic [ref=e632]:
+                        - link "Go Pro!" [ref=e633] [cursor=pointer]:
+                          - /url: https://codecanyon.pluginus.net/item/woobe-woocommerce-bulk-editor-professional/21779835
+                        - text: "|"
+                      - link "Деактивировать BEAR – Bulk Editor and Products Manager Professional for WooCommerce" [ref=e635] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=woo-bulk-editor%2Findex.php&plugin_status=all&paged=1&s&_wpnonce=97e101957e
+                        - text: Деактивировать
+                  - 'cell "Tools for managing and bulk editing WooCommerce Products data in a reliable and flexible way! Be a professional in managing your e-shop’s data! Версия 1.1.6 | Автор: realmag777 | Подробности о BEAR – Bulk Editor and Products Manager Professional for WooCommerce Требует: Подробности о WooCommerce" [ref=e636]':
+                    - paragraph [ref=e638]:
+                      - text: Tools for managing and bulk editing
+                      - strong [ref=e639]: WooCommerce Products
+                      - text: data in a reliable and flexible way! Be a professional in managing your e-shop’s data!
+                    - generic [ref=e640]:
+                      - text: "Версия 1.1.6 | Автор:"
+                      - link "realmag777" [ref=e641] [cursor=pointer]:
+                        - /url: https://pluginus.net/
+                      - text: "|"
+                      - link "Подробности о BEAR – Bulk Editor and Products Manager Professional for WooCommerce" [ref=e642] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=woo-bulk-editor&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                    - paragraph [ref=e644]:
+                      - strong [ref=e645]: "Требует:"
+                      - link "Подробности о WooCommerce" [ref=e646] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=woocommerce&TB_iframe=true&width=600&height=550
+                        - text: WooCommerce
+                  - cell "Включить автоматические обновления" [ref=e647]:
+                    - button "Включить автоматические обновления" [ref=e648] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия BEAR – Bulk Editor and Products Manager Professional for WooCommerce. Можно Посмотреть информацию о BEAR – Bulk Editor and Products Manager Professional for WooCommerce версии 1.2.1 или Обновить BEAR – Bulk Editor and Products Manager Professional for WooCommerce сейчас." [ref=e649]:
+                  - cell "Доступна свежая версия BEAR – Bulk Editor and Products Manager Professional for WooCommerce. Можно Посмотреть информацию о BEAR – Bulk Editor and Products Manager Professional for WooCommerce версии 1.2.1 или Обновить BEAR – Bulk Editor and Products Manager Professional for WooCommerce сейчас." [ref=e650]:
+                    - paragraph [ref=e652]:
+                      - text: Доступна свежая версия BEAR – Bulk Editor and Products Manager Professional for WooCommerce. Можно
+                      - link "Посмотреть информацию о BEAR – Bulk Editor and Products Manager Professional for WooCommerce версии 1.2.1" [ref=e653] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=woo-bulk-editor&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: посмотреть информацию о версии 1.2.1
+                      - text: или
+                      - link "Обновить BEAR – Bulk Editor and Products Manager Professional for WooCommerce сейчас" [ref=e654] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=woo-bulk-editor%2Findex.php&_wpnonce=6d4f2cf950
+                        - text: обновить сейчас
+                      - text: .
+                - 'row "Выбрать Contact Form 7 Contact Form 7 Настройки | Деактивировать Contact Form 7 Конструктор контактных форм. Простой, но гибкий. Версия 6.1.5 | Автор: Rock Lobster Inc. | Подробности о Contact Form 7 Включить автоматические обновления" [ref=e655]':
+                  - rowheader "Выбрать Contact Form 7" [ref=e656]:
+                    - generic [ref=e658]: Выбрать Contact Form 7
+                    - checkbox "Выбрать Contact Form 7" [ref=e659] [cursor=pointer]
+                  - cell "Contact Form 7 Настройки | Деактивировать Contact Form 7" [ref=e660]:
+                    - strong [ref=e661]: Contact Form 7
+                    - generic [ref=e662]:
+                      - generic [ref=e663]:
+                        - link "Настройки" [ref=e664] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/admin.php?page=wpcf7
+                        - text: "|"
+                      - link "Деактивировать Contact Form 7" [ref=e666] [cursor=pointer]:
+                        - /url: plugins.php?action=deactivate&plugin=contact-form-7%2Fwp-contact-form-7.php&plugin_status=all&paged=1&s&_wpnonce=4e6ac59c43
+                        - text: Деактивировать
+                  - 'cell "Конструктор контактных форм. Простой, но гибкий. Версия 6.1.5 | Автор: Rock Lobster Inc. | Подробности о Contact Form 7" [ref=e667]':
+                    - paragraph [ref=e669]: Конструктор контактных форм. Простой, но гибкий.
+                    - generic [ref=e670]:
+                      - text: "Версия 6.1.5 | Автор:"
+                      - link "Rock Lobster Inc." [ref=e671] [cursor=pointer]:
+                        - /url: https://github.com/rocklobster-in/
+                      - text: "|"
+                      - link "Подробности о Contact Form 7" [ref=e672] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=contact-form-7&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                  - cell "Включить автоматические обновления" [ref=e673]:
+                    - button "Включить автоматические обновления" [ref=e674] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия Contact Form 7. Можно Посмотреть информацию о Contact Form 7 версии 6.1.6 или Обновить Contact Form 7 сейчас." [ref=e675]:
+                  - cell "Доступна свежая версия Contact Form 7. Можно Посмотреть информацию о Contact Form 7 версии 6.1.6 или Обновить Contact Form 7 сейчас." [ref=e676]:
+                    - paragraph [ref=e678]:
+                      - text: Доступна свежая версия Contact Form 7. Можно
+                      - link "Посмотреть информацию о Contact Form 7 версии 6.1.6" [ref=e679] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=contact-form-7&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: посмотреть информацию о версии 6.1.6
+                      - text: или
+                      - link "Обновить Contact Form 7 сейчас" [ref=e680] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=contact-form-7%2Fwp-contact-form-7.php&_wpnonce=51fac1d6be
+                        - text: обновить сейчас
+                      - text: .
+                - 'row "Выбрать Delete All Products for WooCommerce Delete All Products for WooCommerce Активировать Delete All Products for WooCommerce | Удалить Delete All Products for WooCommerce Efficiently delete all WooCommerce products in just a few clicks Версия 1.5.4 | Автор: ThemeDyno | Подробности о Delete All Products for WooCommerce Включить автоматические обновления" [ref=e681]':
+                  - rowheader "Выбрать Delete All Products for WooCommerce" [ref=e682]:
+                    - generic [ref=e684]: Выбрать Delete All Products for WooCommerce
+                    - checkbox "Выбрать Delete All Products for WooCommerce" [ref=e685] [cursor=pointer]
+                  - cell "Delete All Products for WooCommerce Активировать Delete All Products for WooCommerce | Удалить Delete All Products for WooCommerce" [ref=e686]:
+                    - strong [ref=e687]: Delete All Products for WooCommerce
+                    - generic [ref=e688]:
+                      - generic [ref=e689]:
+                        - link "Активировать Delete All Products for WooCommerce" [ref=e690] [cursor=pointer]:
+                          - /url: plugins.php?action=activate&plugin=delete-all-products%2Fdelete-all-products.php&plugin_status=all&paged=1&s&_wpnonce=b6410a3e6d
+                          - text: Активировать
+                        - text: "|"
+                      - link "Удалить Delete All Products for WooCommerce" [ref=e692] [cursor=pointer]:
+                        - /url: plugins.php?action=delete-selected&checked%5B0%5D=delete-all-products%2Fdelete-all-products.php&plugin_status=all&paged=1&s&_wpnonce=2c889747a4
+                        - text: Удалить
+                  - 'cell "Efficiently delete all WooCommerce products in just a few clicks Версия 1.5.4 | Автор: ThemeDyno | Подробности о Delete All Products for WooCommerce" [ref=e693]':
+                    - paragraph [ref=e695]: Efficiently delete all WooCommerce products in just a few clicks
+                    - generic [ref=e696]:
+                      - text: "Версия 1.5.4 | Автор:"
+                      - link "ThemeDyno" [ref=e697] [cursor=pointer]:
+                        - /url: https://themedyno.com/
+                      - text: "|"
+                      - link "Подробности о Delete All Products for WooCommerce" [ref=e698] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=delete-all-products&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                  - cell "Включить автоматические обновления" [ref=e699]:
+                    - button "Включить автоматические обновления" [ref=e700] [cursor=pointer]:  Включить автоматические обновления
+                - 'row "Выбрать Elementor Elementor Настройки | Деактивировать Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него. В конструкторе сайтов Elementor есть все: drag and drop конструктор страниц, идеальный дизайн, адаптивное редактирование для мобильных устройств и многое другое. Начните сейчас! Версия 3.35.5 | Автор: Elementor.com | Подробности о Elementor | Ознакомиться с документацией Elementor | Смотреть видеоуроки по Elementor Требуется для: Maps from Yandex for Elementor Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены. Включить автоматические обновления" [ref=e701]':
+                  - rowheader "Выбрать Elementor" [ref=e702]:
+                    - generic [ref=e704]: Выбрать Elementor
+                    - checkbox "Выбрать Elementor" [disabled] [ref=e705]
+                  - cell "Elementor Настройки | Деактивировать Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него." [ref=e706]:
+                    - strong [ref=e707]: Elementor
+                    - generic [ref=e708]:
+                      - generic [ref=e709]:
+                        - link "Настройки" [ref=e710] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/admin.php?page=elementor
+                        - text: "|"
+                      - generic [ref=e711]:
+                        - text: Деактивировать
+                        - generic [ref=e712]: Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него.
+                  - 'cell "В конструкторе сайтов Elementor есть все: drag and drop конструктор страниц, идеальный дизайн, адаптивное редактирование для мобильных устройств и многое другое. Начните сейчас! Версия 3.35.5 | Автор: Elementor.com | Подробности о Elementor | Ознакомиться с документацией Elementor | Смотреть видеоуроки по Elementor Требуется для: Maps from Yandex for Elementor Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены." [ref=e713]':
+                    - paragraph [ref=e715]: "В конструкторе сайтов Elementor есть все: drag and drop конструктор страниц, идеальный дизайн, адаптивное редактирование для мобильных устройств и многое другое. Начните сейчас!"
+                    - generic [ref=e716]:
+                      - text: "Версия 3.35.5 | Автор:"
+                      - link "Elementor.com" [ref=e717] [cursor=pointer]:
+                        - /url: https://elementor.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash
+                      - text: "|"
+                      - link "Подробности о Elementor" [ref=e718] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                      - text: "|"
+                      - link "Ознакомиться с документацией Elementor" [ref=e719] [cursor=pointer]:
+                        - /url: https://go.elementor.com/docs-admin-plugins/
+                        - text: Документация и FAQ
+                      - text: "|"
+                      - link "Смотреть видеоуроки по Elementor" [ref=e720] [cursor=pointer]:
+                        - /url: https://go.elementor.com/yt-admin-plugins/
+                        - text: Видеоуроки
+                    - generic [ref=e721]:
+                      - paragraph [ref=e722]:
+                        - strong [ref=e723]: "Требуется для:"
+                        - text: Maps from Yandex for Elementor
+                      - paragraph [ref=e724]: "Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены."
+                  - cell "Включить автоматические обновления" [ref=e725]:
+                    - button "Включить автоматические обновления" [ref=e726] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия Elementor. Можно Посмотреть информацию о Elementor версии 4.1.4 или Обновить Elementor сейчас.  Внимание, сделайте резервную копию перед обновлением! Последнее обновление включает в себя некоторые существенные изменения в различных областях плагина. Мы настоятельно рекомендуем сделать резервную копию вашего сайта перед обновлением и для начала попробовать обновить на тестовом сайте  Предупреждение о совместимости - Некоторые из используемых вами плагинов не тестировались с последней версией Elementor (4.1.4). Чтобы избежать проблем, перед обновлением Elementor убедитесь, что все они обновлены и совместимы. Плагин Протестирован до Elementor версии Elementor Pro 3.27.0 Envato Elements 3.23.2 Maps from Yandex for Elementor 3.32.4" [ref=e727]:
+                  - cell "Доступна свежая версия Elementor. Можно Посмотреть информацию о Elementor версии 4.1.4 или Обновить Elementor сейчас.  Внимание, сделайте резервную копию перед обновлением! Последнее обновление включает в себя некоторые существенные изменения в различных областях плагина. Мы настоятельно рекомендуем сделать резервную копию вашего сайта перед обновлением и для начала попробовать обновить на тестовом сайте  Предупреждение о совместимости - Некоторые из используемых вами плагинов не тестировались с последней версией Elementor (4.1.4). Чтобы избежать проблем, перед обновлением Elementor убедитесь, что все они обновлены и совместимы. Плагин Протестирован до Elementor версии Elementor Pro 3.27.0 Envato Elements 3.23.2 Maps from Yandex for Elementor 3.32.4" [ref=e728]:
+                    - generic [ref=e729]:
+                      - paragraph [ref=e730]:
+                        - text: Доступна свежая версия Elementor. Можно
+                        - link "Посмотреть информацию о Elementor версии 4.1.4" [ref=e731] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: посмотреть информацию о версии 4.1.4
+                        - text: или
+                        - link "Обновить Elementor сейчас" [ref=e732] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=elementor%2Felementor.php&_wpnonce=ec1124955a
+                          - text: обновить сейчас
+                        - text: .
+                      - separator [ref=e733]
+                      - generic [ref=e734]:
+                        - generic [ref=e736]: 
+                        - generic [ref=e737]:
+                          - generic [ref=e738]: Внимание, сделайте резервную копию перед обновлением!
+                          - generic [ref=e739]:
+                            - text: Последнее обновление включает в себя некоторые существенные изменения в различных областях плагина. Мы настоятельно рекомендуем
+                            - link "сделать резервную копию вашего сайта перед обновлением" [ref=e740] [cursor=pointer]:
+                              - /url: https://go.elementor.com/wp-dash-update-backup/
+                            - text: и для начала попробовать обновить на тестовом сайте
+                      - separator [ref=e741]
+                      - generic [ref=e742]:
+                        - generic [ref=e744]: 
+                        - generic [ref=e745]:
+                          - generic [ref=e746]:
+                            - strong [ref=e747]: Предупреждение о совместимости
+                            - text: "- Некоторые из используемых вами плагинов не тестировались с последней версией Elementor (4.1.4). Чтобы избежать проблем, перед обновлением Elementor убедитесь, что все они обновлены и совместимы."
+                          - table [ref=e748]:
+                            - rowgroup [ref=e749]:
+                              - row "Плагин Протестирован до Elementor версии" [ref=e750]:
+                                - columnheader "Плагин" [ref=e751]
+                                - columnheader "Протестирован до Elementor версии" [ref=e752]
+                              - row "Elementor Pro 3.27.0" [ref=e753]:
+                                - cell "Elementor Pro" [ref=e754]
+                                - cell "3.27.0" [ref=e755]
+                              - row "Envato Elements 3.23.2" [ref=e756]:
+                                - cell "Envato Elements" [ref=e757]
+                                - cell "3.23.2" [ref=e758]
+                              - row "Maps from Yandex for Elementor 3.32.4" [ref=e759]:
+                                - cell "Maps from Yandex for Elementor" [ref=e760]
+                                - cell "3.32.4" [ref=e761]
+                - 'row "Выбрать Elementor Pro Elementor Pro Деактивировать Elementor Pro Elevate your designs and unlock the full power of Elementor. Gain access to dozens of Pro widgets and kits, Theme Builder, Pop Ups, Forms and WooCommerce building capabilities. Версия 3.27.4 | Автор: Elementor.com | Подробности о Elementor Pro | Changelog Включить автоматические обновления" [ref=e762]':
+                  - rowheader "Выбрать Elementor Pro" [ref=e763]:
+                    - generic [ref=e765]: Выбрать Elementor Pro
+                    - checkbox "Выбрать Elementor Pro" [ref=e766] [cursor=pointer]
+                  - cell "Elementor Pro Деактивировать Elementor Pro" [ref=e767]:
+                    - strong [ref=e768]: Elementor Pro
+                    - link "Деактивировать Elementor Pro" [ref=e771] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=elementor-pro%2Felementor-pro.php&plugin_status=all&paged=1&s&_wpnonce=57ca33418a
+                      - text: Деактивировать
+                  - 'cell "Elevate your designs and unlock the full power of Elementor. Gain access to dozens of Pro widgets and kits, Theme Builder, Pop Ups, Forms and WooCommerce building capabilities. Версия 3.27.4 | Автор: Elementor.com | Подробности о Elementor Pro | Changelog" [ref=e772]':
+                    - paragraph [ref=e774]: Elevate your designs and unlock the full power of Elementor. Gain access to dozens of Pro widgets and kits, Theme Builder, Pop Ups, Forms and WooCommerce building capabilities.
+                    - generic [ref=e775]:
+                      - text: "Версия 3.27.4 | Автор:"
+                      - link "Elementor.com" [ref=e776] [cursor=pointer]:
+                        - /url: https://go.elementor.com/wp-dash-wp-plugins-author-uri/
+                      - text: "|"
+                      - link "Подробности о Elementor Pro" [ref=e777] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor-pro&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                      - text: "|"
+                      - link "Changelog" [ref=e778] [cursor=pointer]:
+                        - /url: https://go.elementor.com/pro-changelog/
+                  - cell "Включить автоматические обновления" [ref=e779]:
+                    - button "Включить автоматические обновления" [ref=e780] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия Elementor Pro. Можно Посмотреть информацию о Elementor Pro версии 4.1.2 или Обновить Elementor Pro сейчас.  Внимание, сделайте резервную копию перед обновлением! Последнее обновление включает в себя некоторые существенные изменения в различных областях плагина. Мы настоятельно рекомендуем сделать резервную копию вашего сайта перед обновлением и для начала попробовать обновить на тестовом сайте  Предупреждение о совместимости - Некоторые из используемых вами плагинов не тестировались с последней версией Elementor Pro (4.1.2). Чтобы избежать проблем, перед обновлением Elementor Pro убедитесь, что все они обновлены и совместимы. Плагин Протестирован до Elementor Pro версии Envato Elements 3.23.1 Maps from Yandex for Elementor 3.32.1" [ref=e781]:
+                  - cell "Доступна свежая версия Elementor Pro. Можно Посмотреть информацию о Elementor Pro версии 4.1.2 или Обновить Elementor Pro сейчас.  Внимание, сделайте резервную копию перед обновлением! Последнее обновление включает в себя некоторые существенные изменения в различных областях плагина. Мы настоятельно рекомендуем сделать резервную копию вашего сайта перед обновлением и для начала попробовать обновить на тестовом сайте  Предупреждение о совместимости - Некоторые из используемых вами плагинов не тестировались с последней версией Elementor Pro (4.1.2). Чтобы избежать проблем, перед обновлением Elementor Pro убедитесь, что все они обновлены и совместимы. Плагин Протестирован до Elementor Pro версии Envato Elements 3.23.1 Maps from Yandex for Elementor 3.32.1" [ref=e782]:
+                    - generic [ref=e783]:
+                      - paragraph [ref=e784]:
+                        - text: Доступна свежая версия Elementor Pro. Можно
+                        - link "Посмотреть информацию о Elementor Pro версии 4.1.2" [ref=e785] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor-pro&section=changelog&TB_iframe=true&width=600&height=800
+                          - text: посмотреть информацию о версии 4.1.2
+                        - text: или
+                        - link "Обновить Elementor Pro сейчас" [ref=e786] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=elementor-pro%2Felementor-pro.php&_wpnonce=a2ba4ade1f
+                          - text: обновить сейчас
+                        - text: .
+                      - separator [ref=e787]
+                      - generic [ref=e788]:
+                        - generic [ref=e790]: 
+                        - generic [ref=e791]:
+                          - generic [ref=e792]: Внимание, сделайте резервную копию перед обновлением!
+                          - generic [ref=e793]:
+                            - text: Последнее обновление включает в себя некоторые существенные изменения в различных областях плагина. Мы настоятельно рекомендуем
+                            - link "сделать резервную копию вашего сайта перед обновлением" [ref=e794] [cursor=pointer]:
+                              - /url: https://go.elementor.com/wp-dash-update-backup/
+                            - text: и для начала попробовать обновить на тестовом сайте
+                      - separator [ref=e795]
+                      - generic [ref=e796]:
+                        - generic [ref=e798]: 
+                        - generic [ref=e799]:
+                          - generic [ref=e800]:
+                            - strong [ref=e801]: Предупреждение о совместимости
+                            - text: "- Некоторые из используемых вами плагинов не тестировались с последней версией Elementor Pro (4.1.2). Чтобы избежать проблем, перед обновлением Elementor Pro убедитесь, что все они обновлены и совместимы."
+                          - table [ref=e802]:
+                            - rowgroup [ref=e803]:
+                              - row "Плагин Протестирован до Elementor Pro версии" [ref=e804]:
+                                - columnheader "Плагин" [ref=e805]
+                                - columnheader "Протестирован до Elementor Pro версии" [ref=e806]
+                              - row "Envato Elements 3.23.1" [ref=e807]:
+                                - cell "Envato Elements" [ref=e808]
+                                - cell "3.23.1" [ref=e809]
+                              - row "Maps from Yandex for Elementor 3.32.1" [ref=e810]:
+                                - cell "Maps from Yandex for Elementor" [ref=e811]
+                                - cell "3.32.1" [ref=e812]
+                - 'row "Выбрать Envato Elements Envato Elements Деактивировать Envato Elements Получите доступ к красиво оформленным наборам шаблонов и фотографиям от Envato Elements. Версия 2.0.15 | Автор: Envato" [ref=e813]':
+                  - rowheader "Выбрать Envato Elements" [ref=e814]:
+                    - generic [ref=e816]: Выбрать Envato Elements
+                    - checkbox "Выбрать Envato Elements" [ref=e817] [cursor=pointer]
+                  - cell "Envato Elements Деактивировать Envato Elements" [ref=e818]:
+                    - strong [ref=e819]: Envato Elements
+                    - link "Деактивировать Envato Elements" [ref=e822] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=envato-elements%2Fenvato-elements.php&plugin_status=all&paged=1&s&_wpnonce=721128a3cf
+                      - text: Деактивировать
+                  - 'cell "Получите доступ к красиво оформленным наборам шаблонов и фотографиям от Envato Elements. Версия 2.0.15 | Автор: Envato" [ref=e823]':
+                    - paragraph [ref=e825]: Получите доступ к красиво оформленным наборам шаблонов и фотографиям от Envato Elements.
+                    - generic [ref=e826]:
+                      - text: "Версия 2.0.15 | Автор:"
+                      - link "Envato" [ref=e827] [cursor=pointer]:
+                        - /url: https://elements.envato.com/extensions/wordpress/?utm_source=extensions&utm_medium=referral&utm_campaign=elements_extensions_wpplugins
+                  - cell [ref=e828]
+                - 'row "Выбрать External Importer External Importer Активировать External Importer | Удалить External Importer Extract and import products into your affiliate website. Версия 1.7.1 | Автор: keywordrush.com | Посетите сайт плагина External Importer" [ref=e829]':
+                  - rowheader "Выбрать External Importer" [ref=e830]:
+                    - generic [ref=e832]: Выбрать External Importer
+                    - checkbox "Выбрать External Importer" [ref=e833] [cursor=pointer]
+                  - cell "External Importer Активировать External Importer | Удалить External Importer" [ref=e834]:
+                    - strong [ref=e835]: External Importer
+                    - generic [ref=e836]:
+                      - generic [ref=e837]:
+                        - link "Активировать External Importer" [ref=e838] [cursor=pointer]:
+                          - /url: plugins.php?action=activate&plugin=external-importer%2Fexternal-importer.php&plugin_status=all&paged=1&s&_wpnonce=3d84e72fcd
+                          - text: Активировать
+                        - text: "|"
+                      - link "Удалить External Importer" [ref=e840] [cursor=pointer]:
+                        - /url: plugins.php?action=delete-selected&checked%5B0%5D=external-importer%2Fexternal-importer.php&plugin_status=all&paged=1&s&_wpnonce=2c889747a4
+                        - text: Удалить
+                  - 'cell "Extract and import products into your affiliate website. Версия 1.7.1 | Автор: keywordrush.com | Посетите сайт плагина External Importer" [ref=e841]':
+                    - paragraph [ref=e843]: Extract and import products into your affiliate website.
+                    - generic [ref=e844]:
+                      - text: "Версия 1.7.1 | Автор:"
+                      - link "keywordrush.com" [ref=e845] [cursor=pointer]:
+                        - /url: https://www.keywordrush.com
+                      - text: "|"
+                      - link "Посетите сайт плагина External Importer" [ref=e846] [cursor=pointer]:
+                        - /url: https://www.keywordrush.com/externalimporter
+                        - text: Перейти на страницу плагина
+                  - cell [ref=e847]
+                - 'row "Выбрать Maps from Yandex for Elementor Maps from Yandex for Elementor Деактивировать Maps from Yandex for Elementor | Настройки Виджет Яндекс.Карты для Elementor - это простой способ добавить множество меток с адресами на Яндекс.Карту с поддержкой всех возможных типов: Схема, Спутник, Гибрид. Количество карт на странице и их параметров не ограничены ничем, кроме вашей фантазии. Версия 1.7.1 | Автор: Михаил Кобзарёв | Подробности о Maps from Yandex for Elementor Требует: Подробности о Elementor Website Builder- больше, чем просто конструктор страниц Включить автоматические обновления" [ref=e848]':
+                  - rowheader "Выбрать Maps from Yandex for Elementor" [ref=e849]:
+                    - generic [ref=e851]: Выбрать Maps from Yandex for Elementor
+                    - checkbox "Выбрать Maps from Yandex for Elementor" [ref=e852] [cursor=pointer]
+                  - cell "Maps from Yandex for Elementor Деактивировать Maps from Yandex for Elementor | Настройки" [ref=e853]:
+                    - strong [ref=e854]: Maps from Yandex for Elementor
+                    - generic [ref=e855]:
+                      - generic [ref=e856]:
+                        - link "Деактивировать Maps from Yandex for Elementor" [ref=e857] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=mihdan-elementor-yandex-maps%2Fmihdan-elementor-yandex-maps.php&plugin_status=all&paged=1&s&_wpnonce=1bef543547
+                          - text: Деактивировать
+                        - text: "|"
+                      - link "Настройки" [ref=e859] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/admin.php?page=elementor-settings#tab-integrations
+                  - 'cell "Виджет Яндекс.Карты для Elementor - это простой способ добавить множество меток с адресами на Яндекс.Карту с поддержкой всех возможных типов: Схема, Спутник, Гибрид. Количество карт на странице и их параметров не ограничены ничем, кроме вашей фантазии. Версия 1.7.1 | Автор: Михаил Кобзарёв | Подробности о Maps from Yandex for Elementor Требует: Подробности о Elementor Website Builder- больше, чем просто конструктор страниц" [ref=e860]':
+                    - paragraph [ref=e862]: "Виджет Яндекс.Карты для Elementor - это простой способ добавить множество меток с адресами на Яндекс.Карту с поддержкой всех возможных типов: Схема, Спутник, Гибрид. Количество карт на странице и их параметров не ограничены ничем, кроме вашей фантазии."
+                    - generic [ref=e863]:
+                      - text: "Версия 1.7.1 | Автор:"
+                      - link "Михаил Кобзарёв" [ref=e864] [cursor=pointer]:
+                        - /url: https://www.kobzarev.com/
+                      - text: "|"
+                      - link "Подробности о Maps from Yandex for Elementor" [ref=e865] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=mihdan-elementor-yandex-maps&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                    - paragraph [ref=e867]:
+                      - strong [ref=e868]: "Требует:"
+                      - link "Подробности о Elementor Website Builder- больше, чем просто конструктор страниц" [ref=e869] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=elementor&TB_iframe=true&width=600&height=550
+                        - text: Elementor Website Builder- больше, чем просто конструктор страниц
+                  - cell "Включить автоматические обновления" [ref=e870]:
+                    - button "Включить автоматические обновления" [ref=e871] [cursor=pointer]:  Включить автоматические обновления
+                - 'row "Выбрать SiteSEO SiteSEO Settings | Configuration | Docs | Деактивировать Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него. This plugin handles On Page SEO, Content Analysis, Social Previews, Google Preview, Hyperlink Analysis, Image Analysis, Home Page Monitor, Schemas for various type of posts. Версия 1.1.2 | Автор: Softaculous | Посетите сайт плагина SiteSEO | Check for updates Требуется для: SiteSEO Pro Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены." [ref=e872]':
+                  - rowheader "Выбрать SiteSEO" [ref=e873]:
+                    - generic [ref=e875]: Выбрать SiteSEO
+                    - checkbox "Выбрать SiteSEO" [disabled] [ref=e876]
+                  - cell "SiteSEO Settings | Configuration | Docs | Деактивировать Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него." [ref=e877]:
+                    - strong [ref=e878]: SiteSEO
+                    - generic [ref=e879]:
+                      - generic [ref=e880]:
+                        - link "Settings" [ref=e881] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/admin.php?page=siteseo
+                        - text: "|"
+                      - generic [ref=e882]:
+                        - link "Configuration" [ref=e883] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/admin.php?page=siteseo-setup
+                        - text: "|"
+                      - generic [ref=e884]:
+                        - link "Docs" [ref=e885] [cursor=pointer]:
+                          - /url: https://siteseo.io/docs/
+                        - text: "|"
+                      - generic [ref=e886]:
+                        - text: Деактивировать
+                        - generic [ref=e887]: Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него.
+                  - 'cell "This plugin handles On Page SEO, Content Analysis, Social Previews, Google Preview, Hyperlink Analysis, Image Analysis, Home Page Monitor, Schemas for various type of posts. Версия 1.1.2 | Автор: Softaculous | Посетите сайт плагина SiteSEO | Check for updates Требуется для: SiteSEO Pro Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены." [ref=e888]':
+                    - paragraph [ref=e890]: This plugin handles On Page SEO, Content Analysis, Social Previews, Google Preview, Hyperlink Analysis, Image Analysis, Home Page Monitor, Schemas for various type of posts.
+                    - generic [ref=e891]:
+                      - text: "Версия 1.1.2 | Автор:"
+                      - link "Softaculous" [ref=e892] [cursor=pointer]:
+                        - /url: https://siteseo.io/
+                      - text: "|"
+                      - link "Посетите сайт плагина SiteSEO" [ref=e893] [cursor=pointer]:
+                        - /url: http://wordpress.org/plugins/siteseo/
+                        - text: Перейти на страницу плагина
+                      - text: "|"
+                      - link "Check for updates" [ref=e894] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugins.php?puc_check_for_updates=1&puc_slug=siteseo&_wpnonce=a829c236e3
+                    - generic [ref=e895]:
+                      - paragraph [ref=e896]:
+                        - strong [ref=e897]: "Требуется для:"
+                        - text: SiteSEO Pro
+                      - paragraph [ref=e898]: "Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены."
+                  - cell [ref=e899]
+                - 'row "Выбрать SiteSEO Pro SiteSEO Pro Деактивировать SiteSEO Pro This plugin handles On Page SEO, Content Analysis, Social Previews, Google Preview, Hyperlink Analysis, Image Analysis, Home Page Monitor, Schemas for various type of posts. Версия 1.1.2 | Автор: Softaculous | Подробности о SiteSEO Pro | Check for updates Требует: Подробности о SiteSEO Включить автоматические обновления" [ref=e900]':
+                  - rowheader "Выбрать SiteSEO Pro" [ref=e901]:
+                    - generic [ref=e903]: Выбрать SiteSEO Pro
+                    - checkbox "Выбрать SiteSEO Pro" [ref=e904] [cursor=pointer]
+                  - cell "SiteSEO Pro Деактивировать SiteSEO Pro" [ref=e905]:
+                    - strong [ref=e906]: SiteSEO Pro
+                    - link "Деактивировать SiteSEO Pro" [ref=e909] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=siteseo-pro%2Fsiteseo-pro.php&plugin_status=all&paged=1&s&_wpnonce=6c6b2d4174
+                      - text: Деактивировать
+                  - 'cell "This plugin handles On Page SEO, Content Analysis, Social Previews, Google Preview, Hyperlink Analysis, Image Analysis, Home Page Monitor, Schemas for various type of posts. Версия 1.1.2 | Автор: Softaculous | Подробности о SiteSEO Pro | Check for updates Требует: Подробности о SiteSEO" [ref=e910]':
+                    - paragraph [ref=e912]: This plugin handles On Page SEO, Content Analysis, Social Previews, Google Preview, Hyperlink Analysis, Image Analysis, Home Page Monitor, Schemas for various type of posts.
+                    - generic [ref=e913]:
+                      - text: "Версия 1.1.2 | Автор:"
+                      - link "Softaculous" [ref=e914] [cursor=pointer]:
+                        - /url: https://siteseo.io/
+                      - text: "|"
+                      - link "Подробности о SiteSEO Pro" [ref=e915] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=siteseo-pro&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                      - text: "|"
+                      - link "Check for updates" [ref=e916] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugins.php?puc_check_for_updates=1&puc_slug=siteseo-pro&_wpnonce=a829c236e3
+                    - paragraph [ref=e918]:
+                      - strong [ref=e919]: "Требует:"
+                      - link "Подробности о SiteSEO" [ref=e920] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=siteseo&TB_iframe=true&width=600&height=550
+                        - text: SiteSEO
+                  - cell "Включить автоматические обновления" [ref=e921]:
+                    - button "Включить автоматические обновления" [ref=e922] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия SiteSEO Pro. Можно Посмотреть информацию о SiteSEO Pro версии 1.3.9 или Обновить SiteSEO Pro сейчас." [ref=e923]:
+                  - cell "Доступна свежая версия SiteSEO Pro. Можно Посмотреть информацию о SiteSEO Pro версии 1.3.9 или Обновить SiteSEO Pro сейчас." [ref=e924]:
+                    - paragraph [ref=e926]:
+                      - text: Доступна свежая версия SiteSEO Pro. Можно
+                      - link "Посмотреть информацию о SiteSEO Pro версии 1.3.9" [ref=e927] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=siteseo-pro&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: посмотреть информацию о версии 1.3.9
+                      - text: или
+                      - link "Обновить SiteSEO Pro сейчас" [ref=e928] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=siteseo-pro%2Fsiteseo-pro.php&_wpnonce=467e937835
+                        - text: обновить сейчас
+                      - text: .
+                - 'row "Выбрать Slider Revolution Slider Revolution Деактивировать Slider Revolution | Go Premium | Требуется обновление Slider Revolution - More than just a WordPress Slider Версия 6.7.17 | Автор: ThemePunch | Посетите сайт плагина Slider Revolution" [ref=e929]':
+                  - rowheader "Выбрать Slider Revolution" [ref=e930]:
+                    - generic [ref=e932]: Выбрать Slider Revolution
+                    - checkbox "Выбрать Slider Revolution" [ref=e933] [cursor=pointer]
+                  - cell "Slider Revolution Деактивировать Slider Revolution | Go Premium | Требуется обновление" [ref=e934]:
+                    - strong [ref=e935]: Slider Revolution
+                    - generic [ref=e936]:
+                      - generic [ref=e937]:
+                        - link "Деактивировать Slider Revolution" [ref=e938] [cursor=pointer]:
+                          - /url: plugins.php?action=deactivate&plugin=revslider%2Frevslider.php&plugin_status=all&paged=1&s&_wpnonce=9ff3747208
+                          - text: Деактивировать
+                        - text: "|"
+                      - generic [ref=e939]:
+                        - link "Go Premium" [ref=e940] [cursor=pointer]:
+                          - /url: https://account.sliderrevolution.com/portal/pricing/?utm_source=admin&utm_medium=button&utm_campaign=srusers&utm_content=buykey
+                        - text: "|"
+                      - link "Требуется обновление" [ref=e942] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/themes.php?page=tgmpa-install-plugins&plugin_status=update
+                  - 'cell "Slider Revolution - More than just a WordPress Slider Версия 6.7.17 | Автор: ThemePunch | Посетите сайт плагина Slider Revolution" [ref=e943]':
+                    - paragraph [ref=e945]: Slider Revolution - More than just a WordPress Slider
+                    - generic [ref=e946]:
+                      - text: "Версия 6.7.17 | Автор:"
+                      - link "ThemePunch" [ref=e947] [cursor=pointer]:
+                        - /url: https://themepunch.com/?utm_source=admin&utm_medium=button&utm_campaign=srusers&utm_content=info
+                      - text: "|"
+                      - link "Посетите сайт плагина Slider Revolution" [ref=e948] [cursor=pointer]:
+                        - /url: https://www.sliderrevolution.com/?utm_source=admin&utm_medium=button&utm_campaign=srusers&utm_content=info
+                        - text: Перейти на страницу плагина
+                  - cell [ref=e949]
+                - row "There is a new version (6.7.57) of Slider Revolution available. To update directly register your license key now or purchase a new license key to access all premium features." [ref=e950]:
+                  - cell "There is a new version (6.7.57) of Slider Revolution available. To update directly register your license key now or purchase a new license key to access all premium features." [ref=e951]:
+                    - paragraph [ref=e953]:
+                      - text: There is a new version (
+                      - link "6.7.57" [ref=e954] [cursor=pointer]:
+                        - /url: https://www.sliderrevolution.com/documentation/changelog/?utm_source=admin&utm_medium=wpplugins&utm_campaign=srusers&utm_content=updateinfo#6-7-57
+                      - text: ) of Slider Revolution available. To update directly
+                      - link "register your license key now" [ref=e955] [cursor=pointer]:
+                        - /url: javascript:;
+                      - text: or
+                      - link "purchase a new license key" [ref=e956] [cursor=pointer]:
+                        - /url: https://account.sliderrevolution.com/portal/pricing/?utm_source=admin&utm_medium=wpplugins&utm_campaign=srusers&utm_content=updateinfo
+                      - text: to access
+                      - link "all premium features" [ref=e957] [cursor=pointer]:
+                        - /url: https://www.sliderrevolution.com/premium-slider-revolution/?utm_source=admin&utm_medium=wpplugins&utm_campaign=srusers&utm_content=updateinfo
+                      - text: .
+                - 'row "Выбрать SpeedyCache SpeedyCache Деактивировать SpeedyCache SpeedyCache - это плагин, который помогает уменьшить время загрузки вашего сайта за счет кэширования, минификации и сжатия вашего сайта. Версия 1.3.7 | Автор: Softaculous Team | Посетите сайт плагина SpeedyCache" [ref=e958]':
+                  - rowheader "Выбрать SpeedyCache" [ref=e959]:
+                    - generic [ref=e961]: Выбрать SpeedyCache
+                    - checkbox "Выбрать SpeedyCache" [ref=e962] [cursor=pointer]
+                  - cell "SpeedyCache Деактивировать SpeedyCache" [ref=e963]:
+                    - strong [ref=e964]: SpeedyCache
+                    - link "Деактивировать SpeedyCache" [ref=e967] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=speedycache%2Fspeedycache.php&plugin_status=all&paged=1&s&_wpnonce=404b74e7ba
+                      - text: Деактивировать
+                  - 'cell "SpeedyCache - это плагин, который помогает уменьшить время загрузки вашего сайта за счет кэширования, минификации и сжатия вашего сайта. Версия 1.3.7 | Автор: Softaculous Team | Посетите сайт плагина SpeedyCache" [ref=e968]':
+                    - paragraph [ref=e970]: SpeedyCache - это плагин, который помогает уменьшить время загрузки вашего сайта за счет кэширования, минификации и сжатия вашего сайта.
+                    - generic [ref=e971]:
+                      - text: "Версия 1.3.7 | Автор:"
+                      - link "Softaculous Team" [ref=e972] [cursor=pointer]:
+                        - /url: https://speedycache.com/
+                      - text: "|"
+                      - link "Посетите сайт плагина SpeedyCache" [ref=e973] [cursor=pointer]:
+                        - /url: https://speedycache.com
+                        - text: Перейти на страницу плагина
+                  - cell [ref=e974]
+                - 'row "Выбрать SpeedyCache Pro SpeedyCache Pro Деактивировать SpeedyCache Pro SpeedyCache - это плагин, который помогает уменьшить время загрузки вашего сайта за счет кэширования, минификации и сжатия вашего сайта. Версия 1.3.7 | Автор: Softaculous Team | Подробности о SpeedyCache Pro | Check for updates Включить автоматические обновления" [ref=e975]':
+                  - rowheader "Выбрать SpeedyCache Pro" [ref=e976]:
+                    - generic [ref=e978]: Выбрать SpeedyCache Pro
+                    - checkbox "Выбрать SpeedyCache Pro" [ref=e979] [cursor=pointer]
+                  - cell "SpeedyCache Pro Деактивировать SpeedyCache Pro" [ref=e980]:
+                    - strong [ref=e981]: SpeedyCache Pro
+                    - link "Деактивировать SpeedyCache Pro" [ref=e984] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=speedycache-pro%2Fspeedycache-pro.php&plugin_status=all&paged=1&s&_wpnonce=20d9298e2d
+                      - text: Деактивировать
+                  - 'cell "SpeedyCache - это плагин, который помогает уменьшить время загрузки вашего сайта за счет кэширования, минификации и сжатия вашего сайта. Версия 1.3.7 | Автор: Softaculous Team | Подробности о SpeedyCache Pro | Check for updates" [ref=e985]':
+                    - paragraph [ref=e987]: SpeedyCache - это плагин, который помогает уменьшить время загрузки вашего сайта за счет кэширования, минификации и сжатия вашего сайта.
+                    - generic [ref=e988]:
+                      - text: "Версия 1.3.7 | Автор:"
+                      - link "Softaculous Team" [ref=e989] [cursor=pointer]:
+                        - /url: https://speedycache.com/
+                      - text: "|"
+                      - link "Подробности о SpeedyCache Pro" [ref=e990] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=speedycache-pro&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                      - text: "|"
+                      - link "Check for updates" [ref=e991] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugins.php?puc_check_for_updates=1&puc_slug=speedycache-pro&_wpnonce=a829c236e3
+                  - cell "Включить автоматические обновления" [ref=e992]:
+                    - button "Включить автоматические обновления" [ref=e993] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия SpeedyCache Pro. Можно Посмотреть информацию о SpeedyCache Pro версии 1.4.0 или Обновить SpeedyCache Pro сейчас." [ref=e994]:
+                  - cell "Доступна свежая версия SpeedyCache Pro. Можно Посмотреть информацию о SpeedyCache Pro версии 1.4.0 или Обновить SpeedyCache Pro сейчас." [ref=e995]:
+                    - paragraph [ref=e997]:
+                      - text: Доступна свежая версия SpeedyCache Pro. Можно
+                      - link "Посмотреть информацию о SpeedyCache Pro версии 1.4.0" [ref=e998] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=speedycache-pro&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: посмотреть информацию о версии 1.4.0
+                      - text: или
+                      - link "Обновить SpeedyCache Pro сейчас" [ref=e999] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=speedycache-pro%2Fspeedycache-pro.php&_wpnonce=886adc0a2e
+                        - text: обновить сейчас
+                      - text: .
+                - 'row "Выбрать WooCommerce WooCommerce Посмотреть настройки WooCommerce | Деактивировать Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него. Инструментарий электронной торговли, помогающий продавать всё, что угодно. Красиво. Версия 10.5.3 | Автор: Automattic | Подробности о WooCommerce | Посмотреть документацию WooCommerce | Просмотреть документацию по WooCommerce API | Посетить форумы в сообществе Требуется для: BEAR – Bulk Editor and Products Manager Professional for WooCommerce Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены. Включить автоматические обновления" [ref=e1000]':
+                  - rowheader "Выбрать WooCommerce" [ref=e1001]:
+                    - generic [ref=e1003]: Выбрать WooCommerce
+                    - checkbox "Выбрать WooCommerce" [disabled] [ref=e1004]
+                  - cell "WooCommerce Посмотреть настройки WooCommerce | Деактивировать Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него." [ref=e1005]:
+                    - strong [ref=e1006]: WooCommerce
+                    - generic [ref=e1007]:
+                      - generic [ref=e1008]:
+                        - link "Посмотреть настройки WooCommerce" [ref=e1009] [cursor=pointer]:
+                          - /url: https://av-sound.ru/wp-admin/admin.php?page=wc-settings
+                          - text: Настройки
+                        - text: "|"
+                      - generic [ref=e1010]:
+                        - text: Деактивировать
+                        - generic [ref=e1011]: Вы не можете деактивировать этот плагин, поскольку другие плагины зависят от него.
+                  - 'cell "Инструментарий электронной торговли, помогающий продавать всё, что угодно. Красиво. Версия 10.5.3 | Автор: Automattic | Подробности о WooCommerce | Посмотреть документацию WooCommerce | Просмотреть документацию по WooCommerce API | Посетить форумы в сообществе Требуется для: BEAR – Bulk Editor and Products Manager Professional for WooCommerce Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены." [ref=e1012]':
+                    - paragraph [ref=e1014]: Инструментарий электронной торговли, помогающий продавать всё, что угодно. Красиво.
+                    - generic [ref=e1015]:
+                      - text: "Версия 10.5.3 | Автор:"
+                      - link "Automattic" [ref=e1016] [cursor=pointer]:
+                        - /url: https://woocommerce.com
+                      - text: "|"
+                      - link "Подробности о WooCommerce" [ref=e1017] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=woocommerce&TB_iframe=true&width=600&height=550
+                        - text: Детали
+                      - text: "|"
+                      - link "Посмотреть документацию WooCommerce" [ref=e1018] [cursor=pointer]:
+                        - /url: https://woocommerce.com/documentation/plugins/woocommerce/
+                        - text: Документация
+                      - text: "|"
+                      - link "Просмотреть документацию по WooCommerce API" [ref=e1019] [cursor=pointer]:
+                        - /url: https://woocommerce.com/wc-apidocs/
+                        - text: Документация по API
+                      - text: "|"
+                      - link "Посетить форумы в сообществе" [ref=e1020] [cursor=pointer]:
+                        - /url: https://wordpress.org/support/plugin/woocommerce/
+                        - text: Поддержка сообщества
+                    - generic [ref=e1021]:
+                      - paragraph [ref=e1022]:
+                        - strong [ref=e1023]: "Требуется для:"
+                        - text: BEAR – Bulk Editor and Products Manager Professional for WooCommerce
+                      - paragraph [ref=e1024]: "Заметка: Этот плагин не может быть деактивирован или удален, пока зависимые от него плагины не будут деактивированы или удалены."
+                  - cell "Включить автоматические обновления" [ref=e1025]:
+                    - button "Включить автоматические обновления" [ref=e1026] [cursor=pointer]:  Включить автоматические обновления
+                - row "Доступна свежая версия WooCommerce. Можно Посмотреть информацию о WooCommerce версии 10.8.1 или Обновить WooCommerce сейчас." [ref=e1027]:
+                  - cell "Доступна свежая версия WooCommerce. Можно Посмотреть информацию о WooCommerce версии 10.8.1 или Обновить WooCommerce сейчас." [ref=e1028]:
+                    - paragraph [ref=e1030]:
+                      - text: Доступна свежая версия WooCommerce. Можно
+                      - link "Посмотреть информацию о WooCommerce версии 10.8.1" [ref=e1031] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/plugin-install.php?tab=plugin-information&plugin=woocommerce&section=changelog&TB_iframe=true&width=600&height=800
+                        - text: посмотреть информацию о версии 10.8.1
+                      - text: или
+                      - link "Обновить WooCommerce сейчас" [ref=e1032] [cursor=pointer]:
+                        - /url: https://av-sound.ru/wp-admin/update.php?action=upgrade-plugin&plugin=woocommerce%2Fwoocommerce.php&_wpnonce=69a9844242
+                        - text: обновить сейчас
+                      - text: .
+                - row "Выбрать Woodmart Core Woodmart Core Деактивировать Woodmart Core Woodmart Core needed for Woodmart theme Версия 1.0.44" [ref=e1033]:
+                  - rowheader "Выбрать Woodmart Core" [ref=e1034]:
+                    - generic [ref=e1036]: Выбрать Woodmart Core
+                    - checkbox "Выбрать Woodmart Core" [ref=e1037] [cursor=pointer]
+                  - cell "Woodmart Core Деактивировать Woodmart Core" [ref=e1038]:
+                    - strong [ref=e1039]: Woodmart Core
+                    - link "Деактивировать Woodmart Core" [ref=e1042] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=woodmart-core%2Fwoodmart-core.php&plugin_status=all&paged=1&s&_wpnonce=922b68f9c1
+                      - text: Деактивировать
+                  - cell "Woodmart Core needed for Woodmart theme Версия 1.0.44" [ref=e1043]:
+                    - paragraph [ref=e1045]: Woodmart Core needed for Woodmart theme
+                    - generic [ref=e1046]: Версия 1.0.44
+                  - cell [ref=e1047]
+                - 'row "Выбрать Т-Банк Т-Банк Деактивировать Т-Банк Проведение платежей через T-Bank Версия 3.0.3 | Автор: T-Bank | Посетите сайт плагина Т-Банк" [ref=e1048]':
+                  - rowheader "Выбрать Т-Банк" [ref=e1049]:
+                    - generic [ref=e1051]: Выбрать Т-Банк
+                    - checkbox "Выбрать Т-Банк" [ref=e1052] [cursor=pointer]
+                  - cell "Т-Банк Деактивировать Т-Банк" [ref=e1053]:
+                    - strong [ref=e1054]: Т-Банк
+                    - link "Деактивировать Т-Банк" [ref=e1057] [cursor=pointer]:
+                      - /url: plugins.php?action=deactivate&plugin=tbank-woocommerce%2Fwc-tbank.php&plugin_status=all&paged=1&s&_wpnonce=576a255b4b
+                      - text: Деактивировать
+                  - 'cell "Проведение платежей через T-Bank Версия 3.0.3 | Автор: T-Bank | Посетите сайт плагина Т-Банк" [ref=e1058]':
+                    - paragraph [ref=e1060]: Проведение платежей через T-Bank
+                    - generic [ref=e1061]:
+                      - text: "Версия 3.0.3 | Автор: T-Bank |"
+                      - link "Посетите сайт плагина Т-Банк" [ref=e1062] [cursor=pointer]:
+                        - /url: https://tbank.ru/
+                        - text: Перейти на страницу плагина
+                  - cell [ref=e1063]
+              - rowgroup [ref=e1064]:
+                - row "Выделить все Плагин Описание Автоматические обновления" [ref=e1065]:
+                  - cell "Выделить все" [ref=e1066]:
+                    - checkbox "Выделить все" [ref=e1067] [cursor=pointer]
+                    - generic [ref=e1069]: Выделить все
+                  - columnheader "Плагин" [ref=e1070]
+                  - columnheader "Описание" [ref=e1071]
+                  - columnheader "Автоматические обновления" [ref=e1072]
+            - generic [ref=e1073]:
+              - generic [ref=e1074]:
+                - generic [ref=e1075]: Выберите массовое действие
+                - combobox "Выберите массовое действие" [ref=e1076] [cursor=pointer]:
+                  - option "Действия" [selected]
+                  - option "Активировать"
+                  - option "Деактивировать"
+                  - option "Обновить"
+                  - option "Удалить"
+                  - option "Включить автоматические обновления"
+                  - option "Отключить автоматические обновления"
+                - button "Применить" [ref=e1077] [cursor=pointer]
+              - generic [ref=e1079]: 17 элементов
+  - contentinfo [ref=e1080]:
+    - paragraph [ref=e1081]:
+      - generic [ref=e1083]:
+        - text: Спасибо вам за творчество с
+        - link "WordPress" [ref=e1084] [cursor=pointer]:
+          - /url: https://ru.wordpress.org/
+        - text: .
+    - paragraph [ref=e1085]: Версия 7.0
+  - text: 

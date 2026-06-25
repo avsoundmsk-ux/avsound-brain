@@ -29,17 +29,25 @@ RATES = {
 }
 
 
-def _req(method, url, payload=None):
+def _req(method, url, payload=None, _retries=5):
+    """Запрос с авто-ретраями на сетевые сбои (нестабильный VPN). HTTP-ошибки не ретраим."""
     data = json.dumps(payload).encode() if payload is not None else None
-    req = urllib.request.Request(url, data=data, method=method)
-    req.add_header("Authorization", "Bearer " + API_KEY)
-    req.add_header("Content-Type", "application/json")
-    req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36")
-    try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.loads(r.read().decode())
-    except urllib.error.HTTPError as e:
-        print("HTTP", e.code, e.read().decode()[:500]); sys.exit(1)
+    last = None
+    for attempt in range(_retries):
+        req = urllib.request.Request(url, data=data, method=method)
+        req.add_header("Authorization", "Bearer " + API_KEY)
+        req.add_header("Content-Type", "application/json")
+        req.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36")
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            print("HTTP", e.code, e.read().decode()[:500]); sys.exit(1)
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last = e
+            print(f"  сеть сбой ({attempt+1}/{_retries}): {str(e)[:80]} — ретрай через 5с")
+            time.sleep(5)
+    print("Сеть недоступна после ретраев:", str(last)[:200]); sys.exit(1)
 
 
 def balance():
@@ -141,10 +149,19 @@ def download(url, task_id):
     ext = re.search(r"\.(mp4|png|jpg|jpeg|webp|mp3|wav|gif)(?:\?|$)", url)
     ext = ext.group(1) if ext else "bin"
     path = os.path.join(OUT_DIR, f"{ts}_{task_id[-8:]}.{ext}")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36"})
-    with urllib.request.urlopen(req, timeout=180) as r, open(path, "wb") as f:
-        f.write(r.read())
-    return os.path.abspath(path)
+    last = None
+    for attempt in range(5):  # ретраи на сетевые сбои (VPN)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0 Safari/537.36"})
+            with urllib.request.urlopen(req, timeout=180) as r, open(path, "wb") as f:
+                f.write(r.read())
+            return os.path.abspath(path)
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last = e
+            print(f"  скачивание сбой ({attempt+1}/5): {str(e)[:80]} — ретрай через 5с")
+            time.sleep(5)
+    print("Не скачалось. URL (живёт 3 дня):", url)
+    print("Ошибка:", str(last)[:200]); sys.exit(1)
 
 
 def log(model, mode, args, cr, usd, path):

@@ -113,3 +113,5 @@
 22:33:11 === FLEX ИТОГ 8/10 ===
 22:34:33 OK2 41483 Helix M ONE X amplifier: 3 фото
 22:37:40 OK2 41484 Helix URC.3 remote control: 3 фото
+22:45:39 OK2 41485 Helix Impact terminal: 3 фото
+22:45:39 === FLEX ИТОГ 8/10 ===

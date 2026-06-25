@@ -82,3 +82,5 @@
 12:12:50 OK2 41484 Helix URC.3 remote control: 3 фото
 12:14:56 OK2 41485 Helix Impact terminal: 3 фото
 12:14:56 === FLEX ИТОГ 10/10 ===
+20:10:27 EXC 42275 RuntimeError
+20:10:47 UPERR 42275 400

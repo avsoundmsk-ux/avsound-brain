@@ -17,3 +17,4 @@
 | 2026-06-25 03:37 | bytedance/seedance-2 | 422 | 2.11 | 20260625_033731_dbe3abca.mp4 | Cinematic dark-luxe motion, continuation. The masked woman i |
 | 2026-06-25 09:23 | bytedance/seedance-2 | 205 | 1.02 | 20260625_092346_196808a0.mp4 | The AV SOUND logo on a deep black background slowly emerges  |
 | 2026-06-25 10:14 | bytedance/seedance-2 | 205 | 1.02 | 20260625_101430_35c620db.mp4 | Two subwoofers mounted in a car trunk glowing with blue neon |
+| 2026-06-25 19:08 | google/nano-banana-edit | 4 | 0.02 | 20260625_190832_3aa927ff.png | Place the masked woman from the FIRST image into the scene f |

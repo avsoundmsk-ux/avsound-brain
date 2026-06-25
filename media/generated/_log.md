@@ -22,3 +22,4 @@
 | 2026-06-25 20:58 | bytedance/seedance-2 | 274 | 1.37 | 20260625_204917_ddc22670.mp4 | The masked woman walks slowly toward camera along the produc |
 | 2026-06-25 21:24 | google/nano-banana-edit | 16 | 0.08 | 20260625_212052_795b96a2.png | Place the masked woman from the FIRST image into the scene f |
 | 2026-06-25 22:10 | bytedance/seedance-2 | 262 | 1.31 | 20260625_220632_de09a13a.mp4 | The masked woman in the lounge makes a confident body turn t |
+| 2026-06-26 00:23 | elevenlabs/text-to-speech-multilingual-v2 | 12 | 0.06 | 20260626_002329_b058b664.mp3 |  |

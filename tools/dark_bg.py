@@ -10,17 +10,43 @@ dark_bg.py — настоящий товар на красивом тёмном 
 CLI: python tools/dark_bg.py src.jpg out.png
 """
 import sys, os
-from PIL import Image, ImageFilter, ImageDraw
+from collections import deque
+from PIL import Image, ImageFilter, ImageDraw, ImageChops
 
-_SESSION = None
 
-
-def _sess():
-    global _SESSION
-    if _SESSION is None:
-        from rembg import new_session
-        _SESSION = new_session("isnet-general-use")  # точный вырез предметов
-    return _SESSION
+def _cut_white(im, tol=32):
+    """Убрать白/однотонный фон flood-fill'ом от всех 4 краёв (без ML).
+    Подходит для студийных фото товара на белом/светлом фоне."""
+    im = im.convert("RGB")
+    W, H = im.size
+    px = im.load()
+    alpha = Image.new("L", (W, H), 255)
+    ap = alpha.load()
+    # цвет фона = среднее по углам
+    corners = [px[0, 0], px[W - 1, 0], px[0, H - 1], px[W - 1, 1]]
+    bg = tuple(sum(c[i] for c in corners) // 4 for i in range(3))
+    if sum(bg) < 3 * 90:  # фон тёмный — не трогаем (вырез не нужен)
+        return im.convert("RGBA"), False
+    seen = bytearray(W * H)
+    dq = deque()
+    for x in range(W):
+        dq.append((x, 0)); dq.append((x, H - 1))
+    for y in range(H):
+        dq.append((0, y)); dq.append((W - 1, y))
+    while dq:
+        x, y = dq.popleft()
+        if x < 0 or y < 0 or x >= W or y >= H or seen[y * W + x]:
+            continue
+        seen[y * W + x] = 1
+        r, g, b = px[x, y]
+        if abs(r - bg[0]) <= tol and abs(g - bg[1]) <= tol and abs(b - bg[2]) <= tol:
+            ap[x, y] = 0
+            dq.extend([(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)])
+    out = im.convert("RGBA")
+    # сгладить край альфы
+    alpha = alpha.filter(ImageFilter.GaussianBlur(0.8))
+    out.putalpha(alpha)
+    return out, True
 
 
 def _radial_dark(size):
@@ -45,9 +71,8 @@ def _radial_dark(size):
 
 
 def run(src, out, size=1200, margin=0.16):
-    from rembg import remove
     im = Image.open(src).convert("RGBA")
-    cut = remove(im, session=_sess())  # RGBA с альфой
+    cut, _ = _cut_white(im)
     bbox = cut.getbbox()
     if bbox:
         cut = cut.crop(bbox)

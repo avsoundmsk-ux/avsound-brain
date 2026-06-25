@@ -19,3 +19,4 @@
 | 2026-06-25 10:14 | bytedance/seedance-2 | 205 | 1.02 | 20260625_101430_35c620db.mp4 | Two subwoofers mounted in a car trunk glowing with blue neon |
 | 2026-06-25 19:08 | google/nano-banana-edit | 4 | 0.02 | 20260625_190832_3aa927ff.png | Place the masked woman from the FIRST image into the scene f |
 | 2026-06-25 20:26 | google/nano-banana-edit | 4 | 0.02 | 20260625_202210_a291f906.png | Place the masked woman from the FIRST image into the scene f |
+| 2026-06-25 20:58 | bytedance/seedance-2 | 274 | 1.37 | 20260625_204917_ddc22670.mp4 | The masked woman walks slowly toward camera along the produc |

@@ -92,3 +92,24 @@
 21:58:45 OK2 41477 Helix Ci3 W165FM-S3 speaker: 3 фото
 22:02:44 UPERR 42275 400
 22:08:05 UPERR 41479 400
+22:23:37 OK2 42307 Hellion DRC-2 пульт управления: 3 фото
+22:23:58 OK2 41479 Helix IK W12 DVC2 subwoofer: 3 фото
+22:24:32 OK2 41480 Helix IK W10 DVC2 subwoofer: 1 фото
+22:24:52 UPERR 42309 400
+22:25:21 OK2 41480 Helix IK W10 DVC2 subwoofer: 1 фото
+22:25:51 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
+22:26:06 OK2 41477 Helix Ci3 W165FM-S3 speaker: 3 фото
+22:26:33 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
+22:27:03 OK2 41483 Helix M ONE X amplifier: 3 фото
+22:27:22 OK2 41479 Helix IK W12 DVC2 subwoofer: 3 фото
+22:28:11 OK2 41483 Helix M ONE X amplifier: 3 фото
+22:28:15 OK2 41484 Helix URC.3 remote control: 3 фото
+22:29:00 OK2 41480 Helix IK W10 DVC2 subwoofer: 1 фото
+22:30:18 OK2 41484 Helix URC.3 remote control: 3 фото
+22:31:32 OK2 41485 Helix Impact terminal: 3 фото
+22:31:32 === FLEX ИТОГ 7/10 ===
+22:31:52 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
+22:33:11 OK2 41485 Helix Impact terminal: 3 фото
+22:33:11 === FLEX ИТОГ 8/10 ===
+22:34:33 OK2 41483 Helix M ONE X amplifier: 3 фото
+22:37:40 OK2 41484 Helix URC.3 remote control: 3 фото

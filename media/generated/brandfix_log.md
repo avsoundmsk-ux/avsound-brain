@@ -70,3 +70,5 @@
 11:54:47 OK2 41480 Helix IK W10 DVC2 subwoofer: 1 фото
 11:55:24 OK2 42309 Hellion DRC-LCD пульт управления: 3 фото
 11:57:17 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
+11:58:15 OK2 41477 Helix Ci3 W165FM-S3 speaker: 3 фото
+11:59:22 OK2 41483 Helix M ONE X amplifier: 3 фото

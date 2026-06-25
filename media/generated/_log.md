@@ -15,3 +15,4 @@
 | 2026-06-24 23:09 | nano-banana-2 | 8 | 0.04 | 20260624_230910_4108380b.png | Ultra realistic photograph, young woman with light freckles  |
 | 2026-06-25 03:34 | bytedance/seedance-2 | 410 | 2.05 | 20260625_033417_449d7ac6.mp4 | Cinematic dark-luxe motion. The masked woman in the black ba |
 | 2026-06-25 03:37 | bytedance/seedance-2 | 422 | 2.11 | 20260625_033731_dbe3abca.mp4 | Cinematic dark-luxe motion, continuation. The masked woman i |
+| 2026-06-25 09:23 | bytedance/seedance-2 | 205 | 1.02 | 20260625_092346_196808a0.mp4 | The AV SOUND logo on a deep black background slowly emerges  |

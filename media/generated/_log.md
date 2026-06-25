@@ -13,3 +13,5 @@
 | 2026-06-24 18:19 | google/nano-banana-edit | 4 | 0.02 | 20260624_181838_fa422be7.png | Photorealistic vertical shot of THIS exact woman dressed ele |
 | 2026-06-24 22:26 | nano-banana-2 | 8 | 0.04 | 20260624_222634_b6abd6cc.png | premium car subwoofer glowing neon blue in dark trunk, cinem |
 | 2026-06-24 23:09 | nano-banana-2 | 8 | 0.04 | 20260624_230910_4108380b.png | Ultra realistic photograph, young woman with light freckles  |
+| 2026-06-25 03:34 | bytedance/seedance-2 | 410 | 2.05 | 20260625_033417_449d7ac6.mp4 | Cinematic dark-luxe motion. The masked woman in the black ba |
+| 2026-06-25 03:37 | bytedance/seedance-2 | 422 | 2.11 | 20260625_033731_dbe3abca.mp4 | Cinematic dark-luxe motion, continuation. The masked woman i |

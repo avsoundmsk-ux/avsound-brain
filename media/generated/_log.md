@@ -20,3 +20,4 @@
 | 2026-06-25 19:08 | google/nano-banana-edit | 4 | 0.02 | 20260625_190832_3aa927ff.png | Place the masked woman from the FIRST image into the scene f |
 | 2026-06-25 20:26 | google/nano-banana-edit | 4 | 0.02 | 20260625_202210_a291f906.png | Place the masked woman from the FIRST image into the scene f |
 | 2026-06-25 20:58 | bytedance/seedance-2 | 274 | 1.37 | 20260625_204917_ddc22670.mp4 | The masked woman walks slowly toward camera along the produc |
+| 2026-06-25 21:24 | google/nano-banana-edit | 16 | 0.08 | 20260625_212052_795b96a2.png | Place the masked woman from the FIRST image into the scene f |

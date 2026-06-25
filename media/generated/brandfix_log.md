@@ -72,3 +72,13 @@
 11:57:17 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
 11:58:15 OK2 41477 Helix Ci3 W165FM-S3 speaker: 3 фото
 11:59:22 OK2 41483 Helix M ONE X amplifier: 3 фото
+12:00:40 OK2 41479 Helix IK W12 DVC2 subwoofer: 3 фото
+12:02:27 OK2 41484 Helix URC.3 remote control: 3 фото
+12:03:49 OK2 41485 Helix Impact terminal: 3 фото
+12:03:49 === FLEX ИТОГ 10/10 ===
+12:04:18 OK2 41480 Helix IK W10 DVC2 subwoofer: 1 фото
+12:06:53 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
+12:10:50 OK2 41483 Helix M ONE X amplifier: 3 фото
+12:12:50 OK2 41484 Helix URC.3 remote control: 3 фото
+12:14:56 OK2 41485 Helix Impact terminal: 3 фото
+12:14:56 === FLEX ИТОГ 10/10 ===

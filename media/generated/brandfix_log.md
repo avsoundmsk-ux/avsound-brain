@@ -115,3 +115,11 @@
 22:37:40 OK2 41484 Helix URC.3 remote control: 3 фото
 22:45:39 OK2 41485 Helix Impact terminal: 3 фото
 22:45:39 === FLEX ИТОГ 8/10 ===
+00:43:22 OK2 42275 Hellion DRC-DSD 256 пульт управления: 1 фото
+00:47:15 OK2 42307 Hellion DRC-2 пульт управления: 3 фото
+00:47:35 FAIL2 42309 Hellion DRC-LCD пульт управления: нет фото
+00:47:55 FAIL2 41477 Helix Ci3 W165FM-S3 speaker: нет фото
+00:48:35 FAIL2 41479 Helix IK W12 DVC2 subwoofer: нет фото
+00:48:55 FAIL2 41480 Helix IK W10 DVC2 subwoofer: нет фото
+00:49:15 FAIL2 41481 Helix IK S10 DVC2 subwoofer: нет фото
+00:49:18 FAIL2 42275 Hellion DRC-DSD 256 пульт управления: нет фото

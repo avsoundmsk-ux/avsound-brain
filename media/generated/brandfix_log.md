@@ -54,3 +54,9 @@
 09:47:20 OK2 42309 Hellion DRC-LCD пульт управления: 3 фото
 09:49:27 OK2 41477 Helix Ci3 W165FM-S3 speaker: 3 фото
 09:58:21 UPERR 41479 400
+10:03:27 OK2 41480 Helix IK W10 DVC2 subwoofer: 1 фото
+10:06:46 OK2 41481 Helix IK S10 DVC2 subwoofer: 3 фото
+10:08:40 OK2 41483 Helix M ONE X amplifier: 3 фото
+10:13:06 OK2 41484 Helix URC.3 remote control: 3 фото
+10:17:50 OK2 41485 Helix Impact terminal: 3 фото
+10:17:50 === FLEX ИТОГ 9/10 ===

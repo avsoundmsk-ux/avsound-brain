@@ -30,33 +30,65 @@ def _get(u, t=5):
         time.sleep(2)
 
 
-def shopbear_imgs(query, n=3):
-    """Прямой поиск shop-bear → страница товара → галерея (без firecrawl)."""
-    r = _get("https://shop-bear.ru/search/index.php?q=" + requests.utils.quote(query))
+BRAVE_KEY = "BSA8-Iyhjwluq33IztQMcfpO674JlMq"
+
+
+def brave(query, count=8):
+    """Brave Search API → список URL результатов (бесплатно, ключ в памяти)."""
+    h = {"X-Subscription-Token": BRAVE_KEY, "Accept": "application/json"}
+    for _ in range(3):
+        try:
+            r = requests.get("https://api.search.brave.com/res/v1/web/search",
+                             params={"q": query, "count": count}, headers=h, timeout=25)
+            if r.status_code == 200:
+                return [w["url"] for w in r.json().get("web", {}).get("results", [])]
+            if r.status_code == 429:
+                time.sleep(2)
+        except Exception:
+            time.sleep(2)
+    return []
+
+
+def _imgs_from_page(url, n=3):
+    """og:image + крупные картинки со страницы магазина."""
+    r = _get(url)
     if not r:
         return []
-    links = list(dict.fromkeys(re.findall(r'/catalog/[a-z0-9_-]+/[a-z0-9_-]+/[a-z0-9_-]+/', r.text)))
-    for path in links[:2]:
-        pr = _get("https://shop-bear.ru" + path)
-        if not pr:
+    h = r.text
+    base = re.match(r'(https?://[^/]+)', url).group(1)
+    cand = []
+    m = re.search(r'og:image"[^>]*content="([^"]+)', h) or re.search(r'content="([^"]+)"[^>]*og:image', h)
+    if m:
+        cand.append(m.group(1))
+    cand += re.findall(r'(https?://[^\s"\']+?\.(?:jpg|jpeg|png|webp))', h)
+    cand += [base + u for u in re.findall(r'(?<=")(/[^\s"\']+?\.(?:jpg|jpeg|png|webp))', h)]
+    out = []; seen = set()
+    for u in cand:
+        if u in seen:
             continue
-        full = [u for u in dict.fromkeys(re.findall(r'/upload/iblock/[\w./-]+?\.(?:jpg|jpeg|png)', pr.text))
-                if 'resize_cache' not in u]
-        out = []
-        for u in full:
-            d = _get("https://shop-bear.ru" + u, 3)
-            if not d:
-                continue
-            try:
-                if Image.open(BytesIO(d.content)).size[0] >= 500:
-                    p = f".firecrawl/sb_{abs(hash(u))%10**8}.jpg"
-                    open(p, "wb").write(d.content); out.append(p)
-            except Exception:
-                pass
-            if len(out) >= n:
-                break
-        if out:
-            return out
+        seen.add(u)
+        if any(x in u.lower() for x in ['logo', 'sprite', 'icon', 'placeholder', 'svg', 'banner', 'pixel']):
+            continue
+        d = _get(u, 2)
+        if not d:
+            continue
+        try:
+            if Image.open(BytesIO(d.content)).size[0] >= 500:
+                p = f".firecrawl/bv_{abs(hash(u))%10**8}.jpg"
+                open(p, "wb").write(d.content); out.append(p)
+        except Exception:
+            pass
+        if len(out) >= n:
+            break
+    return out
+
+
+def shopbear_imgs(query, n=3):
+    """Brave → страницы магазинов → реальные фото товара."""
+    for url in brave(query + " купить автозвук", 8)[:6]:
+        got = _imgs_from_page(url, n)
+        if got:
+            return got
     return []
 
 
@@ -72,13 +104,6 @@ def guess_type(n):  # только для запроса фото, не для �
 def process(pid, name):
     q = re.sub(r'^(Усилитель|Сабвуфер|Процессорный усилитель|Моноблок|Преобразователь|Пульт управления|Компонентная акустика|Коаксиальная акустика|Среднечастотная акустика|Твитеры?|Твитера|Магнитола|Камера)\s+', '', name).strip()
     got = shopbear_imgs(q, 3)
-    if not got:  # фолбэк firecrawl
-        import flex
-        urls = flex.search_urls(q + " купить")
-        for u in urls[:6]:
-            got = flex.imgs_from(u, 3)
-            if got:
-                break
     if not got:
         log(f"FAIL {pid} {name}: нет фото"); return "no-src"
     outs = []

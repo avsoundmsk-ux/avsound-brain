@@ -8,7 +8,7 @@ export const MODEL_REGISTRY: ModelEntry[] = [
     providers: ["modelark", "kie"],
     bestFor: ["ugc_video", "car_video", "social_reel"],
     qualityTier: 2,
-    providerModelIds: { modelark: "seedance-2-0", kie: "bytedance/seedance-2" },
+    providerModelIds: { modelark: "dreamina-seedance-2-0-260128", kie: "bytedance/seedance-2" },
   },
   {
     id: "seedance-2-fast",

@@ -27,16 +27,19 @@ export class ModelArkProvider extends BaseProvider {
       Authorization: `Bearer ${this.env("MODELARK_API_KEY")}`,
       "Content-Type": "application/json",
     };
+    // Ark Seedance принимает параметры внутри текста: --resolution --duration --ratio
+    const res = input.request.quality === "best" ? "1080p" : input.request.quality === "cheap" ? "480p" : "720p";
+    const dur = Math.max(input.request.duration ?? 5, 4); // мин 4с
+    const ratio = input.request.aspectRatio ?? "9:16";
+    const text = `${input.enhancedPrompt} --resolution ${res} --duration ${dur} --ratio ${ratio}`;
     const body = {
       model: input.providerModelId,
       content: [
-        { type: "text", text: input.enhancedPrompt },
+        { type: "text", text },
         ...(input.request.inputImages?.[0]
           ? [{ type: "image_url", image_url: { url: input.request.inputImages[0] } }]
           : []),
       ],
-      ratio: input.request.aspectRatio ?? "9:16",
-      duration: input.request.duration ?? 5,
     };
 
     const create = await fetch(`${base}/api/v3/contents/generations/tasks`, {

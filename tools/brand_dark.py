@@ -13,7 +13,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 import woo, dark_bg
-import flex  # фолбэк-источник (firecrawl)
+# flex импортируется лениво в фолбэке (у него side-effect на импорте)
 
 LOG = "media/generated/brand_dark_log.md"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0"}
@@ -73,6 +73,7 @@ def process(pid, name):
     q = re.sub(r'^(Усилитель|Сабвуфер|Процессорный усилитель|Моноблок|Преобразователь|Пульт управления|Компонентная акустика|Коаксиальная акустика|Среднечастотная акустика|Твитеры?|Твитера|Магнитола|Камера)\s+', '', name).strip()
     got = shopbear_imgs(q, 3)
     if not got:  # фолбэк firecrawl
+        import flex
         urls = flex.search_urls(q + " купить")
         for u in urls[:6]:
             got = flex.imgs_from(u, 3)

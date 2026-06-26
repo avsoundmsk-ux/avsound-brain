@@ -176,3 +176,8 @@
 11:27:59 FAIL2 41477 Helix Ci3 W165FM-S3 speaker: нет фото
 11:28:19 FAIL2 41479 Helix IK W12 DVC2 subwoofer: нет фото
 11:28:39 FAIL2 41480 Helix IK W10 DVC2 subwoofer: нет фото
+11:29:19 FAIL2 41481 Helix IK S10 DVC2 subwoofer: нет фото
+11:29:59 FAIL2 41483 Helix M ONE X amplifier: нет фото
+11:30:19 FAIL2 41484 Helix URC.3 remote control: нет фото
+11:30:39 FAIL2 41485 Helix Impact terminal: нет фото
+11:30:39 === FLEX ИТОГ 0/10 ===

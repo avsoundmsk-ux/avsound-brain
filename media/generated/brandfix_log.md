@@ -137,3 +137,42 @@
 00:52:13 FAIL2 41484 Helix URC.3 remote control: нет фото
 00:52:33 FAIL2 41485 Helix Impact terminal: нет фото
 00:52:33 === FLEX ИТОГ 0/10 ===
+00:56:52 FAIL2 42275 Hellion DRC-DSD 256 пульт управления: нет фото
+00:57:12 FAIL2 42307 Hellion DRC-2 пульт управления: нет фото
+00:57:31 FAIL2 42309 Hellion DRC-LCD пульт управления: нет фото
+00:57:51 FAIL2 41477 Helix Ci3 W165FM-S3 speaker: нет фото
+00:58:31 FAIL2 41479 Helix IK W12 DVC2 subwoofer: нет фото
+00:58:51 FAIL2 41480 Helix IK W10 DVC2 subwoofer: нет фото
+00:59:11 FAIL2 41481 Helix IK S10 DVC2 subwoofer: нет фото
+00:59:30 FAIL2 41483 Helix M ONE X amplifier: нет фото
+00:59:50 FAIL2 41484 Helix URC.3 remote control: нет фото
+01:00:25 FAIL2 41485 Helix Impact terminal: нет фото
+01:00:25 === FLEX ИТОГ 0/10 ===
+01:01:06 FAIL2 42275 Hellion DRC-DSD 256 пульт управления: нет фото
+01:01:25 FAIL2 42307 Hellion DRC-2 пульт управления: нет фото
+01:01:45 FAIL2 42309 Hellion DRC-LCD пульт управления: нет фото
+01:02:05 FAIL2 41477 Helix Ci3 W165FM-S3 speaker: нет фото
+01:02:25 FAIL2 41479 Helix IK W12 DVC2 subwoofer: нет фото
+01:02:44 FAIL2 41480 Helix IK W10 DVC2 subwoofer: нет фото
+01:03:04 FAIL2 41481 Helix IK S10 DVC2 subwoofer: нет фото
+01:03:23 FAIL2 41483 Helix M ONE X amplifier: нет фото
+01:03:43 FAIL2 41484 Helix URC.3 remote control: нет фото
+01:04:02 FAIL2 41485 Helix Impact terminal: нет фото
+01:04:02 === FLEX ИТОГ 0/10 ===
+01:05:42 FAIL2 42275 Hellion DRC-DSD 256 пульт управления: нет фото
+01:06:02 FAIL2 42307 Hellion DRC-2 пульт управления: нет фото
+01:06:21 FAIL2 42309 Hellion DRC-LCD пульт управления: нет фото
+01:06:41 FAIL2 41477 Helix Ci3 W165FM-S3 speaker: нет фото
+01:07:01 FAIL2 41479 Helix IK W12 DVC2 subwoofer: нет фото
+01:07:20 FAIL2 41480 Helix IK W10 DVC2 subwoofer: нет фото
+01:08:16 FAIL2 41481 Helix IK S10 DVC2 subwoofer: нет фото
+01:08:36 FAIL2 41483 Helix M ONE X amplifier: нет фото
+01:08:56 FAIL2 41484 Helix URC.3 remote control: нет фото
+01:09:15 FAIL2 41485 Helix Impact terminal: нет фото
+01:09:15 === FLEX ИТОГ 0/10 ===
+11:26:59 FAIL2 42275 Hellion DRC-DSD 256 пульт управления: нет фото
+11:27:19 FAIL2 42307 Hellion DRC-2 пульт управления: нет фото
+11:27:39 FAIL2 42309 Hellion DRC-LCD пульт управления: нет фото
+11:27:59 FAIL2 41477 Helix Ci3 W165FM-S3 speaker: нет фото
+11:28:19 FAIL2 41479 Helix IK W12 DVC2 subwoofer: нет фото
+11:28:39 FAIL2 41480 Helix IK W10 DVC2 subwoofer: нет фото

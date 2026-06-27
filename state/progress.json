@@ -1,0 +1,142 @@
+{
+ "6bf7fee5a5be785a": {
+  "status": "failed",
+  "row": 7,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "7917a32ef8939089": {
+  "status": "failed",
+  "row": 8,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "12b7bcd843b9e7fe": {
+  "status": "failed",
+  "row": 9,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "ad9f5616eeb89a15": {
+  "status": "failed",
+  "row": 10,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "dc108252b93b9eb2": {
+  "status": "failed",
+  "row": 14,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "cbba70eed8266c8a": {
+  "status": "failed",
+  "row": 15,
+  "product_id": null,
+  "score": 0,
+  "match_status": "network_error"
+ },
+ "2d28cb37fbb28fb9": {
+  "status": "needs_manual_review",
+  "row": 16,
+  "product_id": null,
+  "score": 80,
+  "match_status": "needs_manual_review"
+ },
+ "b7561e77973373f5": {
+  "status": "failed",
+  "row": 17,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "ce7a28da1efab2e3": {
+  "status": "failed",
+  "row": 18,
+  "product_id": null,
+  "score": 0,
+  "match_status": "network_error"
+ },
+ "c791dd9fba4c1f3b": {
+  "status": "failed",
+  "row": 19,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "3a9d7d7e807b7157": {
+  "status": "needs_manual_review",
+  "row": 20,
+  "product_id": null,
+  "score": 0,
+  "match_status": "needs_manual_review"
+ },
+ "0a6c6e1637aa7e5a": {
+  "status": "failed",
+  "row": 21,
+  "product_id": null,
+  "score": 0,
+  "match_status": "network_error"
+ },
+ "c0fe214572b51ab1": {
+  "status": "failed",
+  "row": 22,
+  "product_id": null,
+  "score": 0,
+  "match_status": "network_error"
+ },
+ "abc19c1268126d38": {
+  "status": "failed",
+  "row": 26,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "f77fd4c68537f733": {
+  "status": "failed",
+  "row": 27,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "deda275960cb8484": {
+  "status": "needs_manual_review",
+  "row": 28,
+  "product_id": null,
+  "score": 80,
+  "match_status": "needs_manual_review"
+ },
+ "903295245f06e72d": {
+  "status": "failed",
+  "row": 29,
+  "product_id": null,
+  "score": 0,
+  "match_status": "not_found"
+ },
+ "49785b578d2ba037": {
+  "status": "needs_manual_review",
+  "row": 30,
+  "product_id": null,
+  "score": 80,
+  "match_status": "needs_manual_review"
+ },
+ "89fb5ab4bcf6d613": {
+  "status": "failed",
+  "row": 31,
+  "product_id": null,
+  "score": 0,
+  "match_status": "network_error"
+ },
+ "fc9d9a2092aea37b": {
+  "status": "failed",
+  "row": 32,
+  "product_id": null,
+  "score": 0,
+  "match_status": "network_error"
+ }
+}

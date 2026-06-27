@@ -1,0 +1,233 @@
+{
+ "mode": "dry-run",
+ "generated": "2026-06-27T16:29:49",
+ "total": 20,
+ "summary": {
+  "not_found": 10,
+  "network_error": 6,
+  "needs_manual_review": 4
+ },
+ "problems": 20,
+ "rows": [
+  {
+   "row": 7,
+   "name": "MB Quart M1-216",
+   "brand": "MB Quart",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 8,
+   "name": "MB Quart M1-116",
+   "brand": "MB Quart",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 9,
+   "name": "Твитера MB quart M7-01",
+   "brand": "MB Quart",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 293,
+   "category_status": "ok"
+  },
+  {
+   "row": 10,
+   "name": "Сабвуфер MB quart FW1-254",
+   "brand": "MB Quart",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 310,
+   "category_status": "ok"
+  },
+  {
+   "row": 14,
+   "name": "Компонентная акустическая система JBL GTO 608C",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 295,
+   "category_status": "ok"
+  },
+  {
+   "row": 15,
+   "name": "Компонентная акустическая система JBL GTO 609C",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "network_error",
+   "reason": "network:ReadTimeout",
+   "category_id": 295,
+   "category_status": "ok"
+  },
+  {
+   "row": 16,
+   "name": "JBL GX3520",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 80,
+   "status": "needs_manual_review",
+   "reason": "low_confidence_or_ties score=80 ties=1",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 17,
+   "name": "Твитеры JBL GTO 25T",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 293,
+   "category_status": "ok"
+  },
+  {
+   "row": 18,
+   "name": "JBL GTO-0939",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "network_error",
+   "reason": "network:ReadTimeout",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 19,
+   "name": "Сабвуфер под сиденье JBL basspro SL",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 310,
+   "category_status": "ok"
+  },
+  {
+   "row": 20,
+   "name": "Сабвуфер под сиденье JBL BASS PRO LITE 7",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "needs_manual_review",
+   "reason": "invalid_quantity_or_price",
+   "category_id": 310,
+   "category_status": "ok"
+  },
+  {
+   "row": 21,
+   "name": "Активный сабвуфер JBL Club JB-1204-B",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "network_error",
+   "reason": "network:ReadTimeout",
+   "category_id": 297,
+   "category_status": "ok"
+  },
+  {
+   "row": 22,
+   "name": "Сабвуфер в запаску JBL BassPro Hub",
+   "brand": "JBL",
+   "product_id": null,
+   "score": 0,
+   "status": "network_error",
+   "reason": "network:ConnectTimeout",
+   "category_id": 310,
+   "category_status": "ok"
+  },
+  {
+   "row": 26,
+   "name": "Морская акустика Nakamichi nmsp-E8057",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 27,
+   "name": "Морская акустика Nakamichi nmsp-E6557",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 28,
+   "name": "Nakamichi NS6-Q3 3-х полосная акустика",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 80,
+   "status": "needs_manual_review",
+   "reason": "low_confidence_or_ties score=80 ties=1",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 29,
+   "name": "Твитера Nakamichi NS-QT25",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 0,
+   "status": "not_found",
+   "reason": "best=0",
+   "category_id": 293,
+   "category_status": "ok"
+  },
+  {
+   "row": 30,
+   "name": "Nakamichi NSF623",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 80,
+   "status": "needs_manual_review",
+   "reason": "low_confidence_or_ties score=80 ties=1",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 31,
+   "name": "Динамики Nakamichi NSA-CS1721",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 0,
+   "status": "network_error",
+   "reason": "network:ReadTimeout",
+   "category_id": 252,
+   "category_status": "ok"
+  },
+  {
+   "row": 32,
+   "name": "Среднечастотная акустика Nakamichi NS-S31M",
+   "brand": "Nakamichi",
+   "product_id": null,
+   "score": 0,
+   "status": "network_error",
+   "reason": "network:ReadTimeout",
+   "category_id": 306,
+   "category_status": "ok"
+  }
+ ]
+}

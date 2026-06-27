@@ -1,0 +1,21 @@
+﻿row,name,brand,product_id,score,status,reason,category_id,category_status
+7,MB Quart M1-216,MB Quart,,0,not_found,best=0,252,ok
+8,MB Quart M1-116,MB Quart,,0,not_found,best=0,252,ok
+9,Твитера MB quart M7-01,MB Quart,,0,not_found,best=0,293,ok
+10,Сабвуфер MB quart FW1-254,MB Quart,,0,not_found,best=0,310,ok
+14,Компонентная акустическая система JBL GTO 608C,JBL,,0,not_found,best=0,295,ok
+15,Компонентная акустическая система JBL GTO 609C,JBL,,0,network_error,network:ReadTimeout,295,ok
+16,JBL GX3520,JBL,,80,needs_manual_review,low_confidence_or_ties score=80 ties=1,252,ok
+17,Твитеры JBL GTO 25T,JBL,,0,not_found,best=0,293,ok
+18,JBL GTO-0939,JBL,,0,network_error,network:ReadTimeout,252,ok
+19,Сабвуфер под сиденье JBL basspro SL,JBL,,0,not_found,best=0,310,ok
+20,Сабвуфер под сиденье JBL BASS PRO LITE 7,JBL,,0,needs_manual_review,invalid_quantity_or_price,310,ok
+21,Активный сабвуфер JBL Club JB-1204-B,JBL,,0,network_error,network:ReadTimeout,297,ok
+22,Сабвуфер в запаску JBL BassPro Hub,JBL,,0,network_error,network:ConnectTimeout,310,ok
+26,Морская акустика Nakamichi nmsp-E8057,Nakamichi,,0,not_found,best=0,252,ok
+27,Морская акустика Nakamichi nmsp-E6557,Nakamichi,,0,not_found,best=0,252,ok
+28,Nakamichi NS6-Q3 3-х полосная акустика,Nakamichi,,80,needs_manual_review,low_confidence_or_ties score=80 ties=1,252,ok
+29,Твитера Nakamichi NS-QT25,Nakamichi,,0,not_found,best=0,293,ok
+30,Nakamichi NSF623,Nakamichi,,80,needs_manual_review,low_confidence_or_ties score=80 ties=1,252,ok
+31,Динамики Nakamichi NSA-CS1721,Nakamichi,,0,network_error,network:ReadTimeout,252,ok
+32,Среднечастотная акустика Nakamichi NS-S31M,Nakamichi,,0,network_error,network:ReadTimeout,306,ok

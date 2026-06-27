@@ -1,0 +1,9 @@
+{
+ "total": 20,
+ "summary": {
+  "not_found": 10,
+  "network_error": 6,
+  "needs_manual_review": 4
+ },
+ "problems": 20
+}

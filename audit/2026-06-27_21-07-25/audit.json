@@ -1,0 +1,346 @@
+{
+ "meta": {
+  "datetime": "2026-06-27T21:17:28",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-27T21:10:26",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 9,
+   "product_id": 45477,
+   "sku": "",
+   "name": "Твитера MB quart M7-01",
+   "brand": "MB Quart",
+   "action": "images_replaced",
+   "reason": "match score=90",
+   "fields": {
+    "images": {
+     "old": [
+      42942
+     ],
+     "new": [
+      53471
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-27T21:12:11",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 10,
+   "product_id": 45487,
+   "sku": "",
+   "name": "Сабвуфер MB quart FW1-254",
+   "brand": "MB Quart",
+   "action": "images_replaced",
+   "reason": "match score=90",
+   "fields": {
+    "images": {
+     "old": [
+      42942
+     ],
+     "new": [
+      53472
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-27T21:12:28",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 14,
+   "product_id": 43793,
+   "sku": "",
+   "name": "Компонентная акустическая система JBL GTO 608C",
+   "brand": "JBL",
+   "action": "images_replaced",
+   "reason": "match score=90",
+   "fields": {
+    "images": {
+     "old": [
+      43787,
+      42814,
+      43792
+     ],
+     "new": [
+      53473
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-27T21:14:01",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 15,
+   "product_id": 45485,
+   "sku": "",
+   "name": "Компонентная акустическая система JBL GTO 609C",
+   "brand": "JBL",
+   "action": "images_replaced",
+   "reason": "match score=90",
+   "fields": {
+    "images": {
+     "old": [
+      45474,
+      49931,
+      49932,
+      42942
+     ],
+     "new": [
+      53474
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-27T21:16:48",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 16,
+   "product_id": 45503,
+   "sku": "",
+   "name": "JBL GX3520",
+   "brand": "JBL",
+   "action": "images_replaced",
+   "reason": "match score=80",
+   "fields": {
+    "images": {
+     "old": [
+      42942
+     ],
+     "new": [
+      53475
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-27T21:17:28",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 17,
+   "product_id": 45492,
+   "sku": "",
+   "name": "Твитеры JBL GTO 25T",
+   "brand": "JBL",
+   "action": "images_replaced",
+   "reason": "match score=90",
+   "fields": {
+    "images": {
+     "old": [
+      42942,
+      42814
+     ],
+     "new": [
+      53476
+     ]
+    }
+   }
+  }
+ ],
+ "images": [
+  {
+   "datetime": "2026-06-27T21:10:26",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 45477,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/s-l1600.jpg"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/b_45477.webp"
+   ],
+   "old_attachment_ids": [
+    42942
+   ],
+   "new_attachment_ids": [
+    53471
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  },
+  {
+   "datetime": "2026-06-27T21:12:11",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 45487,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/s-l1600.jpg"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/b_45487.webp"
+   ],
+   "old_attachment_ids": [
+    42942
+   ],
+   "new_attachment_ids": [
+    53472
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  },
+  {
+   "datetime": "2026-06-27T21:12:28",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 43793,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/61eYndLH8hS.jpg",
+    "https://av-sound.ru/wp-content/uploads/2026/06/original.webp",
+    "https://av-sound.ru/wp-content/uploads/2026/06/64181587214366.jpg"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/b_43793.webp"
+   ],
+   "old_attachment_ids": [
+    43787,
+    42814,
+    43792
+   ],
+   "new_attachment_ids": [
+    53473
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  },
+  {
+   "datetime": "2026-06-27T21:14:01",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 45485,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/jbl_gto609c_1.jpg",
+    "https://av-sound.ru/wp-content/uploads/2026/06/cae2a6260ab311ee83c500155db5ff04_8ddca2de139211f0842400155db5ff28-1200x1200-2.jpeg",
+    "https://av-sound.ru/wp-content/uploads/2026/06/JBL-GTO609C-main-scaled-2.webp",
+    "https://av-sound.ru/wp-content/uploads/2026/06/s-l1600.jpg"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/b_45485.webp"
+   ],
+   "old_attachment_ids": [
+    45474,
+    49931,
+    49932,
+    42942
+   ],
+   "new_attachment_ids": [
+    53474
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  },
+  {
+   "datetime": "2026-06-27T21:16:48",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 45503,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/s-l1600.jpg"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/b_45503.webp"
+   ],
+   "old_attachment_ids": [
+    42942
+   ],
+   "new_attachment_ids": [
+    53475
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  },
+  {
+   "datetime": "2026-06-27T21:17:28",
+   "run_id": "2026-06-27_21-07-25",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 45492,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/s-l1600.jpg",
+    "https://av-sound.ru/wp-content/uploads/2026/06/original.webp"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/b_45492.webp"
+   ],
+   "old_attachment_ids": [
+    42942,
+    42814
+   ],
+   "new_attachment_ids": [
+    53476
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  }
+ ],
+ "errors": []
+}

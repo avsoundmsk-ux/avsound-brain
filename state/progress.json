@@ -34,5 +34,17 @@
   "row": 15,
   "product_id": 45485,
   "score": 90
+ },
+ "326cd8dedb0e67b9": {
+  "status": "done",
+  "row": 16,
+  "product_id": 45503,
+  "score": 80
+ },
+ "d596725c98245840": {
+  "status": "done",
+  "row": 17,
+  "product_id": 45492,
+  "score": 90
  }
 }

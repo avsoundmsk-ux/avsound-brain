@@ -1,0 +1,164 @@
+[
+ {
+  "datetime": "2026-06-27T21:10:26",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 9,
+  "product_id": 45477,
+  "sku": "",
+  "name": "Твитера MB quart M7-01",
+  "brand": "MB Quart",
+  "action": "images_replaced",
+  "reason": "match score=90",
+  "fields": {
+   "images": {
+    "old": [
+     42942
+    ],
+    "new": [
+     53471
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-27T21:12:11",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 10,
+  "product_id": 45487,
+  "sku": "",
+  "name": "Сабвуфер MB quart FW1-254",
+  "brand": "MB Quart",
+  "action": "images_replaced",
+  "reason": "match score=90",
+  "fields": {
+   "images": {
+    "old": [
+     42942
+    ],
+    "new": [
+     53472
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-27T21:12:28",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 14,
+  "product_id": 43793,
+  "sku": "",
+  "name": "Компонентная акустическая система JBL GTO 608C",
+  "brand": "JBL",
+  "action": "images_replaced",
+  "reason": "match score=90",
+  "fields": {
+   "images": {
+    "old": [
+     43787,
+     42814,
+     43792
+    ],
+    "new": [
+     53473
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-27T21:14:01",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 15,
+  "product_id": 45485,
+  "sku": "",
+  "name": "Компонентная акустическая система JBL GTO 609C",
+  "brand": "JBL",
+  "action": "images_replaced",
+  "reason": "match score=90",
+  "fields": {
+   "images": {
+    "old": [
+     45474,
+     49931,
+     49932,
+     42942
+    ],
+    "new": [
+     53474
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-27T21:16:48",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 16,
+  "product_id": 45503,
+  "sku": "",
+  "name": "JBL GX3520",
+  "brand": "JBL",
+  "action": "images_replaced",
+  "reason": "match score=80",
+  "fields": {
+   "images": {
+    "old": [
+     42942
+    ],
+    "new": [
+     53475
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-27T21:17:28",
+  "run_id": "2026-06-27_21-07-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 17,
+  "product_id": 45492,
+  "sku": "",
+  "name": "Твитеры JBL GTO 25T",
+  "brand": "JBL",
+  "action": "images_replaced",
+  "reason": "match score=90",
+  "fields": {
+   "images": {
+    "old": [
+     42942,
+     42814
+    ],
+    "new": [
+     53476
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,2 @@
+﻿row,name,brand,product_id,score,status,reason,category_id,category_status
+0,Nakamichi nkta 60.4,Nakamichi,45607,80,failed,E2E,256,ok

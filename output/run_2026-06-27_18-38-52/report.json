@@ -1,0 +1,22 @@
+{
+ "mode": "live",
+ "generated": "2026-06-27T18:38:52",
+ "total": 1,
+ "summary": {
+  "failed": 1
+ },
+ "problems": 1,
+ "rows": [
+  {
+   "row": 0,
+   "name": "Nakamichi nkta 60.4",
+   "brand": "Nakamichi",
+   "product_id": 45607,
+   "score": 80,
+   "status": "failed",
+   "reason": "E2E",
+   "category_id": 256,
+   "category_status": "ok"
+  }
+ ]
+}

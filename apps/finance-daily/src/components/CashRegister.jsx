@@ -1,6 +1,5 @@
 import { useState } from 'react'
-
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxfxlLfol4I6mj4Lbo3tSmJMxG26Jx6XchNRM1lM89B0clsQjjfdSbfzLZqoF6E6yYv/exec'
+import { saveDay } from '../utils/sheetsApi.js'
 
 function fmt(n) {
   return n.toLocaleString('ru-RU') + ' ₽'
@@ -37,7 +36,8 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
   const [остатокВчера, setОстатокВчера] = useState(0)
   const [приходОзон, setПриходОзон] = useState(0)
   const [приходЯндекс, setПриходЯндекс] = useState(0)
-  const [saveStatus, setSaveStatus] = useState(null) // null | 'saving' | 'ok' | 'error'
+  const [saveStatus, setSaveStatus] = useState(null) // null | 'saving' | 'ok' | 'error' | 'confirm'
+  const [pendingPayload, setPendingPayload] = useState(null)
   const today = new Date()
   const defaultDate = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`
   const [selectedDate, setSelectedDate] = useState(defaultDate)
@@ -55,11 +55,10 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
   const pct = реализация ? Math.round(((реализация - (totals.себестоимость||0)) / реализация) * 100) : 0
   const чистая = маржа + работа - расходы - аренда
 
-  async function saveToSheets() {
-    setSaveStatus('saving')
+  function buildPayload() {
     const [y, m, d] = selectedDate.split('-')
     const дата = `${d}.${m}.${y}`
-    const payload = {
+    return {
       дата,
       summary: {
         реализация,
@@ -73,20 +72,20 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
         прибыльДня: чистая,
       },
       продажи: salesItems.map(i => ({
-        date: i.date, name: i.name, channel: i.channel,
+        name: i.name, channel: i.channel,
         реализация: i.реализация, закупка: i.закупка, маржа: i.маржа,
       })),
-      работа: workItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
-      расходы: expenseItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
-      зарплата: salaryItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
-      закупка: stockItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
+      работа: workItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
+      расходы: expenseItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
+      зарплата: salaryItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
+      закупка: stockItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       касса: {
-        наличные:  cash.наличные  || 0,
-        тБизнес:   cash.тБизнес   || 0,
-        тинькофф:  cash.тинькофф  || 0,
-        тБизнес2:  cash.тБизнес2  || 0,
-        тЯндекс:   cash.тЯндекс   || 0,
-        другое:    cash.другое    || 0,
+        наличные:    cash.наличные  || 0,
+        тБизнес:     cash.тБизнес   || 0,
+        тинькофф:    cash.тинькофф  || 0,
+        тБизнес2:    cash.тБизнес2  || 0,
+        тЯндекс:     cash.тЯндекс   || 0,
+        другое:      cash.другое    || 0,
         итогоВКассе,
         остатокВчера,
         приходОзон,
@@ -95,12 +94,19 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
         расхождение,
       },
     }
+  }
+
+  async function saveToSheets(force = false) {
+    setSaveStatus('saving')
+    const payload = pendingPayload || buildPayload()
     try {
-      await fetch(SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: JSON.stringify(payload),
-      })
+      const result = await saveDay(payload, force)
+      if (result.existed && !force) {
+        setPendingPayload(payload)
+        setSaveStatus('confirm')
+        return
+      }
+      setPendingPayload(null)
       setSaveStatus('ok')
       setTimeout(() => setSaveStatus(null), 3000)
     } catch {
@@ -175,7 +181,7 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
       </div>
 
       {/* Дата + кнопка сохранения */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 flex-wrap">
         <div className="flex flex-col gap-1">
           <label className="text-xs text-gray-500 uppercase tracking-wide">Дата отчёта</label>
           <input
@@ -185,15 +191,39 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
             className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-400"
           />
         </div>
-        <button
-          onClick={saveToSheets}
-          disabled={saveStatus === 'saving'}
-          className="px-6 py-3 bg-green-600 hover:bg-green-700 disabled:bg-gray-300 text-white font-semibold rounded-xl transition-colors"
-        >
-          {saveStatus === 'saving' ? 'Сохраняю...' : 'Сохранить в Google Sheets'}
-        </button>
+
+        {saveStatus !== 'confirm' && (
+          <button
+            onClick={() => saveToSheets(false)}
+            disabled={saveStatus === 'saving'}
+            className="px-6 py-3 bg-green-600 hover:bg-green-700 disabled:bg-gray-300 text-white font-semibold rounded-xl transition-colors"
+          >
+            {saveStatus === 'saving' ? 'Сохраняю...' : 'Сохранить в Google Sheets'}
+          </button>
+        )}
+
         {saveStatus === 'ok' && <span className="text-green-600 font-medium">✓ Сохранено</span>}
-        {saveStatus === 'error' && <span className="text-red-500">Ошибка сохранения</span>}
+        {saveStatus === 'error' && <span className="text-red-500">Ошибка соединения с Sheets</span>}
+
+        {saveStatus === 'confirm' && (
+          <div className="flex items-center gap-3 bg-yellow-50 border border-yellow-300 rounded-xl px-4 py-3">
+            <span className="text-yellow-800 text-sm font-medium">
+              ⚠️ Этот день уже сохранён. Перезаписать?
+            </span>
+            <button
+              onClick={() => saveToSheets(true)}
+              className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-semibold rounded-lg"
+            >
+              Перезаписать
+            </button>
+            <button
+              onClick={() => { setSaveStatus(null); setPendingPayload(null) }}
+              className="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 text-sm font-semibold rounded-lg"
+            >
+              Отмена
+            </button>
+          </div>
+        )}
       </div>
     </div>
   )

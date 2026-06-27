@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { signOut } from "@/auth/client";
 
 type Quote = { priceCredits: number; priceUsd: number; costCredits: number; profitCredits: number };
+type Job = { id: string; status: string; prompt: string; outputUrl: string | null; priceCredits: number; createdAt: string };
 
 export function DashboardUI({ email, role, balance }: { email: string; role: string; balance: number }) {
   const router = useRouter();
@@ -13,6 +14,13 @@ export function DashboardUI({ email, role, balance }: { email: string; role: str
   const [res, setRes] = useState("720p");
   const [q, setQ] = useState<Quote | null>(null);
   const [err, setErr] = useState("");
+  const [jobs, setJobs] = useState<Job[]>([]);
+
+  const loadJobs = useCallback(async () => {
+    const r = await fetch("/api/jobs");
+    if (r.ok) setJobs(await r.json());
+  }, []);
+  useEffect(() => { loadJobs(); }, [loadJobs]);
 
   async function calc() {
     setErr(""); setQ(null);
@@ -67,8 +75,32 @@ export function DashboardUI({ email, role, balance }: { email: string; role: str
           </div>
         )}
       </div>
+
+      <div style={card}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <h3 style={{ margin: 0 }}>История генераций</h3>
+          <button onClick={loadJobs} style={ghost}>Обновить</button>
+        </div>
+        {jobs.length === 0 && <p style={{ color: "#8b93a3" }}>Пока пусто.</p>}
+        {jobs.map((j) => (
+          <div key={j.id} style={{ borderTop: "1px solid #2a313d", padding: "10px 0", display: "flex", justifyContent: "space-between", gap: 12 }}>
+            <div style={{ overflow: "hidden" }}>
+              <div style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{j.prompt}</div>
+              <div style={{ fontSize: 12, color: "#8b93a3" }}>{j.priceCredits} кр · {new Date(j.createdAt).toLocaleString("ru")}</div>
+            </div>
+            <div style={{ textAlign: "right", whiteSpace: "nowrap" }}>
+              <span style={{ color: statusColor(j.status), fontWeight: 700 }}>{j.status}</span>
+              {j.outputUrl && <div><a href={j.outputUrl} target="_blank" style={{ color: "#ffd23f", fontSize: 12 }}>результат</a></div>}
+            </div>
+          </div>
+        ))}
+      </div>
     </main>
   );
+}
+
+function statusColor(s: string): string {
+  return s === "completed" ? "#5cd68a" : s === "failed" ? "#ff5c5c" : "#ffd23f";
 }
 
 const card: React.CSSProperties = { background: "#161a22", border: "1px solid #2a313d", borderRadius: 14, padding: 20, marginTop: 20 };

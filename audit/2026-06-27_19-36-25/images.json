@@ -1,0 +1,28 @@
+[
+ {
+  "datetime": "2026-06-27T19:37:03",
+  "run_id": "2026-06-27_19-36-25",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "product_id": 45607,
+  "old_urls": [
+   "https://av-sound.ru/wp-content/uploads/2026/06/db_45607.jpg"
+  ],
+  "new_urls": [
+   "https://av-sound.ru/wp-content/uploads/2026/06/e2e_45607_v2.webp"
+  ],
+  "old_attachment_ids": [
+   53363
+  ],
+  "new_attachment_ids": [
+   53466
+  ],
+  "source": "darkbg",
+  "kie_attempts": 0,
+  "cost_usd": 0.0,
+  "status": "replaced"
+ }
+]

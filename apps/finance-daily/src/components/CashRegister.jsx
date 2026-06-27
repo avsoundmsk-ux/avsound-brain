@@ -52,9 +52,11 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
   const расхождение = итогоВКассе - расчётный
   const сходится = Math.abs(расхождение) < 1
 
-  const маржа = реализация - (totals.себестоимость || 0)
-  const pct = реализация ? Math.round(((реализация - (totals.себестоимость||0)) / реализация) * 100) : 0
-  const чистая = маржа + работа - расходы - аренда
+  const себестоимость = totals.себестоимость || 0
+  const маржа = реализация - себестоимость
+  const pct = реализация ? Math.round((маржа / реализация) * 100) : 0
+  const валоваяПрибыль = маржа + работа
+  const чистая = валоваяПрибыль - расходы - зарплата - аренда
 
   function buildPayload() {
     const [y, m, d] = selectedDate.split('-')
@@ -63,13 +65,15 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
       дата,
       summary: {
         реализация,
-        себестоимость: totals.себестоимость || 0,
+        себестоимость,
         маржа,
         pct,
         работа,
+        валоваяПрибыль,
         расходы,
         зарплата,
         закупка,
+        аренда,
         прибыльДня: чистая,
       },
       продажи: salesItems.map(i => ({

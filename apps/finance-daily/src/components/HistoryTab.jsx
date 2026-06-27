@@ -17,13 +17,13 @@ function DayDetail({ entry }) {
 
   return (
     <div className="mt-4 space-y-4 border-t border-gray-100 pt-4">
-      {/* Итоги */}
-      <div className="grid grid-cols-4 gap-3">
+      {/* Итоги — полная цепочка */}
+      <div className="grid grid-cols-4 gap-2 mb-3">
         {[
-          { label: 'Реализация',    value: s.реализация,  color: 'text-gray-900' },
-          { label: 'Маржа',         value: s.маржа,        color: s.маржа >= 0 ? 'text-green-600' : 'text-red-500' },
-          { label: 'Чистая прибыль',value: s.прибыльДня,  color: s.прибыльДня >= 0 ? 'text-green-700' : 'text-red-500' },
-          { label: 'Итого в кассе', value: k.итогоВКассе, color: 'text-gray-900' },
+          { label: 'Реализация',      value: s.реализация,      color: 'text-gray-900' },
+          { label: 'Себестоимость',   value: s.себестоимость,   color: 'text-gray-500' },
+          { label: 'Маржа продаж',    value: s.маржа,            color: (s.маржа||0) >= 0 ? 'text-green-600' : 'text-red-500' },
+          { label: 'Работа студии',   value: s.работа,           color: 'text-blue-600' },
         ].map(c => (
           <div key={c.label} className="bg-gray-50 rounded-lg p-3">
             <p className="text-xs text-gray-500 uppercase tracking-wide">{c.label}</p>
@@ -31,7 +31,32 @@ function DayDetail({ entry }) {
           </div>
         ))}
       </div>
-
+      <div className="grid grid-cols-5 gap-2">
+        {[
+          { label: 'Валовая прибыль', value: s.валоваяПрибыль ?? ((s.маржа||0)+(s.работа||0)), color: 'text-green-700' },
+          { label: 'Расходы',         value: s.расходы,          color: 'text-red-500' },
+          { label: 'Зарплата',        value: s.зарплата,         color: 'text-orange-500' },
+          { label: 'Аренда',          value: s.аренда ?? 5000,   color: 'text-gray-400' },
+          { label: 'Прибыль дня',     value: s.прибыльДня,       color: (s.прибыльДня||0) >= 0 ? 'text-green-700' : 'text-red-500' },
+        ].map(c => (
+          <div key={c.label} className={`rounded-lg p-3 ${c.label === 'Прибыль дня' ? 'bg-gray-900' : 'bg-gray-50'}`}>
+            <p className={`text-xs uppercase tracking-wide ${c.label === 'Прибыль дня' ? 'text-gray-400' : 'text-gray-500'}`}>{c.label}</p>
+            <p className={`text-base font-bold mt-0.5 ${c.color}`}>{fmt(c.value)}</p>
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-2 gap-2 mt-2">
+        <div className="bg-gray-50 rounded-lg p-3">
+          <p className="text-xs text-gray-500 uppercase tracking-wide">Итого в кассе</p>
+          <p className="text-lg font-bold">{fmt(k.итогоВКассе)}</p>
+        </div>
+        <div className={`rounded-lg p-3 ${Math.abs(k.расхождение||0) < 1 ? 'bg-green-50' : 'bg-red-50'}`}>
+          <p className="text-xs text-gray-500 uppercase tracking-wide">Расхождение</p>
+          <p className={`text-lg font-bold ${Math.abs(k.расхождение||0) < 1 ? 'text-green-600' : 'text-red-500'}`}>
+            {Math.abs(k.расхождение||0) < 1 ? '✓ Касса сходится' : fmt(k.расхождение)}
+          </p>
+        </div>
+      </div>
       {/* Продажи */}
       {sales.length > 0 && (
         <Section title="Продажи">
@@ -80,30 +105,26 @@ function DayDetail({ entry }) {
         )}
       </div>
 
-      {/* Касса */}
-      <Section title="Касса">
-        <div className="grid grid-cols-3 gap-x-6 gap-y-1 text-sm">
-          {[
-            ['Наличные', k.наличные],
-            ['Т-Бизнес', k.тБизнес],
-            ['Тинькофф', k.тинькофф],
-            ['Т-Бизнес 2', k.тБизнес2],
-            ['Т-Яндекс', k.тЯндекс],
-            ['Другое', k.другое],
-          ].map(([label, val]) => (
-            <div key={label} className="flex justify-between py-1 border-b border-gray-50">
-              <span className="text-gray-500">{label}</span>
-              <span className="font-medium">{fmt(val)}</span>
-            </div>
-          ))}
-        </div>
-        <div className="mt-3 flex justify-between items-center">
-          <span className="text-sm text-gray-600">Расхождение:</span>
-          <span className={`text-sm font-semibold ${Math.abs(k.расхождение || 0) < 1 ? 'text-green-600' : 'text-red-500'}`}>
-            {Math.abs(k.расхождение || 0) < 1 ? '✓ Касса сходится' : fmt(k.расхождение) + ' расхождение'}
-          </span>
-        </div>
-      </Section>
+      {/* Детализация кассы по счетам */}
+      {(k.наличные || k.тБизнес || k.тинькофф || k.тБизнес2 || k.тЯндекс || k.другое) > 0 && (
+        <Section title="Касса по счетам">
+          <div className="grid grid-cols-3 gap-x-6 gap-y-1 text-sm">
+            {[
+              ['Наличные', k.наличные],
+              ['Т-Бизнес', k.тБизнес],
+              ['Тинькофф', k.тинькофф],
+              ['Т-Бизнес 2', k.тБизнес2],
+              ['Т-Яндекс', k.тЯндекс],
+              ['Другое', k.другое],
+            ].filter(([, v]) => v).map(([label, val]) => (
+              <div key={label} className="flex justify-between py-1 border-b border-gray-50">
+                <span className="text-gray-500">{label}</span>
+                <span className="font-medium">{fmt(val)}</span>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
     </div>
   )
 }
@@ -188,8 +209,9 @@ export default function HistoryTab() {
                 <span className="text-sm font-bold text-gray-700 w-24">{entry.дата}</span>
                 <div className="flex gap-6 text-sm">
                   <span className="text-gray-500">Реализация: <b className="text-gray-800">{fmt(s.реализация)}</b></span>
-                  <span className="text-gray-500">Маржа: <b className={s.маржа >= 0 ? 'text-green-600' : 'text-red-500'}>{fmt(s.маржа)}</b></span>
-                  <span className="text-gray-500">Прибыль: <b className={s.прибыльДня >= 0 ? 'text-green-700' : 'text-red-500'}>{fmt(s.прибыльДня)}</b></span>
+                  <span className="text-gray-500">Маржа: <b className={(s.маржа||0) >= 0 ? 'text-green-600' : 'text-red-500'}>{fmt(s.маржа)}</b></span>
+                  <span className="text-gray-500">Работа: <b className="text-blue-600">{fmt(s.работа)}</b></span>
+                  <span className="text-gray-500">Прибыль дня: <b className={(s.прибыльДня||0) >= 0 ? 'text-green-700' : 'text-red-500'}>{fmt(s.прибыльДня)}</b></span>
                 </div>
               </div>
               <div className="flex items-center gap-3">

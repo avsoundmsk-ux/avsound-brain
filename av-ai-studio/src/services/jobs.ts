@@ -10,6 +10,7 @@ import { db, schema } from "../db/index.js";
 import { estimateCostUsd } from "./providerCost.js";
 import { quote, costToCredits } from "./pricing.js";
 import * as credits from "./credits.js";
+import { persistResult, defaultStorage, type Storage } from "../storage/storage.js";
 import type { Generator, GenInput } from "../generation/generator.js";
 
 const { jobs, jobLogs, models, priceRules } = schema;
@@ -73,8 +74,8 @@ export async function createJob(
   return { ...job, status: "queued" as const };
 }
 
-/** Обработать job: вызвать generator → settle/refund. Идемпотентно по статусу. */
-export async function processJob(jobId: string, generator: Generator) {
+/** Обработать job: generator → storage → settle/refund. Идемпотентно по статусу. */
+export async function processJob(jobId: string, generator: Generator, storage: Storage = defaultStorage) {
   const [job] = await db.select().from(jobs).where(eq(jobs.id, jobId));
   if (!job) throw new Error("job не найден");
   if (!["queued", "created"].includes(job.status)) {
@@ -98,15 +99,20 @@ export async function processJob(jobId: string, generator: Generator) {
 
   try {
     const result = await generator(genInput, (m, d) => jlog(jobId, m, d));
+    // переложить результат в своё хранилище (stable url); fallback — provider url
+    const persisted = await persistResult(
+      result.outputUrl, jobId, (m, d, lvl) => jlog(jobId, m, d, lvl ?? "info"), storage,
+    );
     const costCredits = costToCredits(result.costUsd);
     const profitCredits = job.priceCredits - costCredits;
     await db.update(jobs).set({
-      status: "completed", outputUrl: result.outputUrl, providerTaskId: result.providerTaskId,
+      status: "completed", outputUrl: persisted.url, providerTaskId: result.providerTaskId,
       costCredits, profitCredits, finishedAt: new Date(),
+      params: { ...(job.params as object ?? {}), providerOutputUrl: result.outputUrl, stored: persisted.stored },
     }).where(eq(jobs.id, jobId));
     await credits.settle(job.userId, jobId, `job ${jobId} settle`);
-    await jlog(jobId, "completed", { outputUrl: result.outputUrl, costCredits, profitCredits });
-    return { ...job, status: "completed" as const, outputUrl: result.outputUrl };
+    await jlog(jobId, "completed", { outputUrl: persisted.url, stored: persisted.stored, costCredits, profitCredits });
+    return { ...job, status: "completed" as const, outputUrl: persisted.url };
   } catch (e) {
     const msg = (e as Error).message;
     await db.update(jobs).set({ status: "failed", error: msg, finishedAt: new Date() }).where(eq(jobs.id, jobId));

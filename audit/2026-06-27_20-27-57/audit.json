@@ -1,0 +1,68 @@
+{
+ "meta": {
+  "datetime": "2026-06-27T20:28:24",
+  "run_id": "2026-06-27_20-27-57",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-27T20:28:24",
+   "run_id": "2026-06-27_20-27-57",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45607,
+   "sku": "",
+   "name": "Nakamichi nkta 60.4",
+   "brand": "Nakamichi",
+   "action": "images_replaced",
+   "reason": "E2E confirmed",
+   "fields": {
+    "images": {
+     "old": [
+      53468
+     ],
+     "new": [
+      53469
+     ]
+    }
+   }
+  }
+ ],
+ "images": [
+  {
+   "datetime": "2026-06-27T20:28:24",
+   "run_id": "2026-06-27_20-27-57",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "product_id": 45607,
+   "old_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/e2e_45607_v2-2.webp"
+   ],
+   "new_urls": [
+    "https://av-sound.ru/wp-content/uploads/2026/06/e2e_45607_v2-3.webp"
+   ],
+   "old_attachment_ids": [
+    53468
+   ],
+   "new_attachment_ids": [
+    53469
+   ],
+   "source": "darkbg",
+   "kie_attempts": 0,
+   "cost_usd": 0.0,
+   "status": "replaced"
+  }
+ ],
+ "errors": []
+}

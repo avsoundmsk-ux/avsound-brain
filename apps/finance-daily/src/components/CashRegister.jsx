@@ -53,8 +53,7 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
 
   const маржа = реализация - (totals.себестоимость || 0)
   const pct = реализация ? Math.round(((реализация - (totals.себестоимость||0)) / реализация) * 100) : 0
-  const чистая = маржа + работа - расходы - зарплата - аренда
-  const зарплатаДня = маржа + работа - расходы - аренда
+  const чистая = маржа + работа - расходы - аренда
 
   async function saveToSheets() {
     setSaveStatus('saving')
@@ -71,8 +70,7 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
         расходы,
         зарплата,
         закупка,
-        зарплатаДня,
-        чистая,
+        прибыльДня: чистая,
       },
       продажи: salesItems.map(i => ({
         date: i.date, name: i.name, channel: i.channel,

@@ -51,11 +51,11 @@ def _cut_white(im, tol=32):
 def _radial_dark(size):
     """Серый радиальный градиент с подсветкой по центру: центр ~#6e7076, края ~#3a3b40."""
     W = H = size
-    bg = Image.new("RGB", (W, H), (58, 59, 64))
+    bg = Image.new("RGB", (W, H), (30, 30, 34))
     cx, cy = W / 2, H * 0.5
     maxd = (W ** 2 + H ** 2) ** 0.5 / 2
     px = bg.load()
-    c0 = (110, 112, 118); c1 = (52, 53, 58)
+    c0 = (60, 61, 66); c1 = (28, 28, 32)
     for y in range(H):
         for x in range(0, W, 2):
             d = (((x - cx) ** 2 + (y - cy) ** 2) ** 0.5) / maxd
@@ -88,7 +88,7 @@ def _cut_rembg(im):
     return None
 
 
-def run(src, out, size=1200, margin=0.16):
+def run(src, out, size=1600, margin=0.07):
     im = Image.open(src).convert("RGBA")
     cut = _cut_rembg(im)
     if cut is None:                 # фолбэк: flood-fill однотонного фона

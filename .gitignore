@@ -67,3 +67,7 @@ avtozvuk-agent/
 
 # Obsidian vault (бинарные файлы, кэш)
 obsidian/
+
+# секреты проекта av-sound automation
+config/.env
+.env

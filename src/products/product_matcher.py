@@ -64,12 +64,25 @@ def _tokens_conflict(t1: dict, t2: dict) -> bool:
     return False
 
 
+def _brand_matches(exc, cand: dict) -> bool:
+    """Бренд совпал, если канон-бренд есть в атрибуте 'Производитель' ИЛИ где-либо в названии."""
+    bl = exc.brand_canon.lower()
+    if _site_brand(cand).lower() == bl:
+        return True
+    name = (cand.get("name") or "").lower().replace("ё", "е")
+    # любой токен канон-бренда присутствует в названии (mb quart → 'quart')
+    toks = [t for t in bl.split() if len(t) > 1]
+    return any(t in name for t in toks)
+
+
 def score_candidate(exc, cand: dict) -> int:
     """Скоринг по MATCHING_RULES. Бренд обязателен — иначе 0."""
     site_brand = _site_brand(cand)
-    if site_brand.lower() != exc.brand_canon.lower():
+    if not _brand_matches(exc, cand):
         return 0
     s = 35  # бренд совпал
+    if site_brand.lower() != exc.brand_canon.lower():
+        site_brand = exc.brand_canon  # для извлечения модели
     site_model = extract_model(normalize_name(cand.get("name", "")), site_brand)
     if site_model and site_model == exc.model:
         s += 45

@@ -1,0 +1,67 @@
+/**
+ * better-auth — ядро аутентификации AV AI Studio.
+ * Спека: email/password (argon2), email verify, password reset, роли (additionalFields),
+ * 2FA TOTP (plugin). Вся критичная логика — server-only.
+ */
+import { betterAuth } from "better-auth";
+import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { twoFactor } from "better-auth/plugins/two-factor";
+import argon2 from "argon2";
+import { db } from "@/db";
+import { sendEmail } from "@/auth/email";
+import {
+  user, session, account, verification, twoFactor as twoFactorTable,
+} from "@/db/schema";
+
+export const auth = betterAuth({
+  appName: "AV AI Studio",
+  secret: process.env.BETTER_AUTH_SECRET,
+  baseURL: process.env.BETTER_AUTH_URL,
+
+  database: drizzleAdapter(db, {
+    provider: "pg",
+    schema: { user, session, account, verification, twoFactor: twoFactorTable },
+  }),
+
+  emailAndPassword: {
+    enabled: true,
+    requireEmailVerification: true,
+    autoSignIn: false,
+    // argon2 вместо дефолтного scrypt (по спеке безопасности)
+    password: {
+      hash: (password) => argon2.hash(password),
+      verify: ({ hash, password }) => argon2.verify(hash, password),
+    },
+    sendResetPassword: async ({ user, url }) => {
+      await sendEmail({
+        to: user.email,
+        subject: "Сброс пароля — AV AI Studio",
+        text: `Для сброса пароля перейдите по ссылке: ${url}`,
+      });
+    },
+  },
+
+  emailVerification: {
+    sendOnSignUp: true,
+    autoSignInAfterVerification: true,
+    sendVerificationEmail: async ({ user, url }) => {
+      await sendEmail({
+        to: user.email,
+        subject: "Подтверждение email — AV AI Studio",
+        text: `Подтвердите email по ссылке: ${url}`,
+      });
+    },
+  },
+
+  // роли: user | admin | owner — задаются backend, не вводом пользователя
+  user: {
+    additionalFields: {
+      role: { type: "string", required: false, defaultValue: "user", input: false },
+      status: { type: "string", required: false, defaultValue: "active", input: false },
+    },
+  },
+
+  plugins: [twoFactor()],
+});
+
+export type Session = typeof auth.$Infer.Session;

@@ -2,6 +2,9 @@
  * Полная схема БД AV AI Studio (Drizzle / Postgres).
  * Принцип: вся критичная логика (баланс, цены, ключи) — backend.
  * Баланс = сумма immutable-записей credit_ledger (не редактируется напрямую).
+ *
+ * Auth-таблицы (user/session/account/verification/two_factor) — формат better-auth.
+ * better-auth владеет ими; бизнес-таблицы ссылаются на user.id (text).
  */
 import {
   pgTable, text, uuid, integer, bigint, boolean, timestamp, jsonb, pgEnum, index,
@@ -20,38 +23,66 @@ export const priceTypeEnum = pgEnum("price_type", ["fixed", "markup", "multiplie
 export const topupStatusEnum = pgEnum("topup_status", ["pending", "paid", "failed", "canceled"]);
 export const payProviderEnum = pgEnum("pay_provider", ["yookassa", "stripe", "manual"]);
 
-// ---------- users / auth ----------
-export const users = pgTable("users", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  email: text("email").notNull().unique(),
-  passwordHash: text("password_hash"),         // argon2; null если соц-вход
+// ---------- auth (better-auth: text id) ----------
+// better-auth core "user" + additionalFields (role/status/twoFactorEnabled).
+export const user = pgTable("user", {
+  id: text("id").primaryKey(),
   name: text("name"),
+  email: text("email").notNull().unique(),
+  emailVerified: boolean("email_verified").notNull().default(false),
+  image: text("image"),
+  // --- additionalFields (приложение) ---
   role: roleEnum("role").notNull().default("user"),
   status: userStatusEnum("status").notNull().default("active"),
-  emailVerified: boolean("email_verified").notNull().default(false),
-  twoFactorSecret: text("two_factor_secret"),  // TOTP для admin/owner
   twoFactorEnabled: boolean("two_factor_enabled").notNull().default(false),
   createdAt: timestamp("created_at").notNull().defaultNow(),
-}, (t) => ({ emailIdx: index("users_email_idx").on(t.email) }));
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
+}, (t) => ({ emailIdx: index("user_email_idx").on(t.email) }));
 
-export const sessions = pgTable("sessions", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+export const session = pgTable("session", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   token: text("token").notNull().unique(),
   expiresAt: timestamp("expires_at").notNull(),
-  ip: text("ip"),
+  ipAddress: text("ip_address"),
   userAgent: text("user_agent"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
 
-// токены для verify email / reset password
-export const verificationTokens = pgTable("verification_tokens", {
-  id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  purpose: text("purpose").notNull(),          // "email_verify" | "password_reset"
-  token: text("token").notNull().unique(),
+// credentials (email/password argon2 hash в .password) + соц-аккаунты
+export const account = pgTable("account", {
+  id: text("id").primaryKey(),
+  accountId: text("account_id").notNull(),
+  providerId: text("provider_id").notNull(),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
+  accessToken: text("access_token"),
+  refreshToken: text("refresh_token"),
+  idToken: text("id_token"),
+  accessTokenExpiresAt: timestamp("access_token_expires_at"),
+  refreshTokenExpiresAt: timestamp("refresh_token_expires_at"),
+  scope: text("scope"),
+  password: text("password"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
+});
+
+// email verify / password reset (better-auth управляет)
+export const verification = pgTable("verification", {
+  id: text("id").primaryKey(),
+  identifier: text("identifier").notNull(),
+  value: text("value").notNull(),
   expiresAt: timestamp("expires_at").notNull(),
-  usedAt: timestamp("used_at"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
+});
+
+// 2FA (TOTP) — плагин two-factor
+export const twoFactor = pgTable("two_factor", {
+  id: text("id").primaryKey(),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
+  secret: text("secret").notNull(),
+  backupCodes: text("backup_codes").notNull(),
 });
 
 // ---------- провайдеры / модели / режимы / цены ----------
@@ -79,28 +110,28 @@ export const priceRules = pgTable("price_rules", {
   priceType: priceTypeEnum("price_type").notNull(),  // fixed|markup|multiplier
   value: integer("value").notNull(),                 // fixed=кредиты; markup=+кредиты; multiplier=%×100 (200=×2)
   enabled: boolean("enabled").notNull().default(true),
-  updatedBy: uuid("updated_by").references(() => users.id),
+  updatedBy: text("updated_by").references(() => user.id),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 }, (t) => ({ modelModeIdx: index("price_rules_model_mode_idx").on(t.modelId, t.mode) }));
 
 // ---------- кредиты (immutable ledger) ----------
 export const creditLedger = pgTable("credit_ledger", {
   id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   type: ledgerTypeEnum("type").notNull(),
   delta: integer("delta").notNull(),           // + начисление, − списание (в кредитах)
   balanceAfter: integer("balance_after").notNull(),
   jobId: uuid("job_id"),                        // связь с генерацией (hold/settle/refund)
   topupId: uuid("topup_id"),
   note: text("note"),
-  createdBy: uuid("created_by").references(() => users.id), // админ для adjust
+  createdBy: text("created_by").references(() => user.id), // админ для adjust
   createdAt: timestamp("created_at").notNull().defaultNow(),
 }, (t) => ({ userIdx: index("ledger_user_idx").on(t.userId, t.createdAt) }));
 
 // ---------- пополнения ----------
 export const topups = pgTable("topups", {
   id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   payProvider: payProviderEnum("pay_provider").notNull(),
   amountMinor: bigint("amount_minor", { mode: "number" }).notNull(), // в копейках/центах
   currency: text("currency").notNull().default("RUB"),
@@ -115,7 +146,7 @@ export const topups = pgTable("topups", {
 // ---------- jobs (генерации) ----------
 export const jobs = pgTable("jobs", {
   id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   modelId: uuid("model_id").notNull().references(() => models.id),
   mode: modeEnum("mode").notNull(),
   status: jobStatusEnum("status").notNull().default("created"),
@@ -147,7 +178,7 @@ export const jobLogs = pgTable("job_logs", {
 // ---------- продукт: промты, шаблоны, папки ----------
 export const promptLibrary = pgTable("prompt_library", {
   id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").references(() => users.id, { onDelete: "cascade" }), // null = общий
+  userId: text("user_id").references(() => user.id, { onDelete: "cascade" }), // null = общий
   title: text("title").notNull(),
   prompt: text("prompt").notNull(),
   tags: jsonb("tags"),
@@ -156,13 +187,13 @@ export const promptLibrary = pgTable("prompt_library", {
 
 export const folders = pgTable("folders", {
   id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   name: text("name").notNull(),
 });
 
 export const favorites = pgTable("favorites", {
   id: uuid("id").defaultRandom().primaryKey(),
-  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   jobId: uuid("job_id").notNull().references(() => jobs.id, { onDelete: "cascade" }),
   folderId: uuid("folder_id").references(() => folders.id, { onDelete: "set null" }),
 });
@@ -180,7 +211,7 @@ export const promoCodes = pgTable("promo_codes", {
 // ---------- админ-аудит ----------
 export const adminAudit = pgTable("admin_audit", {
   id: uuid("id").defaultRandom().primaryKey(),
-  adminId: uuid("admin_id").notNull().references(() => users.id),
+  adminId: text("admin_id").notNull().references(() => user.id),
   action: text("action").notNull(),            // "refund", "block_user", "set_price"...
   targetType: text("target_type"),
   targetId: text("target_id"),

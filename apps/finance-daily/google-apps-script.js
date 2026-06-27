@@ -1,216 +1,256 @@
-// AVSound Finance — Google Apps Script
-// Вставь весь этот код в Apps Script вместо старого
-// Опубликуй заново: Развернуть → Управление развёртываниями → ⚙️ → Изменить → Новая версия → Сохранить
+// AVSound Finance — Google Apps Script v2
+// Этап 1: полная структура листов, проверка дублей, история
+//
+// КАК УСТАНОВИТЬ:
+// 1. Открой script.google.com → найди скрипт таблицы
+// 2. Вставь весь этот код вместо старого
+// 3. Нажми "Выполнить" → setupSheets() — создаст все листы с заголовками
+// 4. Развернуть → Управление развёртываниями → ⚙️ → Изменить → Новая версия → Сохранить
+// 5. Скопируй новый URL развёртывания в sheetsApi.js
+
+const SS = SpreadsheetApp.getActiveSpreadsheet
+
+const SHEET = {
+  DAILY:     'daily_summary',
+  SALES:     'sales',
+  WORK:      'studio_work',
+  EXPENSES:  'expenses',
+  SALARY:    'salary',
+  PURCHASES: 'purchases',
+  CASHBOX:   'cashbox',
+  MONTHLY:   'monthly_report',
+  SETTINGS:  'settings',
+}
+
+const HEADERS = {
+  daily_summary: [
+    'day_id','дата','реализация','себестоимость','маржа','%маржи',
+    'работа','расходы','зарплата','закупка','аренда','прибыль_дня',
+    'остаток_вчера','приход_озон','приход_яндекс','расчётный','итого_касса','расхождение',
+  ],
+  sales: [
+    'record_id','day_id','дата','товар','канал',
+    'реализация','закупка','маржа','%маржи',
+  ],
+  studio_work:  ['record_id','day_id','дата','описание','сумма'],
+  expenses:     ['record_id','day_id','дата','описание','сумма'],
+  salary:       ['record_id','day_id','дата','описание','сумма'],
+  purchases:    ['record_id','day_id','дата','описание','сумма'],
+  cashbox: [
+    'record_id','day_id','дата',
+    'наличные','тБизнес','тинькофф','тБизнес2','тЯндекс','другое',
+    'итого','остаток_вчера','приход_озон','приход_яндекс','расчётный','расхождение',
+  ],
+}
+
+// ---------- helpers ----------
+
+function ss() { return SpreadsheetApp.getActiveSpreadsheet() }
+
+function getOrCreate(name) {
+  return ss().getSheetByName(name) || ss().insertSheet(name)
+}
+
+// Конвертация DD.MM.YYYY → YYYY-MM-DD (day_id)
+function toDayId(dateStr) {
+  const [d, m, y] = String(dateStr).split('.')
+  return `${y}-${m}-${d}`
+}
+
+// Найти строки по значению в колонке col (1-based) листа sheet
+function findRows(sheet, col, value) {
+  const data = sheet.getDataRange().getValues()
+  const result = []
+  for (let i = 1; i < data.length; i++) {
+    if (String(data[i][col - 1]) === String(value)) result.push(i + 1) // 1-based row
+  }
+  return result
+}
+
+// Удалить все строки с day_id из листа (снизу вверх чтобы не сбивать индексы)
+function deleteByDayId(sheet, dayId) {
+  const rows = findRows(sheet, 2, dayId) // col 2 = day_id
+  rows.reverse().forEach(r => sheet.deleteRow(r))
+}
+
+// ---------- setup ----------
+
+function setupSheets() {
+  const s = ss()
+
+  // Структурные листы
+  Object.entries(HEADERS).forEach(([name, headers]) => {
+    const sheet = getOrCreate(name)
+    if (sheet.getLastRow() === 0) {
+      sheet.appendRow(headers)
+      sheet.getRange(1, 1, 1, headers.length)
+        .setBackground('#1a237e').setFontColor('#ffffff').setFontWeight('bold')
+      sheet.setFrozenRows(1)
+    }
+  })
+
+  // monthly_report — формулы QUERY
+  const monthly = getOrCreate(SHEET.MONTHLY)
+  if (monthly.getLastRow() === 0) {
+    monthly.getRange('A1').setFormula(
+      `=QUERY(daily_summary!A:R, "SELECT LEFT(A,7), SUM(C), SUM(D), SUM(E), AVG(F), SUM(G), SUM(H), SUM(I), SUM(J), SUM(K), SUM(L) WHERE A <> 'day_id' AND A <> '' GROUP BY LEFT(A,7) ORDER BY LEFT(A,7) DESC LABEL LEFT(A,7) 'месяц', SUM(C) 'реализация', SUM(D) 'себестоимость', SUM(E) 'маржа', AVG(F) '%маржи', SUM(G) 'работа', SUM(H) 'расходы', SUM(I) 'зарплата', SUM(J) 'закупка', SUM(K) 'аренда', SUM(L) 'прибыль_дня'", 1)`
+    )
+    monthly.setFrozenRows(1)
+  }
+
+  // settings — справочники
+  const settings = getOrCreate(SHEET.SETTINGS)
+  if (settings.getLastRow() === 0) {
+    settings.getRange('A1:E1').setValues([['каналы_продаж','статьи_расходов','счета_кассы','сотрудники','типы_операций']])
+      .setBackground('#263238').setFontColor('#ffffff').setFontWeight('bold')
+    settings.getRange('A2:E6').setValues([
+      ['Авито',    'Расходники',  'Наличные',   'Миша',   'Продажа'],
+      ['Прямые',   'Инструмент',  'Т-Бизнес',   'Гера',   'Установка'],
+      ['Озон',     'Реклама',     'Тинькофф',   'Кедий',  'Закупка'],
+      ['Яндекс',   'Хоз-во',      'Т-Бизнес 2', 'Даша',   'Расход'],
+      ['',         'Транспорт',   'Т-Яндекс',   'Мастер', 'Зарплата'],
+    ])
+    settings.setFrozenRows(1)
+  }
+
+  return 'Setup complete'
+}
+
+// ---------- doGet — история ----------
+
+function doGet(e) {
+  const action = e && e.parameter && e.parameter.action
+
+  if (action === 'history') {
+    const sheet = ss().getSheetByName(SHEET.DAILY)
+    if (!sheet || sheet.getLastRow() < 2) {
+      return json({ history: [] })
+    }
+    const data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 2).getValues()
+    const history = data
+      .filter(r => r[0])
+      .map(r => ({ dayId: r[0], дата: r[1] }))
+      .reverse()
+    return json({ history })
+  }
+
+  if (action === 'day') {
+    const dayId = e.parameter.dayId
+    const result = {}
+    const sheets = [SHEET.DAILY, SHEET.SALES, SHEET.WORK, SHEET.EXPENSES, SHEET.SALARY, SHEET.PURCHASES, SHEET.CASHBOX]
+    sheets.forEach(name => {
+      const sheet = ss().getSheetByName(name)
+      if (!sheet) return
+      const all = sheet.getDataRange().getValues()
+      const headers = all[0]
+      const dayCol = headers.indexOf('day_id')
+      if (dayCol === -1) return
+      const rows = all.slice(1).filter(r => r[dayCol] === dayId)
+      result[name] = rows.map(r => {
+        const obj = {}
+        headers.forEach((h, i) => { obj[h] = r[i] })
+        return obj
+      })
+    })
+    return json(result)
+  }
+
+  return json({ error: 'unknown action' })
+}
+
+// ---------- doPost — сохранение ----------
 
 function doPost(e) {
-  const data = JSON.parse(e.postData.contents);
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const payload = JSON.parse(e.postData.contents)
+  const { дата, forceOverwrite, summary, продажи, работа, расходы, зарплата, закупка, касса } = payload
 
-  // Создаём лист с названием = дата (или перезаписываем)
-  const sheetName = data.дата;
-  let sheet = ss.getSheetByName(sheetName);
-  if (sheet) {
-    sheet.clearContents();
-    sheet.clearFormats();
-  } else {
-    sheet = ss.insertSheet(sheetName, 0);
+  const dayId = toDayId(дата)
+  const dailySheet = getOrCreate(SHEET.DAILY)
+
+  // Проверка дубля
+  const existingRows = findRows(dailySheet, 1, dayId)
+  if (existingRows.length > 0 && !forceOverwrite) {
+    return json({ existed: true, dayId })
   }
 
-  let row = 1;
-
-  function set(r, c, val) { sheet.getRange(r, c).setValue(val); }
-
-  function writeBlock(title, headers, rows, totalsRow) {
-    // Заголовок блока
-    const w = headers.length;
-    sheet.getRange(row, 1, 1, w).merge()
-      .setValue(title)
-      .setBackground('#263238').setFontColor('#ffffff')
-      .setFontWeight('bold').setFontSize(11);
-    row++;
-
-    // Шапка таблицы
-    sheet.getRange(row, 1, 1, w).setValues([headers])
-      .setBackground('#eceff1').setFontWeight('bold');
-    row++;
-
-    // Строки данных
-    rows.forEach((r2, idx) => {
-      sheet.getRange(row, 1, 1, w).setValues([r2]);
-      if (idx % 2 === 1) sheet.getRange(row, 1, 1, w).setBackground('#fafafa');
-      row++;
-    });
-
-    // Итого
-    if (totalsRow) {
-      sheet.getRange(row, 1, 1, w).setValues([totalsRow])
-        .setBackground('#e0e0e0').setFontWeight('bold');
-      row++;
-    }
-
-    row++; // пустая строка
+  // Если перезапись — удалить старые данные по day_id из всех листов
+  if (forceOverwrite) {
+    [SHEET.DAILY, SHEET.SALES, SHEET.WORK, SHEET.EXPENSES, SHEET.SALARY, SHEET.PURCHASES, SHEET.CASHBOX]
+      .forEach(name => {
+        const sh = getOrCreate(name)
+        // daily_summary: day_id в col 1
+        if (name === SHEET.DAILY) {
+          findRows(sh, 1, dayId).reverse().forEach(r => sh.deleteRow(r))
+        } else {
+          deleteByDayId(sh, dayId)
+        }
+      })
   }
 
-  function fmtNum(n) { return n || 0; }
+  const s = summary || {}
+  const k = касса || {}
+  const n = v => (v !== undefined && v !== null) ? v : 0
 
-  const s = data.summary || {};
-  const k = data.касса || {};
+  // --- daily_summary (1 строка) ---
+  dailySheet.appendRow([
+    dayId, дата,
+    n(s.реализация), n(s.себестоимость), n(s.маржа), n(s.pct),
+    n(s.работа), n(s.расходы), n(s.зарплата), n(s.закупка), 5000, n(s.прибыльДня),
+    n(k.остатокВчера), n(k.приходОзон), n(k.приходЯндекс),
+    n(k.расчётный), n(k.итогоВКассе), n(k.расхождение),
+  ])
 
-  // === ЗАГОЛОВОК ===
-  sheet.getRange(row, 1, 1, 7).merge()
-    .setValue('AVSound — Отчёт за ' + data.дата)
-    .setBackground('#1a237e').setFontColor('#ffffff')
-    .setFontWeight('bold').setFontSize(14).setHorizontalAlignment('center');
-  row++;
-  row++;
+  // --- sales ---
+  const salesSheet = getOrCreate(SHEET.SALES)
+  ;(продажи || []).forEach((item, i) => {
+    const pct = item.реализация ? Math.round((item.маржа / item.реализация) * 100) : 0
+    salesSheet.appendRow([
+      `${dayId}_sl_${i + 1}`, dayId, дата,
+      item.name, item.channel,
+      n(item.реализация), n(item.закупка), n(item.маржа), pct,
+    ])
+  })
 
-  // === ПРОДАЖИ ===
-  const sales = data.продажи || [];
-  const totSales = sales.reduce((a, i) => ({
-    р: a.р + i.реализация, з: a.з + i.закупка, м: a.м + i.маржа
-  }), { р: 0, з: 0, м: 0 });
-  const pctTot = totSales.р ? Math.round((totSales.м / totSales.р) * 100) : 0;
+  // --- studio_work ---
+  const workSheet = getOrCreate(SHEET.WORK)
+  ;(работа || []).forEach((item, i) => {
+    workSheet.appendRow([`${dayId}_wk_${i + 1}`, dayId, дата, item.comment || '', n(item.сумма)])
+  })
 
-  writeBlock(
-    '📦 ПРОДАЖИ',
-    ['Дата', 'Товар', 'Канал', 'Реализация ₽', 'Закупка ₽', 'Маржа ₽', '% маржи'],
-    sales.map(i => {
-      const p = i.реализация ? Math.round((i.маржа / i.реализация) * 100) : 0;
-      return [i.date, i.name, i.channel, fmtNum(i.реализация), fmtNum(i.закупка), fmtNum(i.маржа), p + '%'];
-    }),
-    ['ИТОГО', '', '', totSales.р, totSales.з, totSales.м, pctTot + '%']
-  );
+  // --- expenses ---
+  const expSheet = getOrCreate(SHEET.EXPENSES)
+  ;(расходы || []).forEach((item, i) => {
+    expSheet.appendRow([`${dayId}_ex_${i + 1}`, dayId, дата, item.comment || '', n(item.сумма)])
+  })
 
-  // === РАБОТА СТУДИИ ===
-  const work = data.работа || [];
-  writeBlock(
-    '🔧 РАБОТА СТУДИИ',
-    ['Дата', 'Описание', 'Сумма ₽'],
-    work.map(i => [i.date, i.comment || '', fmtNum(i.сумма)]),
-    ['ИТОГО', '', work.reduce((s2, i) => s2 + i.сумма, 0)]
-  );
+  // --- salary ---
+  const salSheet = getOrCreate(SHEET.SALARY)
+  ;(зарплата || []).forEach((item, i) => {
+    salSheet.appendRow([`${dayId}_sa_${i + 1}`, dayId, дата, item.comment || '', n(item.сумма)])
+  })
 
-  // === РАСХОДЫ ===
-  const exp = data.расходы || [];
-  writeBlock(
-    '💸 РАСХОДЫ',
-    ['Дата', 'Описание', 'Сумма ₽'],
-    exp.map(i => [i.date, i.comment || '', fmtNum(i.сумма)]),
-    ['ИТОГО', '', exp.reduce((s2, i) => s2 + i.сумма, 0)]
-  );
+  // --- purchases ---
+  const purSheet = getOrCreate(SHEET.PURCHASES)
+  ;(закупка || []).forEach((item, i) => {
+    purSheet.appendRow([`${dayId}_pu_${i + 1}`, dayId, дата, item.comment || '', n(item.сумма)])
+  })
 
-  // === ЗАРПЛАТА (выплаты из файла) ===
-  const sal = data.зарплата || [];
-  writeBlock(
-    '👤 ЗАРПЛАТА (выплаты)',
-    ['Дата', 'Описание', 'Сумма ₽'],
-    sal.map(i => [i.date, i.comment || '', fmtNum(i.сумма)]),
-    ['ИТОГО', '', sal.reduce((s2, i) => s2 + i.сумма, 0)]
-  );
+  // --- cashbox (1 строка) ---
+  const cashSheet = getOrCreate(SHEET.CASHBOX)
+  cashSheet.appendRow([
+    `${dayId}_cb_1`, dayId, дата,
+    n(k.наличные), n(k.тБизнес), n(k.тинькофф), n(k.тБизнес2), n(k.тЯндекс), n(k.другое),
+    n(k.итогоВКассе), n(k.остатокВчера), n(k.приходОзон), n(k.приходЯндекс),
+    n(k.расчётный), n(k.расхождение),
+  ])
 
-  // === ЗАКУПКА СКЛАДА ===
-  const stk = data.закупка || [];
-  writeBlock(
-    '📦 ЗАКУПКА СКЛАДА',
-    ['Дата', 'Описание', 'Сумма ₽'],
-    stk.map(i => [i.date, i.comment || '', fmtNum(i.сумма)]),
-    ['ИТОГО', '', stk.reduce((s2, i) => s2 + i.сумма, 0)]
-  );
+  return json({ success: true, dayId, existed: false })
+}
 
-  // === ИТОГИ ДНЯ ===
-  sheet.getRange(row, 1, 1, 3).merge()
-    .setValue('📊 ИТОГИ ДНЯ')
-    .setBackground('#263238').setFontColor('#ffffff').setFontWeight('bold').setFontSize(11);
-  row++;
+// ---------- util ----------
 
-  const summaryRows = [
-    ['Реализация', fmtNum(s.реализация), '#e8f5e9', false],
-    ['Себестоимость', fmtNum(s.себестоимость), '#f5f5f5', false],
-    ['Маржа продаж', fmtNum(s.маржа), '#c8e6c9', true],
-    ['+ Работа студии', fmtNum(s.работа), '#e3f2fd', true],
-    ['− Расходы', fmtNum(s.расходы), '#ffebee', false],
-    ['− Зарплата выплачено', fmtNum(s.зарплата), '#fff3e0', false],
-    ['− Закупка склада', fmtNum(s.закупка), '#f3e5f5', false],
-    ['− Аренда (авто)', 5000, '#eceff1', false],
-  ];
-
-  summaryRows.forEach(([label, val, bg, bold]) => {
-    sheet.getRange(row, 1).setValue(label);
-    sheet.getRange(row, 2).setValue(val);
-    sheet.getRange(row, 1, 1, 3).setBackground(bg);
-    if (bold) sheet.getRange(row, 1, 1, 3).setFontWeight('bold');
-    row++;
-  });
-
-  // Зарплата дня — жёлтый
-  sheet.getRange(row, 1).setValue('💰 ЗАРПЛАТА ДНЯ (заработано)');
-  sheet.getRange(row, 2).setValue(fmtNum(s.зарплатаДня));
-  sheet.getRange(row, 1, 1, 3).setBackground('#fff8e1').setFontWeight('bold').setFontSize(12);
-  row++;
-
-  // Чистая прибыль — тёмный
-  sheet.getRange(row, 1).setValue('⭐ ЧИСТАЯ ПРИБЫЛЬ');
-  sheet.getRange(row, 2).setValue(fmtNum(s.чистая));
-  sheet.getRange(row, 1, 1, 3).setBackground('#1b5e20').setFontColor('#ffffff').setFontWeight('bold').setFontSize(13);
-  row++;
-  row++;
-
-  // === КАССА ===
-  sheet.getRange(row, 1, 1, 3).merge()
-    .setValue('💳 КАССА НА ВЕЧЕР')
-    .setBackground('#263238').setFontColor('#ffffff').setFontWeight('bold').setFontSize(11);
-  row++;
-
-  const kassaRows = [
-    ['Наличные', fmtNum(k.наличные)],
-    ['Т-Бизнес', fmtNum(k.тБизнес)],
-    ['Тинькофф', fmtNum(k.тинькофф)],
-    ['Т-Бизнес 2', fmtNum(k.тБизнес2)],
-    ['Т-Яндекс', fmtNum(k.тЯндекс)],
-    ['Другое', fmtNum(k.другое)],
-  ];
-
-  kassaRows.forEach(([label, val]) => {
-    sheet.getRange(row, 1).setValue(label);
-    sheet.getRange(row, 2).setValue(val);
-    row++;
-  });
-
-  sheet.getRange(row, 1).setValue('ИТОГО В КАССЕ');
-  sheet.getRange(row, 2).setValue(fmtNum(k.итогоВКассе));
-  sheet.getRange(row, 1, 1, 3).setBackground('#e0e0e0').setFontWeight('bold');
-  row++;
-  row++;
-
-  sheet.getRange(row, 1).setValue('Остаток на начало дня');
-  sheet.getRange(row, 2).setValue(fmtNum(k.остатокВчера));
-  row++;
-  sheet.getRange(row, 1).setValue('Приход Озон');
-  sheet.getRange(row, 2).setValue(fmtNum(k.приходОзон));
-  row++;
-  sheet.getRange(row, 1).setValue('Приход Яндекс');
-  sheet.getRange(row, 2).setValue(fmtNum(k.приходЯндекс));
-  row++;
-  sheet.getRange(row, 1).setValue('Расчётный остаток');
-  sheet.getRange(row, 2).setValue(fmtNum(k.расчётный));
-  sheet.getRange(row, 1, 1, 3).setFontWeight('bold');
-  row++;
-
-  const сходится = Math.abs(k.расхождение || 0) < 1;
-  sheet.getRange(row, 1).setValue('Расхождение');
-  sheet.getRange(row, 2).setValue(fmtNum(k.расхождение));
-  sheet.getRange(row, 3).setValue(сходится ? '✓ Касса сходится' : '✗ Расхождение');
-  sheet.getRange(row, 1, 1, 3).setBackground(сходится ? '#c8e6c9' : '#ffcdd2');
-  row++;
-
-  // Ширина колонок
-  sheet.setColumnWidth(1, 220);
-  sheet.setColumnWidth(2, 140);
-  sheet.setColumnWidth(3, 120);
-  sheet.setColumnWidth(4, 130);
-  sheet.setColumnWidth(5, 130);
-  sheet.setColumnWidth(6, 130);
-  sheet.setColumnWidth(7, 80);
-
-  return ContentService.createTextOutput('ok');
+function json(obj) {
+  return ContentService
+    .createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON)
 }

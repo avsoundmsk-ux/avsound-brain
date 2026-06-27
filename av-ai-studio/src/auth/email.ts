@@ -7,8 +7,9 @@ type Mail = { to: string; subject: string; text: string };
 
 export async function sendEmail(mail: Mail): Promise<void> {
   if (!process.env.SMTP_HOST) {
+    // SECURITY (C-4): НЕ логировать mail.text — содержит verify/reset токены (credential).
+    // Только subject + to. Текст письма наружу не пишем.
     console.warn(`[email] SMTP не настроен — письмо не отправлено: "${mail.subject}" → ${mail.to}`);
-    console.warn(`[email] ссылка/текст: ${mail.text}`);
     return;
   }
   // TODO(P1/P4): реальная отправка через SMTP (nodemailer/Resend) после получения env.

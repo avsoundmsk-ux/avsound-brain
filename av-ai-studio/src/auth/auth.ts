@@ -7,6 +7,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { twoFactor } from "better-auth/plugins/two-factor";
 import argon2 from "argon2";
+import { BETTER_AUTH_SECRET, BETTER_AUTH_URL } from "@/env";
 import { db } from "@/db";
 import { sendEmail } from "@/auth/email";
 import {
@@ -15,9 +16,9 @@ import {
 
 export const auth = betterAuth({
   appName: "AV AI Studio",
-  secret: process.env.BETTER_AUTH_SECRET,
-  baseURL: process.env.BETTER_AUTH_URL,
-  trustedOrigins: process.env.BETTER_AUTH_URL ? [process.env.BETTER_AUTH_URL] : [],
+  secret: BETTER_AUTH_SECRET,
+  baseURL: BETTER_AUTH_URL,
+  trustedOrigins: [BETTER_AUTH_URL],
 
   // rate-limit чувствительных auth-эндпоинтов (storage memory — без БД)
   rateLimit: {

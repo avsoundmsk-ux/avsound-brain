@@ -101,8 +101,9 @@ def match_one(client: WooReadClient, prod) -> MatchResult:
     try:
         cands = client.search_products(query, per_page=10)
     except Exception as e:
+        # сбой сети (VPN/timeout/SSL/connection) — это НЕ not_found
         return MatchResult(prod.row, prod.name, exc.brand_canon, None, 0,
-                           "needs_manual_review", f"search_error:{type(e).__name__}",
+                           "network_error", f"network:{type(e).__name__}",
                            cat.final_id, cat.status)
 
     scored = sorted(((score_candidate(exc, c), c) for c in cands), key=lambda x: -x[0])

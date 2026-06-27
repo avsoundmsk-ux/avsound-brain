@@ -23,8 +23,9 @@ from core.logger import get_logger  # noqa: E402
 
 log = get_logger("woocommerce_client")
 
-RETRIES = 6
-TIMEOUT = 120
+import os
+RETRIES = int(os.environ.get("WOO_RETRIES", "6"))
+TIMEOUT = int(os.environ.get("WOO_TIMEOUT", "120"))
 
 
 class WooReadClient:

@@ -12,6 +12,15 @@ export type Role = "user" | "admin" | "owner";
 
 const ROLE_RANK: Record<Role, number> = { user: 0, admin: 1, owner: 2 };
 
+/**
+ * SECURITY (H-4): роль валидируется в рантайме, не через unsafe as-cast.
+ * Любое неизвестное значение → "user" (безопасный минимум), а не undefined,
+ * чтобы `ROLE_RANK[role]` никогда не был undefined.
+ */
+function normalizeRole(v: unknown): Role {
+  return v === "owner" || v === "admin" ? v : "user";
+}
+
 export class AuthError extends Error {
   constructor(
     public readonly code: "UNAUTHENTICATED" | "FORBIDDEN" | "BLOCKED",
@@ -30,15 +39,15 @@ export async function getSession() {
 export async function requireUser() {
   const s = await getSession();
   if (!s) throw new AuthError("UNAUTHENTICATED", 401);
-  const status = (s.user as { status?: string }).status ?? "active";
-  if (status === "blocked") throw new AuthError("BLOCKED", 403);
+  const u = s.user as Record<string, unknown>;
+  if (u.status === "blocked") throw new AuthError("BLOCKED", 403);
   return s;
 }
 
 /** Требует роль не ниже min (user < admin < owner). */
 export async function requireRole(min: Role) {
   const s = await requireUser();
-  const role = ((s.user as { role?: Role }).role ?? "user");
+  const role = normalizeRole((s.user as Record<string, unknown>).role);
   if (ROLE_RANK[role] < ROLE_RANK[min]) throw new AuthError("FORBIDDEN", 403);
   return s;
 }

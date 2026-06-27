@@ -1,6 +1,11 @@
 /**
  * In-memory rate limiter (на инстанс). MVP — без Redis/БД.
- * P7 хардненг: заменить на durable store (Postgres/Redis) для мульти-воркера.
+ *
+ * ⚠️ KNOWN RISK (C-2/M-2): счётчик живёт в памяти ОДНОГО инстанса.
+ * На serverless (Vercel) / мульти-воркере лимит фиктивен — fan-out по lambda.
+ * ПРИГОДНО ТОЛЬКО ДЛЯ DEV / single-instance.
+ * ДО PRODUCTION заменить на durable store (Upstash Redis / Postgres-таблица).
+ * Это БЛОКЕР production (см. SECURITY.md). То же касается better-auth rateLimit (storage: memory).
  */
 type Bucket = { count: number; resetAt: number };
 const store = new Map<string, Bucket>();
@@ -21,9 +26,18 @@ export function rateLimit(key: string, limit: number, windowMs: number): RateRes
   return { ok: true, remaining: limit - b.count, retryAfter: 0 };
 }
 
-/** IP клиента из заголовков прокси (Vercel/Hetzner). */
+/**
+ * IP клиента ТОЛЬКО из доверенных источников.
+ * SECURITY (C-1): произвольный `x-forwarded-for` спуфится клиентом → не используем.
+ * Доверенные заголовки, выставляемые инфраструктурой (клиент не может переопределить):
+ *  - Vercel: `x-vercel-forwarded-for`
+ *  - reverse-proxy (Nginx/HAProxy на Hetzner): `x-real-ip`
+ * Нет доверенного источника → "unknown" (fail-safe: общий, более строгий лимит).
+ */
 export function clientIp(req: Request): string {
-  const xff = req.headers.get("x-forwarded-for");
-  if (xff) return xff.split(",")[0]!.trim();
-  return req.headers.get("x-real-ip") ?? "unknown";
+  const vercel = req.headers.get("x-vercel-forwarded-for");
+  if (vercel) return vercel.split(",")[0]!.trim();
+  const real = req.headers.get("x-real-ip");
+  if (real) return real.trim();
+  return "unknown";
 }

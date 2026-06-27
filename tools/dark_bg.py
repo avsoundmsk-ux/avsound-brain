@@ -25,8 +25,7 @@ def _cut_white(im, tol=32):
     # цвет фона = среднее по углам
     corners = [px[0, 0], px[W - 1, 0], px[0, H - 1], px[W - 1, 1]]
     bg = tuple(sum(c[i] for c in corners) // 4 for i in range(3))
-    if sum(bg) < 3 * 90:  # фон тёмный — не трогаем (вырез не нужен)
-        return im.convert("RGBA"), False
+    # режем любой однотонный фон (светлый ИЛИ тёмный) flood-fill'ом от краёв
     seen = bytearray(W * H)
     dq = deque()
     for x in range(W):

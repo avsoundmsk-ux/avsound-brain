@@ -79,7 +79,10 @@ export function DashboardUI({ email, role, balance: initialBalance }: { email: s
     <main style={{ maxWidth: 720, margin: "0 auto", padding: "40px 24px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <h1>Личный кабинет</h1>
-        <button onClick={async () => { await signOut(); router.push("/"); }} style={ghost}>Выйти</button>
+        <div style={{ display: "flex", gap: 8 }}>
+          {isStaff && <a href="/admin" style={{ ...ghost, textDecoration: "none", lineHeight: "20px" }}>Админка</a>}
+          <button onClick={async () => { await signOut(); router.push("/"); }} style={ghost}>Выйти</button>
+        </div>
       </div>
       <p style={{ color: "#8b93a3" }}>{email} · роль: <b>{role}</b></p>
 

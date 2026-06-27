@@ -38,14 +38,18 @@ GENERATED_DIR = PROJECT_ROOT / "images" / "generated"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0"}
 
 PROMPT = (
-    "Create a premium studio-quality square ecommerce product photo for AV-Sound.ru. "
-    "Keep the product exactly identical to the original image. Do not change the product "
-    "shape, proportions, color, materials, logos, branding, text, buttons, connectors, "
-    "details or packaging. Replace ONLY the background. Use a premium dark graphite/black "
-    "studio background, soft radial backlight, realistic reflection, subtle floor shadow, "
-    "clean professional lighting. Center the product, fill ~80% of frame. Photorealistic, "
-    "ultra sharp, 1:1 square. No people, no cars, no furniture, no extra objects, no text, "
-    "no watermark, no distortion."
+    "Cut out ONLY the product from the original photo and place it on a brand-new background. "
+    "COMPLETELY REMOVE and discard the original background. Do NOT keep any part of the original "
+    "background, do NOT keep a framed photo, card, rectangle, border, inner picture or a second "
+    "background behind the product — only the isolated product object remains. "
+    "The new dark graphite-to-black studio background must be FULL-BLEED, filling the entire frame "
+    "edge to edge, with soft radial backlight, a realistic reflection under the product and a subtle "
+    "soft shadow. "
+    "Keep the product itself exactly identical: same shape, proportions, color, materials, logos, "
+    "branding, text, buttons, connectors, details. Center the product, fill ~80% of frame. "
+    "Premium ecommerce product photo for AV-Sound.ru. Photorealistic, ultra sharp, 1:1 square. "
+    "No people, no cars, no furniture, no extra objects, no text, no watermark, no distortion, "
+    "no picture-in-picture, no inner frame."
 )
 MAX_ATTEMPTS = 3
 
@@ -208,7 +212,21 @@ class KieProvider(ImageGenerationProvider, _KieGatewayMixin):
         return self._run(original_path, out_path)
 
 
-PROVIDERS = {"nanobanana": NanoBananaProvider, "kie": KieProvider}
+class DarkBgProvider(ImageGenerationProvider):
+    """Детерминированный (без ИИ, бесплатно): вырез фона + тёмный студийный градиент.
+    Надёжно «вырезает товар и ставит на фон» — без двойного фона/рамок."""
+    provider_name = "darkbg"
+    cost_per_generation = 0.0
+
+    def _generate_once(self, original_path: Path, out_path: Path) -> bool:
+        tools_dir = PROJECT_ROOT / "tools"
+        sys.path.insert(0, str(tools_dir))
+        import dark_bg
+        dark_bg.run(str(original_path), str(out_path))
+        return out_path.exists()
+
+
+PROVIDERS = {"nanobanana": NanoBananaProvider, "kie": KieProvider, "darkbg": DarkBgProvider}
 
 
 def get_provider(budget: BudgetGuard | None = None) -> ImageGenerationProvider:

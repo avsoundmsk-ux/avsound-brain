@@ -39,12 +39,13 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
         <Card label="% маржи" value={pct + '%'} color={pct >= 30 ? 'text-green-600' : pct >= 15 ? 'text-yellow-600' : 'text-red-500'} />
       </div>
       {/* Расходы + итог */}
-      <div className="grid grid-cols-6 gap-3">
+      <div className="grid grid-cols-7 gap-3">
         <Card label="Работа студии" value={fmt(работа)} color="text-blue-600" />
         <Card label="Расходы" value={fmt(расходы)} color="text-red-500" />
-        <Card label="Зарплата" value={fmt(зарплата)} color="text-orange-500" />
+        <Card label="Зарплата (выпл)" value={fmt(зарплата)} color="text-orange-500" />
         <Card label="Закупка склад" value={fmt(закупка)} color="text-purple-600" />
         <Card label="Аренда (авто)" value={fmt(аренда)} color="text-gray-400" />
+        <Card label="💰 Зарплата дня" value={fmt(маржа + работа - расходы - аренда)} color={(маржа + работа - расходы - аренда) >= 0 ? 'text-yellow-500' : 'text-red-500'} />
         <Card label="Чистая прибыль" value={fmt(чистая)} color={чистая >= 0 ? 'text-green-400' : 'text-red-400'} dark />
       </div>
     </div>

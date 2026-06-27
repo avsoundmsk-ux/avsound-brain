@@ -100,7 +100,16 @@ export default function App() {
       )}
 
       {/* Вкладка: Касса */}
-      {tab === 'касса' && <CashRegister totals={totals} />}
+      {tab === 'касса' && (
+        <CashRegister
+          totals={totals}
+          salesItems={g('продажи')}
+          workItems={g('работа')}
+          expenseItems={g('расходы')}
+          salaryItems={g('зарплата')}
+          stockItems={g('закупка')}
+        />
+      )}
 
       {hasAny && (
         <button onClick={reset} className="mt-6 text-sm text-gray-400 hover:text-gray-600 underline">

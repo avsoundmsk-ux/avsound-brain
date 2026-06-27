@@ -30,7 +30,7 @@ const CASH_FIELDS = [
   { key: 'другое',   label: 'Другое' },
 ]
 
-export default function CashRegister({ totals }) {
+export default function CashRegister({ totals, salesItems = [], workItems = [], expenseItems = [], salaryItems = [], stockItems = [] }) {
   const { реализация = 0, работа = 0, расходы = 0, зарплата = 0, закупка = 0 } = totals
 
   const [cash, setCash] = useState({})
@@ -54,6 +54,7 @@ export default function CashRegister({ totals }) {
   const маржа = реализация - (totals.себестоимость || 0)
   const pct = реализация ? Math.round(((реализация - (totals.себестоимость||0)) / реализация) * 100) : 0
   const чистая = маржа + работа - расходы - зарплата - аренда
+  const зарплатаДня = маржа + работа - расходы - аренда
 
   async function saveToSheets() {
     setSaveStatus('saving')
@@ -61,27 +62,40 @@ export default function CashRegister({ totals }) {
     const дата = `${d}.${m}.${y}`
     const payload = {
       дата,
-      реализация,
-      себестоимость: totals.себестоимость || 0,
-      маржа,
-      pct,
-      работа,
-      расходы,
-      зарплата,
-      закупка,
-      чистая,
-      остатокВчера,
-      приходОзон,
-      приходЯндекс,
-      наличные:  cash.наличные  || 0,
-      тБизнес:   cash.тБизнес   || 0,
-      тинькофф:  cash.тинькофф  || 0,
-      тБизнес2:  cash.тБизнес2  || 0,
-      тЯндекс:   cash.тЯндекс   || 0,
-      другое:    cash.другое    || 0,
-      итогоВКассе,
-      расчётный,
-      расхождение,
+      summary: {
+        реализация,
+        себестоимость: totals.себестоимость || 0,
+        маржа,
+        pct,
+        работа,
+        расходы,
+        зарплата,
+        закупка,
+        зарплатаДня,
+        чистая,
+      },
+      продажи: salesItems.map(i => ({
+        date: i.date, name: i.name, channel: i.channel,
+        реализация: i.реализация, закупка: i.закупка, маржа: i.маржа,
+      })),
+      работа: workItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
+      расходы: expenseItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
+      зарплата: salaryItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
+      закупка: stockItems.map(i => ({ date: i.date, comment: i.comment, сумма: i.сумма })),
+      касса: {
+        наличные:  cash.наличные  || 0,
+        тБизнес:   cash.тБизнес   || 0,
+        тинькофф:  cash.тинькофф  || 0,
+        тБизнес2:  cash.тБизнес2  || 0,
+        тЯндекс:   cash.тЯндекс   || 0,
+        другое:    cash.другое    || 0,
+        итогоВКассе,
+        остатокВчера,
+        приходОзон,
+        приходЯндекс,
+        расчётный,
+        расхождение,
+      },
     }
     try {
       await fetch(SCRIPT_URL, {

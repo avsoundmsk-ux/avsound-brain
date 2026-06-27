@@ -77,9 +77,15 @@ def _download(url: str, dst: Path, tries: int = 8) -> Path:
             with urllib.request.urlopen(req, timeout=60) as r, open(dst, "wb") as f:
                 f.write(r.read())
             return dst
+        except urllib.error.HTTPError as e:
+            # 4xx (403/404) — постоянная ошибка источника, НЕ ретраить (кроме 429)
+            if e.code != 429:
+                raise
+            last = e
+            time.sleep(min(3 * (2 ** attempt), 60))
         except Exception as e:
             last = e
-            wait = min(3 * (2 ** attempt), 60)
+            wait = min(3 * (2 ** attempt), 30)
             log.warning("download повтор %d/%d: %s → %.0fс", attempt + 1, tries, type(e).__name__, wait)
             time.sleep(wait)
     raise last

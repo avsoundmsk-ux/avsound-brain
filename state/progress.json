@@ -1,1 +1,14 @@
-{}
+{
+ "c633961cfb25e813": {
+  "status": "needs_manual_review",
+  "row": 7,
+  "product_id": 43791,
+  "reason": "all_photos_failed"
+ },
+ "7c7b99d3c0a7fa52": {
+  "status": "needs_manual_review",
+  "row": 8,
+  "product_id": 45482,
+  "reason": "no_photo"
+ }
+}

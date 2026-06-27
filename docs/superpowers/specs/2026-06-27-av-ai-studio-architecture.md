@@ -65,8 +65,15 @@ UI (Next) → API-роуты (auth+zod) → сервисы (`CreditService`, `Pr
 - **Phase 6 — Продукт-UX:** калькулятор, история, повтор, копировать промт, библиотека промтов, шаблоны, папки/избранное, промокоды.
 - **Phase 7 — Харднинг:** rate-limit, anti-brute-force, бэкапы БД, мониторинг, режимы i2v/v2v/image/audio.
 
-## 5. Решения до старта (нужен твой выбор)
-1. **Платёжка:** ЮKassa/CloudPayments (РФ-карты) vs Stripe (межд.) vs обе.
-2. **Деплой:** твой Hetzner (Docker) vs Vercel+worker.
-3. **Очередь:** pg-boss (просто, без Redis) vs BullMQ+Redis.
-4. **ai-hub:** переиспользовать как есть (импорт) vs влить код в новый монорепо.
+## 5. Решения (УТВЕРЖДЕНО 2026-06-27)
+1. **Платёжка:** ✅ ОБЕ — ЮKassa (РФ) + Stripe (межд.).
+2. **Деплой:** ✅ Vercel (UI/API) + worker на Hetzner.
+3. **Очередь:** ✅ pg-boss (на Postgres, без Redis).
+4. **ai-hub:** ✅ переиспользовать как ядро (импорт provider-слоя).
+
+## 6. Инфра, которую нужно дать (по ходу Phase 1–4)
+- **DATABASE_URL** — Postgres (рекомендую Neon — бесплатный, serverless, дружит с Vercel).
+- **SMTP** (для email verify/reset) — Resend/SendGrid/любой.
+- **ЮKassa**: shopId + secretKey. **Stripe**: secret + webhook secret.
+- **S3** (R2/B2): ключи + бакет.
+- Ключи провайдеров уже есть: KIE, ModelArk (в ai-hub).

@@ -6,6 +6,7 @@ import SalesTable from './components/SalesTable.jsx'
 import WorkSection from './components/WorkSection.jsx'
 import ExpensesSection from './components/ExpensesSection.jsx'
 import CashRegister from './components/CashRegister.jsx'
+import HistoryTab from './components/HistoryTab.jsx'
 import { parseFile } from './utils/parseSales.js'
 
 const SLOTS = [
@@ -46,8 +47,9 @@ export default function App() {
   function reset() { setData({}); setError(null); setTab('отчёт') }
 
   const tabs = [
-    { key: 'отчёт', label: 'Отчёт' },
-    { key: 'касса', label: 'Касса' },
+    { key: 'отчёт',   label: 'Отчёт' },
+    { key: 'касса',   label: 'Касса' },
+    { key: 'история', label: 'История' },
   ]
 
   return (
@@ -98,6 +100,9 @@ export default function App() {
           {data.продажи  && <SalesTable items={g('продажи')} />}
         </>
       )}
+
+      {/* Вкладка: История */}
+      {tab === 'история' && <HistoryTab />}
 
       {/* Вкладка: Касса */}
       {tab === 'касса' && (

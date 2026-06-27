@@ -1,0 +1,22 @@
+{
+ "mode": "dry-run",
+ "generated": "2026-06-27T15:31:57",
+ "total": 1,
+ "summary": {
+  "matched": 1
+ },
+ "problems": 0,
+ "rows": [
+  {
+   "row": 7,
+   "name": "Pride Uno plus",
+   "brand": "Pride",
+   "product_id": 41560,
+   "score": 95,
+   "status": "matched",
+   "reason": "score=95",
+   "category_id": 256,
+   "category_status": "ok"
+  }
+ ]
+}

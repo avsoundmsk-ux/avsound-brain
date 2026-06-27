@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "datetime": "2026-06-27T15:31:57",
+  "run_id": "2026-06-27_15-31-57",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "dry-run",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-27T15:31:57",
+   "run_id": "2026-06-27_15-31-57",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "dry-run",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 7,
+   "product_id": 41560,
+   "sku": "PRIDE-…",
+   "name": "Pride Uno plus",
+   "brand": "Pride",
+   "action": "planned_update",
+   "reason": "dry-run demo",
+   "fields": {
+    "price": {
+     "old": "10950",
+     "new": "10950"
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

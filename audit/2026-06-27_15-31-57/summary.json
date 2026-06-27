@@ -1,0 +1,15 @@
+{
+ "datetime": "2026-06-27T15:31:57",
+ "run_id": "2026-06-27_15-31-57",
+ "program_version": "0.1.0",
+ "docs_version": "spec-2026-06",
+ "user": "AI Agent",
+ "mode": "dry-run",
+ "excel_file": "input/(8).xlsx",
+ "summary": {
+  "demo": true
+ },
+ "changes": 1,
+ "images": 0,
+ "errors": 0
+}

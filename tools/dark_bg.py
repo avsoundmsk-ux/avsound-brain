@@ -49,13 +49,13 @@ def _cut_white(im, tol=32):
 
 
 def _radial_dark(size):
-    """Тёмный радиальный градиент: центр ~#2a2a2e, края ~#0a0a0c."""
+    """Серый радиальный градиент с подсветкой по центру: центр ~#6e7076, края ~#3a3b40."""
     W = H = size
-    bg = Image.new("RGB", (W, H), (10, 10, 12))
-    cx, cy = W / 2, H * 0.44
+    bg = Image.new("RGB", (W, H), (58, 59, 64))
+    cx, cy = W / 2, H * 0.5
     maxd = (W ** 2 + H ** 2) ** 0.5 / 2
     px = bg.load()
-    c0 = (44, 44, 50); c1 = (8, 8, 10)
+    c0 = (110, 112, 118); c1 = (52, 53, 58)
     for y in range(H):
         for x in range(0, W, 2):
             d = (((x - cx) ** 2 + (y - cy) ** 2) ** 0.5) / maxd
@@ -104,24 +104,9 @@ def run(src, out, size=1200, margin=0.16):
     cut = cut.resize((nw, nh), Image.LANCZOS)
 
     bg = _radial_dark(size)
+    # товар по центру, без отражения
     cx = (size - nw) // 2
-    cy = int(size * 0.40) - nh // 2
-    cy = max(int(size * margin), cy)
-
-    # отражение снизу
-    refl = cut.transpose(Image.FLIP_TOP_BOTTOM)
-    fade = Image.new("L", refl.size, 0)
-    fd = fade.load()
-    for yy in range(refl.size[1]):
-        a = int(70 * (1 - yy / refl.size[1]))
-        for xx in range(refl.size[0]):
-            fd[xx, yy] = a
-    ra = refl.split()[3].point(lambda p: p)
-    from PIL import ImageChops
-    ra = ImageChops.multiply(ra, fade)
-    refl.putalpha(ra)
-    bg.paste(refl, (cx, cy + nh + 4), refl)
-
+    cy = (size - nh) // 2
     bg.paste(cut, (cx, cy), cut)
     bg.save(out, quality=92)
     return out

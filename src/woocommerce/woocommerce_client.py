@@ -24,8 +24,27 @@ from core.logger import get_logger  # noqa: E402
 log = get_logger("woocommerce_client")
 
 import os
-RETRIES = int(os.environ.get("WOO_RETRIES", "6"))
-TIMEOUT = int(os.environ.get("WOO_TIMEOUT", "120"))
+RETRIES = int(os.environ.get("WOO_RETRIES", "8"))
+TIMEOUT = int(os.environ.get("WOO_TIMEOUT", "60"))
+BACKOFF_BASE = float(os.environ.get("WOO_BACKOFF", "3"))
+BACKOFF_CAP = 60.0
+
+
+def _request_with_backoff(method: str, url: str, *, auth, params=None, json=None, timeout=None):
+    """HTTP с ретраями и экспоненциальным backoff (нестабильная сеть = норма, docs/NETWORK_POLICY.md).
+    Бросает исключение только после исчерпания всех попыток."""
+    last = None
+    for attempt in range(RETRIES):
+        try:
+            return requests.request(method, url, auth=auth, params=params,
+                                    json=json, timeout=timeout or TIMEOUT)
+        except requests.exceptions.RequestException as e:
+            last = e
+            wait = min(BACKOFF_BASE * (2 ** attempt), BACKOFF_CAP)
+            log.warning("сеть %s, попытка %d/%d: %s → ждём %.0fс",
+                        method, attempt + 1, RETRIES, type(e).__name__, wait)
+            time.sleep(wait)
+    raise last
 
 
 class WooReadClient:
@@ -36,18 +55,9 @@ class WooReadClient:
         self.auth = (config.require("WOO_CK"), config.require("WOO_CS"))
 
     def _get(self, path: str, params: dict | None = None):
-        """GET с ретраями. Разрешён только GET."""
+        """GET с ретраями и экспоненциальным backoff. Разрешён только GET."""
         url = path if path.startswith("http") else f"{self.base}{path}"
-        last = None
-        for attempt in range(RETRIES):
-            try:
-                r = requests.get(url, params=params, auth=self.auth, timeout=TIMEOUT)
-                return r
-            except requests.exceptions.RequestException as e:
-                last = e
-                log.warning("сеть, повтор %d/%d: %s", attempt + 1, RETRIES, type(e).__name__)
-                time.sleep(4)
-        raise last
+        return _request_with_backoff("GET", url, params=params, auth=self.auth)
 
     # ----------------------------- READ методы -----------------------------
     def get_product(self, product_id: int) -> dict:

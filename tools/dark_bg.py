@@ -69,9 +69,30 @@ def _radial_dark(size):
     return bg
 
 
+_REMBG_SESSION = None
+
+
+def _cut_rembg(im):
+    """ML-вырез фона (любой цвет/градиент). None при недоступности rembg."""
+    global _REMBG_SESSION
+    try:
+        from rembg import remove, new_session
+        if _REMBG_SESSION is None:
+            _REMBG_SESSION = new_session("isnet-general-use")
+        out = remove(im.convert("RGBA"), session=_REMBG_SESSION)
+        # проверка, что что-то осталось (не пустой альфа)
+        if out.getbbox():
+            return out
+    except Exception:
+        pass
+    return None
+
+
 def run(src, out, size=1200, margin=0.16):
     im = Image.open(src).convert("RGBA")
-    cut, _ = _cut_white(im)
+    cut = _cut_rembg(im)
+    if cut is None:                 # фолбэк: flood-fill однотонного фона
+        cut, _ = _cut_white(im)
     bbox = cut.getbbox()
     if bbox:
         cut = cut.crop(bbox)

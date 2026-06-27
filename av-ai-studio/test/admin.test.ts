@@ -74,7 +74,7 @@ test("audit пишется", async () => {
 after(async () => {
   // вернуть seed-цену (×2), чтобы не ломать остальные тесты
   await db.update(schema.priceRules)
-    .set({ priceType: "multiplier", value: 200 })
+    .set({ priceType: "multiplier", value: 200, updatedBy: null })
     .where(eq(schema.priceRules.modelId, modelId));
   // admin_audit ссылается на owner (без cascade) — чистим перед удалением owner
   await db.delete(schema.adminAudit).where(eq(schema.adminAudit.adminId, ownerId));

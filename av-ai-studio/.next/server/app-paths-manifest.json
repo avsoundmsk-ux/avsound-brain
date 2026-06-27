@@ -1,1 +1,6 @@
-{}
+{
+  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js",
+  "/api/me/route": "app/api/me/route.js",
+  "/api/pricing/quote/route": "app/api/pricing/quote/route.js",
+  "/api/credits/history/route": "app/api/credits/history/route.js"
+}

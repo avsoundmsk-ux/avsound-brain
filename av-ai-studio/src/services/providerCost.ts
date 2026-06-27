@@ -3,10 +3,10 @@
  * Пока для ModelArk Seedance 2.0 (замерено: 5с 720p ≈ 108 900 токенов; $7/M t2v, $4.3/M i2v).
  * Для калькулятора «цена до запуска». Точная цена — по факту после генерации (job.costCredits).
  */
-import type { mode as ModeEnum } from "../db/schema.js";
-
 type Res = "480p" | "720p" | "1080p";
-type Mode = (typeof ModeEnum.enumValues)[number];
+type Mode =
+  | "text_to_video" | "image_to_video" | "video_to_video"
+  | "image_generation" | "image_editing" | "audio" | "voice" | "document" | "workflow";
 
 // База: 720p t2v $/сек. Множители по разрешению (относительно 720p).
 const BASE_PER_SEC_USD = 0.1525;   // 720p, text-to-video

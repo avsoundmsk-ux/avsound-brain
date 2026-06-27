@@ -9,8 +9,18 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // server-only пакеты не бандлим в клиент
+  serverExternalPackages: ["postgres", "argon2", "better-auth"],
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
+  },
+  // резолв TS-импортов вида "./x.js" → x.ts (NodeNext-стиль в webpack)
+  webpack(config) {
+    config.resolve.extensionAlias = {
+      ".js": [".ts", ".tsx", ".js"],
+      ".mjs": [".mts", ".mjs"],
+    };
+    return config;
   },
 };
 

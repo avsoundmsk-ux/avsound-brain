@@ -40,7 +40,8 @@ export const auth = betterAuth({
 
   emailAndPassword: {
     enabled: true,
-    requireEmailVerification: true,
+    // prod — строго (нужен verify); dev без SMTP — разрешаем вход для локального теста
+    requireEmailVerification: process.env.NODE_ENV === "production",
     autoSignIn: false,
     // argon2 вместо дефолтного scrypt (по спеке безопасности)
     password: {

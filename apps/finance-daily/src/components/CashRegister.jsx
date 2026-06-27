@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { saveDay } from '../utils/sheetsApi.js'
-import { saveToHistory } from '../utils/localHistory.js'
+import { saveDay } from '../utils/dataService.js'
 
 function fmt(n) {
   return n.toLocaleString('ru-RU') + ' ₽'
@@ -111,8 +110,6 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
         setSaveStatus('confirm')
         return
       }
-      const [y, m, d] = selectedDate.split('-')
-      saveToHistory(selectedDate, `${d}.${m}.${y}`, payload)
       setPendingPayload(null)
       setSaveStatus('ok')
       setTimeout(() => setSaveStatus(null), 3000)

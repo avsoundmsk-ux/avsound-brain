@@ -7,6 +7,9 @@ import WorkSection from './components/WorkSection.jsx'
 import ExpensesSection from './components/ExpensesSection.jsx'
 import CashRegister from './components/CashRegister.jsx'
 import HistoryTab from './components/HistoryTab.jsx'
+import DashboardTab from './components/DashboardTab.jsx'
+import MonthlyTab from './components/MonthlyTab.jsx'
+import ChartsTab from './components/ChartsTab.jsx'
 import { parseFile } from './utils/parseSales.js'
 
 const SLOTS = [
@@ -47,9 +50,12 @@ export default function App() {
   function reset() { setData({}); setError(null); setTab('отчёт') }
 
   const tabs = [
-    { key: 'отчёт',   label: 'Отчёт' },
-    { key: 'касса',   label: 'Касса' },
-    { key: 'история', label: 'История' },
+    { key: 'отчёт',    label: 'Отчёт' },
+    { key: 'касса',    label: 'Касса' },
+    { key: 'дашборд',  label: 'Дашборд' },
+    { key: 'история',  label: 'История' },
+    { key: 'месяц',    label: 'Месяц' },
+    { key: 'графики',  label: 'Графики' },
   ]
 
   return (
@@ -101,8 +107,17 @@ export default function App() {
         </>
       )}
 
+      {/* Вкладка: Дашборд */}
+      {tab === 'дашборд' && <DashboardTab />}
+
       {/* Вкладка: История */}
       {tab === 'история' && <HistoryTab />}
+
+      {/* Вкладка: Месяц */}
+      {tab === 'месяц' && <MonthlyTab />}
+
+      {/* Вкладка: Графики */}
+      {tab === 'графики' && <ChartsTab />}
 
       {/* Вкладка: Касса */}
       {tab === 'касса' && (

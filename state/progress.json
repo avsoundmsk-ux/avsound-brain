@@ -10,5 +10,29 @@
   "row": 8,
   "product_id": 45482,
   "reason": "no_photo"
+ },
+ "8ab581a2deaa7f12": {
+  "status": "done",
+  "row": 9,
+  "product_id": 45477,
+  "score": 90
+ },
+ "ae28b18bed1ba8d6": {
+  "status": "done",
+  "row": 10,
+  "product_id": 45487,
+  "score": 90
+ },
+ "ea6a2bff01ba6af4": {
+  "status": "done",
+  "row": 14,
+  "product_id": 43793,
+  "score": 90
+ },
+ "0f6d1d3d13194441": {
+  "status": "done",
+  "row": 15,
+  "product_id": 45485,
+  "score": 90
  }
 }

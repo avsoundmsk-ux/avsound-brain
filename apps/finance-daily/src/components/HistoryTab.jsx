@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react'
-import { getHistory, getDay, deleteDay } from '../utils/localHistory.js'
+import { getHistory } from '../utils/dataService.js'
+
+function deleteDay(dayId) {
+  try {
+    const days = JSON.parse(localStorage.getItem('avsound_days') || '[]')
+    localStorage.setItem('avsound_days', JSON.stringify(days.filter(d => d.dayId !== dayId)))
+  } catch {}
+}
 
 function fmt(n) {
   return (n || 0).toLocaleString('ru-RU') + ' ₽'

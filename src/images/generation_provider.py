@@ -67,12 +67,22 @@ class GenerationResult:
         self.reason = reason
 
 
-def _download(url: str, dst: Path) -> Path:
+def _download(url: str, dst: Path, tries: int = 8) -> Path:
+    """Скачать с ретраями и backoff (нестабильная сеть = норма, NETWORK_POLICY.md)."""
     dst.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=60) as r, open(dst, "wb") as f:
-        f.write(r.read())
-    return dst
+    last = None
+    for attempt in range(tries):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=60) as r, open(dst, "wb") as f:
+                f.write(r.read())
+            return dst
+        except Exception as e:
+            last = e
+            wait = min(3 * (2 ** attempt), 60)
+            log.warning("download повтор %d/%d: %s → %.0fс", attempt + 1, tries, type(e).__name__, wait)
+            time.sleep(wait)
+    raise last
 
 
 def _too_light(path: Path) -> bool:

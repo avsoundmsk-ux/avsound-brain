@@ -1,0 +1,245 @@
+[
+ {
+  "datetime": "2026-06-29T00:05:23",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 40,
+  "product_id": 45540,
+  "sku": "",
+  "name": "Магнитола Nakamichi NQ523BD",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     51900,
+     47005
+    ],
+    "new": [
+     53506
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:05:28",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 41,
+  "product_id": 45557,
+  "sku": "",
+  "name": "Магнитола Nakamichi NQ711B",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     42942,
+     46900
+    ],
+    "new": [
+     53507
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:05:33",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 42,
+  "product_id": 45558,
+  "sku": "",
+  "name": "Магнитола Nakamichi M 5210 AX",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     46900
+    ],
+    "new": [
+     53508
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:05:39",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 44,
+  "product_id": 45556,
+  "sku": "",
+  "name": "Активный сабвуфер Nakamichi nbт-805A",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     50106,
+     44163
+    ],
+    "new": [
+     53509
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:05:45",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 45,
+  "product_id": 45574,
+  "sku": "",
+  "name": "Сабвуфер под сиденье Nakamichi NBF 8.1A",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     53383
+    ],
+    "new": [
+     53510
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:05:50",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 46,
+  "product_id": 43848,
+  "sku": "",
+  "name": "Сабвуфер активный Nakamichi NBS210A",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     51703,
+     43846,
+     43847,
+     44163
+    ],
+    "new": [
+     53511
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:05:56",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 47,
+  "product_id": 45567,
+  "sku": "",
+  "name": "Активный сабвуфер Nakamichi NBL8A",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     44163,
+     51703
+    ],
+    "new": [
+     53512
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:06:02",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 49,
+  "product_id": 43855,
+  "sku": "",
+  "name": "Сабвуфер под сиденье Nakamichi NBF25.0A",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     43852,
+     43854
+    ],
+    "new": [
+     53513
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T00:06:07",
+  "run_id": "2026-06-29_00-05-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 50,
+  "product_id": 45578,
+  "sku": "",
+  "name": "Автосабвуфер Nakamichi NBT-1208",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "batch3 eye-approved",
+  "fields": {
+   "images": {
+    "old": [
+     50106,
+     44163
+    ],
+    "new": [
+     53514
+    ]
+   }
+  }
+ }
+]

@@ -27,7 +27,12 @@ export interface CreateJobInput {
 }
 
 async function jlog(jobId: string, message: string, data?: unknown, level = "info") {
-  await db.insert(jobLogs).values({ jobId, level, message, data: data ?? null });
+  // логирование не критично — сбой записи лога НЕ должен ронять генерацию
+  try {
+    await db.insert(jobLogs).values({ jobId, level, message, data: data ?? null });
+  } catch (e) {
+    console.warn("[jlog] не записан:", message, (e as Error).message);
+  }
 }
 
 /** Создать job: считает цену, холдит кредиты, ставит в очередь. */

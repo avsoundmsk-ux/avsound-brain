@@ -35,7 +35,7 @@ async function main() {
 
   log("4-6) Worker → реальная генерация ModelArk → settle");
   const done = await processJob(job.id, modelArkGenerator); // та же логика, что в воркере
-  console.log("  status:", done.status);
+  console.log("  status:", done.status, (done as { error?: string }).error ? `| ERROR: ${(done as { error?: string }).error}` : "");
   console.log("  9) ССЫЛКА РЕЗУЛЬТАТА:", done.outputUrl);
   console.log("  balance после settle:", await getBalance(uid), "(не должен измениться — hold стал оплатой)");
 

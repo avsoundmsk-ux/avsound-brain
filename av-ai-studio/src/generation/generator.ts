@@ -23,6 +23,20 @@ export type Generator = (input: GenInput, log: Logger) => Promise<GenResult>;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+// fetch с ретраями на сетевые сбои (нестабильный VPN). HTTP-коды не ретраим тут.
+async function rfetch(url: string, init?: RequestInit, tries = 4): Promise<Response> {
+  let last: unknown;
+  for (let i = 0; i < tries; i++) {
+    try {
+      return await fetch(url, init);
+    } catch (e) {
+      last = e;
+      await sleep(4000);
+    }
+  }
+  throw new Error(`network: ${String((last as Error)?.message ?? last)}`);
+}
+
 export const modelArkGenerator: Generator = async (input, log) => {
   const key = process.env.MODELARK_API_KEY;
   const base = (process.env.MODELARK_BASE_URL || "").replace(/\/$/, "");
@@ -36,7 +50,7 @@ export const modelArkGenerator: Generator = async (input, log) => {
   if (input.inputImages?.[0]) content.push({ type: "image_url", image_url: { url: input.inputImages[0] } });
 
   const headers = { Authorization: `Bearer ${key}`, "Content-Type": "application/json" };
-  const create = await fetch(`${base}/api/v3/contents/generations/tasks`, {
+  const create = await rfetch(`${base}/api/v3/contents/generations/tasks`, {
     method: "POST", headers, body: JSON.stringify({ model: input.providerModelId, content }),
   });
   if (!create.ok) throw new Error(`ModelArk create HTTP ${create.status}: ${(await create.text()).slice(0, 200)}`);
@@ -45,7 +59,7 @@ export const modelArkGenerator: Generator = async (input, log) => {
   await log("modelark task created", { taskId: created.id });
 
   for (let i = 0; i < 120; i++) {
-    const r = await fetch(`${base}/api/v3/contents/generations/tasks/${created.id}`, { headers });
+    const r = await rfetch(`${base}/api/v3/contents/generations/tasks/${created.id}`, { headers });
     const d = (await r.json()) as { status?: string; content?: { video_url?: string }; video_url?: string };
     const st = String(d.status ?? "").toLowerCase();
     if (st === "succeeded" || st === "success") {

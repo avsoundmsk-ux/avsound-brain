@@ -1,29 +1,9 @@
 {
   "pages": {
-    "/layout": [
+    "/api/health/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/layout.js"
-    ],
-    "/sign-in/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/sign-in/page.js"
-    ],
-    "/api/auth/[...all]/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/auth/[...all]/route.js"
-    ],
-    "/api/credits/history/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/credits/history/route.js"
-    ],
-    "/api/jobs/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/jobs/route.js"
+      "static/chunks/app/api/health/route.js"
     ]
   }
 }

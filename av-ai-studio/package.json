@@ -12,7 +12,9 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "worker": "tsx src/worker/index.ts",
-    "test": "tsx --test test/*.test.ts"
+    "test": "tsx --test test/*.test.ts",
+    "check": "tsc --noEmit && tsx --test test/*.test.ts",
+    "liveflow": "tsx scripts/liveflow.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1075.0",

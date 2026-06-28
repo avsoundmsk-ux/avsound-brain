@@ -56,6 +56,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/dashboard/billing/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/billing">> = Specific
+  const handler = {} as typeof import("../../src/app/dashboard/billing/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/dashboard/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dashboard">> = Specific
@@ -146,6 +155,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/api/health/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/health">> = Specific
+  const handler = {} as typeof import("../../src/app/api/health/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/api/jobs/route.ts
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/jobs">> = Specific
@@ -168,6 +186,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/pricing/quote">> = Specific
   const handler = {} as typeof import("../../src/app/api/pricing/quote/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/topups/confirm/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/topups/confirm">> = Specific
+  const handler = {} as typeof import("../../src/app/api/topups/confirm/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/api/topups/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/topups">> = Specific
+  const handler = {} as typeof import("../../src/app/api/topups/route.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

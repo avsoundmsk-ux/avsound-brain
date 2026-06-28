@@ -1,3 +1,21 @@
 {
-  "/api/health/route": "app/api/health/route.js"
+  "/api/admin/users/route": "app/api/admin/users/route.js",
+  "/api/admin/pricing/route": "app/api/admin/pricing/route.js",
+  "/api/credits/history/route": "app/api/credits/history/route.js",
+  "/api/admin/jobs/route": "app/api/admin/jobs/route.js",
+  "/api/health/route": "app/api/health/route.js",
+  "/api/admin/stats/route": "app/api/admin/stats/route.js",
+  "/api/jobs/route": "app/api/jobs/route.js",
+  "/api/me/route": "app/api/me/route.js",
+  "/api/topups/confirm/route": "app/api/topups/confirm/route.js",
+  "/api/pricing/quote/route": "app/api/pricing/quote/route.js",
+  "/api/topups/route": "app/api/topups/route.js",
+  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/sign-in/page": "app/sign-in/page.js",
+  "/page": "app/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/dashboard/billing/page": "app/dashboard/billing/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/sign-up/page": "app/sign-up/page.js"
 }

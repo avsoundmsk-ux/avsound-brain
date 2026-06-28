@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { signIn } from "@/auth/client";
-import { Shell, inp, primaryBtn } from "../sign-up/page";
+import { Shell, inp, primaryBtn } from "@/components/authui";
 
 export default function SignIn() {
   const router = useRouter();

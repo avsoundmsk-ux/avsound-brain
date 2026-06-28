@@ -1,0 +1,39 @@
+{
+ "meta": {
+  "datetime": "2026-06-28T22:36:06",
+  "run_id": "2026-06-28_22-35-59",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-28T22:36:06",
+   "run_id": "2026-06-28_22-35-59",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45537,
+   "sku": "",
+   "name": "Магнитола Nakamichi M5960 PRO  9\"дюймов 4/64",
+   "brand": "Nakamichi",
+   "action": "images_replaced",
+   "reason": "alt clean render",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53499
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

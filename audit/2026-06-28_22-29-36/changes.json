@@ -1,0 +1,189 @@
+[
+ {
+  "datetime": "2026-06-28T22:29:41",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 28,
+  "product_id": 45513,
+  "sku": "",
+  "name": "Nakamichi NS6-Q3 3-х полосная акустика",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=80",
+  "fields": {
+   "images": {
+    "old": [
+     49943
+    ],
+    "new": [
+     53492
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-28T22:30:11",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 29,
+  "product_id": 43830,
+  "sku": "",
+  "name": "Твитера Nakamichi NS-QT25",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=90",
+  "fields": {
+   "images": {
+    "old": [
+     43825,
+     43826,
+     43829,
+     42942,
+     46900
+    ],
+    "new": [
+     53493
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-28T22:30:16",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 30,
+  "product_id": 45514,
+  "sku": "",
+  "name": "Nakamichi NSF623",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=80",
+  "fields": {
+   "images": {
+    "old": [
+     49955
+    ],
+    "new": [
+     53494
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-28T22:30:23",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 31,
+  "product_id": 45528,
+  "sku": "",
+  "name": "Динамики Nakamichi NSA-CS1721",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=80",
+  "fields": {
+   "images": {
+    "old": [],
+    "new": [
+     53495
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-28T22:30:29",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 32,
+  "product_id": 45532,
+  "sku": "",
+  "name": "Среднечастотная акустика Nakamichi NS-S31M",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=80",
+  "fields": {
+   "images": {
+    "old": [
+     42892
+    ],
+    "new": [
+     53496
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-28T22:30:34",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 33,
+  "product_id": 45534,
+  "sku": "",
+  "name": "Твитера Nakamichi N-T39",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=90",
+  "fields": {
+   "images": {
+    "old": [
+     46900,
+     43826,
+     44525
+    ],
+    "new": [
+     53497
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-28T22:30:39",
+  "run_id": "2026-06-28_22-29-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 34,
+  "product_id": 45530,
+  "sku": "",
+  "name": "Nakamichi NSE-0718",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "preview ok score=80",
+  "fields": {
+   "images": {
+    "old": [
+     42942,
+     44163
+    ],
+    "new": [
+     53498
+    ]
+   }
+  }
+ }
+]

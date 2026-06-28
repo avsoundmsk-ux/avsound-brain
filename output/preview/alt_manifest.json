@@ -1,86 +1,86 @@
 [
  {
-  "pid": 45477,
-  "idx": 5,
-  "name": "M7-01 tweeter твитер",
-  "domain": "woofersetc.com",
-  "prev": "output\\preview\\alt_45477_5.webp"
- },
- {
-  "pid": 45477,
-  "idx": 6,
-  "name": "M7-01 tweeter твитер",
-  "domain": "onlinecarstereo.com",
-  "prev": "output\\preview\\alt_45477_6.webp"
- },
- {
-  "pid": 45477,
-  "idx": 7,
-  "name": "M7-01 tweeter твитер",
-  "domain": "picclick.com",
-  "prev": "output\\preview\\alt_45477_7.webp"
- },
- {
-  "pid": 43793,
+  "pid": 45542,
   "idx": 0,
-  "name": "GTO 608C component",
-  "domain": "autoclint.com",
-  "prev": "output\\preview\\alt_43793_0.webp"
+  "name": "AC3 DSP remote controller пульт",
+  "domain": "asiabooth.com",
+  "prev": "output\\preview\\alt_45542_0.webp"
  },
  {
-  "pid": 43793,
+  "pid": 45542,
   "idx": 1,
-  "name": "GTO 608C component",
+  "name": "AC3 DSP remote controller пульт",
+  "domain": "asiabooth.com",
+  "prev": "output\\preview\\alt_45542_1.webp"
+ },
+ {
+  "pid": 45542,
+  "idx": 2,
+  "name": "AC3 DSP remote controller пульт",
+  "domain": "asiabooth.com",
+  "prev": "output\\preview\\alt_45542_2.webp"
+ },
+ {
+  "pid": 45537,
+  "idx": 0,
+  "name": "M5960 android head unit магнитола",
+  "domain": "nakamichicaraudio.com",
+  "prev": "output\\preview\\alt_45537_0.webp"
+ },
+ {
+  "pid": 45537,
+  "idx": 2,
+  "name": "M5960 android head unit магнитола",
+  "domain": "hiresaudio.co.ke",
+  "prev": "output\\preview\\alt_45537_2.webp"
+ },
+ {
+  "pid": 45537,
+  "idx": 3,
+  "name": "M5960 android head unit магнитола",
+  "domain": "reddit.com",
+  "prev": "output\\preview\\alt_45537_3.webp"
+ },
+ {
+  "pid": 43840,
+  "idx": 2,
+  "name": "M5230-AX android head unit магнитола",
+  "domain": "reddit.com",
+  "prev": "output\\preview\\alt_43840_2.webp"
+ },
+ {
+  "pid": 43840,
+  "idx": 3,
+  "name": "M5230-AX android head unit магнитола",
   "domain": "carconceptsshop.com",
-  "prev": "output\\preview\\alt_43793_1.webp"
+  "prev": "output\\preview\\alt_43840_3.webp"
  },
  {
-  "pid": 43793,
-  "idx": 2,
-  "name": "GTO 608C component",
-  "domain": "thewinkel.com",
-  "prev": "output\\preview\\alt_43793_2.webp"
+  "pid": 43840,
+  "idx": 4,
+  "name": "M5230-AX android head unit магнитола",
+  "domain": "walmart.com",
+  "prev": "output\\preview\\alt_43840_4.webp"
  },
  {
-  "pid": 45495,
+  "pid": 45539,
   "idx": 0,
-  "name": "GTO 0939 6x9",
-  "domain": "picclick.com",
-  "prev": "output\\preview\\alt_45495_0.webp"
+  "name": "M-5210 android head unit магнитола",
+  "domain": "cemerlangmotor.com",
+  "prev": "output\\preview\\alt_45539_0.webp"
  },
  {
-  "pid": 45495,
-  "idx": 1,
-  "name": "GTO 0939 6x9",
-  "domain": "picclick.com",
-  "prev": "output\\preview\\alt_45495_1.webp"
+  "pid": 45539,
+  "idx": 3,
+  "name": "M-5210 android head unit магнитола",
+  "domain": "cemerlangmotor.com",
+  "prev": "output\\preview\\alt_45539_3.webp"
  },
  {
-  "pid": 45495,
-  "idx": 2,
-  "name": "GTO 0939 6x9",
-  "domain": "manuals.plus",
-  "prev": "output\\preview\\alt_45495_2.webp"
- },
- {
-  "pid": 45516,
-  "idx": 0,
-  "name": "NMSP-E6557 marine speaker",
-  "domain": "nakamichicaraudio.com",
-  "prev": "output\\preview\\alt_45516_0.webp"
- },
- {
-  "pid": 45516,
-  "idx": 1,
-  "name": "NMSP-E6557 marine speaker",
-  "domain": "nakamichicaraudio.com",
-  "prev": "output\\preview\\alt_45516_1.webp"
- },
- {
-  "pid": 45516,
-  "idx": 2,
-  "name": "NMSP-E6557 marine speaker",
-  "domain": "azvuk.ua",
-  "prev": "output\\preview\\alt_45516_2.webp"
+  "pid": 45539,
+  "idx": 4,
+  "name": "M-5210 android head unit магнитола",
+  "domain": "cemerlangmotor.com",
+  "prev": "output\\preview\\alt_45539_4.webp"
  }
 ]

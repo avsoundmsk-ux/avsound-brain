@@ -90,6 +90,7 @@ export function DashboardUI({ email, role, balance: initialBalance }: { email: s
         <div style={{ color: "#8b93a3", fontSize: 13 }}>Баланс</div>
         <div style={{ fontSize: 36, fontWeight: 800, color: "#ffd23f" }}>{balance} <span style={{ fontSize: 16 }}>кр</span></div>
         <div style={{ color: "#8b93a3", fontSize: 13 }}>≈ ${(balance * 0.01).toFixed(2)}</div>
+        <a href="/dashboard/billing" style={{ ...primary, display: "inline-block", textDecoration: "none", marginTop: 12 }}>Пополнить</a>
       </div>
 
       {/* ----- Форма генерации ----- */}

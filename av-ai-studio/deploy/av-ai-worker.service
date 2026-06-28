@@ -1,0 +1,16 @@
+# systemd-юнит для воркера (альтернатива Docker). Положить в /etc/systemd/system/
+# затем: systemctl daemon-reload && systemctl enable --now av-ai-worker
+[Unit]
+Description=AV AI Studio generation worker
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/av-ai-studio
+EnvironmentFile=/opt/av-ai-studio/.env.worker
+ExecStart=/usr/bin/npx tsx src/worker/index.ts
+Restart=always
+RestartSec=5
+User=avstudio
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.env
+data/output
+test
+scripts
+*.log
+README.md
+DEPLOY.md

@@ -1,0 +1,21 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/admin/jobs/route": "/api/admin/jobs",
+  "/api/admin/stats/route": "/api/admin/stats",
+  "/api/admin/pricing/route": "/api/admin/pricing",
+  "/api/admin/users/route": "/api/admin/users",
+  "/api/credits/history/route": "/api/credits/history",
+  "/api/health/route": "/api/health",
+  "/api/jobs/route": "/api/jobs",
+  "/api/me/route": "/api/me",
+  "/api/topups/confirm/route": "/api/topups/confirm",
+  "/api/pricing/quote/route": "/api/pricing/quote",
+  "/api/topups/route": "/api/topups",
+  "/api/auth/[...all]/route": "/api/auth/[...all]",
+  "/page": "/",
+  "/sign-in/page": "/sign-in",
+  "/admin/page": "/admin",
+  "/sign-up/page": "/sign-up",
+  "/dashboard/billing/page": "/dashboard/billing",
+  "/dashboard/page": "/dashboard"
+}

@@ -20,10 +20,34 @@ const SLOTS = [
   { key: 'закупка',  label: 'Закупка.xlsx' },
 ]
 
+const DRAFT_KEY = 'avsound_cash_draft'
+
+function loadDraft() {
+  try { return JSON.parse(localStorage.getItem(DRAFT_KEY) || '{}') } catch { return {} }
+}
+
+function saveDraft(draft) {
+  localStorage.setItem(DRAFT_KEY, JSON.stringify(draft))
+}
+
 export default function App() {
-  const [data, setData] = useState({})
+  const [data, setData]   = useState({})
   const [error, setError] = useState(null)
-  const [tab, setTab] = useState('отчёт')
+  const [tab, setTab]     = useState('отчёт')
+
+  // Касса — единое состояние, живёт здесь, не сбрасывается при смене вкладки
+  const [cashDraft, setCashDraft] = useState(loadDraft)
+
+  function updateCash(key, value) {
+    const next = { ...cashDraft, [key]: value }
+    setCashDraft(next)
+    saveDraft(next)
+  }
+
+  function clearCash() {
+    setCashDraft({})
+    localStorage.removeItem(DRAFT_KEY)
+  }
 
   async function handleFile(file) {
     try {
@@ -40,22 +64,23 @@ export default function App() {
   const g = key => data[key] || []
 
   const totals = {
-    реализация: g('продажи').reduce((s, i) => s + i.реализация, 0),
-    работа:     g('работа').reduce((s, i) => s + i.сумма, 0),
-    расходы:    g('расходы').reduce((s, i) => s + i.сумма, 0),
-    зарплата:   g('зарплата').reduce((s, i) => s + i.сумма, 0),
-    закупка:    g('закупка').reduce((s, i) => s + i.сумма, 0),
+    реализация:    g('продажи').reduce((s, i) => s + i.реализация, 0),
+    себестоимость: g('продажи').reduce((s, i) => s + i.закупка, 0),
+    работа:        g('работа').reduce((s, i) => s + i.сумма, 0),
+    расходы:       g('расходы').reduce((s, i) => s + i.сумма, 0),
+    зарплата:      g('зарплата').reduce((s, i) => s + i.сумма, 0),
+    закупка:       g('закупка').reduce((s, i) => s + i.сумма, 0),
   }
 
   function reset() { setData({}); setError(null); setTab('отчёт') }
 
   const tabs = [
-    { key: 'отчёт',    label: 'Отчёт' },
-    { key: 'касса',    label: 'Касса' },
-    { key: 'дашборд',  label: 'Дашборд' },
-    { key: 'история',  label: 'История' },
-    { key: 'месяц',    label: 'Месяц' },
-    { key: 'графики',  label: 'Графики' },
+    { key: 'отчёт',   label: 'Отчёт' },
+    { key: 'касса',   label: 'Касса' },
+    { key: 'дашборд', label: 'Дашборд' },
+    { key: 'история', label: 'История' },
+    { key: 'месяц',   label: 'Месяц' },
+    { key: 'графики', label: 'Графики' },
   ]
 
   return (
@@ -72,7 +97,7 @@ export default function App() {
       {error && <p className="mb-4 text-red-600">{error}</p>}
 
       {/* Вкладки */}
-      <div className="flex gap-1 mb-6 bg-gray-200 p-1 rounded-xl w-fit">
+      <div className="flex gap-1 mb-6 bg-gray-200 p-1 rounded-xl w-fit flex-wrap">
         {tabs.map(t => (
           <button
             key={t.key}
@@ -88,7 +113,7 @@ export default function App() {
         ))}
       </div>
 
-      {/* Вкладка: Отчёт */}
+      {/* Отчёт */}
       {tab === 'отчёт' && hasAny && (
         <>
           <SummaryCards
@@ -100,27 +125,15 @@ export default function App() {
           />
           {data.работа   && <WorkSection items={g('работа')} />}
           {data.расходы  && <ExpensesSection items={g('расходы')} title="Расходы" color="red" />}
-          {data.зарплата && <ExpensesSection items={g('зарплата')} title="Зарплата" color="orange" />}
-          {data.закупка  && <ExpensesSection items={g('закупка')} title="Закупка оборудования" color="purple" />}
+          {data.зарплата && <ExpensesSection items={g('зарплата')} title="Зарплата (выплачено из кассы)" color="orange" />}
+          {data.закупка  && <ExpensesSection items={g('закупка')} title="Закупка (движение кассы)" color="purple" />}
           {data.продажи  && <ChannelBreakdown items={g('продажи')} />}
           {data.продажи  && <SalesTable items={g('продажи')} />}
         </>
       )}
 
-      {/* Вкладка: Дашборд */}
-      {tab === 'дашборд' && <DashboardTab />}
-
-      {/* Вкладка: История */}
-      {tab === 'история' && <HistoryTab />}
-
-      {/* Вкладка: Месяц */}
-      {tab === 'месяц' && <MonthlyTab />}
-
-      {/* Вкладка: Графики */}
-      {tab === 'графики' && <ChartsTab />}
-
-      {/* Вкладка: Касса */}
-      {tab === 'касса' && (
+      {/* Касса — ВСЕГДА монтирована, только скрыта когда не активна */}
+      <div className={tab === 'касса' ? '' : 'hidden'}>
         <CashRegister
           totals={totals}
           salesItems={g('продажи')}
@@ -128,12 +141,20 @@ export default function App() {
           expenseItems={g('расходы')}
           salaryItems={g('зарплата')}
           stockItems={g('закупка')}
+          cashDraft={cashDraft}
+          onUpdateCash={updateCash}
+          onClearCash={clearCash}
         />
-      )}
+      </div>
+
+      {tab === 'дашборд' && <DashboardTab />}
+      {tab === 'история' && <HistoryTab />}
+      {tab === 'месяц'   && <MonthlyTab />}
+      {tab === 'графики' && <ChartsTab />}
 
       {hasAny && (
         <button onClick={reset} className="mt-6 text-sm text-gray-400 hover:text-gray-600 underline">
-          Сбросить
+          Сбросить файлы
         </button>
       )}
     </div>

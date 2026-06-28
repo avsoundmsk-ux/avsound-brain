@@ -29,8 +29,9 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
   const pct            = реализация ? Math.round((маржа / реализация) * 100) : 0
   const аренда         = 5000
   const валоваяПрибыль = маржа + работа
-  // Прибыль дня = маржа + работа - расходы - зарплата - аренда
-  const прибыльДня     = валоваяПрибыль - расходы - зарплата - аренда
+  // Зарплата дня = маржа + работа - расходы - аренда
+  // Файл "зарплата" — это выплата из кассы, не влияет на расчёт зарплаты дня
+  const зарплатаДня    = валоваяПрибыль - расходы - аренда
 
   return (
     <div className="mb-6 space-y-3">
@@ -48,12 +49,14 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
       </div>
       {/* Строка 2: расходы + итог */}
       <div className="grid grid-cols-5 gap-3">
-        <Card label="Расходы"      value={fmt(расходы)}   color="text-red-500" />
-        <Card label="Зарплата"     value={fmt(зарплата)}  color="text-orange-500" />
-        <Card label="Закупка склад" value={fmt(закупка)}  color="text-purple-600" />
-        <Card label="Аренда (авто)" value={fmt(аренда)}   color="text-gray-400" />
-        <Card label="Прибыль дня"  value={fmt(прибыльДня)}
-          color={прибыльДня >= 0 ? 'text-green-400' : 'text-red-400'} dark />
+        <Card label="Расходы"       value={fmt(расходы)}    color="text-red-500" />
+        <Card label="Аренда (авто)" value={fmt(аренда)}     color="text-gray-400" />
+        <Card label="Закупка склад" value={fmt(закупка)}    color="text-purple-600"
+          sub="движение кассы" />
+        <Card label="Зарплата выпл." value={fmt(зарплата)} color="text-orange-500"
+          sub="движение кассы" />
+        <Card label="Зарплата дня"  value={fmt(зарплатаДня)}
+          color={зарплатаДня >= 0 ? 'text-green-400' : 'text-red-400'} dark />
       </div>
     </div>
   )

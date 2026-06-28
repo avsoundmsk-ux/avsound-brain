@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "datetime": "2026-06-28T21:50:37",
+  "run_id": "2026-06-28_21-50-10",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-28T21:50:17",
+   "run_id": "2026-06-28_21-50-10",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45477,
+   "sku": null,
+   "name": "MB Quart M7-01",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "user-picked alt",
+   "fields": {
+    "images": {
+     "new": [
+      53485
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T21:50:25",
+   "run_id": "2026-06-28_21-50-10",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43793,
+   "sku": null,
+   "name": "JBL GTO 608C",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "user-picked alt",
+   "fields": {
+    "images": {
+     "new": [
+      53486,
+      53487
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T21:50:29",
+   "run_id": "2026-06-28_21-50-10",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45495,
+   "sku": null,
+   "name": "JBL GTO-0939",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "user-picked alt",
+   "fields": {
+    "images": {
+     "new": [
+      53488
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T21:50:37",
+   "run_id": "2026-06-28_21-50-10",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45516,
+   "sku": null,
+   "name": "Nakamichi NMSP-E6557",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "user-picked alt",
+   "fields": {
+    "images": {
+     "new": [
+      53489,
+      53490
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

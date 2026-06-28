@@ -46,5 +46,45 @@
   "row": 17,
   "product_id": 45492,
   "score": 90
+ },
+ "2e0462407a0551bf": {
+  "status": "done",
+  "row": 8,
+  "product_id": 45482
+ },
+ "439ecf4b0347c07c": {
+  "status": "done",
+  "row": 16,
+  "product_id": 45503
+ },
+ "1703fe6317b87404": {
+  "status": "done",
+  "row": 19,
+  "product_id": 45498
+ },
+ "8a8521137424e238": {
+  "status": "done",
+  "row": 20,
+  "product_id": 45501
+ },
+ "7de01f6ec65dc479": {
+  "status": "done",
+  "row": 21,
+  "product_id": 45512
+ },
+ "c599c1dc977ae768": {
+  "status": "done",
+  "row": 22,
+  "product_id": 43831
+ },
+ "7b74387d2c2bb984": {
+  "status": "done",
+  "row": 26,
+  "product_id": 45515
+ },
+ "a3660aac783c4c34": {
+  "status": "done",
+  "row": 17,
+  "product_id": 45492
  }
 }

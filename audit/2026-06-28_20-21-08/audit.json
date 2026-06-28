@@ -1,0 +1,199 @@
+{
+ "meta": {
+  "datetime": "2026-06-28T20:21:58",
+  "run_id": "2026-06-28_20-21-08",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-28T20:21:13",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 8,
+   "product_id": 45482,
+   "sku": null,
+   "name": "MB Quart M1-116",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53477
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:17",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 16,
+   "product_id": 45503,
+   "sku": null,
+   "name": "JBL GX3520",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53478
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:21",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 19,
+   "product_id": 45498,
+   "sku": null,
+   "name": "Сабвуфер под сиденье JBL basspro SL",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53479
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:25",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 20,
+   "product_id": 45501,
+   "sku": null,
+   "name": "Сабвуфер под сиденье JBL BASS PRO LITE 7",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53480
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:30",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 21,
+   "product_id": 45512,
+   "sku": null,
+   "name": "Активный сабвуфер JBL Club JB-1204-B",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53481
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:34",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 22,
+   "product_id": 43831,
+   "sku": null,
+   "name": "Сабвуфер в запаску JBL BassPro Hub",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53482
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:38",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 26,
+   "product_id": 45515,
+   "sku": null,
+   "name": "Морская акустика Nakamichi nmsp-E8057",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53483
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-28T20:21:58",
+   "run_id": "2026-06-28_20-21-08",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 17,
+   "product_id": 45492,
+   "sku": null,
+   "name": "Твитеры JBL GTO 25T",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "approved preview",
+   "fields": {
+    "images": {
+     "new": [
+      53484
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

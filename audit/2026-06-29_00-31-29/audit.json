@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "datetime": "2026-06-29T00:32:12",
+  "run_id": "2026-06-29_00-31-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-29T00:31:56",
+   "run_id": "2026-06-29_00-31-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 72,
+   "product_id": 45646,
+   "sku": "",
+   "name": "УРАЛ МОЛНИЯ АС-МЛ100",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch5 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45632,
+      45637,
+      45645,
+      44163,
+      44478,
+      43995
+     ],
+     "new": [
+      53522
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:32:01",
+   "run_id": "2026-06-29_00-31-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 74,
+   "product_id": 45662,
+   "sku": "",
+   "name": "УРАЛ МОЛНИЯ АС-МЛ165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch5 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45647,
+      45655,
+      45659,
+      45663
+     ],
+     "new": [
+      53523
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:32:07",
+   "run_id": "2026-06-29_00-31-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 76,
+   "product_id": 45660,
+   "sku": "",
+   "name": "Урал молния ас-мл250",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch5 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45648,
+      50026,
+      45658,
+      44478
+     ],
+     "new": [
+      53524
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:32:12",
+   "run_id": "2026-06-29_00-31-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 81,
+   "product_id": 45681,
+   "sku": "",
+   "name": "Урал ас-М165 молот",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch5 eye-approved",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53525
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

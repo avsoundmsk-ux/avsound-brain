@@ -29,33 +29,43 @@ const CASH_FIELDS = [
   { key: 'другое',   label: 'Другое' },
 ]
 
-export default function CashRegister({ totals, salesItems = [], workItems = [], expenseItems = [], salaryItems = [], stockItems = [] }) {
-  const { реализация = 0, работа = 0, расходы = 0, зарплата = 0, закупка = 0 } = totals
+export default function CashRegister({
+  totals, salesItems = [], workItems = [], expenseItems = [], salaryItems = [], stockItems = [],
+  cashDraft = {}, onUpdateCash, onClearCash,
+}) {
+  const { реализация = 0, работа = 0, расходы = 0, зарплата = 0, закупка = 0, себестоимость = 0 } = totals
 
-  const [cash, setCash] = useState({})
-  const [остатокВчера, setОстатокВчера] = useState(0)
-  const [приходОзон, setПриходОзон] = useState(0)
-  const [приходЯндекс, setПриходЯндекс] = useState(0)
-  const [saveStatus, setSaveStatus] = useState(null) // null | 'saving' | 'ok' | 'error' | 'confirm'
+  const [saveStatus, setSaveStatus] = useState(null)
   const [pendingPayload, setPendingPayload] = useState(null)
+
   const today = new Date()
   const defaultDate = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`
-  const [selectedDate, setSelectedDate] = useState(defaultDate)
 
-  const set = key => val => setCash(p => ({ ...p, [key]: val }))
+  // These auxiliary fields also live in cashDraft so they survive tab switches
+  const остатокВчера = cashDraft.остатокВчера || 0
+  const приходОзон   = cashDraft.приходОзон   || 0
+  const приходЯндекс = cashDraft.приходЯндекс || 0
+  const selectedDate = cashDraft.selectedDate || defaultDate
+
+  const cash = cashDraft.cash || {}
+
+  function setCashField(key, val) { onUpdateCash('cash', { ...cash, [key]: val }) }
+  function setAux(key, val)       { onUpdateCash(key, val) }
 
   const итогоВКассе = CASH_FIELDS.reduce((s, f) => s + (cash[f.key] || 0), 0)
   const аренда = 5000
+
+  // Расчётный остаток — движение кассы (включает зарплату и закупку как кассовые выплаты)
   const расчётный = остатокВчера + реализация + работа + приходОзон + приходЯндекс
                   - расходы - зарплата - закупка - аренда
   const расхождение = итогоВКассе - расчётный
   const сходится = Math.abs(расхождение) < 1
 
-  const себестоимость = totals.себестоимость || 0
   const маржа = реализация - себестоимость
   const pct = реализация ? Math.round((маржа / реализация) * 100) : 0
   const валоваяПрибыль = маржа + работа
-  const чистая = валоваяПрибыль - расходы - зарплата - аренда
+  // Зарплата дня = маржа + работа - расходы - аренда (файл зарплата = кассовое движение, не вычитается)
+  const зарплатаДня = валоваяПрибыль - расходы - аренда
 
   function buildPayload() {
     const [y, m, d] = selectedDate.split('-')
@@ -63,39 +73,20 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
     return {
       дата,
       summary: {
-        реализация,
-        себестоимость,
-        маржа,
-        pct,
-        работа,
-        валоваяПрибыль,
-        расходы,
-        зарплата,
-        закупка,
-        аренда,
-        прибыльДня: чистая,
+        реализация, себестоимость, маржа, pct,
+        работа, валоваяПрибыль, расходы, зарплата, закупка, аренда,
+        прибыльДня: зарплатаДня,
       },
-      продажи: salesItems.map(i => ({
-        name: i.name, channel: i.channel,
-        реализация: i.реализация, закупка: i.закупка, маржа: i.маржа,
-      })),
-      работа: workItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
+      продажи: salesItems.map(i => ({ name: i.name, channel: i.channel, реализация: i.реализация, закупка: i.закупка, маржа: i.маржа })),
+      работа:  workItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       расходы: expenseItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       зарплата: salaryItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
-      закупка: stockItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
+      закупка:  stockItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       касса: {
-        наличные:    cash.наличные  || 0,
-        тБизнес:     cash.тБизнес   || 0,
-        тинькофф:    cash.тинькофф  || 0,
-        тБизнес2:    cash.тБизнес2  || 0,
-        тЯндекс:     cash.тЯндекс   || 0,
-        другое:      cash.другое    || 0,
-        итогоВКассе,
-        остатокВчера,
-        приходОзон,
-        приходЯндекс,
-        расчётный,
-        расхождение,
+        наличные: cash.наличные || 0, тБизнес: cash.тБизнес || 0,
+        тинькофф: cash.тинькофф || 0, тБизнес2: cash.тБизнес2 || 0,
+        тЯндекс:  cash.тЯндекс  || 0, другое:   cash.другое   || 0,
+        итогоВКассе, остатокВчера, приходОзон, приходЯндекс, расчётный, расхождение,
       },
     }
   }
@@ -134,7 +125,7 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
             Суммы в кассе на вечер
           </h2>
           {CASH_FIELDS.map(f => (
-            <NumInput key={f.key} label={f.label} value={cash[f.key]} onChange={set(f.key)} />
+            <NumInput key={f.key} label={f.label} value={cash[f.key]} onChange={v => setCashField(f.key, v)} />
           ))}
           <div className="mt-4 pt-3 border-t border-gray-200 flex justify-between items-center">
             <span className="font-semibold text-gray-700">Итого в кассе</span>
@@ -147,9 +138,9 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
             Сверка кассы
           </h2>
-          <NumInput label="Остаток на начало дня" value={остатокВчера} onChange={setОстатокВчера} />
-          <NumInput label="Приход Озон" value={приходОзон} onChange={setПриходОзон} />
-          <NumInput label="Приход Яндекс" value={приходЯндекс} onChange={setПриходЯндекс} />
+          <NumInput label="Остаток на начало дня" value={остатокВчера} onChange={v => setAux('остатокВчера', v)} />
+          <NumInput label="Приход Озон"            value={приходОзон}   onChange={v => setAux('приходОзон', v)} />
+          <NumInput label="Приход Яндекс"          value={приходЯндекс} onChange={v => setAux('приходЯндекс', v)} />
 
           <div className="mt-4 space-y-0.5 border-t border-gray-100 pt-3">
             <Row label="Остаток вчера"  value={остатокВчера} sign="+" color="text-gray-500" />
@@ -158,8 +149,8 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
             <Row label="Приход Озон"    value={приходОзон}    sign="+" color="text-green-600" />
             <Row label="Приход Яндекс" value={приходЯндекс}  sign="+" color="text-green-600" />
             <Row label="Расходы"        value={расходы}       sign="−" color="text-red-500" />
-            <Row label="Зарплата"       value={зарплата}      sign="−" color="text-orange-500" />
-            <Row label="Закупка"        value={закупка}       sign="−" color="text-purple-600" />
+            <Row label="Зарплата выпл." value={зарплата}      sign="−" color="text-orange-500" />
+            <Row label="Закупка склад"  value={закупка}       sign="−" color="text-purple-600" />
             <Row label="Аренда (авто)"  value={аренда}        sign="−" color="text-gray-400" />
           </div>
 
@@ -184,14 +175,14 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
         </div>
       </div>
 
-      {/* Дата + кнопка сохранения */}
+      {/* Дата + кнопки */}
       <div className="flex items-center gap-4 flex-wrap">
         <div className="flex flex-col gap-1">
           <label className="text-xs text-gray-500 uppercase tracking-wide">Дата отчёта</label>
           <input
             type="date"
             value={selectedDate}
-            onChange={e => setSelectedDate(e.target.value)}
+            onChange={e => setAux('selectedDate', e.target.value)}
             className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-400"
           />
         </div>
@@ -206,7 +197,14 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
           </button>
         )}
 
-        {saveStatus === 'ok' && <span className="text-green-600 font-medium">✓ Сохранено</span>}
+        <button
+          onClick={onClearCash}
+          className="px-4 py-3 bg-gray-100 hover:bg-gray-200 text-gray-600 font-medium rounded-xl transition-colors text-sm"
+        >
+          Очистить
+        </button>
+
+        {saveStatus === 'ok'    && <span className="text-green-600 font-medium">✓ Сохранено</span>}
         {saveStatus === 'error' && <span className="text-red-500">Ошибка соединения с Sheets</span>}
 
         {saveStatus === 'confirm' && (
@@ -214,16 +212,12 @@ export default function CashRegister({ totals, salesItems = [], workItems = [], 
             <span className="text-yellow-800 text-sm font-medium">
               ⚠️ Этот день уже сохранён. Перезаписать?
             </span>
-            <button
-              onClick={() => saveToSheets(true)}
-              className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-semibold rounded-lg"
-            >
+            <button onClick={() => saveToSheets(true)}
+              className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-semibold rounded-lg">
               Перезаписать
             </button>
-            <button
-              onClick={() => { setSaveStatus(null); setPendingPayload(null) }}
-              className="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 text-sm font-semibold rounded-lg"
-            >
+            <button onClick={() => { setSaveStatus(null); setPendingPayload(null) }}
+              className="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 text-sm font-semibold rounded-lg">
               Отмена
             </button>
           </div>

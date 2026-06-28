@@ -1,0 +1,122 @@
+[
+ {
+  "pid": 45597,
+  "name": "Сабвуфер под сиденье Nakamichi NBF 17.0A",
+  "row": 52,
+  "score": 90,
+  "preview": "output\\preview\\45597.webp",
+  "opt": "images\\generated\\optimized\\p_45597.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/files/1_NBF20.0A_800x.png?v=1749715740",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45592,
+  "name": "Сабвуфер под сиденье Nakamichi nbf618s",
+  "row": 53,
+  "score": 90,
+  "preview": "output\\preview\\45592.webp",
+  "opt": "images\\generated\\optimized\\p_45592.webp",
+  "src": "https://xciteaudio.com/cdn/shop/products/5e4e36c06fa5486c4e53f9044dab2dbf.jpg?v=1677547013&width=1445",
+  "src_domain": "xciteaudio.com"
+ },
+ {
+  "pid": 45589,
+  "name": "Активный сабвуфер Nakamichi nbg25a",
+  "row": 54,
+  "score": 90,
+  "preview": "output\\preview\\45589.webp",
+  "opt": "images\\generated\\optimized\\p_45589.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBX25L-0-01_800x.jpg?v=1614245393",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 38072,
+  "name": "Сабвуфер в запаску Nakamichi nbw1150a",
+  "row": 55,
+  "score": 90,
+  "preview": "output\\preview\\38072.webp",
+  "opt": "images\\generated\\optimized\\p_38072.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/files/NBW1150A-07_800x.jpg?v=1684909774",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45605,
+  "name": "Усилитель Nakamichi N40t",
+  "row": 57,
+  "score": 90,
+  "preview": "output\\preview\\45605.webp",
+  "opt": "images\\generated\\optimized\\p_45605.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/N40t-02_800x.jpg?v=1614585588",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45603,
+  "name": "Моноблок Nakamichi N10t",
+  "row": 58,
+  "score": 90,
+  "preview": "output\\preview\\45603.webp",
+  "opt": "images\\generated\\optimized\\p_45603.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/N10-01_800x.jpg?v=1614585527",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45610,
+  "name": "Процессорный усилитель Nakamichi NDS460",
+  "row": 59,
+  "score": 90,
+  "preview": "output\\preview\\45610.webp",
+  "opt": "images\\generated\\optimized\\p_45610.webp",
+  "src": "http://i1378.photobucket.com/albums/ah97/tradeworkz-intl/TradeworksRan/Nakamichi%20Car%20Amplifier%20NDS460%20_%204.jpg",
+  "src_domain": "diymobileaudio.com"
+ },
+ {
+  "pid": 45625,
+  "name": "Процессорный усилитель Nakamichi NDS580",
+  "row": 60,
+  "score": 90,
+  "preview": "output\\preview\\45625.webp",
+  "opt": "images\\generated\\optimized\\p_45625.webp",
+  "src": "https://skyfiaudio.com/cdn/shop/files/nakamichi-580t-wireless-remote-control-rare-accessory-260.jpg?v=1759519894&width=1600",
+  "src_domain": "skyfiaudio.com"
+ },
+ {
+  "pid": 45621,
+  "name": "Процессорный усилитель Nakamichi NDSK4285AU",
+  "row": 61,
+  "score": 90,
+  "preview": "output\\preview\\45621.webp",
+  "opt": "images\\generated\\optimized\\p_45621.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NDSK4285AU-17.jpg?v=1669013751&width=2135",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45612,
+  "name": "УРАЛ ТТ 165 ГРОМ",
+  "row": 68,
+  "score": 80,
+  "preview": "output\\preview\\45612.webp",
+  "opt": "images\\generated\\optimized\\p_45612.webp",
+  "src": "https://worldsound.ru/upload/iblock/b3f/jjnmbrd3voiqw80zjbf1hpxfzxbxnr9b/Ural-TT_165-Grom-_3_.jpg",
+  "src_domain": "worldsound.ru"
+ },
+ {
+  "pid": 45635,
+  "name": "УРАЛ ТТ 130 ДРАЙВ Мидрейндж",
+  "row": 69,
+  "score": 80,
+  "preview": "output\\preview\\45635.webp",
+  "opt": "images\\generated\\optimized\\p_45635.webp",
+  "src": "http://splshop.in.ua/image/cache/catalog/2018%20ural/TT%201305-74x74.jpg",
+  "src_domain": "splshop.in.ua"
+ },
+ {
+  "pid": 45644,
+  "name": "Урал тт 165 драйв Мидрейндж",
+  "row": 70,
+  "score": 80,
+  "preview": "output\\preview\\45644.webp",
+  "opt": "images\\generated\\optimized\\p_45644.webp",
+  "src": "https://worldsound.ru/upload/iblock/74e/znjwegkdo2jmfd3vlw1m1st7rlthrmg3/Ural-TT-165.2_2.webp",
+  "src_domain": "worldsound.ru"
+ }
+]

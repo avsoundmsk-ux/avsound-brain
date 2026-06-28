@@ -1,0 +1,203 @@
+{
+ "meta": {
+  "datetime": "2026-06-29T00:20:48",
+  "run_id": "2026-06-29_00-20-14",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-29T00:20:19",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 52,
+   "product_id": 45597,
+   "sku": "",
+   "name": "Сабвуфер под сиденье Nakamichi NBF 17.0A",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      43854,
+      43852
+     ],
+     "new": [
+      53515
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:20:24",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 53,
+   "product_id": 45592,
+   "sku": "",
+   "name": "Сабвуфер под сиденье Nakamichi nbf618s",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      53382
+     ],
+     "new": [
+      53516
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:20:29",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 54,
+   "product_id": 45589,
+   "sku": "",
+   "name": "Активный сабвуфер Nakamichi nbg25a",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      44163
+     ],
+     "new": [
+      53517
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:20:34",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 55,
+   "product_id": 38072,
+   "sku": "",
+   "name": "Сабвуфер в запаску Nakamichi nbw1150a",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      43867,
+      43868,
+      46900
+     ],
+     "new": [
+      53518
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:20:39",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 57,
+   "product_id": 45605,
+   "sku": "",
+   "name": "Усилитель Nakamichi N40t",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45613
+     ],
+     "new": [
+      53519
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:20:44",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 58,
+   "product_id": 45603,
+   "sku": "",
+   "name": "Моноблок Nakamichi N10t",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      53364
+     ],
+     "new": [
+      53520
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:20:48",
+   "run_id": "2026-06-29_00-20-14",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 61,
+   "product_id": 45621,
+   "sku": "",
+   "name": "Процессорный усилитель Nakamichi NDSK4285AU",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch4 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45613,
+      45617,
+      45620,
+      47458
+     ],
+     "new": [
+      53521
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

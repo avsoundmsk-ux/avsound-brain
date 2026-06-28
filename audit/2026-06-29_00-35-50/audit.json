@@ -1,0 +1,262 @@
+{
+ "meta": {
+  "datetime": "2026-06-29T00:36:35",
+  "run_id": "2026-06-29_00-35-50",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-29T00:35:55",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 83,
+   "product_id": 45695,
+   "sku": "",
+   "name": "Акустическая система ural AS-M250 molot",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45685,
+      45686
+     ],
+     "new": [
+      53526
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:00",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 86,
+   "product_id": 45690,
+   "sku": "",
+   "name": "Твитера ural AS-W25TW SQ",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45684,
+      44163,
+      51935
+     ],
+     "new": [
+      53527
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:05",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 87,
+   "product_id": 45687,
+   "sku": "",
+   "name": "Акустическая система ural (урал) AS-W50M",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      44163
+     ],
+     "new": [
+      53528
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:10",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 88,
+   "product_id": 45708,
+   "sku": "",
+   "name": "Среднечастотные ural (урал) AS-W87M SQ",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45702,
+      45706,
+      44055
+     ],
+     "new": [
+      53529
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:15",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 89,
+   "product_id": 45707,
+   "sku": "",
+   "name": "Урал классик ас-К1627К",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45700,
+      50231
+     ],
+     "new": [
+      53530
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:20",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 90,
+   "product_id": 45711,
+   "sku": "",
+   "name": "УРАЛ АС-Б1627К",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45699,
+      45704,
+      50041,
+      43995
+     ],
+     "new": [
+      53531
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:25",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 92,
+   "product_id": 45730,
+   "sku": "",
+   "name": "Урал патриот ас-пт200 элемент 4",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53532
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:30",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 93,
+   "product_id": 45722,
+   "sku": "",
+   "name": "Твитера ural урал AK-25",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      45714,
+      50275,
+      45720,
+      46353
+     ],
+     "new": [
+      53533
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T00:36:35",
+   "run_id": "2026-06-29_00-35-50",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 100,
+   "product_id": 45742,
+   "sku": "",
+   "name": "УРАЛ АС-А25ВЧ АВАНГАРД",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "batch6 eye-approved",
+   "fields": {
+    "images": {
+     "old": [
+      43995,
+      44055,
+      45739,
+      46353
+     ],
+     "new": [
+      53534
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

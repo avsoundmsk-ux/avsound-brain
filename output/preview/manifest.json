@@ -1,0 +1,122 @@
+[
+ {
+  "pid": 45540,
+  "name": "Магнитола Nakamichi NQ523BD",
+  "row": 40,
+  "score": 90,
+  "preview": "output\\preview\\45540.webp",
+  "opt": "images\\generated\\optimized\\p_45540.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NQ523BD_800x.jpg?v=1638599860",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45557,
+  "name": "Магнитола Nakamichi NQ711B",
+  "row": 41,
+  "score": 90,
+  "preview": "output\\preview\\45557.webp",
+  "opt": "images\\generated\\optimized\\p_45557.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NQ711B-15_800x.jpg?v=1615532096",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45558,
+  "name": "Магнитола Nakamichi M 5210 AX",
+  "row": 42,
+  "score": 90,
+  "preview": "output\\preview\\45558.webp",
+  "opt": "images\\generated\\optimized\\p_45558.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NAM5210T-A9_244949c5-0f92-40d8-a145-06192c38cfb8_800x.jpg?v=1638263973",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45552,
+  "name": "Магнитола DSP Nakamichi M1710",
+  "row": 43,
+  "score": 90,
+  "preview": "output\\preview\\45552.webp",
+  "opt": "images\\generated\\optimized\\p_45552.webp",
+  "src": "https://static-data2.manualslib.com/product-images/d47/3080953/nakamichi-nam1710-stereo-receiver.jpg",
+  "src_domain": "manualslib.com"
+ },
+ {
+  "pid": 45556,
+  "name": "Активный сабвуфер Nakamichi nbт-805A",
+  "row": 44,
+  "score": 90,
+  "preview": "output\\preview\\45556.webp",
+  "opt": "images\\generated\\optimized\\p_45556.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBF08A-07_800x.jpg?v=1615537009",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45574,
+  "name": "Сабвуфер под сиденье Nakamichi NBF 8.1A",
+  "row": 45,
+  "score": 90,
+  "preview": "output\\preview\\45574.webp",
+  "opt": "images\\generated\\optimized\\p_45574.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBF8.0A_800x.jpg?v=1614929660",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 43848,
+  "name": "Сабвуфер активный Nakamichi NBS210A",
+  "row": 46,
+  "score": 90,
+  "preview": "output\\preview\\43848.webp",
+  "opt": "images\\generated\\optimized\\p_43848.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBS210A_800x.jpg?v=1614245455",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45567,
+  "name": "Активный сабвуфер Nakamichi NBL8A",
+  "row": 47,
+  "score": 90,
+  "preview": "output\\preview\\45567.webp",
+  "opt": "images\\generated\\optimized\\p_45567.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBL8A_600x.jpg?v=1637223914",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45573,
+  "name": "Сабвуфер под сиденье Nakamichi NBF10.3A",
+  "row": 48,
+  "score": 90,
+  "preview": "output\\preview\\45573.webp",
+  "opt": "images\\generated\\optimized\\p_45573.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBF10.2A_800x.jpg?v=1614929590",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 43855,
+  "name": "Сабвуфер под сиденье Nakamichi NBF25.0A",
+  "row": 49,
+  "score": 90,
+  "preview": "output\\preview\\43855.webp",
+  "opt": "images\\generated\\optimized\\p_43855.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/files/1_NBF25.0A_800x.png?v=1749715010",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45578,
+  "name": "Автосабвуфер Nakamichi NBT-1208",
+  "row": 50,
+  "score": 90,
+  "preview": "output\\preview\\45578.webp",
+  "opt": "images\\generated\\optimized\\p_45578.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBT-1006A_800x.jpg?v=1636782999",
+  "src_domain": "nakamichicaraudio.com"
+ },
+ {
+  "pid": 45598,
+  "name": "Сабвуфер под сиденье Nakamichi NBF20.0A",
+  "row": 51,
+  "score": 90,
+  "preview": "output\\preview\\45598.webp",
+  "opt": "images\\generated\\optimized\\p_45598.webp",
+  "src": "https://nakamichicaraudio.com/cdn/shop/products/NBF10.0A.jpg?v=1614932539&width=1024",
+  "src_domain": "nakamichicaraudio.com"
+ }
+]

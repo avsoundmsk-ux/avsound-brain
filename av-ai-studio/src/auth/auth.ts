@@ -1,5 +1,5 @@
 /**
- * better-auth — ядро аутентификации AV AI Studio.
+ * better-auth — ядро аутентификации AV Studio.
  * Спека: email/password (argon2), email verify, password reset, роли (additionalFields),
  * 2FA TOTP (plugin). Вся критичная логика — server-only.
  */
@@ -15,7 +15,7 @@ import {
 } from "@/db/schema";
 
 export const auth = betterAuth({
-  appName: "AV AI Studio",
+  appName: "AV Studio",
   secret: BETTER_AUTH_SECRET,
   baseURL: BETTER_AUTH_URL,
   trustedOrigins: [BETTER_AUTH_URL],
@@ -51,7 +51,7 @@ export const auth = betterAuth({
     sendResetPassword: async ({ user, url }) => {
       await sendEmail({
         to: user.email,
-        subject: "Сброс пароля — AV AI Studio",
+        subject: "Сброс пароля — AV Studio",
         text: `Для сброса пароля перейдите по ссылке: ${url}`,
       });
     },
@@ -63,7 +63,7 @@ export const auth = betterAuth({
     sendVerificationEmail: async ({ user, url }) => {
       await sendEmail({
         to: user.email,
-        subject: "Подтверждение email — AV AI Studio",
+        subject: "Подтверждение email — AV Studio",
         text: `Подтвердите email по ссылке: ${url}`,
       });
     },

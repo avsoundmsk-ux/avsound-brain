@@ -1,4 +1,4 @@
-# AV AI Studio
+# AV Studio
 
 Веб-платформа AI-генерации (видео/фото) с балансом кредитов, ценами, очередью генераций,
 хранилищем результатов и админкой. Стек: **Next.js 15 (App Router) · Postgres/Drizzle ·
@@ -33,7 +33,7 @@ scripts/          liveflow (E2E)
 
 ## Запуск локально
 ```bash
-cd av-ai-studio
+cd av-studio
 cp .env.example .env          # заполнить (минимум DATABASE_URL, BETTER_AUTH_SECRET)
 npm install
 npm run db:generate && npx drizzle-kit push   # схема в БД
@@ -76,7 +76,7 @@ npm run worker
 
 ## Деплой
 **Frontend + API → Vercel:**
-- Импортировать репозиторий (root = `av-ai-studio`), framework Next.js.
+- Импортировать репозиторий (root = `av-studio`), framework Next.js.
 - Env-переменные из `.env.example` → в Vercel Project Settings.
 - `serverExternalPackages` (postgres/argon2/better-auth) уже в `next.config.ts`.
 

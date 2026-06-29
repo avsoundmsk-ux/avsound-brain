@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main style={{ maxWidth: 720, margin: "0 auto", padding: "80px 24px", textAlign: "center" }}>
-      <h1 style={{ fontSize: 44, marginBottom: 8 }}>🎬 AV AI Studio</h1>
+      <h1 style={{ fontSize: 44, marginBottom: 8 }}>🎬 AV Studio</h1>
       <p style={{ color: "#8b93a3", fontSize: 18 }}>
         Единый центр AI-генерации видео и фото. Выбираешь задачу — система берёт нужную модель.
       </p>

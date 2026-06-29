@@ -1,4 +1,4 @@
-# Деплой AV AI Studio
+# Деплой AV Studio
 
 Архитектура прод:
 - **Next (web+API)** → Vercel
@@ -9,9 +9,9 @@
 ---
 
 ## 0. Репозиторий
-Vercel деплоит из Git. Код в `av-ai-studio/` внутри основного репо.
-- Вариант A (просто): импортировать весь репо в Vercel, **Root Directory = `av-ai-studio`**.
-- Вариант B: вынести `av-ai-studio` в отдельный GitHub-репо.
+Vercel деплоит из Git. Код в `av-studio/` внутри основного репо.
+- Вариант A (просто): импортировать весь репо в Vercel, **Root Directory = `av-studio`**.
+- Вариант B: вынести `av-studio` в отдельный GitHub-репо.
 ⚠️ `.env` НЕ коммитить (уже в .gitignore). Все ключи — в секретах Vercel/Hetzner.
 
 ---
@@ -44,7 +44,7 @@ NODE_ENV=production
 
 ## 2. Vercel (web)
 1. vercel.com → Add New → Project → импорт репо.
-2. **Root Directory = av-ai-studio**. Framework: Next.js (auto).
+2. **Root Directory = av-studio**. Framework: Next.js (auto).
 3. Settings → Environment Variables → вставить блок «Vercel» выше (Production).
 4. Deploy. Получишь `https://<project>.vercel.app`.
 5. `BETTER_AUTH_URL` = этот URL (или кастомный домен из шага 6) → redeploy.
@@ -62,8 +62,8 @@ npx tsx src/db/seed.ts
 
 ### Docker
 ```bash
-scp -r av-ai-studio user@178.105.105.46:/opt/av-ai-studio   # или git clone
-cd /opt/av-ai-studio
+scp -r av-studio user@178.105.105.46:/opt/av-studio   # или git clone
+cd /opt/av-studio
 # создать .env.worker с блоком "Worker"
 docker build -f Dockerfile.worker -t av-ai-worker .
 docker run -d --restart=always --env-file .env.worker --name av-ai-worker av-ai-worker
@@ -72,9 +72,9 @@ docker logs -f av-ai-worker   # должно быть "[worker] running, queue: 
 
 ### systemd (без Docker)
 ```bash
-# код в /opt/av-ai-studio, npm ci, npm i tsx
+# код в /opt/av-studio, npm ci, npm i tsx
 cp deploy/av-ai-worker.service /etc/systemd/system/
-# заполнить /opt/av-ai-studio/.env.worker
+# заполнить /opt/av-studio/.env.worker
 systemctl daemon-reload && systemctl enable --now av-ai-worker
 journalctl -u av-ai-worker -f
 ```

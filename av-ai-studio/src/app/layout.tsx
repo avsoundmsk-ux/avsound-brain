@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 export const metadata = {
-  title: "AV AI Studio",
+  title: "AV Studio",
   description: "Единый центр AI-генерации",
 };
 

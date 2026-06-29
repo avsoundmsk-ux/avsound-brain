@@ -1,6 +1,6 @@
-# AV AI Studio — трекер фаз
+# AV Studio — трекер фаз
 
-Архитектура: [docs/superpowers/specs/2026-06-27-av-ai-studio-architecture.md](../docs/superpowers/specs/2026-06-27-av-ai-studio-architecture.md)
+Архитектура: [docs/superpowers/specs/2026-06-27-av-studio-architecture.md](../docs/superpowers/specs/2026-06-27-av-studio-architecture.md)
 Стек: Next.js 15 · Postgres/Drizzle · better-auth · pg-boss · ЮKassa+Stripe · ai-hub · Vercel+worker(Hetzner).
 
 ## P0 — AI-ядро ✅

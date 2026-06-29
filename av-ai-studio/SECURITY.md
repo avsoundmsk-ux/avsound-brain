@@ -1,4 +1,4 @@
-# AV AI Studio — Security Ledger
+# AV Studio — Security Ledger
 
 Реестр security-находок (аудит 2026-06-27, агент security-reviewer) и их статус.
 Обновлять при каждом security-ревью.
@@ -31,7 +31,7 @@
 | M-5 | creditLedger без CHECK/FOR UPDATE | P2 (кредиты): `CHECK(balance_after>=0)` + `SELECT ... FOR UPDATE` в транзакции |
 | M-6 | admin/owner не разграничены в middleware | layout-guard + тест на `app/owner/**` |
 | L-1 | jobLogs jsonb retention | P7: схема data + TTL-очистка |
-| L-2 | twoFactor() без issuer | `twoFactor({ issuer: "AV AI Studio" })` |
+| L-2 | twoFactor() без issuer | `twoFactor({ issuer: "AV Studio" })` |
 | L-3 | adminAudit без индекса | `index(adminId, createdAt)` |
 | L-5 | role без нормализации в /api/me | применить `normalizeRole` в ответе |
 

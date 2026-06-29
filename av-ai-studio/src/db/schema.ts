@@ -1,5 +1,5 @@
 /**
- * Полная схема БД AV AI Studio (Drizzle / Postgres).
+ * Полная схема БД AV Studio (Drizzle / Postgres).
  * Принцип: вся критичная логика (баланс, цены, ключи) — backend.
  * Баланс = сумма immutable-записей credit_ledger (не редактируется напрямую).
  *

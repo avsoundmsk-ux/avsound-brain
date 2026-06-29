@@ -1,0 +1,52 @@
+[
+ {
+  "pid": 44098,
+  "name": "Клемма обжимная Ural (2.8mm) SPT-DB1012Ga",
+  "row": 138,
+  "score": 80,
+  "preview": "output\\preview\\44098.webp",
+  "opt": "images\\generated\\optimized\\p_44098.webp",
+  "src": "https://siktivkar.avtozvuk-spb.ru/cache/images/6f1d753db31d790da0727c897116c805.jpg",
+  "src_domain": "siktivkar.avtozvuk-spb.ru"
+ },
+ {
+  "pid": 44393,
+  "name": "УРАЛ ТТМ 1.800",
+  "row": 175,
+  "score": 80,
+  "preview": "output\\preview\\44393.webp",
+  "opt": "images\\generated\\optimized\\p_44393.webp",
+  "src": "https://www.xn--80aeatqv1al.xn--p1ai/wp-content/uploads/2024/10/Ural_%D0%A2%D0%A2%D0%9C_1.300_1.500_1.800_01_face-610x763.jpg",
+  "src_domain": "xn--80aeatqv1al.xn--p1ai"
+ },
+ {
+  "pid": 44566,
+  "name": "УРАЛ ТТМ 4.100",
+  "row": 176,
+  "score": 80,
+  "preview": "output\\preview\\44566.webp",
+  "opt": "images\\generated\\optimized\\p_44566.webp",
+  "src": "https://auto-hifi.ru/amp/Ural/ttm_4_100.jpg",
+  "src_domain": "auto-hifi.ru"
+ },
+ {
+  "pid": 44575,
+  "name": "4-канальный усилитель ural BV 4.70",
+  "row": 178,
+  "score": 90,
+  "preview": "output\\preview\\44575.webp",
+  "opt": "images\\generated\\optimized\\p_44575.webp",
+  "src": "https://worldsound.ru/upload/iblock/e3a/xb4fp9u53o77hogld3amgl3zhsl7gkpy/Ural-BV-2.70-_4_.jpg",
+  "src_domain": "worldsound.ru"
+ },
+ {
+  "pid": 45031,
+  "name": "3-канальный усилитель ural BV 3.500",
+  "row": 180,
+  "score": 90,
+  "preview": "output\\preview\\45031.webp",
+  "opt": "images\\generated\\optimized\\p_45031.webp",
+  "src": "https://ural-auto.ru/upload/iblock/916/sl0cu6ir53rm7sxlsarfzhgw3ph3g8hd.png",
+  "src_domain": "ural-auto.ru"
+ }
+]

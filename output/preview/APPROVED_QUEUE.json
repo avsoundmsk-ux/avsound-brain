@@ -68,5 +68,25 @@
   "pid": 43972,
   "name": "Сабвуфер ural Symphony 10",
   "opt": "images\\generated\\optimized\\p_43972.webp"
+ },
+ {
+  "pid": 44056,
+  "name": "Урал саб 15",
+  "opt": "images/generated/optimized/p_44056.webp"
+ },
+ {
+  "pid": 44098,
+  "name": "Урал SPT-DB1012Ga клемма",
+  "opt": "images/generated/optimized/p_44098.webp"
+ },
+ {
+  "pid": 44566,
+  "name": "Урал ТТМ 4.100",
+  "opt": "images/generated/optimized/p_44566.webp"
+ },
+ {
+  "pid": 45031,
+  "name": "Урал BV 3.500",
+  "opt": "images/generated/optimized/p_45031.webp"
  }
 ]

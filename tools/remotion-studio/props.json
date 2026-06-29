@@ -1,0 +1,18 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audio": "voice.mp3",
+  "items": [
+    { "src": "clip1.mp4", "type": "video", "durationInFrames": 452 },
+    { "src": "clip2.mp4", "type": "video", "durationInFrames": 671 }
+  ],
+  "captions": [
+    { "text": "AVSound", "fromFrame": 15, "toFrame": 60 },
+    { "text": "звук, который чувствуешь телом", "fromFrame": 60, "toFrame": 150 },
+    { "text": "установка под ключ · Москва", "fromFrame": 150, "toFrame": 300 },
+    { "text": "подбор · монтаж · настройка", "fromFrame": 300, "toFrame": 396 },
+    { "text": "слушай громче", "fromFrame": 396, "toFrame": 470 },
+    { "text": "AVSound · av-sound.ru", "fromFrame": 1020, "toFrame": 1123 }
+  ]
+}

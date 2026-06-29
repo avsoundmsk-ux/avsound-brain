@@ -8,7 +8,7 @@
 // 4. Развернуть → Управление развёртываниями → ⚙️ → Изменить → Новая версия → Сохранить
 // 5. Скопируй новый URL развёртывания в sheetsApi.js
 
-const SS = SpreadsheetApp.getActiveSpreadsheet
+const SPREADSHEET_NAME = 'AVSound Finance'
 
 const SHEET = {
   DAILY:     'daily_summary',
@@ -45,7 +45,18 @@ const HEADERS = {
 
 // ---------- helpers ----------
 
-function ss() { return SpreadsheetApp.getActiveSpreadsheet() }
+// Получить или создать таблицу (работает в standalone-скрипте)
+function ss() {
+  const props = PropertiesService.getScriptProperties()
+  let id = props.getProperty('SPREADSHEET_ID')
+  if (id) {
+    try { return SpreadsheetApp.openById(id) } catch(e) { /* удалён — пересоздадим */ }
+  }
+  // Создаём новую таблицу
+  const spreadsheet = SpreadsheetApp.create(SPREADSHEET_NAME)
+  props.setProperty('SPREADSHEET_ID', spreadsheet.getId())
+  return spreadsheet
+}
 
 function getOrCreate(name) {
   return ss().getSheetByName(name) || ss().insertSheet(name)

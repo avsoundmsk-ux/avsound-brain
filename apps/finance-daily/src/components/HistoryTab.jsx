@@ -193,11 +193,28 @@ export default function HistoryTab() {
     )
   }
 
+  function handleClearAll() {
+    if (!confirm('Очистить всю историю? Это удалит все данные из локального хранилища.')) return
+    localStorage.removeItem('avsound_days')
+    localStorage.removeItem('avsound_rent')
+    localStorage.removeItem('avsound_cash_draft')
+    setHistory([])
+    setOpenId(null)
+  }
+
   return (
     <div className="space-y-3">
-      <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
-        История — {history.length} {history.length === 1 ? 'день' : history.length < 5 ? 'дня' : 'дней'}
-      </h2>
+      <div className="flex items-center justify-between">
+        <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+          История — {history.length} {history.length === 1 ? 'день' : history.length < 5 ? 'дня' : 'дней'}
+        </h2>
+        <button
+          onClick={handleClearAll}
+          className="px-3 py-1.5 bg-red-50 hover:bg-red-100 text-red-500 hover:text-red-600 text-xs font-medium rounded-lg transition-colors"
+        >
+          Очистить всю историю
+        </button>
+      </div>
 
       {history.map(entry => {
         const s = entry.payload?.summary || {}

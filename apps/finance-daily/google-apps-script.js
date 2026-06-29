@@ -103,9 +103,9 @@ function setupSheets() {
   // monthly_report — формулы QUERY
   const monthly = getOrCreate(SHEET.MONTHLY)
   if (monthly.getLastRow() === 0) {
-    monthly.getRange('A1').setFormula(
-      `=QUERY(daily_summary!A:R, "SELECT LEFT(A,7), SUM(C), SUM(D), SUM(E), AVG(F), SUM(G), SUM(H), SUM(I), SUM(J), SUM(K), SUM(L) WHERE A <> 'day_id' AND A <> '' GROUP BY LEFT(A,7) ORDER BY LEFT(A,7) DESC LABEL LEFT(A,7) 'месяц', SUM(C) 'реализация', SUM(D) 'себестоимость', SUM(E) 'маржа', AVG(F) '%маржи', SUM(G) 'работа', SUM(H) 'расходы', SUM(I) 'зарплата', SUM(J) 'закупка', SUM(K) 'аренда', SUM(L) 'прибыль_дня'", 1)`
-    )
+    // Заголовки вручную — QUERY с LABEL и кириллицей даёт #VALUE в некоторых локалях
+    monthly.appendRow(['месяц','реализация','себестоимость','маржа','%маржи','работа','расходы','зарплата','закупка','аренда','прибыль_дня'])
+    monthly.getRange(1,1,1,11).setBackground('#1a237e').setFontColor('#ffffff').setFontWeight('bold')
     monthly.setFrozenRows(1)
   }
 

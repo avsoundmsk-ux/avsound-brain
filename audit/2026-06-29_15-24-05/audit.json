@@ -1,0 +1,490 @@
+{
+ "meta": {
+  "datetime": "2026-06-29T15:31:33",
+  "run_id": "2026-06-29_15-24-05",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-29T15:24:11",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45775,
+   "sku": "",
+   "name": "Урал AS-BV200 Булава",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      53535
+     ],
+     "new": [
+      53541
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:24:15",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45797,
+   "sku": "",
+   "name": "Урал WARHEAD AS-W165MB",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      53536
+     ],
+     "new": [
+      53542
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:24:45",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45816,
+   "sku": "",
+   "name": "УРАЛ DB VOLTMETER",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      53537
+     ],
+     "new": [
+      53543
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:24:50",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45817,
+   "sku": "",
+   "name": "УРАЛ SAMOREZ 48 BLACK Саморез",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      53538
+     ],
+     "new": [
+      53544
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:25:18",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45820,
+   "sku": "",
+   "name": "УРАЛ ТТ ТАС-ТТ03 Сабвуферная чашка",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      53539
+     ],
+     "new": [
+      53545
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:27:45",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45819,
+   "sku": "",
+   "name": "УРАЛ ИМПУЛЬС AВ-12A Антенна автомобильная активная",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      53540
+     ],
+     "new": [
+      53546
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:28:42",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44059,
+   "sku": "",
+   "name": "УРАЛ ЦЕППЕЛИН 3 Антенна",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      44057,
+      48905,
+      44058
+     ],
+     "new": [
+      53547
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:11",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45818,
+   "sku": "",
+   "name": "УРАЛ МАГНИТ Антенна",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      49249,
+      45806,
+      42892,
+      44163
+     ],
+     "new": [
+      53548
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:16",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45848,
+   "sku": "",
+   "name": "Клеммы Ural RT-DB8GA",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      45837,
+      42892
+     ],
+     "new": [
+      53549
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:21",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45842,
+   "sku": "",
+   "name": "УРАЛ RT-DB00GA Обжимная клемма (кольцевая)",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      45839,
+      45840,
+      42892
+     ],
+     "new": [
+      53550
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:26",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45859,
+   "sku": "",
+   "name": "Ural YRCA-DB1F2M",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      45855,
+      45857,
+      44095
+     ],
+     "new": [
+      53551
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:31",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43614,
+   "sku": "",
+   "name": "УРАЛ АС-У12А ДВОЙНОЙ",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53552
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:37",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43960,
+   "sku": "",
+   "name": "Активный сабвуфер ural ас-У12А компакт",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      44163,
+      43956,
+      43959
+     ],
+     "new": [
+      53553
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:43",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43972,
+   "sku": "",
+   "name": "Сабвуфер ural Symphony 10",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53554
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:29:48",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44056,
+   "sku": "",
+   "name": "Урал саб 15",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53555
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:30:38",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44098,
+   "sku": "",
+   "name": "Урал SPT-DB1012Ga клемма",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53556
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:31:28",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44566,
+   "sku": "",
+   "name": "Урал ТТМ 4.100",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      44559,
+      44565
+     ],
+     "new": [
+      53557
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-29T15:31:33",
+   "run_id": "2026-06-29_15-24-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45031,
+   "sku": "",
+   "name": "Урал BV 3.500",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "queue flush",
+   "fields": {
+    "images": {
+     "old": [
+      45027,
+      45030,
+      42892
+     ],
+     "new": [
+      53558
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

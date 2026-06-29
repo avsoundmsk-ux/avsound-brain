@@ -1,0 +1,14 @@
+{
+ "meta": {
+  "datetime": "2026-06-29T12:13:39",
+  "run_id": "2026-06-29_12-13-33",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [],
+ "images": [],
+ "errors": []
+}

@@ -43,5 +43,30 @@
   "pid": 45848,
   "name": "Клеммы Ural RT-DB8GA",
   "opt": "images\\generated\\optimized\\p_45848.webp"
+ },
+ {
+  "pid": 45842,
+  "name": "УРАЛ RT-DB00GA Обжимная клемма (кольцевая)",
+  "opt": "images\\generated\\optimized\\p_45842.webp"
+ },
+ {
+  "pid": 45859,
+  "name": "Ural YRCA-DB1F2M",
+  "opt": "images\\generated\\optimized\\p_45859.webp"
+ },
+ {
+  "pid": 43614,
+  "name": "УРАЛ АС-У12А ДВОЙНОЙ",
+  "opt": "images\\generated\\optimized\\p_43614.webp"
+ },
+ {
+  "pid": 43960,
+  "name": "Активный сабвуфер ural ас-У12А компакт",
+  "opt": "images\\generated\\optimized\\p_43960.webp"
+ },
+ {
+  "pid": 43972,
+  "name": "Сабвуфер ural Symphony 10",
+  "opt": "images\\generated\\optimized\\p_43972.webp"
  }
 ]

@@ -6,27 +6,15 @@ import {
 import { getChartData } from '../utils/dataService.js'
 
 function fmt(n) { return (n || 0).toLocaleString('ru-RU') + ' ₽' }
+function fmtTick(v) { return Math.abs(v) >= 1000 ? (v / 1000).toFixed(0) + 'к' : v }
 
-function fmtTick(v) {
-  if (Math.abs(v) >= 1000) return (v / 1000).toFixed(0) + 'к'
-  return v
-}
-
-const COLORS = {
-  реализация: '#6366f1',
-  маржа:      '#22c55e',
-  валовая:    '#16a34a',
-  расходы:    '#ef4444',
-  зарплата:   '#f97316',
-  аренда:     '#9ca3af',
-  прибыль:    '#15803d',
-  касса:      '#3b82f6',
-}
-
-function ChartCard({ title, children }) {
+function ChartCard({ title, sub, children }) {
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-5">
-      <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-4">{title}</h3>
+      <div className="mb-4">
+        <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">{title}</h3>
+        {sub && <p className="text-xs text-gray-400 mt-0.5">{sub}</p>}
+      </div>
       {children}
     </div>
   )
@@ -47,9 +35,11 @@ function CustomTooltip({ active, payload, label }) {
   )
 }
 
-export default function ChartsTab({ onRefresh }) {
+const H = 200
+
+export default function ChartsTab() {
   const [days, setDays] = useState(30)
-  const data = useMemo(() => getChartData(days), [onRefresh, days])
+  const data = useMemo(() => getChartData(days), [days])
 
   if (data.length === 0) {
     return (
@@ -61,93 +51,125 @@ export default function ChartsTab({ onRefresh }) {
     )
   }
 
+  const tick  = { fontSize: 11 }
+  const grid  = <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+  const xAxis = <XAxis dataKey="дата" tick={tick} tickFormatter={d => d.slice(0, 5)} />
+
   return (
     <div className="space-y-5">
       {/* Период */}
       <div className="flex items-center gap-2">
         <span className="text-xs text-gray-500 uppercase tracking-wide">Период:</span>
         {[7, 14, 30, 60].map(d => (
-          <button
-            key={d}
-            onClick={() => setDays(d)}
+          <button key={d} onClick={() => setDays(d)}
             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
               days === d ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
+            }`}>
             {d} дн.
           </button>
         ))}
       </div>
 
-      {/* 1. Прибыль по дням */}
-      <ChartCard title="Прибыль дня">
+      {/* 2 колонки */}
+      <div className="grid grid-cols-2 gap-5">
+
+        <ChartCard title="Реализация" sub="выручка за день">
+          <ResponsiveContainer width="100%" height={H}>
+            <BarChart data={data}>
+              {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="реализация" name="Реализация" fill="#6366f1" radius={[3,3,0,0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+
+        <ChartCard title="Маржа продаж" sub="реализация − себестоимость">
+          <ResponsiveContainer width="100%" height={H}>
+            <BarChart data={data}>
+              {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="маржа" name="Маржа" fill="#22c55e" radius={[3,3,0,0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+
+        <ChartCard title="Работа студии" sub="установки, сервис">
+          <ResponsiveContainer width="100%" height={H}>
+            <BarChart data={data}>
+              {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="работа" name="Работа" fill="#3b82f6" radius={[3,3,0,0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+
+        <ChartCard title="Расходы" sub="операционные расходы дня">
+          <ResponsiveContainer width="100%" height={H}>
+            <BarChart data={data}>
+              {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="расходы" name="Расходы" fill="#ef4444" radius={[3,3,0,0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+
+        <ChartCard title="Закупка склада" sub="движение кассы, не влияет на прибыль">
+          <ResponsiveContainer width="100%" height={H}>
+            <BarChart data={data}>
+              {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="закупка" name="Закупка" fill="#a855f7" radius={[3,3,0,0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+
+        <ChartCard title="Выплачено зарплаты" sub="движение кассы, не влияет на прибыль">
+          <ResponsiveContainer width="100%" height={H}>
+            <BarChart data={data}>
+              {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
+              <Tooltip content={<CustomTooltip />} />
+              <Bar dataKey="зарплата" name="Зарплата выпл." fill="#f97316" radius={[3,3,0,0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </ChartCard>
+
+      </div>
+
+      {/* Прибыль дня — широкий */}
+      <ChartCard title="Зарплата / прибыль дня" sub="маржа + работа − расходы − аренда (зарплатные выплаты не вычитаются)">
         <ResponsiveContainer width="100%" height={220}>
           <BarChart data={data}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis dataKey="дата" tick={{ fontSize: 11 }} tickFormatter={d => d.slice(0, 5)} />
-            <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtTick} />
+            {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
             <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="прибыль" name="Прибыль дня" fill={COLORS.прибыль} radius={[3,3,0,0]} />
+            <Bar dataKey="прибыль" name="Прибыль дня" fill="#15803d" radius={[3,3,0,0]} />
           </BarChart>
         </ResponsiveContainer>
       </ChartCard>
 
-      {/* 2. Реализация и маржа */}
-      <ChartCard title="Реализация и маржа">
+      {/* Реализация + Маржа линейный */}
+      <ChartCard title="Реализация и маржа — динамика">
         <ResponsiveContainer width="100%" height={220}>
           <LineChart data={data}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis dataKey="дата" tick={{ fontSize: 11 }} tickFormatter={d => d.slice(0, 5)} />
-            <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtTick} />
+            {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
             <Tooltip content={<CustomTooltip />} />
             <Legend />
-            <Line dataKey="реализация" name="Реализация" stroke={COLORS.реализация} dot={false} strokeWidth={2} />
-            <Line dataKey="маржа"      name="Маржа"       stroke={COLORS.маржа}      dot={false} strokeWidth={2} />
+            <Line dataKey="реализация" name="Реализация" stroke="#6366f1" dot={false} strokeWidth={2} />
+            <Line dataKey="маржа"      name="Маржа"       stroke="#22c55e" dot={false} strokeWidth={2} />
           </LineChart>
         </ResponsiveContainer>
       </ChartCard>
 
-      {/* 3. Расходы, зарплата, аренда */}
-      <ChartCard title="Расходы по дням">
-        <ResponsiveContainer width="100%" height={220}>
-          <BarChart data={data}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis dataKey="дата" tick={{ fontSize: 11 }} tickFormatter={d => d.slice(0, 5)} />
-            <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtTick} />
-            <Tooltip content={<CustomTooltip />} />
-            <Legend />
-            <Bar dataKey="расходы"  name="Расходы"  fill={COLORS.расходы}  stackId="a" radius={[0,0,0,0]} />
-            <Bar dataKey="зарплата" name="Зарплата" fill={COLORS.зарплата} stackId="a" />
-            <Bar dataKey="аренда"   name="Аренда"   fill={COLORS.аренда}   stackId="a" radius={[3,3,0,0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
-
-      {/* 4. Касса */}
-      <ChartCard title="Итого в кассе">
+      {/* Касса на конец дня */}
+      <ChartCard title="Касса на конец дня" sub="итого по всем счетам">
         <ResponsiveContainer width="100%" height={180}>
           <LineChart data={data}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis dataKey="дата" tick={{ fontSize: 11 }} tickFormatter={d => d.slice(0, 5)} />
-            <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtTick} />
+            {grid}{xAxis}<YAxis tick={tick} tickFormatter={fmtTick} />
             <Tooltip content={<CustomTooltip />} />
-            <Line dataKey="касса" name="Касса" stroke={COLORS.касса} dot={false} strokeWidth={2} />
+            <Line dataKey="касса" name="Касса" stroke="#3b82f6" dot={false} strokeWidth={2} />
           </LineChart>
         </ResponsiveContainer>
       </ChartCard>
 
-      {/* 5. Работа студии */}
-      <ChartCard title="Работа студии">
-        <ResponsiveContainer width="100%" height={180}>
-          <BarChart data={data}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-            <XAxis dataKey="дата" tick={{ fontSize: 11 }} tickFormatter={d => d.slice(0, 5)} />
-            <YAxis tick={{ fontSize: 11 }} tickFormatter={fmtTick} />
-            <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="работа" name="Работа" fill="#3b82f6" radius={[3,3,0,0]} />
-          </BarChart>
-        </ResponsiveContainer>
-      </ChartCard>
     </div>
   )
 }

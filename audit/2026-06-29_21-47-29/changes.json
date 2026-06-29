@@ -1,0 +1,368 @@
+[
+ {
+  "datetime": "2026-06-29T21:47:37",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45628,
+  "sku": "",
+  "name": "Мидрейндж УРАЛ ТТ 130.2",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53559
+    ],
+    "new": [
+     53572
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:47:42",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45656,
+  "sku": "",
+  "name": "Акустическая система урал молния ас-мл57",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53560
+    ],
+    "new": [
+     53573
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:47:48",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45697,
+  "sku": "",
+  "name": "Акустическая система урал ас-М69 молот",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53561
+    ],
+    "new": [
+     53574
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:47:53",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45761,
+  "sku": "",
+  "name": "Акустическая система урал ас-а1625к авангард",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53562
+    ],
+    "new": [
+     53575
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:47:59",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45763,
+  "sku": "",
+  "name": "Эстрадная акустика урал патриот ас-пт165 гром",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53563
+    ],
+    "new": [
+     53576
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:48:05",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45782,
+  "sku": "",
+  "name": "Широкополосная SQL акустика урал че 006",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53564
+    ],
+    "new": [
+     53577
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:48:11",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45799,
+  "sku": "",
+  "name": "Рупора урал патриот ас-пт30 элемент",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53565
+    ],
+    "new": [
+     53578
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:48:38",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45864,
+  "sku": "",
+  "name": "УРАЛ АДАПТЕР-ПЕРЕХОДНИК УГЛОВОЙ RCA («ПАПА»)",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53566
+    ],
+    "new": [
+     53579
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:48:44",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45897,
+  "sku": "",
+  "name": "Комплект для установки усилителя урал молот К-мт8",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53567
+    ],
+    "new": [
+     53580
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:48:49",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45904,
+  "sku": "",
+  "name": "Автомагнитола урал молот арс-мт 333К",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53568
+    ],
+    "new": [
+     53581
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:48:54",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 44124,
+  "sku": "",
+  "name": "Сабвуфер УРАЛ SYMPHONY 12",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53569
+    ],
+    "new": [
+     53582
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:49:00",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45906,
+  "sku": "",
+  "name": "Сабвуфер урал патриот 12",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53570
+    ],
+    "new": [
+     53583
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:49:07",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45923,
+  "sku": "",
+  "name": "Сабвуфер урал патриот 12 гром",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     53571
+    ],
+    "new": [
+     53584
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-29T21:49:13",
+  "run_id": "2026-06-29_21-47-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 43806,
+  "sku": "",
+  "name": "Активный сабвуфер УРАЛ АС-У12А СЕРЫЙ",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "exact Урал",
+  "fields": {
+   "images": {
+    "old": [
+     44163,
+     43803,
+     43959
+    ],
+    "new": [
+     53585
+    ]
+   }
+  }
+ }
+]

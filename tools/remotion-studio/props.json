@@ -2,17 +2,15 @@
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "audio": "voice.mp3",
+  "audio": "vo.mp3",
   "items": [
-    { "src": "clip1.mp4", "type": "video", "durationInFrames": 452 },
-    { "src": "clip2.mp4", "type": "video", "durationInFrames": 671 }
+    { "src": "clip1.mp4", "type": "video", "durationInFrames": 452, "muted": true },
+    { "src": "clip2.mp4", "type": "video", "durationInFrames": 671, "muted": true }
   ],
   "captions": [
-    { "text": "AVSound", "fromFrame": 15, "toFrame": 60 },
-    { "text": "звук, который чувствуешь телом", "fromFrame": 60, "toFrame": 150 },
-    { "text": "установка под ключ · Москва", "fromFrame": 150, "toFrame": 300 },
-    { "text": "подбор · монтаж · настройка", "fromFrame": 300, "toFrame": 396 },
-    { "text": "слушай громче", "fromFrame": 396, "toFrame": 470 },
-    { "text": "AVSound · av-sound.ru", "fromFrame": 1020, "toFrame": 1123 }
+    { "text": "AVSound", "fromFrame": 24, "toFrame": 150 },
+    { "text": "звук под твою машину", "fromFrame": 160, "toFrame": 360 },
+    { "text": "подбор · монтаж · настройка", "fromFrame": 380, "toFrame": 620 },
+    { "text": "Москва · запись на консультацию", "fromFrame": 980, "toFrame": 1123 }
   ]
 }

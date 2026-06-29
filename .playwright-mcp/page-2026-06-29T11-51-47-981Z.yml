@@ -1,0 +1,29 @@
+- generic [ref=e3]:
+  - heading "AVSound — Учёт дня" [level=1] [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e6] [cursor=pointer]:
+      - paragraph [ref=e7]: Перетащи Продажи.xlsx
+      - paragraph [ref=e8]: или нажми для выбора
+    - generic [ref=e9] [cursor=pointer]:
+      - paragraph [ref=e10]: Перетащи Работа.xlsx
+      - paragraph [ref=e11]: или нажми для выбора
+    - generic [ref=e12] [cursor=pointer]:
+      - paragraph [ref=e13]: Перетащи Расходы.xlsx
+      - paragraph [ref=e14]: или нажми для выбора
+    - generic [ref=e15] [cursor=pointer]:
+      - paragraph [ref=e16]: Перетащи Зарплата.xlsx
+      - paragraph [ref=e17]: или нажми для выбора
+    - generic [ref=e18] [cursor=pointer]:
+      - paragraph [ref=e19]: Перетащи Закупка.xlsx
+      - paragraph [ref=e20]: или нажми для выбора
+  - generic [ref=e21]:
+    - button "Отчёт" [ref=e22] [cursor=pointer]
+    - button "Касса" [ref=e23] [cursor=pointer]
+    - button "Дашборд" [ref=e24] [cursor=pointer]
+    - button "История" [ref=e25] [cursor=pointer]
+    - button "Месяц" [ref=e26] [cursor=pointer]
+    - button "Графики" [active] [ref=e27] [cursor=pointer]
+  - generic [ref=e109]:
+    - paragraph [ref=e110]: 📈
+    - paragraph [ref=e111]: Нет данных для графиков
+    - paragraph [ref=e112]: Сохрани несколько дней — появятся графики динамики

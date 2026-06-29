@@ -1,0 +1,101 @@
+- generic [ref=e3]:
+  - heading "AVSound — Учёт дня" [level=1] [ref=e4]
+  - generic [ref=e5]:
+    - generic [ref=e6] [cursor=pointer]:
+      - paragraph [ref=e7]: Перетащи Продажи.xlsx
+      - paragraph [ref=e8]: или нажми для выбора
+    - generic [ref=e9] [cursor=pointer]:
+      - paragraph [ref=e10]: Перетащи Работа.xlsx
+      - paragraph [ref=e11]: или нажми для выбора
+    - generic [ref=e12] [cursor=pointer]:
+      - paragraph [ref=e13]: Перетащи Расходы.xlsx
+      - paragraph [ref=e14]: или нажми для выбора
+    - generic [ref=e15] [cursor=pointer]:
+      - paragraph [ref=e16]: Перетащи Зарплата.xlsx
+      - paragraph [ref=e17]: или нажми для выбора
+    - generic [ref=e18] [cursor=pointer]:
+      - paragraph [ref=e19]: Перетащи Закупка.xlsx
+      - paragraph [ref=e20]: или нажми для выбора
+  - generic [ref=e21]:
+    - button "Отчёт" [ref=e22] [cursor=pointer]
+    - button "Касса" [active] [ref=e23] [cursor=pointer]
+    - button "Дашборд" [ref=e24] [cursor=pointer]
+    - button "История" [ref=e25] [cursor=pointer]
+    - button "Месяц" [ref=e26] [cursor=pointer]
+    - button "Графики" [ref=e27] [cursor=pointer]
+  - generic [ref=e33]:
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Суммы в кассе на вечер" [level=2] [ref=e36]
+        - generic [ref=e37]:
+          - generic [ref=e38]: Наличные
+          - spinbutton [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]: Т-Бизнес
+          - spinbutton [ref=e42]
+        - generic [ref=e43]:
+          - generic [ref=e44]: Тинькофф
+          - spinbutton [ref=e45]
+        - generic [ref=e46]:
+          - generic [ref=e47]: Т-Бизнес 2
+          - spinbutton [ref=e48]
+        - generic [ref=e49]:
+          - generic [ref=e50]: Т-Яндекс
+          - spinbutton [ref=e51]
+        - generic [ref=e52]:
+          - generic [ref=e53]: Другое
+          - spinbutton [ref=e54]
+        - generic [ref=e55]:
+          - generic [ref=e56]: Итого в кассе
+          - generic [ref=e57]: 0 ₽
+      - generic [ref=e58]:
+        - heading "Сверка кассы" [level=2] [ref=e59]
+        - generic [ref=e60]:
+          - generic [ref=e61]: Остаток на начало дня
+          - spinbutton [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e64]: Приход Озон
+          - spinbutton [ref=e65]
+        - generic [ref=e66]:
+          - generic [ref=e67]: Приход Яндекс
+          - spinbutton [ref=e68]
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - generic [ref=e71]: +Остаток вчера
+            - generic [ref=e72]: 0 ₽
+          - generic [ref=e73]:
+            - generic [ref=e74]: +Реализация
+            - generic [ref=e75]: 0 ₽
+          - generic [ref=e76]:
+            - generic [ref=e77]: +Работа студии
+            - generic [ref=e78]: 0 ₽
+          - generic [ref=e79]:
+            - generic [ref=e80]: +Приход Озон
+            - generic [ref=e81]: 0 ₽
+          - generic [ref=e82]:
+            - generic [ref=e83]: +Приход Яндекс
+            - generic [ref=e84]: 0 ₽
+          - generic [ref=e85]:
+            - generic [ref=e86]: −Расходы
+            - generic [ref=e87]: 0 ₽
+          - generic [ref=e88]:
+            - generic [ref=e89]: −Зарплата выпл.
+            - generic [ref=e90]: 0 ₽
+          - generic [ref=e91]:
+            - generic [ref=e92]: −Закупка склад
+            - generic [ref=e93]: 0 ₽
+          - generic [ref=e94]:
+            - generic [ref=e95]: −Аренда (авто)
+            - generic [ref=e96]: 5 000 ₽
+        - generic [ref=e97]:
+          - generic [ref=e98]: Расчётный остаток
+          - generic [ref=e99]: "-5 000 ₽"
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: ✗ Расхождение
+          - paragraph [ref=e102]: +5 000 ₽ — в кассе больше
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]: Дата отчёта
+        - textbox [ref=e106]: 2026-06-29
+      - button "Сохранить в Google Sheets" [ref=e107] [cursor=pointer]
+      - button "Очистить" [ref=e108] [cursor=pointer]

@@ -11,6 +11,7 @@ export function DashboardUI({ email, role, balance: initialBalance }: { email: s
   const isStaff = role === "admin" || role === "owner";
 
   const [balance, setBalance] = useState(initialBalance);
+  const [model, setModel] = useState("seedance-2");
   const [mode, setMode] = useState("text_to_video");
   const [prompt, setPrompt] = useState("");
   const [dur, setDur] = useState(5);
@@ -36,13 +37,13 @@ export function DashboardUI({ email, role, balance: initialBalance }: { email: s
     (async () => {
       const r = await fetch("/api/pricing/quote", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ modelKey: "seedance-2", mode, durationSec: dur, resolution: res }),
+        body: JSON.stringify({ modelKey: model, mode, durationSec: dur, resolution: res }),
       });
       const d = await r.json();
       if (alive) r.ok ? setQ(d) : setQ(null);
     })();
     return () => { alive = false; };
-  }, [mode, dur, res]);
+  }, [model, mode, dur, res]);
 
   // первичная загрузка + polling каждые 7с (статусы + баланс)
   const hasActive = useRef(false);
@@ -61,7 +62,7 @@ export function DashboardUI({ email, role, balance: initialBalance }: { email: s
     try {
       const r = await fetch("/api/jobs", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ modelKey: "seedance-2", mode, prompt, durationSec: dur, resolution: res }),
+        body: JSON.stringify({ modelKey: model, mode, prompt, durationSec: dur, resolution: res }),
       });
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || "ошибка запуска");
@@ -95,8 +96,12 @@ export function DashboardUI({ email, role, balance: initialBalance }: { email: s
 
       {/* ----- Форма генерации ----- */}
       <div style={card}>
-        <h3 style={{ marginTop: 0 }}>Генерация видео (Seedance 2.0)</h3>
+        <h3 style={{ marginTop: 0 }}>Генерация видео</h3>
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 10 }}>
+          <select value={model} onChange={(e) => setModel(e.target.value)} style={sel}>
+            <option value="seedance-2">Seedance 2.0</option>
+            <option value="seedance-2-mini">Seedance 2.0 mini (дешевле)</option>
+          </select>
           <select value={mode} onChange={(e) => setMode(e.target.value)} style={sel}>
             <option value="text_to_video">text-to-video</option>
             <option value="image_to_video" disabled>image-to-video (скоро)</option>

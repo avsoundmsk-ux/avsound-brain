@@ -44,9 +44,9 @@ export async function parseFile(file) {
         const реализация = parseAmount(r[2])
         const tags = String(r[6] || '').trim()
         const comment = String(r[7] || '').trim()
-        const bracketMatch = comment.match(/\((\d[\d\s]*)\)\s*$/)
+        const bracketMatch = comment.match(/\((\d[\d\s]*)\)/)
         const закупка = bracketMatch ? parseFloat(bracketMatch[1].replace(/\s/g, '')) || 0 : 0
-        const name = comment.replace(/\s*\(\d[\d\s]*\)\s*$/, '').trim()
+        const name = comment.replace(/\s*\(\d[\d\s]*\)\s*/, ' ').trim()
         const channel = tags.toLowerCase().includes('авито') ? 'Авито' : 'Прямые'
         return { date: parseDate(r[0]), name, channel, реализация, закупка, маржа: реализация - закупка }
       })

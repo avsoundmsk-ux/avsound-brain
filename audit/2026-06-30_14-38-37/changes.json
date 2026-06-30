@@ -1,0 +1,314 @@
+[
+ {
+  "datetime": "2026-06-30T14:38:42",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45791,
+  "sku": "",
+  "name": "SQL акустика урал патриот элемент ас-пт165",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     45786,
+     45788,
+     51893,
+     45748,
+     42814
+    ],
+    "new": [
+     53603
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:38:47",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45779,
+  "sku": "",
+  "name": "УРАЛ ПАТРИОТ АС-ПТ 165.2",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     45762,
+     45772,
+     45776,
+     45770,
+     45777
+    ],
+    "new": [
+     53604
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:38:52",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45771,
+  "sku": "",
+  "name": "УРАЛ AS-W30TW «SHKVAL»",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     45765
+    ],
+    "new": [
+     53605
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:38:57",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45759,
+  "sku": "",
+  "name": "Мидрейндж Ural AS-D200 Armada",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     45751,
+     43995
+    ],
+    "new": [
+     53606
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:02",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45757,
+  "sku": "",
+  "name": "Рупор ural AS-PT115 patriot",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     45752,
+     45754
+    ],
+    "new": [
+     53607
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:07",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45745,
+  "sku": "",
+  "name": "Урал ас-А1325К авангард",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     44055,
+     45734,
+     45740,
+     44163,
+     42892
+    ],
+    "new": [
+     53608
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:12",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45712,
+  "sku": "",
+  "name": "Урал классик AS-C1327K",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     42892,
+     45703,
+     42814
+    ],
+    "new": [
+     53609
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:17",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45664,
+  "sku": "",
+  "name": "Урал молния ас-мл69",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     45651,
+     45654,
+     45661,
+     44055
+    ],
+    "new": [
+     53610
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:23",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 44575,
+  "sku": "",
+  "name": "4-канальный усилитель ural BV 4.70",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     44570,
+     44572
+    ],
+    "new": [
+     53611
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:28",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 44070,
+  "sku": "",
+  "name": "УРАЛ PB-DB Extreme SPL Distributor",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     44060,
+     44066,
+     44069,
+     44478
+    ],
+    "new": [
+     53612
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T14:39:33",
+  "run_id": "2026-06-30_14-38-37",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 44045,
+  "sku": "",
+  "name": "Урал AS-W130MB",
+  "brand": "Ural",
+  "action": "images_replaced",
+  "reason": "ural full audit",
+  "fields": {
+   "images": {
+    "old": [
+     44040,
+     44043,
+     44055,
+     42814
+    ],
+    "new": [
+     53613
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,15 @@
+{
+ "datetime": "2026-06-30T14:39:33",
+ "run_id": "2026-06-30_14-38-37",
+ "program_version": "0.1.0",
+ "docs_version": "spec-2026-06",
+ "user": "AI Agent",
+ "mode": "live",
+ "excel_file": "input/(8).xlsx",
+ "summary": {
+  "ural_audit": 11
+ },
+ "changes": 11,
+ "images": 0,
+ "errors": 0
+}

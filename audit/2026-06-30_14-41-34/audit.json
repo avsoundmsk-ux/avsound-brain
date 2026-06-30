@@ -1,0 +1,407 @@
+{
+ "meta": {
+  "datetime": "2026-06-30T14:44:41",
+  "run_id": "2026-06-30_14-41-34",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-30T14:41:39",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44021,
+   "sku": "",
+   "name": "Урал АС-Ф1307",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [
+      44020,
+      48868,
+      43995,
+      44465
+     ],
+     "new": [
+      53614
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:41:45",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43913,
+   "sku": "",
+   "name": "Сабвуфер ural Bulava 10 V.2",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [
+      43908,
+      42892
+     ],
+     "new": [
+      53615
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:41:50",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45920,
+   "sku": "",
+   "name": "Сабвуфер урал тт 15 красный",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53616
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:41:55",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45916,
+   "sku": "",
+   "name": "Сабвуфер урал молот 10",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53617
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:42:40",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45744,
+   "sku": "",
+   "name": "Компонентная акустическая система урал аk-47.С М",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53618
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:42:45",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45696,
+   "sku": "",
+   "name": "Урал ас-М57 молот",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53619
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:42:51",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45678,
+   "sku": "",
+   "name": "Урал ас-М100 молот",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53620
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:42:55",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45676,
+   "sku": "",
+   "name": "УРАЛ АС-М200 МОЛОТ",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53621
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:43:00",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45671,
+   "sku": "",
+   "name": "Урал ас-М130 молот",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53622
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:43:06",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45635,
+   "sku": "",
+   "name": "УРАЛ ТТ 130 ДРАЙВ Мидрейндж",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53623
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:43:35",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44564,
+   "sku": "",
+   "name": "6-канальный усилитель ural (урал) DB 6.180 V.2",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53624
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:43:40",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43974,
+   "sku": "",
+   "name": "Сабвуфер ural Bulava 15 V.2",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53625
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:43:45",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43899,
+   "sku": "",
+   "name": "Сабвуфер ural Bulava 12 V.2",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53626
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:44:31",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43886,
+   "sku": "",
+   "name": "Сабвуфер урал патриот 8",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53627
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:44:36",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43857,
+   "sku": "",
+   "name": "Сабвуфер под сиденье урал пмн-2 “черная вдова”",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53628
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T14:44:41",
+   "run_id": "2026-06-30_14-41-34",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43704,
+   "sku": "",
+   "name": "Сабвуфер урал молот 12",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural full audit",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53629
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

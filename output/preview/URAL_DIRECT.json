@@ -52,5 +52,29 @@
   "name": "Урал ВВ 12 сабвуфер",
   "opt": "images/generated/optimized/u_44137.webp",
   "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/symphony-12/"
+ },
+ {
+  "pid": 45920,
+  "name": "Урал ВВ 15 неон сабвуфер",
+  "opt": "images/generated/optimized/u_45920.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/active-sub/symphonia-15/"
+ },
+ {
+  "pid": 43704,
+  "name": "Урал Союз 12 сабвуфер",
+  "opt": "images/generated/optimized/u_43704.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/symphony-12/"
+ },
+ {
+  "pid": 43766,
+  "name": "Урал Армада АС-Д12А неон сабвуфер",
+  "opt": "images/generated/optimized/u_43766.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/active-sub/as-u12a-compact/"
+ },
+ {
+  "pid": 44127,
+  "name": "Урал Патриот 15 неон сабвуфер",
+  "opt": "images/generated/optimized/u_44127.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/patriot-15-grom/"
  }
 ]

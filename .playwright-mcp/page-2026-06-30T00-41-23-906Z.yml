@@ -1,0 +1,455 @@
+- generic [ref=f23e7]:
+  - generic:
+    - generic:
+      - generic:
+        - img
+  - generic [ref=f23e9]:
+    - generic [ref=f23e11]:
+      - link "KIE.AI" [ref=f23e13] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f23e15]: KIE.AI
+      - generic [ref=f23e18]:
+        - generic "language" [ref=f23e20] [cursor=pointer]:
+          - generic "language" [ref=f23e21]:
+            - generic [ref=f23e22]:
+              - generic [ref=f23e23]: language
+              - img [ref=f23e24]:
+                - img [ref=f23e25]
+        - generic "language" [ref=f23e29] [cursor=pointer]:
+          - generic "language" [ref=f23e30]:
+            - generic [ref=f23e31]:
+              - generic [ref=f23e32]: language
+              - img [ref=f23e33]:
+                - img [ref=f23e34]
+      - generic [ref=f23e37]:
+        - button "Toggle theme" [ref=f23e39] [cursor=pointer]:
+          - img [ref=f23e40]
+        - link "Market" [ref=f23e44] [cursor=pointer]:
+          - /url: https://kie.ai/market
+          - button "Market" [ref=f23e46]:
+            - generic [ref=f23e47]: Market
+        - link "Support" [ref=f23e48] [cursor=pointer]:
+          - /url: mailto:support@kie.ai
+          - generic [ref=f23e49]: Support
+    - generic [ref=f23e52]:
+      - generic:
+        - link "Market" [ref=f23e53] [cursor=pointer]:
+          - /url: /1973359m0
+          - generic [ref=f23e55]: Market
+        - link "File Upload API" [ref=f23e57] [cursor=pointer]:
+          - /url: /file-upload-api/quickstart
+          - generic [ref=f23e59]: File Upload API
+        - link "Common API" [ref=f23e60] [cursor=pointer]:
+          - /url: /common-api/quickstart
+          - generic [ref=f23e62]: Common API
+      - generic [ref=f23e63]:
+        - link "Market" [ref=f23e64] [cursor=pointer]:
+          - /url: /1973359m0
+          - generic [ref=f23e66]: Market
+        - link "File Upload API" [ref=f23e68] [cursor=pointer]:
+          - /url: /file-upload-api/quickstart
+          - generic [ref=f23e70]: File Upload API
+        - link "Common API" [ref=f23e71] [cursor=pointer]:
+          - /url: /common-api/quickstart
+          - generic [ref=f23e73]: Common API
+  - generic [ref=f23e74]:
+    - generic [ref=f23e77]:
+      - generic [ref=f23e81] [cursor=pointer]:
+        - img [ref=f23e82]:
+          - img [ref=f23e83]
+        - textbox "Search" [ref=f23e85]
+        - generic [ref=f23e86]: Ctrl+K
+      - list [ref=f23e90]:
+        - listitem [ref=f23e91]:
+          - link "Getting Started with KIE API (Important)" [ref=f23e92] [cursor=pointer]:
+            - /url: /1973359m0
+            - generic [ref=f23e93]: Getting Started with KIE API (Important)
+        - listitem [ref=f23e94]:
+          - link "Market" [ref=f23e95] [cursor=pointer]:
+            - /url: /market/quickstart
+            - generic [ref=f23e96]: Market
+        - listitem [ref=f23e97]:
+          - generic "Image Models" [ref=f23e98] [cursor=pointer]:
+            - generic [ref=f23e99]: Image Models
+            - img [ref=f23e101]:
+              - img [ref=f23e102]
+          - list [ref=f23e104]:
+            - listitem [ref=f23e105]:
+              - generic "Seedream" [ref=f23e106] [cursor=pointer]:
+                - generic [ref=f23e107]: Seedream
+                - img [ref=f23e109]:
+                  - img [ref=f23e110]
+            - listitem [ref=f23e112]:
+              - generic "Z-image" [ref=f23e113] [cursor=pointer]:
+                - generic [ref=f23e114]: Z-image
+                - img [ref=f23e116]:
+                  - img [ref=f23e117]
+            - listitem [ref=f23e119]:
+              - generic "Google" [ref=f23e120] [cursor=pointer]:
+                - generic [ref=f23e121]: Google
+                - img [ref=f23e123]:
+                  - img [ref=f23e124]
+            - listitem [ref=f23e126]:
+              - generic "Flux-2" [ref=f23e127] [cursor=pointer]:
+                - generic [ref=f23e128]: Flux-2
+                - img [ref=f23e130]:
+                  - img [ref=f23e131]
+            - listitem [ref=f23e133]:
+              - generic "Grok Imagine" [ref=f23e134] [cursor=pointer]:
+                - generic [ref=f23e135]: Grok Imagine
+                - img [ref=f23e137]:
+                  - img [ref=f23e138]
+            - listitem [ref=f23e140]:
+              - generic "GPT Image" [ref=f23e141] [cursor=pointer]:
+                - generic [ref=f23e142]: GPT Image
+                - img [ref=f23e144]:
+                  - img [ref=f23e145]
+            - listitem [ref=f23e147]:
+              - generic "Topaz" [ref=f23e148] [cursor=pointer]:
+                - generic [ref=f23e149]: Topaz
+                - img [ref=f23e151]:
+                  - img [ref=f23e152]
+            - listitem [ref=f23e154]:
+              - generic "Recraft" [ref=f23e155] [cursor=pointer]:
+                - generic [ref=f23e156]: Recraft
+                - img [ref=f23e158]:
+                  - img [ref=f23e159]
+            - listitem [ref=f23e161]:
+              - generic "Ideogram" [ref=f23e162] [cursor=pointer]:
+                - generic [ref=f23e163]: Ideogram
+                - img [ref=f23e165]:
+                  - img [ref=f23e166]
+            - listitem [ref=f23e168]:
+              - generic "Qwen" [ref=f23e169] [cursor=pointer]:
+                - generic [ref=f23e170]: Qwen
+                - img [ref=f23e172]:
+                  - img [ref=f23e173]
+            - listitem [ref=f23e175]:
+              - generic "4o Image API" [ref=f23e176] [cursor=pointer]:
+                - generic [ref=f23e177]: 4o Image API
+                - img [ref=f23e179]:
+                  - img [ref=f23e180]
+            - listitem [ref=f23e182]:
+              - generic "Flux Kontext API" [ref=f23e183] [cursor=pointer]:
+                - generic [ref=f23e184]: Flux Kontext API
+                - img [ref=f23e186]:
+                  - img [ref=f23e187]
+            - listitem [ref=f23e189]:
+              - generic "Wan" [ref=f23e190] [cursor=pointer]:
+                - generic [ref=f23e191]: Wan
+                - img [ref=f23e193]:
+                  - img [ref=f23e194]
+        - listitem [ref=f23e196]:
+          - generic "Video Models" [ref=f23e197] [cursor=pointer]:
+            - generic [ref=f23e198]: Video Models
+            - img [ref=f23e200]:
+              - img [ref=f23e201]
+          - list [ref=f23e203]:
+            - listitem [ref=f23e204]:
+              - generic "Grok Imagine" [ref=f23e205] [cursor=pointer]:
+                - generic [ref=f23e206]: Grok Imagine
+                - img [ref=f23e208]:
+                  - img [ref=f23e209]
+            - listitem [ref=f23e211]:
+              - generic "Kling" [ref=f23e212] [cursor=pointer]:
+                - generic [ref=f23e213]: Kling
+                - img [ref=f23e215]:
+                  - img [ref=f23e216]
+            - listitem [ref=f23e218]:
+              - generic "Bytedance" [ref=f23e219] [cursor=pointer]:
+                - generic [ref=f23e220]: Bytedance
+                - img [ref=f23e222]:
+                  - img [ref=f23e223]
+            - listitem [ref=f23e225]:
+              - generic "Hailuo" [ref=f23e226] [cursor=pointer]:
+                - generic [ref=f23e227]: Hailuo
+                - img [ref=f23e229]:
+                  - img [ref=f23e230]
+            - listitem [ref=f23e232]:
+              - generic "Wan" [ref=f23e233] [cursor=pointer]:
+                - generic [ref=f23e234]: Wan
+                - img [ref=f23e236]:
+                  - img [ref=f23e237]
+            - listitem [ref=f23e239]:
+              - generic "Topaz" [ref=f23e240] [cursor=pointer]:
+                - generic [ref=f23e241]: Topaz
+                - img [ref=f23e243]:
+                  - img [ref=f23e244]
+            - listitem [ref=f23e246]:
+              - generic "Infinitalk" [ref=f23e247] [cursor=pointer]:
+                - generic [ref=f23e248]: Infinitalk
+                - img [ref=f23e250]:
+                  - img [ref=f23e251]
+            - listitem [ref=f23e253]:
+              - generic "Runway API" [ref=f23e254] [cursor=pointer]:
+                - generic [ref=f23e255]: Runway API
+                - img [ref=f23e257]:
+                  - img [ref=f23e258]
+            - listitem [ref=f23e260]:
+              - generic "HappyHorse" [ref=f23e261] [cursor=pointer]:
+                - generic [ref=f23e262]: HappyHorse
+                - img [ref=f23e264]:
+                  - img [ref=f23e265]
+            - listitem [ref=f23e267]:
+              - generic "Gemini Omni" [ref=f23e268] [cursor=pointer]:
+                - generic [ref=f23e269]: Gemini Omni
+                - img [ref=f23e271]:
+                  - img [ref=f23e272]
+            - listitem [ref=f23e274]:
+              - generic "OmniHuman" [ref=f23e275] [cursor=pointer]:
+                - generic [ref=f23e276]: OmniHuman
+                - img [ref=f23e278]:
+                  - img [ref=f23e279]
+            - listitem [ref=f23e281]:
+              - generic "Volcengine" [ref=f23e282] [cursor=pointer]:
+                - generic [ref=f23e283]: Volcengine
+                - img [ref=f23e285]:
+                  - img [ref=f23e286]
+              - list [ref=f23e288]:
+                - listitem [ref=f23e289]:
+                  - link "Volcengine video to video lip sync POST" [ref=f23e290] [cursor=pointer]:
+                    - /url: /market/volcengine/video-to-video-lip-sync
+                    - generic [ref=f23e291]: Volcengine video to video lip sync
+                    - generic [ref=f23e294]: POST
+        - listitem [ref=f23e295]:
+          - generic "Music Models" [ref=f23e296] [cursor=pointer]:
+            - generic [ref=f23e297]: Music Models
+            - img [ref=f23e299]:
+              - img [ref=f23e300]
+        - listitem [ref=f23e302]:
+          - generic "Chat Models" [ref=f23e303] [cursor=pointer]:
+            - generic [ref=f23e304]: Chat Models
+            - img [ref=f23e306]:
+              - img [ref=f23e307]
+        - listitem [ref=f23e309]:
+          - generic "Suno API" [ref=f23e310] [cursor=pointer]:
+            - generic [ref=f23e311]: Suno API
+            - img [ref=f23e313]:
+              - img [ref=f23e314]
+        - listitem [ref=f23e316]:
+          - generic "Veo3.1 API" [ref=f23e317] [cursor=pointer]:
+            - generic [ref=f23e318]: Veo3.1 API
+            - img [ref=f23e320]:
+              - img [ref=f23e321]
+        - listitem [ref=f23e323]:
+          - link "Get Task Details GET" [ref=f23e324] [cursor=pointer]:
+            - /url: /market/common/get-task-detail
+            - generic [ref=f23e325]: Get Task Details
+            - generic [ref=f23e328]: GET
+    - generic [ref=f23e336]:
+      - generic [ref=f23e337]:
+        - navigation [ref=f23e338]:
+          - list [ref=f23e339]:
+            - listitem [ref=f23e340]:
+              - generic [ref=f23e341]: Volcengine
+        - generic [ref=f23e343]:
+          - button "Copy Page" [ref=f23e344] [cursor=pointer]:
+            - generic [ref=f23e345]:
+              - img [ref=f23e346]:
+                - img [ref=f23e347]
+              - text: Copy Page
+          - button [ref=f23e350] [cursor=pointer]:
+            - img [ref=f23e351]:
+              - img [ref=f23e352]
+      - heading "Volcengine video to video lip sync" [level=1] [ref=f23e356]
+      - generic [ref=f23e358]:
+        - generic [ref=f23e361]: POST
+        - generic [ref=f23e363]:
+          - img [ref=f23e365] [cursor=pointer]
+          - generic [ref=f23e368]: /api/v1/jobs/createTask
+        - button "Try it" [ref=f23e370] [cursor=pointer]:
+          - img [ref=f23e371]:
+            - img [ref=f23e372]
+          - generic [ref=f23e374]: Try it
+      - button "Run in Apidog" [ref=f23e375] [cursor=pointer]:
+        - img [ref=f23e376]:
+          - img [ref=f23e377]
+        - generic [ref=f23e379]: Run in Apidog
+      - generic [ref=f23e382]:
+        - heading "Create Task" [level=2] [ref=f23e383]:
+          - text: Create Task
+          - link [ref=f23e384] [cursor=pointer]:
+            - /url: "#create-task"
+        - generic [ref=f23e385]: Use this endpoint to create a new video-to-video lip sync task. Upload a video and an audio file, and the model will drive the video lip movements to match the target audio.
+        - generic [ref=f23e387]:
+          - generic [ref=f23e390]: 
+          - generic [ref=f23e391]: Get Task Details
+          - text: After submission, use the unified query endpoint to check task progress and retrieve results
+        - generic [ref=f23e392]:
+          - img [ref=f23e394]:
+            - img [ref=f23e395]
+          - generic [ref=f23e399]:
+            - text: For production use, we recommend providing the
+            - code [ref=f23e400]: callBackUrl
+            - text: parameter so your service can receive completion notifications instead of polling for task status.
+        - heading "File Upload" [level=2] [ref=f23e401]:
+          - text: File Upload
+          - link [ref=f23e402] [cursor=pointer]:
+            - /url: "#file-upload"
+        - generic [ref=f23e403]:
+          - img [ref=f23e405]:
+            - img [ref=f23e406]
+          - generic [ref=f23e410]:
+            - text: Need to upload files before calling this endpoint? See
+            - link "File Upload API Quickstart" [ref=f23e411] [cursor=pointer]:
+              - /url: /file-upload-api/quickstart
+            - text: .
+        - heading "Output Specifications" [level=2] [ref=f23e412]:
+          - text: Output Specifications
+          - link [ref=f23e413] [cursor=pointer]:
+            - /url: "#output-specifications"
+        - generic [ref=f23e414]: "The generated video is returned in MP4 format at 25 fps. The final output duration follows the audio duration: if the source video is longer than the audio, it will be trimmed; if the source video is shorter than the audio, it will be looped."
+        - heading "Related Resources" [level=2] [ref=f23e415]:
+          - text: Related Resources
+          - link [ref=f23e416] [cursor=pointer]:
+            - /url: "#related-resources"
+        - generic [ref=f23e417]:
+          - generic [ref=f23e419]:
+            - generic [ref=f23e422]: 
+            - generic [ref=f23e423]: Model Marketplace
+            - text: Explore all available models and capabilities
+          - generic [ref=f23e425]:
+            - generic [ref=f23e428]: 
+            - generic [ref=f23e429]: Common API
+            - text: Check account credits and usage
+      - generic [ref=f23e430]:
+        - heading "Request" [level=2] [ref=f23e431]
+        - generic [ref=f23e434]:
+          - button "Authorization" [expanded] [ref=f23e435] [cursor=pointer]:
+            - img [ref=f23e437]:
+              - img [ref=f23e438]
+            - generic [ref=f23e441]: Authorization
+          - generic [ref=f23e446]:
+            - generic [ref=f23e448]: Bearer Token
+            - generic [ref=f23e449]:
+              - generic [ref=f23e451]:
+                - text: Provide your bearer token in the
+                - generic [ref=f23e452]: Authorization
+                - text: header when making requests to protected resources.
+              - generic [ref=f23e453]:
+                - generic [ref=f23e454]: "Example:"
+                - code [ref=f23e457]: "Authorization: Bearer ********************"
+        - generic [ref=f23e458]:
+          - generic [ref=f23e460]:
+            - generic [ref=f23e462]:
+              - generic [ref=f23e463]: Body Params
+              - generic [ref=f23e464]: application/json
+              - generic [ref=f23e465]: Required
+            - button "Generate Code" [ref=f23e467] [cursor=pointer]:
+              - img [ref=f23e468]:
+                - img [ref=f23e469]
+              - generic [ref=f23e471]: Generate Code
+          - generic [ref=f23e474]:
+            - generic [ref=f23e479]:
+              - heading [level=3] [ref=f23e480]
+              - list [ref=f23e481]:
+                - listitem [ref=f23e482]
+                - listitem [ref=f23e483]
+                - listitem [ref=f23e484]
+            - generic [ref=f23e487] [cursor=pointer]:
+              - generic [ref=f23e488]: Examples
+              - img [ref=f23e489]:
+                - img [ref=f23e490]
+      - generic [ref=f23e493]:
+        - heading "Responses" [level=2] [ref=f23e494]
+        - tablist [ref=f23e495]:
+          - generic [ref=f23e496]:
+            - tab "right 🟢200" [expanded] [ref=f23e497] [cursor=pointer]:
+              - img "right" [ref=f23e498]:
+                - img [ref=f23e499]
+              - generic [ref=f23e503]: 🟢200
+            - tabpanel [ref=f23e504]:
+              - generic [ref=f23e508]:
+                - generic [ref=f23e509]:
+                  - generic [ref=f23e513]: application/json
+                  - generic [ref=f23e516]: Request successful
+                - generic [ref=f23e517]:
+                  - generic [ref=f23e519]:
+                    - generic [ref=f23e521]:
+                      - text: Body
+                      - generic [ref=f23e523]: application/json
+                    - button "Generate Code" [ref=f23e525] [cursor=pointer]:
+                      - img [ref=f23e526]:
+                        - img [ref=f23e527]
+                      - generic [ref=f23e529]: Generate Code
+                  - generic [ref=f23e533]:
+                    - heading [level=3] [ref=f23e534]
+                    - list [ref=f23e535]:
+                      - listitem [ref=f23e536]
+                      - listitem [ref=f23e537]
+                      - listitem [ref=f23e538]
+      - generic [ref=f23e539]:
+        - generic [ref=f23e541]:
+          - generic [ref=f23e542]:
+            - generic [ref=f23e544]: Request
+            - generic [ref=f23e545]:
+              - generic [ref=f23e546]:
+                - tablist [ref=f23e547]:
+                  - generic [ref=f23e549]:
+                    - tab "Shell" [selected] [ref=f23e551] [cursor=pointer]
+                    - tab "JavaScript" [ref=f23e553] [cursor=pointer]
+                    - tab "Java" [ref=f23e555] [cursor=pointer]
+                - generic:
+                  - generic:
+                    - tabpanel "Shell"
+              - img [ref=f23e557]:
+                - img [ref=f23e558]
+          - generic [ref=f23e564]:
+            - generic [ref=f23e565] [cursor=pointer]:
+              - generic [ref=f23e566]:
+                - radio "cURL" [checked]
+              - text: cURL
+            - generic [ref=f23e567] [cursor=pointer]:
+              - generic [ref=f23e568]:
+                - radio "cURL-Windows"
+              - text: cURL-Windows
+            - generic [ref=f23e569] [cursor=pointer]:
+              - generic [ref=f23e570]:
+                - radio "Httpie"
+              - text: Httpie
+            - generic [ref=f23e571] [cursor=pointer]:
+              - generic [ref=f23e572]:
+                - radio "wget"
+              - text: wget
+            - generic [ref=f23e573] [cursor=pointer]:
+              - generic [ref=f23e574]:
+                - radio "PowerShell"
+              - text: PowerShell
+          - code [ref=f23e577]: "curl --location 'https://api.kie.ai/api/v1/jobs/createTask' \\ --header 'Authorization: Bearer <token>' \\ --header 'Content-Type: application/json' \\ --data '{ \"model\": \"volcengine/video-to-video-lip-sync\", \"input\": { \"mode\": \"lite\", \"video_url\": \"https://your-domain.com/video/example.mp4\", \"audio_url\": \"https://your-domain.com/audio/speech.mp3\", \"separate_vocal\": false, \"open_scenedet\": false, \"align_audio\": true, \"align_audio_reverse\": false, \"templ_start_seconds\": 0 }, \"callBackUrl\": \"https://your-domain.com/api/callback\" }'"
+        - generic [ref=f23e578]:
+          - generic [ref=f23e583]: Response
+          - code [ref=f23e586]: "{ \"code\": 200, \"msg\": \"success\", \"data\": { \"taskId\": \"task_volcengine-video-to-video-lip-sync_1234567890\" } }"
+      - generic [ref=f23e587]:
+        - link "Previous OmniHuman 1.5 Subject Detection" [ref=f23e588] [cursor=pointer]:
+          - /url: /market/omnihuman-1-5/subject-detection
+          - img [ref=f23e589]:
+            - img [ref=f23e590]
+          - generic [ref=f23e592]:
+            - generic [ref=f23e593]: Previous
+            - generic [ref=f23e594]: OmniHuman 1.5 Subject Detection
+        - link "Next elevenlabs/audio-isolation" [ref=f23e595] [cursor=pointer]:
+          - /url: /market/elevenlabs/audio-isolation
+          - generic [ref=f23e596]:
+            - generic [ref=f23e597]: Next
+            - generic [ref=f23e598]: elevenlabs/audio-isolation
+          - img [ref=f23e599]:
+            - img [ref=f23e600]
+      - contentinfo [ref=f23e603]:
+        - generic [ref=f23e604]:
+          - link "LLMs.txt" [ref=f23e605] [cursor=pointer]:
+            - /url: /llms.txt
+            - button "LLMs.txt" [ref=f23e606]:
+              - generic [ref=f23e607]: LLMs.txt
+          - button "Clone" [ref=f23e608] [cursor=pointer]:
+            - img [ref=f23e609]:
+              - img [ref=f23e610]
+            - generic [ref=f23e614]: Clone
+          - button "Export" [ref=f23e615] [cursor=pointer]:
+            - img [ref=f23e616]:
+              - img [ref=f23e617]
+            - generic [ref=f23e620]: Export
+        - link "homepage link" [ref=f23e623] [cursor=pointer]:
+          - /url: https://apidog.com
+          - generic [ref=f23e624]:
+            - generic [ref=f23e625]: Built with
+            - img [ref=f23e626]

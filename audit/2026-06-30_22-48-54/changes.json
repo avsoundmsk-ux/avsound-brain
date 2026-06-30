@@ -1,0 +1,189 @@
+[
+ {
+  "datetime": "2026-06-30T22:49:48",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45625,
+  "sku": "",
+  "name": "Процессорный усилитель Nakamichi NDS580",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [
+     45615,
+     45618,
+     45613
+    ],
+    "new": [
+     53630
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T22:49:53",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45610,
+  "sku": "",
+  "name": "Процессорный усилитель Nakamichi NDS460",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [
+     45606,
+     44091,
+     45609,
+     45615,
+     45613
+    ],
+    "new": [
+     53631
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T22:49:58",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45598,
+  "sku": "",
+  "name": "Сабвуфер под сиденье Nakamichi NBF20.0A",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [
+     43854,
+     43852
+    ],
+    "new": [
+     53632
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T22:50:04",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45567,
+  "sku": "",
+  "name": "Активный сабвуфер Nakamichi NBL8A",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [
+     53512
+    ],
+    "new": [
+     53633
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T22:50:09",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45557,
+  "sku": "",
+  "name": "Магнитола Nakamichi NQ711B",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [
+     53507
+    ],
+    "new": [
+     53634
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T22:50:21",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45539,
+  "sku": "",
+  "name": "Автомагнитола Nakamichi M-5210 7\" android",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [
+     44163
+    ],
+    "new": [
+     53635
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-06-30T22:50:25",
+  "run_id": "2026-06-30_22-48-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx",
+  "excel_row": 0,
+  "product_id": 45542,
+  "sku": "",
+  "name": "Контроллер для DSP Nakamichi AC3",
+  "brand": "Nakamichi",
+  "action": "images_replaced",
+  "reason": "nak audit",
+  "fields": {
+   "images": {
+    "old": [],
+    "new": [
+     53636
+    ]
+   }
+  }
+ }
+]

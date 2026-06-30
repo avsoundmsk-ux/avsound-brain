@@ -22,5 +22,47 @@
   "name": "Активный сабвуфер Nakamichi NBL8A",
   "opt": "images/generated/optimized/nk_45567.webp",
   "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 45557,
+  "name": "Магнитола Nakamichi NQ711B",
+  "opt": "images/generated/optimized/nk_45557.webp",
+  "src": "manuals.plus"
+ },
+ {
+  "pid": 45545,
+  "name": "Камера заднего вида Nakamichi NC-5L",
+  "opt": "images/generated/optimized/nk_45545.webp",
+  "src": "nakamichi.ru"
+ },
+ {
+  "pid": 45539,
+  "name": "Автомагнитола Nakamichi M-5210 7\" android",
+  "opt": "images/generated/optimized/nk_45539.webp",
+  "src": "nakamichiaustralia.com.au"
+ },
+ {
+  "pid": 43840,
+  "name": "Магнитола Nakamichi M5230-AX 2/32",
+  "opt": "images/generated/optimized/nk_43840.webp",
+  "src": "nakamichi.ru"
+ },
+ {
+  "pid": 45552,
+  "name": "Магнитола DSP Nakamichi M1710",
+  "opt": "images/generated/optimized/nk_45552.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 45542,
+  "name": "Контроллер для DSP Nakamichi AC3",
+  "opt": "images/generated/optimized/nk_45542.webp",
+  "src": "nakamichi.com.my"
+ },
+ {
+  "pid": 45537,
+  "name": "Магнитола Nakamichi M5960 PRO  9\"дюймов 4/64",
+  "opt": "images/generated/optimized/nk_45537.webp",
+  "src": "nakamichicaraudio.com"
  }
 ]

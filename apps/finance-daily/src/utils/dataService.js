@@ -225,8 +225,53 @@ export function getChartData(limitDays = 60) {
  * Пока — заглушка. Реализовать когда накопится история.
  */
 export async function syncFromSheets() {
-  // TODO: GET /history → сравнить dayId → загрузить недостающие дни
-  return { synced: 0, message: 'sync not yet implemented' }
+  // 1. Получить список дней из Sheets
+  const { history } = await sheetsHistory()
+  if (!history || history.length === 0) return { synced: 0 }
+
+  const localDays = loadDays()
+  const localIds = new Set(localDays.map(d => d.dayId))
+
+  // 2. Найти дни которых нет в localStorage
+  const missing = history.filter(h => !localIds.has(h.dayId))
+  if (missing.length === 0) return { synced: 0 }
+
+  // 3. Загрузить детализацию каждого отсутствующего дня
+  const fetched = []
+  for (const h of missing) {
+    try {
+      const detail = await getDayDetail(h.dayId)
+      const ds = (detail.daily_summary || [])[0] || {}
+      fetched.push({
+        dayId: h.dayId,
+        дата: h.дата,
+        savedAt: new Date().toISOString(),
+        payload: {
+          summary: {
+            реализация:    ds.реализация    || 0,
+            себестоимость: ds.себестоимость || 0,
+            маржа:         ds.маржа         || 0,
+            работа:        ds.работа        || 0,
+            расходы:       ds.расходы       || 0,
+            зарплата:      ds.зарплата      || 0,
+            закупка:       ds.закупка       || 0,
+            аренда:        ds.аренда        || RENT_PER_DAY,
+            прибыльДня:    (ds.маржа||0) + (ds.работа||0) - (ds.расходы||0) - (ds.аренда||RENT_PER_DAY),
+          },
+          продажи:  (detail.sales          || []).map(r => ({ name: r.товар, channel: r.канал, реализация: r.реализация, закупка: r.закупка, маржа: r.маржа })),
+          работа:   (detail.studio_work    || []).map(r => ({ comment: r.описание, сумма: r.сумма })),
+          расходы:  (detail.expenses       || []).map(r => ({ comment: r.описание, сумма: r.сумма })),
+          зарплата: (detail.salary         || []).map(r => ({ comment: r.описание, сумма: r.сумма })),
+          закупка:  (detail.purchases      || []).map(r => ({ comment: r.описание, сумма: r.сумма })),
+          касса:    (detail.cashbox        || [])[0] || {},
+        },
+      })
+    } catch { /* пропустить сломанный день */ }
+  }
+
+  // 4. Дописать в localStorage (новые в начало)
+  saveDays([...fetched.reverse(), ...localDays])
+  return { synced: fetched.length }
 }
 
 // ─── helpers ──────────────────────────────────────────────────────────────────

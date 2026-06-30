@@ -11,6 +11,7 @@ import DashboardTab from './components/DashboardTab.jsx'
 import MonthlyTab from './components/MonthlyTab.jsx'
 import ChartsTab from './components/ChartsTab.jsx'
 import { parseFile } from './utils/parseSales.js'
+import { syncFromSheets } from './utils/dataService.js'
 
 const SLOTS = [
   { key: 'продажи',  label: 'Продажи.xlsx' },
@@ -72,6 +73,22 @@ export default function App() {
     закупка:       g('закупка').reduce((s, i) => s + i.сумма, 0),
   }
 
+  const [syncing, setSyncing] = useState(false)
+  const [syncMsg, setSyncMsg] = useState(null)
+
+  async function handleSync() {
+    setSyncing(true)
+    setSyncMsg(null)
+    try {
+      const { synced } = await syncFromSheets()
+      setSyncMsg(synced > 0 ? `✓ Загружено ${synced} дн.` : '✓ Всё актуально')
+    } catch {
+      setSyncMsg('Ошибка соединения')
+    }
+    setSyncing(false)
+    setTimeout(() => setSyncMsg(null), 4000)
+  }
+
   function reset() { setData({}); setError(null); setTab('отчёт') }
 
   const tabs = [
@@ -85,7 +102,19 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-6 max-w-5xl mx-auto">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">AVSound — Учёт дня</h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold text-gray-800">AVSound — Учёт дня</h1>
+        <div className="flex items-center gap-3">
+          {syncMsg && <span className="text-sm text-gray-500">{syncMsg}</span>}
+          <button
+            onClick={handleSync}
+            disabled={syncing}
+            className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-300 text-white text-sm font-medium rounded-xl transition-colors"
+          >
+            {syncing ? 'Синхронизация...' : '↓ Синхронизировать из Sheets'}
+          </button>
+        </div>
+      </div>
 
       {/* Слоты загрузки */}
       <div className="grid grid-cols-5 gap-3 mb-6">

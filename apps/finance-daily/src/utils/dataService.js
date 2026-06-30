@@ -8,7 +8,7 @@
  *   avsound_rent   — {начислено, оплачено, записи: [{dayId, начислено, оплачено}]}
  */
 
-import { saveDay as sheetsSave } from './sheetsApi.js'
+import { saveDay as sheetsSave, getHistory as sheetsHistory, getDayDetail } from './sheetsApi.js'
 
 const KEYS = {
   DAYS: 'avsound_days',

@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "datetime": "2026-06-30T13:07:32",
+  "run_id": "2026-06-30_13-07-27",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-30T13:07:32",
+   "run_id": "2026-06-30_13-07-27",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43819,
+   "sku": "",
+   "name": "Урал Армада 15 сабвуфер корпусной",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "og:image",
+   "fields": {
+    "images": {
+     "old": [
+      43811,
+      43814,
+      43817,
+      46900
+     ],
+     "new": [
+      53591
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

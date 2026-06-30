@@ -1,0 +1,155 @@
+{
+ "meta": {
+  "datetime": "2026-06-30T03:55:42",
+  "run_id": "2026-06-30_03-55-11",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-30T03:55:18",
+   "run_id": "2026-06-30_03-55-11",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45631,
+   "sku": "",
+   "name": "Урал ТТ 200.2 динамик",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural-auto direct",
+   "fields": {
+    "images": {
+     "old": [
+      45630,
+      44478,
+      42892
+     ],
+     "new": [
+      53586
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T03:55:23",
+   "run_id": "2026-06-30_03-55-11",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45731,
+   "sku": "",
+   "name": "Урал АК-74.С динамик",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural-auto direct",
+   "fields": {
+    "images": {
+     "old": [
+      45725,
+      45728
+     ],
+     "new": [
+      53587
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T03:55:28",
+   "run_id": "2026-06-30_03-55-11",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 43766,
+   "sku": "",
+   "name": "Урал Армада АС-Д12А неон сабвуфер",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural-auto direct",
+   "fields": {
+    "images": {
+     "old": [
+      42892,
+      43764,
+      43611
+     ],
+     "new": [
+      53588
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T03:55:37",
+   "run_id": "2026-06-30_03-55-11",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44127,
+   "sku": "",
+   "name": "Урал Патриот 15 неон сабвуфер",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural-auto direct",
+   "fields": {
+    "images": {
+     "old": [
+      44117,
+      49333,
+      44125
+     ],
+     "new": [
+      53589
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T03:55:42",
+   "run_id": "2026-06-30_03-55-11",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 44184,
+   "sku": "",
+   "name": "Урал ВВ 5.700 усилитель",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "ural-auto direct",
+   "fields": {
+    "images": {
+     "old": [
+      44174,
+      44180,
+      44183,
+      44163
+     ],
+     "new": [
+      53590
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

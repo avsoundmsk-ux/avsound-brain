@@ -76,5 +76,23 @@
   "name": "Урал Патриот 15 неон сабвуфер",
   "opt": "images/generated/optimized/u_44127.webp",
   "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/patriot-15-grom/"
+ },
+ {
+  "pid": 43886,
+  "name": "Урал Патриот 8 сабвуфер",
+  "opt": "images/generated/optimized/u_43886.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/patriot-8/"
+ },
+ {
+  "pid": 44003,
+  "name": "Урал ВВ 12 неон сабвуфер",
+  "opt": "images/generated/optimized/u_44003.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/symphony-12/"
+ },
+ {
+  "pid": 44184,
+  "name": "Урал ВВ 5.700 усилитель",
+  "opt": "images/generated/optimized/u_44184.webp",
+  "src": "https://ural-auto.ru/catalog/usiliteli/tt-5-700/"
  }
 ]

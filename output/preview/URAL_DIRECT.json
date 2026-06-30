@@ -1,1 +1,56 @@
-[]
+[
+ {
+  "pid": 45624,
+  "name": "Урал ВВ 25 неон динамик",
+  "opt": "images/generated/optimized/u_45624.webp",
+  "src": "https://ural-auto.ru/catalog/dinamiki/russkiy-zvuk/ak-47-c-2/"
+ },
+ {
+  "pid": 45631,
+  "name": "Урал ТТ 200.2 динамик",
+  "opt": "images/generated/optimized/u_45631.webp",
+  "src": "https://ural-auto.ru/catalog/dinamiki/gromko/midreyndzh-ural-tt-200-2/"
+ },
+ {
+  "pid": 43989,
+  "name": "Урал распределитель РБ",
+  "opt": "images/generated/optimized/u_43989.webp",
+  "src": "https://ural-auto.ru/"
+ },
+ {
+  "pid": 45731,
+  "name": "Урал АК-74.С динамик",
+  "opt": "images/generated/optimized/u_45731.webp",
+  "src": "https://ural-auto.ru/catalog/dinamiki/russkiy-zvuk/ak-74-c-2/"
+ },
+ {
+  "pid": 45729,
+  "name": "Урал АК-74 динамик",
+  "opt": "images/generated/optimized/u_45729.webp",
+  "src": "https://ural-auto.ru/catalog/dinamiki/russkiy-zvuk/ak-74-c-2/"
+ },
+ {
+  "pid": 45829,
+  "name": "Урал неон АК-07 пищалка",
+  "opt": "images/generated/optimized/u_45829.webp",
+  "src": "https://ural-auto.ru/catalog/dinamiki/russkiy-zvuk/avtomobilnyj-akusticheskij-komplekt-ak/"
+ },
+ {
+  "pid": 45916,
+  "name": "Урал Союз 10 сабвуфер",
+  "opt": "images/generated/optimized/u_45916.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/symphony-10/"
+ },
+ {
+  "pid": 45926,
+  "name": "Урал сабвуфер активный Симфония",
+  "opt": "images/generated/optimized/u_45926.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/active-sub/symphonia-15/"
+ },
+ {
+  "pid": 44137,
+  "name": "Урал ВВ 12 сабвуфер",
+  "opt": "images/generated/optimized/u_44137.webp",
+  "src": "https://ural-auto.ru/catalog/subwoofers/passive-sub/symphony-12/"
+ }
+]

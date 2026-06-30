@@ -1,0 +1,568 @@
+- generic [active] [ref=f1e1]:
+  - main [ref=f1e5]:
+    - generic [ref=f1e6]:
+      - region "Site announcement" [ref=f1e8]:
+        - generic [ref=f1e9]:
+          - link "Seedance 2.0 — open the kie.ai page" [ref=f1e10] [cursor=pointer]:
+            - /url: https://kie.ai/seedance-2-0-mini
+            - img [ref=f1e11]
+            - generic [ref=f1e15]: Seedance 2.0 Mini from ByteDance has officially landed on Kie! 🚀
+          - button "Close announcement" [ref=f1e16] [cursor=pointer]:
+            - img [ref=f1e17]
+      - generic [ref=f1e19]:
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]:
+            - link "kie.ai KIE AI" [ref=f1e23] [cursor=pointer]:
+              - /url: /
+              - img "kie.ai" [ref=f1e25]
+              - generic [ref=f1e26]: KIE AI
+            - button [ref=f1e27] [cursor=pointer]:
+              - img [ref=f1e28]
+          - generic [ref=f1e34]:
+            - listbox [ref=f1e36]:
+              - option "Models Market" [selected] [ref=f1e37] [cursor=pointer]:
+                - img [ref=f1e38]
+                - generic [ref=f1e42]: Models Market
+              - option "Pricing" [ref=f1e43] [cursor=pointer]:
+                - img [ref=f1e44]
+                - generic [ref=f1e50]: Pricing
+              - option "API Keys" [ref=f1e51] [cursor=pointer]:
+                - img [ref=f1e52]
+                - generic [ref=f1e56]: API Keys
+              - option "Billing" [ref=f1e57] [cursor=pointer]:
+                - img [ref=f1e58]
+                - generic [ref=f1e60]: Billing
+              - option "API Usage" [ref=f1e61] [cursor=pointer]:
+                - img [ref=f1e62]
+                - generic [ref=f1e64]: API Usage
+              - option "Logs" [ref=f1e65] [cursor=pointer]:
+                - img [ref=f1e66]
+                - generic [ref=f1e71]: Logs
+              - option "Affiliate Program" [ref=f1e72] [cursor=pointer]:
+                - img [ref=f1e73]
+                - generic [ref=f1e78]: Affiliate Program
+              - option "API Updates" [ref=f1e79] [cursor=pointer]:
+                - img [ref=f1e80]
+                - generic [ref=f1e82]: API Updates
+              - option "Document" [ref=f1e83] [cursor=pointer]:
+                - img [ref=f1e84]
+                - generic [ref=f1e88]: Document
+            - generic [ref=f1e90]:
+              - button "Settings" [ref=f1e91] [cursor=pointer]:
+                - img [ref=f1e92]
+                - generic [ref=f1e95]: Settings
+              - button "English" [ref=f1e97] [cursor=pointer]:
+                - img [ref=f1e98]
+                - generic [ref=f1e100]:
+                  - generic [ref=f1e101]: English
+                  - img [ref=f1e102]
+              - button "Login" [ref=f1e104] [cursor=pointer]:
+                - img [ref=f1e105]
+                - text: Login
+        - generic [ref=f1e109]:
+          - generic [ref=f1e110]:
+            - paragraph
+          - generic [ref=f1e113]:
+            - generic [ref=f1e115]:
+              - generic [ref=f1e116]:
+                - generic [ref=f1e118]:
+                  - generic: "01"
+                  - generic [ref=f1e121]:
+                    - generic [ref=f1e123]: Chat
+                    - generic [ref=f1e124]: Claude Opus 4.7/4.6 & Sonnet 4.6
+                    - paragraph [ref=f1e125]: Claude Opus 4.7, 4.6, and Sonnet 4.6 provide industry-leading intelligence with exceptional reasoning and coding capabilities designed to master the most sophisticated professional and creative challenges.
+                    - link "Learn More" [ref=f1e127] [cursor=pointer]:
+                      - /url: /claude-opus-4-7
+                      - button "Learn More" [ref=f1e128]:
+                        - text: Learn More
+                        - img [ref=f1e129]
+                - generic:
+                  - button "Text to Image Image to Image GPT Image 2 GPT Image 2 is a cutting-edge visual generation model known for its exceptional photorealism and sophisticated prompt adherence, creating high-fidelity images from complex textual instructions. Learn More":
+                    - generic: "02"
+                    - generic:
+                      - generic:
+                        - generic: Text to Image
+                        - generic: Image to Image
+                      - generic: GPT Image 2
+                      - paragraph: GPT Image 2 is a cutting-edge visual generation model known for its exceptional photorealism and sophisticated prompt adherence, creating high-fidelity images from complex textual instructions.
+                      - generic:
+                        - link "Learn More":
+                          - /url: /gpt-image-2
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+                - generic:
+                  - button "Text to Video Image to Video Seedance 2.0 Seedance 2.0 on KIE is a multimodal AI video model by ByteDance, optimized for fast and realistic video generation. It supports high-quality real human and virtual avatar video creation with strong multi-shot consistency, enabling more lifelike and cinematic outputs across scenes. Learn More":
+                    - generic: "03"
+                    - generic:
+                      - generic:
+                        - generic: Text to Video
+                        - generic: Image to Video
+                      - generic: Seedance 2.0
+                      - paragraph: Seedance 2.0 on KIE is a multimodal AI video model by ByteDance, optimized for fast and realistic video generation. It supports high-quality real human and virtual avatar video creation with strong multi-shot consistency, enabling more lifelike and cinematic outputs across scenes.
+                      - generic:
+                        - link "Learn More":
+                          - /url: /seedance-2-0
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+                - generic:
+                  - button "Text to Image Image to Image Nano Banana Pro Google DeepMind’s Nano Banana Pro delivers sharper 2K imagery, intelligent 4K scaling, improved text rendering, and enhanced character consistency—offering a major leap in visual quality for creative and API-driven workflows. Learn More":
+                    - generic: "04"
+                    - generic:
+                      - generic:
+                        - generic: Text to Image
+                        - generic: Image to Image
+                      - generic: Nano Banana Pro
+                      - paragraph: Google DeepMind’s Nano Banana Pro delivers sharper 2K imagery, intelligent 4K scaling, improved text rendering, and enhanced character consistency—offering a major leap in visual quality for creative and API-driven workflows.
+                      - generic:
+                        - link "Learn More":
+                          - /url: /nano-banana-pro
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+                - generic:
+                  - button "Text to Video Image to Video Grok Imagine Grok Imagine is xAI’s multimodal image and video generation model that converts text or images into short visual outputs with coherent motion and synchronized audio. Learn More":
+                    - generic: "05"
+                    - generic:
+                      - generic:
+                        - generic: Text to Video
+                        - generic: Image to Video
+                      - generic: Grok Imagine
+                      - paragraph: Grok Imagine is xAI’s multimodal image and video generation model that converts text or images into short visual outputs with coherent motion and synchronized audio.
+                      - generic:
+                        - link "Learn More":
+                          - /url: /grok-imagine
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+                - generic:
+                  - button "Text to Video Image to Video Veo 3.1 Google Veo 3.1 is a next-generation AI video generation model developed by Google DeepMind. It supports both text-to-video and image-to-video creation, producing high-fidelity, cinematic visuals with advanced scene understanding and natural motion simulation. Through Kie.ai, users can access Veo 3.1 Fast for rapid, cost-efficient workflows or Veo 3.1 Quality for premium output, all with transparent pricing and stable infrastructure. Learn More":
+                    - generic: "06"
+                    - generic:
+                      - generic:
+                        - generic: Text to Video
+                        - generic: Image to Video
+                      - generic: Veo 3.1
+                      - paragraph: Google Veo 3.1 is a next-generation AI video generation model developed by Google DeepMind. It supports both text-to-video and image-to-video creation, producing high-fidelity, cinematic visuals with advanced scene understanding and natural motion simulation. Through Kie.ai, users can access Veo 3.1 Fast for rapid, cost-efficient workflows or Veo 3.1 Quality for premium output, all with transparent pricing and stable infrastructure.
+                      - generic:
+                        - link "Learn More":
+                          - /url: /veo-3-1
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+                - generic:
+                  - button "Text to Image Image to Image NanoBanana-Gemini 2.5 Flash Image Preview Gemini 2.5 Flash Image Preview (aka Nano Banana) is an advanced AI model excelling in natural language-driven image generation and editing. It produces hyper-realistic, physics-aware visuals with seamless style transformations. Learn More":
+                    - generic: "07"
+                    - generic:
+                      - generic:
+                        - generic: Text to Image
+                        - generic: Image to Image
+                      - generic: NanoBanana-Gemini 2.5 Flash Image Preview
+                      - paragraph: Gemini 2.5 Flash Image Preview (aka Nano Banana) is an advanced AI model excelling in natural language-driven image generation and editing. It produces hyper-realistic, physics-aware visuals with seamless style transformations.
+                      - generic:
+                        - link "Learn More":
+                          - /url: /nano-banana
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+                - generic:
+                  - 'button "Text to Music Suno API Compose the Future with Suno API on Kie.ai: Where AI and Melody Unite Seamlessly! Transform text prompts into stunning AI-generated tracks, blending vocals and instruments with revolutionary realism. Newly added V5 delivers hyper-dynamic, natural performances—emotional arcs, breathing, and fluid progressions for lifelike depth. Ideal for developers crafting immersive apps: fast and scalable. Revolutionize music creation today! Learn More"':
+                    - generic: "08"
+                    - generic:
+                      - generic:
+                        - generic: Text to Music
+                      - generic: Suno API
+                      - paragraph: "Compose the Future with Suno API on Kie.ai: Where AI and Melody Unite Seamlessly! Transform text prompts into stunning AI-generated tracks, blending vocals and instruments with revolutionary realism. Newly added V5 delivers hyper-dynamic, natural performances—emotional arcs, breathing, and fluid progressions for lifelike depth. Ideal for developers crafting immersive apps: fast and scalable. Revolutionize music creation today!"
+                      - generic:
+                        - link "Learn More":
+                          - /url: /suno-api
+                          - button "Learn More":
+                            - text: Learn More
+                            - img
+              - button "Previous slide" [ref=f1e131] [cursor=pointer]:
+                - img [ref=f1e132]
+              - button "Next slide" [ref=f1e134] [cursor=pointer]:
+                - img [ref=f1e135]
+            - generic [ref=f1e137]:
+              - generic [ref=f1e139]:
+                - generic [ref=f1e140]: All Models
+                - generic [ref=f1e141]: 79 models found
+              - generic [ref=f1e143]:
+                - img [ref=f1e144]
+                - textbox "Search models by name —— e.g. 'nano banana'" [ref=f1e147]
+                - generic [ref=f1e148]:
+                  - generic [ref=f1e149]: ⌘K
+                  - generic [ref=f1e150]: 79 MODELS
+            - generic [ref=f1e152]:
+              - generic [ref=f1e153]:
+                - generic [ref=f1e154]: Providers
+                - generic [ref=f1e155]: (22)
+              - generic [ref=f1e156]:
+                - button "Google" [ref=f1e157] [cursor=pointer]: Google
+                - button "ByteDance" [ref=f1e159] [cursor=pointer]: ByteDance
+                - button "Anthropic" [ref=f1e161] [cursor=pointer]: Anthropic
+                - button "Kling" [ref=f1e163] [cursor=pointer]: Kling
+                - button "OpenAI" [ref=f1e165] [cursor=pointer]: OpenAI
+                - button "Wan" [ref=f1e167] [cursor=pointer]: Wan
+                - button "Qwen" [ref=f1e169] [cursor=pointer]: Qwen
+                - button "Grok" [ref=f1e171] [cursor=pointer]: Grok
+                - button "Hailuo" [ref=f1e173] [cursor=pointer]: Hailuo
+                - button "Topaz" [ref=f1e175] [cursor=pointer]: Topaz
+                - button "Recraft" [ref=f1e177] [cursor=pointer]: Recraft
+                - button "Elevenlabs" [ref=f1e179] [cursor=pointer]: Elevenlabs
+                - button "Ideogram" [ref=f1e181] [cursor=pointer]: Ideogram
+                - button "Black Forest Labs" [ref=f1e183] [cursor=pointer]: Black Forest Labs
+                - button "Alibaba" [ref=f1e185] [cursor=pointer]: Alibaba
+                - button "Other" [ref=f1e187] [cursor=pointer]: Other
+                - button "Runway" [ref=f1e189] [cursor=pointer]: Runway
+                - button "Suno" [ref=f1e191] [cursor=pointer]: Suno
+                - button "Veed" [ref=f1e193] [cursor=pointer]: Veed
+                - button "Luma" [ref=f1e195] [cursor=pointer]: Luma
+                - button "Kie" [ref=f1e197] [cursor=pointer]: Kie
+                - button "Midjourney" [ref=f1e199] [cursor=pointer]: Midjourney
+            - generic [ref=f1e201]:
+              - generic [ref=f1e202]:
+                - generic [ref=f1e203]: Tasks
+                - generic [ref=f1e204]: (15)
+              - generic [ref=f1e205]:
+                - button "Image to Video" [ref=f1e206] [cursor=pointer]:
+                  - img [ref=f1e207]
+                  - text: Image to Video
+                - button "Image to Image" [ref=f1e209] [cursor=pointer]:
+                  - img [ref=f1e210]
+                  - text: Image to Image
+                - button "Text to Video" [ref=f1e214] [cursor=pointer]:
+                  - img [ref=f1e215]
+                  - text: Text to Video
+                - button "Text to Image" [ref=f1e217] [cursor=pointer]:
+                  - img [ref=f1e218]
+                  - text: Text to Image
+                - button "Chat" [ref=f1e222] [cursor=pointer]:
+                  - img [ref=f1e223]
+                  - text: Chat
+                - button "Video to Video" [ref=f1e225] [cursor=pointer]:
+                  - img [ref=f1e226]
+                  - text: Video to Video
+                - button "Lip Sync" [ref=f1e228] [cursor=pointer]:
+                  - img [ref=f1e229]
+                  - text: Lip Sync
+                - button "Speech to Video" [ref=f1e231] [cursor=pointer]:
+                  - img [ref=f1e232]
+                  - text: Speech to Video
+                - button "Text to Speech" [ref=f1e234] [cursor=pointer]:
+                  - img [ref=f1e235]
+                  - text: Text to Speech
+                - button "Video Editing" [ref=f1e239] [cursor=pointer]:
+                  - img [ref=f1e240]
+                  - text: Video Editing
+                - button "Image Editing" [ref=f1e242] [cursor=pointer]:
+                  - img [ref=f1e243]
+                  - text: Image Editing
+                - button "Text to Music" [ref=f1e247] [cursor=pointer]:
+                  - img [ref=f1e248]
+                  - text: Text to Music
+                - button "Speech to Text" [ref=f1e252] [cursor=pointer]:
+                  - img [ref=f1e253]
+                  - text: Speech to Text
+                - button "Audio to Audio" [ref=f1e257] [cursor=pointer]:
+                  - img [ref=f1e258]
+                  - text: Audio to Audio
+                - button "Video Upscale" [ref=f1e262] [cursor=pointer]:
+                  - img [ref=f1e263]
+                  - text: Video Upscale
+            - generic [ref=f1e265]:
+              - generic [ref=f1e266] [cursor=pointer]:
+                - generic: ByteDance
+                - generic [ref=f1e270]:
+                  - generic [ref=f1e272]: ByteDance
+                  - generic [ref=f1e273]: Seedance 2.5 (Coming Soon)
+                  - generic [ref=f1e275]:
+                    - generic [ref=f1e276]: Text to Video
+                    - generic [ref=f1e277]: Image to Video
+                - generic [ref=f1e278]:
+                  - generic [ref=f1e280]: ByteDance
+                  - generic [ref=f1e281]: Seedance 2.5 (Coming Soon)
+                  - paragraph [ref=f1e282]: Seedance 2.5 is ByteDance’s upgraded AI video model, designed for 30-second generation, native 4K output, multimodal reference control, precise local edits, and more production-ready creative workflows.
+                  - link "Try it" [ref=f1e283]:
+                    - /url: https://kie.ai/seedance-2-5
+                    - button "Try it" [ref=f1e284]
+              - generic [ref=f1e285] [cursor=pointer]:
+                - generic: ByteDance
+                - generic [ref=f1e289]:
+                  - generic [ref=f1e291]: ByteDance
+                  - generic [ref=f1e292]: Seedance 2.0 Mini
+                  - generic [ref=f1e294]:
+                    - generic [ref=f1e295]: Text to Video
+                    - generic [ref=f1e296]: Image to Video
+                - generic [ref=f1e297]:
+                  - generic [ref=f1e299]: ByteDance
+                  - generic [ref=f1e300]: Seedance 2.0 Mini
+                  - paragraph [ref=f1e301]: Seedance 2.0 Mini is ByteDance's cost-efficient AI video model designed for faster generation and lower inference costs. It supports text-to-video, image-to-video, consistent character generation, and cinematic motion, making it ideal for scalable AI video applications and production workflows.
+                  - link "Try it" [ref=f1e302]:
+                    - /url: https://kie.ai/seedance-2-0-mini
+                    - button "Try it" [ref=f1e303]
+              - generic [ref=f1e304] [cursor=pointer]:
+                - generic: Alibaba
+                - generic [ref=f1e308]:
+                  - generic [ref=f1e310]: Alibaba
+                  - generic [ref=f1e311]: HappyHorse-1.1
+                  - generic [ref=f1e313]:
+                    - generic [ref=f1e314]: Text to Video
+                    - generic [ref=f1e315]: Image to Video
+                - generic [ref=f1e316]:
+                  - generic [ref=f1e318]: Alibaba
+                  - generic [ref=f1e319]: HappyHorse-1.1
+                  - paragraph [ref=f1e320]: HappyHorse-1.1 is an AI video generation model that improves on HappyHorse-1.0 with better prompt understanding, smoother motion, stronger consistency, and higher-quality outputs across T2V, I2V, and R2V workflows.
+                  - link "Try it" [ref=f1e321]:
+                    - /url: https://kie.ai/happyhorse-1-1
+                    - button "Try it" [ref=f1e322]
+              - generic [ref=f1e323] [cursor=pointer]:
+                - generic: OpenAI
+                - generic [ref=f1e326]:
+                  - generic [ref=f1e328]: OpenAI
+                  - generic [ref=f1e329]: GPT-5.6 (Coming Soon)
+                  - generic [ref=f1e332]: Chat
+                - generic [ref=f1e333]:
+                  - generic [ref=f1e335]: OpenAI
+                  - generic [ref=f1e336]: GPT-5.6 (Coming Soon)
+                  - paragraph [ref=f1e337]: GPT-5.6 is OpenAI’s next-generation model family, introduced through a limited preview with Sol for frontier intelligence, Terra for balanced everyday work, and Luna for fast high-volume usage.
+                  - link "Try it" [ref=f1e338]:
+                    - /url: https://kie.ai/gpt-5-6
+                    - button "Try it" [ref=f1e339]
+              - generic [ref=f1e340] [cursor=pointer]:
+                - generic: Kling
+                - generic [ref=f1e344]:
+                  - generic [ref=f1e346]: Kling
+                  - generic [ref=f1e347]: Kling 3.0 Turbo
+                  - generic [ref=f1e349]:
+                    - generic [ref=f1e350]: Text to Video
+                    - generic [ref=f1e351]: Image to Video
+                - generic [ref=f1e352]:
+                  - generic [ref=f1e354]: Kling
+                  - generic [ref=f1e355]: Kling 3.0 Turbo
+                  - paragraph [ref=f1e356]: Kling 3.0 Turbo is Kuaishou’s faster video generation model in the Kling 3.0 series, built to balance high-quality visuals, smooth motion, prompt adherence, multi-shot continuity, precise audio-visual synchronization, and stronger cost performance.
+                  - link "Try it" [ref=f1e357]:
+                    - /url: https://kie.ai/kling-3-0-turbo
+                    - button "Try it" [ref=f1e358]
+              - generic [ref=f1e359] [cursor=pointer]:
+                - generic: ByteDance
+                - generic [ref=f1e362]:
+                  - generic [ref=f1e364]: ByteDance
+                  - generic [ref=f1e365]: Volcengine Video-to-Video Lip Sync
+                  - generic [ref=f1e368]: Lip Sync
+                - generic [ref=f1e369]:
+                  - generic [ref=f1e371]: ByteDance
+                  - generic [ref=f1e372]: Volcengine Video-to-Video Lip Sync
+                  - paragraph [ref=f1e373]: Make every frame speak your language — Volcengine Lip Sync API delivers pixel-perfect video-to-video lip sync and AI dubbing in minutes.
+                  - link "Try it" [ref=f1e374]:
+                    - /url: https://kie.ai/volcengine-video-to-video-lip-sync
+                    - button "Try it" [ref=f1e375]
+              - generic [ref=f1e376] [cursor=pointer]:
+                - generic: ByteDance
+                - generic [ref=f1e379]:
+                  - generic [ref=f1e381]: ByteDance
+                  - generic [ref=f1e382]: OmniHuman 1.5
+                  - generic [ref=f1e385]: Lip Sync
+                - generic [ref=f1e386]:
+                  - generic [ref=f1e388]: ByteDance
+                  - generic [ref=f1e389]: OmniHuman 1.5
+                  - paragraph [ref=f1e390]: OmniHuman 1.5 is ByteDance's AI avatar and digital human model that transforms a single image and audio into realistic talking videos with natural lip sync, facial expressions, and lifelike motion.
+                  - link "Try it" [ref=f1e391]:
+                    - /url: https://kie.ai/omnihuman-1-5
+                    - button "Try it" [ref=f1e392]
+              - generic [ref=f1e393] [cursor=pointer]:
+                - generic: Anthropic
+                - generic [ref=f1e396]:
+                  - generic [ref=f1e398]: Anthropic
+                  - generic [ref=f1e399]: Claude Fable 5
+                  - generic [ref=f1e402]: Chat
+                - generic [ref=f1e403]:
+                  - generic [ref=f1e405]: Anthropic
+                  - generic [ref=f1e406]: Claude Fable 5
+                  - paragraph [ref=f1e407]: Claude Fable 5 is Anthropic’s Mythos-class model for advanced general use, built for long-running coding, complex knowledge work, vision reasoning, and multi-step tasks that require stronger planning and verification.
+                  - link "Try it" [ref=f1e408]:
+                    - /url: https://kie.ai/claude-fable-5
+                    - button "Try it" [ref=f1e409]
+              - generic [ref=f1e410] [cursor=pointer]:
+                - generic: Grok
+                - generic [ref=f1e414]:
+                  - generic [ref=f1e416]: Grok
+                  - generic [ref=f1e417]: Grok Imagine Video 1.5
+                  - generic [ref=f1e420]: Image to Video
+                - generic [ref=f1e421]:
+                  - generic [ref=f1e423]: Grok
+                  - generic [ref=f1e424]: Grok Imagine Video 1.5
+                  - paragraph [ref=f1e425]: Grok Imagine Video 1.5 is xAI's AI video generation model that creates realistic videos, generates synchronized audio, and supports video editing workflows with strong prompt adherence and consistent visual quality.
+                  - link "Try it" [ref=f1e426]:
+                    - /url: https://kie.ai/grok-imagine-video-1.5
+                    - button "Try it" [ref=f1e427]
+              - generic [ref=f1e428] [cursor=pointer]:
+                - generic: Anthropic
+                - generic [ref=f1e431]:
+                  - generic [ref=f1e433]: Anthropic
+                  - generic [ref=f1e434]: Claude Opus 4.8
+                  - generic [ref=f1e437]: Chat
+                - generic [ref=f1e438]:
+                  - generic [ref=f1e440]: Anthropic
+                  - generic [ref=f1e441]: Claude Opus 4.8
+                  - paragraph [ref=f1e442]: Claude Opus 4.8 delivers a major upgrade in complex reasoning, agentic coding, and professional knowledge work. With improved honesty, stronger long-horizon task execution, and a 1-million-token context window on supported platforms, it is built as Anthropic’s most capable generally available model for high-autonomy workflows and demanding enterprise use cases.
+                  - link "Try it" [ref=f1e443]:
+                    - /url: https://kie.ai/claude-opus-4-8
+                    - button "Try it" [ref=f1e444]
+              - generic [ref=f1e445] [cursor=pointer]:
+                - generic: Google
+                - generic [ref=f1e448]:
+                  - generic [ref=f1e450]: Google
+                  - generic [ref=f1e451]: Gemini 3.5 Flash
+                  - generic [ref=f1e454]: Chat
+                - generic [ref=f1e455]:
+                  - generic [ref=f1e457]: Google
+                  - generic [ref=f1e458]: Gemini 3.5 Flash
+                  - paragraph [ref=f1e459]: Gemini 3.5 Flash is Google’s high-efficiency multimodal model, combining Flash-level speed with stronger coding, reasoning, and agentic execution for complex AI workflows that need both capability and efficiency.
+                  - link "Try it" [ref=f1e460]:
+                    - /url: https://kie.ai/gemini-3-5-flash
+                    - button "Try it" [ref=f1e461]
+              - generic [ref=f1e462] [cursor=pointer]:
+                - generic: Google
+                - generic [ref=f1e466]:
+                  - generic [ref=f1e468]: Google
+                  - generic [ref=f1e469]: Gemini Omni
+                  - generic [ref=f1e471]:
+                    - generic [ref=f1e472]: Text to Video
+                    - generic [ref=f1e473]: Image to Video
+                - generic [ref=f1e474]:
+                  - generic [ref=f1e476]: Google
+                  - generic [ref=f1e477]: Gemini Omni
+                  - paragraph [ref=f1e478]: Gemini Omni is Google’s released multimodal creation model built to create from different kinds of input, starting with video. Gemini Omni Flash is the first model in the Omni family, supporting practical video generation and editing workflows such as natural language edits, reference-based creation, scene transformation, and coherent visual storytelling.
+                  - link "Try it" [ref=f1e479]:
+                    - /url: https://kie.ai/gemini-omni
+                    - button "Try it" [ref=f1e480]
+              - generic [ref=f1e481] [cursor=pointer]:
+                - generic: Anthropic
+                - generic [ref=f1e484]:
+                  - generic [ref=f1e486]: Anthropic
+                  - generic [ref=f1e487]: Claude Opus 4.7
+                  - generic [ref=f1e490]: Chat
+                - generic [ref=f1e491]:
+                  - generic [ref=f1e493]: Anthropic
+                  - generic [ref=f1e494]: Claude Opus 4.7
+                  - paragraph [ref=f1e495]: Claude Opus 4.7 delivers a quantum leap in logical reasoning and creative synthesis. With its next-gen architecture and massive 2-million-token context, it serves as the ultimate high-performance partner for those pushing the boundaries of innovation and discovery.
+                  - link "Try it" [ref=f1e496]:
+                    - /url: https://kie.ai/claude-opus-4-7
+                    - button "Try it" [ref=f1e497]
+              - generic [ref=f1e498] [cursor=pointer]:
+                - generic: OpenAI
+                - generic [ref=f1e501]:
+                  - generic [ref=f1e503]: OpenAI
+                  - generic [ref=f1e504]: GPT-5.5
+                  - generic [ref=f1e507]: Chat
+                - generic [ref=f1e508]:
+                  - generic [ref=f1e510]: OpenAI
+                  - generic [ref=f1e511]: GPT-5.5
+                  - paragraph [ref=f1e512]: GPT-5.5 is OpenAI’s advanced reasoning model for agentic coding, knowledge work, scientific research, and complex multi-step task execution.
+                  - link "Try it" [ref=f1e513]:
+                    - /url: https://kie.ai/gpt-5-5
+                    - button "Try it" [ref=f1e514]
+              - generic [ref=f1e515] [cursor=pointer]:
+                - generic: OpenAI
+                - generic [ref=f1e518]:
+                  - generic [ref=f1e520]: OpenAI
+                  - generic [ref=f1e521]: GPT Image 2
+                  - generic [ref=f1e523]:
+                    - generic [ref=f1e524]: Text to Image
+                    - generic [ref=f1e525]: Image to Image
+                - generic [ref=f1e526]:
+                  - generic [ref=f1e528]: OpenAI
+                  - generic [ref=f1e529]: GPT Image 2
+                  - paragraph [ref=f1e530]: GPT Image 2 is OpenAI’s next-gen image model built for stronger photorealism, cleaner image editing, sharper text rendering, and more polished product photography. Designed for more advanced visual workflows, it pushes image generation beyond basic text-to-image output and into higher-quality creative, commercial, and design-ready use cases.
+                  - link "Try it" [ref=f1e531]:
+                    - /url: https://kie.ai/gpt-image-2
+                    - button "Try it" [ref=f1e532]
+              - generic [ref=f1e533] [cursor=pointer]:
+                - generic: Alibaba
+                - generic [ref=f1e537]:
+                  - generic [ref=f1e539]: Alibaba
+                  - generic [ref=f1e540]: HappyHorse-1.0
+                  - generic [ref=f1e542]:
+                    - generic [ref=f1e543]: Text to Video
+                    - generic [ref=f1e544]: Image to Video
+                - generic [ref=f1e545]:
+                  - generic [ref=f1e547]: Alibaba
+                  - generic [ref=f1e548]: HappyHorse-1.0
+                  - paragraph [ref=f1e549]: HappyHorse-1.0 is an emerging AI video model developed by Alibaba ATH and has quickly become one of the most watched new names in AI video generation. It is associated with strong text-to-video and image-to-video performance, along with audio support and multilingual capability.
+                  - link "Try it" [ref=f1e550]:
+                    - /url: https://kie.ai/happyhorse-1-0
+                    - button "Try it" [ref=f1e551]
+              - generic [ref=f1e552] [cursor=pointer]:
+                - generic: Wan
+                - generic [ref=f1e555]:
+                  - generic [ref=f1e557]: Wan
+                  - generic [ref=f1e558]: Wan 2.7 Video
+                  - generic [ref=f1e560]:
+                    - generic [ref=f1e561]: Text to Video
+                    - generic [ref=f1e562]: Image to Video
+                - generic [ref=f1e563]:
+                  - generic [ref=f1e565]: Wan
+                  - generic [ref=f1e566]: Wan 2.7 Video
+                  - paragraph [ref=f1e567]: Wan 2.7 Video API is Alibaba Tongyi Lab's AI video suite, covering four generation modes — Text-to-Video, Image-to-Video, Reference-to-Video, and Video Edit. It supports full-modality input (text, image, video, audio) and outputs 720P–1080P video. Access all four modes through a single API on Kie.ai.
+                  - link "Try it" [ref=f1e568]:
+                    - /url: https://kie.ai/wan-2-7-video
+                    - button "Try it" [ref=f1e569]
+              - generic [ref=f1e570] [cursor=pointer]:
+                - generic: ByteDance
+                - generic [ref=f1e574]:
+                  - generic [ref=f1e576]: ByteDance
+                  - generic [ref=f1e577]: Seedance 2.0
+                  - generic [ref=f1e579]:
+                    - generic [ref=f1e580]: Text to Video
+                    - generic [ref=f1e581]: Image to Video
+                - generic [ref=f1e582]:
+                  - generic [ref=f1e584]: ByteDance
+                  - generic [ref=f1e585]: Seedance 2.0
+                  - paragraph [ref=f1e586]: Seedance 2.0 on KIE is a multimodal Al video model by ByteDance, optimized for fast and realistic video generation. It supports high-quality virtual human video creation with strong multi-shot consistency, enabling more lifelike and cinematic outputs across scenes. With efficient generation speed, Seedance 2.0 typically averages around ~5 minutes per generation, while Seedance 2.0 Fast averages around ~4 minutes - making it a reliable choice for scalable, real-time content production.
+                  - link "Try it" [ref=f1e587]:
+                    - /url: https://kie.ai/seedance-2-0
+                    - button "Try it" [ref=f1e588]
+              - generic [ref=f1e589] [cursor=pointer]:
+                - generic: Wan
+                - generic [ref=f1e592]:
+                  - generic [ref=f1e594]: Wan
+                  - generic [ref=f1e595]: Wan2.7 Image
+                  - generic [ref=f1e597]:
+                    - generic [ref=f1e598]: Text to Image
+                    - generic [ref=f1e599]: Image to Image
+                - generic [ref=f1e600]:
+                  - generic [ref=f1e602]: Wan
+                  - generic [ref=f1e603]: Wan2.7 Image
+                  - paragraph [ref=f1e604]: Wan2.7-Image is Alibaba’s unified image model family for generation and editing, supporting text-to-image, image editing, advanced text rendering, multi-image workflows, 2K output in its standard variant, and 4K text-to-image in its Pro variant.
+                  - link "Try it" [ref=f1e605]:
+                    - /url: https://kie.ai/wan-2-7-image
+                    - button "Try it" [ref=f1e606]
+              - generic [ref=f1e607] [cursor=pointer]:
+                - generic: Qwen
+                - generic [ref=f1e610]:
+                  - generic [ref=f1e612]: Qwen
+                  - generic [ref=f1e613]: Qwen Image 2.0
+                  - generic [ref=f1e615]:
+                    - generic [ref=f1e616]: Text to Image
+                    - generic [ref=f1e617]: Image to Image
+                - generic [ref=f1e618]:
+                  - generic [ref=f1e620]: Qwen
+                  - generic [ref=f1e621]: Qwen Image 2.0
+                  - paragraph [ref=f1e622]: Alibaba Qwen Image 2.0 is a unified image model for realistic generation, structured text rendering, native 2K output, and flexible editing across creative and visual design workflows.
+                  - link "Try it" [ref=f1e623]:
+                    - /url: https://kie.ai/qwen-image-2
+                    - button "Try it" [ref=f1e624]
+            - navigation "pagination navigation" [ref=f1e626]:
+              - list [ref=f1e627]:
+                - generic: "1"
+                - button "previous page button" [disabled]:
+                  - img
+                - button "pagination item 1 active" [ref=f1e628] [cursor=pointer]: "1"
+                - button "pagination item 2" [ref=f1e629] [cursor=pointer]: "2"
+                - button "pagination item 3" [ref=f1e630] [cursor=pointer]: "3"
+                - button "pagination item 4" [ref=f1e631] [cursor=pointer]: "4"
+                - button "next page button" [ref=f1e632] [cursor=pointer]:
+                  - img [ref=f1e633]
+  - alert [ref=f1e635]

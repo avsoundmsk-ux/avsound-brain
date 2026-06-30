@@ -1,0 +1,455 @@
+- generic [active] [ref=f13e1]:
+  - generic [ref=f13e4]:
+    - navigation [ref=f13e6]:
+      - generic [ref=f13e7]:
+        - link "kie.ai KIE API" [ref=f13e10] [cursor=pointer]:
+          - /url: /
+          - img "kie.ai" [ref=f13e11]
+          - paragraph [ref=f13e12]: KIE API
+        - list [ref=f13e13]:
+          - generic [ref=f13e14]:
+            - link "API Market" [ref=f13e15] [cursor=pointer]:
+              - /url: /market
+              - generic [ref=f13e16]: API Market
+            - link "Pricing" [ref=f13e17] [cursor=pointer]:
+              - /url: /pricing
+              - generic [ref=f13e18]: Pricing
+            - button "AI Video API" [ref=f13e21] [cursor=pointer]:
+              - generic [ref=f13e22]: AI Video API
+              - img [ref=f13e23]
+            - button "AI Image API" [ref=f13e27] [cursor=pointer]:
+              - generic [ref=f13e28]: AI Image API
+              - img [ref=f13e29]
+            - button "AI Text API" [ref=f13e33] [cursor=pointer]:
+              - generic [ref=f13e34]: AI Text API
+              - img [ref=f13e35]
+            - link "Updates" [ref=f13e37] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=f13e38]: Updates
+        - list [ref=f13e39]:
+          - listitem [ref=f13e40]:
+            - button [ref=f13e41] [cursor=pointer]:
+              - img [ref=f13e42]
+          - listitem [ref=f13e46]:
+            - button [ref=f13e48] [cursor=pointer]:
+              - img [ref=f13e49]
+          - listitem [ref=f13e51]:
+            - button "Get Started" [ref=f13e52] [cursor=pointer]
+    - generic [ref=f13e53]:
+      - generic [ref=f13e54]:
+        - generic [ref=f13e55]:
+          - generic [ref=f13e57]:
+            - img [ref=f13e59]
+            - generic [ref=f13e61]:
+              - generic [ref=f13e62]:
+                - generic [ref=f13e64]:
+                  - generic [ref=f13e65]: volcengine /
+                  - text: video-to-video-lip-sync
+                - button [ref=f13e66] [cursor=pointer]:
+                  - img [ref=f13e67]
+              - generic [ref=f13e71]: Commercial use
+          - generic [ref=f13e72]:
+            - button "Run with API" [ref=f13e73] [cursor=pointer]:
+              - img [ref=f13e74]
+              - text: Run with API
+            - generic [ref=f13e76]:
+              - button "Copy page" [ref=f13e77] [cursor=pointer]:
+                - img [ref=f13e78]
+                - text: Copy page
+              - button [ref=f13e82] [cursor=pointer]:
+                - img [ref=f13e83]
+        - paragraph [ref=f13e85]: Make every frame speak your language — Volcengine Lip Sync API delivers pixel-perfect video-to-video lip sync and AI dubbing in minutes.
+      - generic [ref=f13e87]:
+        - img [ref=f13e88]
+        - generic [ref=f13e91]: "Pricing: 8 credits per second (~$0.04). High-tier top-ups (+10% bonus) bring effective pricing down to ~$0.036 per second."
+    - navigation "Tabs" [ref=f13e94]:
+      - button "Playground" [ref=f13e95] [cursor=pointer]:
+        - img [ref=f13e96]
+        - text: Playground
+      - button "Similar" [ref=f13e98] [cursor=pointer]:
+        - img [ref=f13e99]
+        - text: Similar
+      - button "README" [ref=f13e102] [cursor=pointer]:
+        - img [ref=f13e103]
+        - text: README
+      - button "API" [ref=f13e106] [cursor=pointer]:
+        - img [ref=f13e107]
+        - text: API
+    - main [ref=f13e110]:
+      - generic [ref=f13e114]:
+        - generic [ref=f13e115]:
+          - generic [ref=f13e117]:
+            - generic [ref=f13e118]: Input
+            - generic [ref=f13e119]:
+              - button "Form" [ref=f13e120] [cursor=pointer]
+              - button "JSON" [ref=f13e121] [cursor=pointer]
+          - generic [ref=f13e122]:
+            - generic [ref=f13e123]:
+              - generic [ref=f13e125]: video_url *
+              - generic [ref=f13e128]:
+                - img [ref=f13e130]
+                - paragraph [ref=f13e132]: Click to upload or drag and drop
+                - paragraph [ref=f13e133]: "Supported formats: MP4, QUICKTIME, X-MATROSKA Maximum file size: 500MB"
+                - button "Select file" [ref=f13e134] [cursor=pointer]
+              - paragraph [ref=f13e135]: Video asset URL
+            - generic [ref=f13e136]:
+              - generic [ref=f13e138]: audio_url *
+              - generic [ref=f13e141]:
+                - img [ref=f13e143]
+                - paragraph [ref=f13e145]: Click to upload or drag and drop
+                - paragraph [ref=f13e146]: "Supported formats: MPEG, WAV, X-WAV, AAC, MP4, OGG Maximum file size: 10MB"
+                - button "Select file" [ref=f13e147] [cursor=pointer]
+              - paragraph [ref=f13e148]: Target pure vocal audio URL; used to drive video lip movements.
+            - generic [ref=f13e149]:
+              - generic [ref=f13e150]: mode *
+              - generic [ref=f13e151] [cursor=pointer]:
+                - button "lite" [ref=f13e152]:
+                  - generic [ref=f13e153]: lite
+                - button "basic" [ref=f13e154]:
+                  - generic [ref=f13e155]: basic
+              - paragraph [ref=f13e156]: Service identifier
+            - generic [ref=f13e158]:
+              - generic [ref=f13e159]:
+                - generic [ref=f13e160]: separate_vocal
+                - paragraph [ref=f13e161]: Enable vocal separation to suppress background noise.
+              - checkbox [ref=f13e163]
+            - generic [ref=f13e166]:
+              - generic [ref=f13e167]:
+                - generic [ref=f13e168]: align_audio
+                - paragraph [ref=f13e169]: Supported in lite mode. Whether to loop the video when the audio is longer than the video.
+              - checkbox [checked] [ref=f13e171]
+            - generic [ref=f13e174]:
+              - generic [ref=f13e175]:
+                - generic [ref=f13e176]: align_audio_reverse
+                - paragraph [ref=f13e177]: Supported in lite mode. Whether to loop the video in reverse (backward). Requires align_audio to be set to true.
+              - checkbox [ref=f13e179]
+            - generic [ref=f13e181]:
+              - generic [ref=f13e182]: templ_start_seconds
+              - generic [ref=f13e183]:
+                - spinbutton "Enter number..." [ref=f13e184]: "0"
+                - button [ref=f13e185] [cursor=pointer]:
+                  - img [ref=f13e186]
+            - paragraph [ref=f13e189]: Supported in lite mode. Start time of the template video, in seconds.
+            - generic [ref=f13e190]:
+              - button "Reset" [ref=f13e191] [cursor=pointer]
+              - button "Run" [ref=f13e192] [cursor=pointer]
+          - text: 
+        - generic [ref=f13e193]:
+          - generic [ref=f13e195]:
+            - generic [ref=f13e196]: Output
+            - generic [ref=f13e197]:
+              - button "Preview" [ref=f13e198] [cursor=pointer]
+              - button "JSON" [ref=f13e199] [cursor=pointer]
+          - generic [ref=f13e200]:
+            - generic [ref=f13e202]:
+              - generic [ref=f13e203]: output type
+              - generic [ref=f13e204]: video
+            - paragraph [ref=f13e207]: no output
+            - generic [ref=f13e208]:
+              - button [ref=f13e209] [cursor=pointer]:
+                - img [ref=f13e210]
+              - button "View full history" [ref=f13e214] [cursor=pointer]:
+                - img [ref=f13e215]
+                - text: View full history
+      - complementary [ref=f13e219]:
+        - generic [ref=f13e220]:
+          - region "More AI models from ByteDance" [ref=f13e221]:
+            - generic [ref=f13e222]:
+              - text: More AI models from
+              - link "ByteDance" [ref=f13e223] [cursor=pointer]:
+                - /url: /market/bytedance
+            - generic [ref=f13e224]:
+              - article [ref=f13e225]:
+                - link "View Seedance 2.0 Mini" [ref=f13e227] [cursor=pointer]:
+                  - /url: /seedance-2-0-mini
+                  - generic "Seedance 2.0 Mini Seedance 2.0 Mini AI Model" [ref=f13e228]
+                - generic [ref=f13e229]:
+                  - generic [ref=f13e232]: ByteDance
+                  - link "Seedance 2.0 Mini" [ref=f13e234] [cursor=pointer]:
+                    - /url: /seedance-2-0-mini
+              - article [ref=f13e235]:
+                - link "View OmniHuman 1.5" [ref=f13e237] [cursor=pointer]:
+                  - /url: /omnihuman-1-5
+                  - img "OmniHuman 1.5 OmniHuman 1.5 AI Model" [ref=f13e238]
+                - generic [ref=f13e239]:
+                  - generic [ref=f13e242]: ByteDance
+                  - link "OmniHuman 1.5" [ref=f13e244] [cursor=pointer]:
+                    - /url: /omnihuman-1-5
+              - article [ref=f13e245]:
+                - link "View Seedance 2.0" [ref=f13e247] [cursor=pointer]:
+                  - /url: /seedance-2-0
+                  - generic "Seedance 2.0 Seedance 2.0 AI Model" [ref=f13e248]
+                - generic [ref=f13e249]:
+                  - generic [ref=f13e252]: ByteDance
+                  - link "Seedance 2.0" [ref=f13e254] [cursor=pointer]:
+                    - /url: /seedance-2-0
+              - article [ref=f13e255]:
+                - link "View Seedream 5.0 Lite" [ref=f13e257] [cursor=pointer]:
+                  - /url: /seedream5-0-lite
+                  - img "Seedream 5.0 Lite Seedream 5.0 Lite AI Model" [ref=f13e258]
+                - generic [ref=f13e259]:
+                  - generic [ref=f13e262]: ByteDance
+                  - link "Seedream 5.0 Lite" [ref=f13e264] [cursor=pointer]:
+                    - /url: /seedream5-0-lite
+          - region "Latest and popular AI models" [ref=f13e265]:
+            - generic [ref=f13e266]: Latest and popular AI models
+            - generic [ref=f13e267]:
+              - article [ref=f13e268]:
+                - link "View Seedance 2.0 Mini" [ref=f13e270] [cursor=pointer]:
+                  - /url: /seedance-2-0-mini
+                  - generic "Seedance 2.0 Mini Seedance 2.0 Mini AI Model" [ref=f13e271]
+                - generic [ref=f13e272]:
+                  - generic [ref=f13e275]: ByteDance
+                  - link "Seedance 2.0 Mini" [ref=f13e277] [cursor=pointer]:
+                    - /url: /seedance-2-0-mini
+              - article [ref=f13e278]:
+                - link "View HappyHorse-1.1" [ref=f13e280] [cursor=pointer]:
+                  - /url: /happyhorse-1-1
+                  - generic "HappyHorse-1.1 HappyHorse-1.1 AI Model" [ref=f13e281]
+                - generic [ref=f13e282]:
+                  - generic [ref=f13e285]: Alibaba
+                  - link "HappyHorse-1.1" [ref=f13e287] [cursor=pointer]:
+                    - /url: /happyhorse-1-1
+              - article [ref=f13e288]:
+                - link "View Kling 3.0 Turbo" [ref=f13e290] [cursor=pointer]:
+                  - /url: /kling-3-0-turbo
+                  - generic "Kling 3.0 Turbo Kling 3.0 Turbo AI Model" [ref=f13e291]
+                - generic [ref=f13e292]:
+                  - generic [ref=f13e295]: Kling
+                  - link "Kling 3.0 Turbo" [ref=f13e297] [cursor=pointer]:
+                    - /url: /kling-3-0-turbo
+              - article [ref=f13e298]:
+                - link "View Imagen 4" [ref=f13e300] [cursor=pointer]:
+                  - /url: /google/imagen4
+                  - img "Imagen 4 Imagen 4 AI Model" [ref=f13e301]
+                - generic [ref=f13e302]:
+                  - generic [ref=f13e305]: Google
+                  - link "Imagen 4" [ref=f13e307] [cursor=pointer]:
+                    - /url: /google/imagen4
+      - generic [ref=f13e310]:
+        - generic [ref=f13e311]:
+          - generic [ref=f13e312]: README
+          - paragraph [ref=f13e313]: Complete guide to using volcengine/video-to-video-lip-sync
+        - generic [ref=f13e315]:
+          - generic [ref=f13e319]:
+            - generic [ref=f13e322]:
+              - 'heading "Volcengine Video-to-Video Lip Sync API: AI Lip Sync & Video Dubbing API" [level=1] [ref=f13e326]'
+              - paragraph [ref=f13e327]: Integrate Volcengine Video-to-Video Lip Sync API for seamless AI lip sync video dubbing. High-accuracy mouth sync engine supporting multi-language video translation at scale. Available on Kie.ai.
+            - generic [ref=f13e336]:
+              - img "Original image"
+          - generic [ref=f13e341]:
+            - heading "Key Features of the Volcengine Lip Sync API" [level=2] [ref=f13e343]
+            - generic [ref=f13e345]:
+              - generic [ref=f13e347]:
+                - generic [ref=f13e348]:
+                  - img [ref=f13e350]
+                  - heading "Frame-Accurate Lip Synchronization" [level=3] [ref=f13e353]
+                  - paragraph [ref=f13e354]: "Unlike traditional audio-driven methods that produce loose sync, Volcengine's deep learning model achieves pixel-level mouth-to-audio alignment — even preserving subtle articulations like \"p\" and \"b\" plosives. The result: natural-looking speech that passes the uncanny valley test."
+                - img "Frame-Accurate Lip Synchronization" [ref=f13e358]
+              - generic [ref=f13e361]:
+                - generic [ref=f13e362]:
+                  - img [ref=f13e364]
+                  - heading "Multi-Language Video Dubbing Pipeline" [level=3] [ref=f13e367]
+                  - paragraph [ref=f13e368]: Combine the Lip Sync API with Volcengine's Video Translation API to automatically dub videos into 20+ languages. The pipeline detects original speech, translates it, generates synthesized voice, and syncs lip movements — all in a single async workflow with no manual intervention needed.
+                - img "Multi-Language Video Dubbing Pipeline" [ref=f13e372]
+              - generic [ref=f13e375]:
+                - generic [ref=f13e376]:
+                  - img [ref=f13e378]
+                  - heading "Native Ecosystem Integration" [level=3] [ref=f13e381]
+                  - paragraph [ref=f13e382]: "Built directly into Volcengine's Intelligent Vision Service, the API works out of the box with ByteDance's infrastructure: automatic transcoding, CDN delivery, watermark removal, and video moderation. No need to stitch together multiple services — one API key gives you the full video generation stack."
+                - img "Native Ecosystem Integration" [ref=f13e386]
+              - generic [ref=f13e389]:
+                - generic [ref=f13e390]:
+                  - img [ref=f13e392]
+                  - heading "High-Throughput Async Task Processing" [level=3] [ref=f13e395]
+                  - paragraph [ref=f13e396]: The API uses Volcengine's CVSubmitTask/CVGetResult asynchronous pattern, allowing you to submit hundreds of lip sync jobs simultaneously without blocking. Each job processes independently with progress tracking, callback URL delivery, and automatic retry on failure — built for production-scale content pipelines.
+                - img "High-Throughput Async Task Processing" [ref=f13e400]
+          - generic [ref=f13e403]:
+            - heading "How to Use the Volcengine Video-to-Video Lip Sync API" [level=2] [ref=f13e405]
+            - paragraph [ref=f13e406]: Get started with our product in just a few simple steps...
+            - list [ref=f13e408]:
+              - generic [ref=f13e409]:
+                - listitem [ref=f13e410]:
+                  - img [ref=f13e413]
+                  - generic [ref=f13e417]:
+                    - 'heading "Step 1: Sign Up for Volcengine Lip Sync API Access on Kie.ai" [level=3] [ref=f13e418]'
+                    - paragraph [ref=f13e419]: Sign up on Kie.ai and generate a secure Volcengine Lip Sync API key. This API key is required for authentication and enables you to access the full capabilities of the Volcengine Video-to-Video Lip Sync generation, including multi-language dubbing and batch processing.
+                - listitem [ref=f13e420]:
+                  - img [ref=f13e423]
+                  - generic [ref=f13e427]:
+                    - 'heading "Step 2: Submit a Lip Sync Task to the API" [level=3] [ref=f13e428]'
+                    - paragraph [ref=f13e429]: Use your API key to send a POST request with your input video URL, target audio file, and configuration parameters. The Volcengine Lip Sync API processes your request asynchronously via CVSubmitTask, handling frame-by-frame mouth movement analysis and audio-visual alignment within minutes.
+                - listitem [ref=f13e430]:
+                  - img [ref=f13e433]
+                  - generic [ref=f13e437]:
+                    - 'heading "Step 3: Retrieve and Deliver the Synced Video" [level=3] [ref=f13e438]'
+                    - paragraph [ref=f13e439]: After processing, the API responds with the task status and the output video URL. If you provide a callback URL, the Volcengine Video-to-Video API will automatically deliver the synced video result to your application for seamless integration into your content pipeline
+          - generic [ref=f13e442]:
+            - heading "Popular Use Cases for Video-to-Video Lip Sync API" [level=2] [ref=f13e444]
+            - generic [ref=f13e445]:
+              - generic [ref=f13e446]:
+                - img [ref=f13e448]
+                - img [ref=f13e453]
+                - generic [ref=f13e457]:
+                  - heading "E-Learning & Course Localization" [level=3] [ref=f13e458]
+                  - paragraph [ref=f13e459]: Translate and lip-sync educational video courses for global audiences. A university in Singapore used the API to dub 200+ hours of lecture content into Mandarin, Hindi, and Bahasa Indonesia — reducing localization costs by 70% while maintaining instructor authenticity through accurate lip sync.
+              - generic [ref=f13e460]:
+                - img [ref=f13e462]
+                - img [ref=f13e467]
+                - generic [ref=f13e471]:
+                  - heading "Social Media Content Repurposing" [level=3] [ref=f13e472]
+                  - paragraph [ref=f13e473]: Creators on TikTok and YouTube Shorts can clone their lip movements into multiple languages with a single source video. A travel vlogger repurposed one English video into 12 languages using Volcengine's pipeline, growing their international subscriber base by 340% in 3 months — all without reshooting a single frame.
+              - generic [ref=f13e474]:
+                - img [ref=f13e476]
+                - img [ref=f13e481]
+                - generic [ref=f13e485]:
+                  - heading "Corporate Video & Global Marketing" [level=3] [ref=f13e486]
+                  - paragraph [ref=f13e487]: Enterprises use the Lip Sync API to quickly adapt product demos, CEO announcements, and training materials for regional markets. A Fortune 500 tech company localized 500 product tutorial videos into Japanese, Korean, and Thai, achieving lip sync accuracy that passed internal QA on the first review — no reshoots needed.
+              - generic [ref=f13e488]:
+                - img [ref=f13e490]
+                - img [ref=f13e495]
+                - generic [ref=f13e499]:
+                  - heading "Film & TV Dubbing Automation" [level=3] [ref=f13e500]
+                  - paragraph [ref=f13e501]: Post-production studios integrate the API to automate the initial lip sync pass for foreign-language dubbing. Volcengine's engine handles the first rough sync, reducing manual VFX artist hours by 60% — sync artists only need to fine-tune emotional extremes, dramatically accelerating the dubbing pipeline from weeks to days.
+          - generic [ref=f13e503]:
+            - heading "Frequently Asked Questions About Volcengine Video-to-Video Lip Sync API" [level=2] [ref=f13e505]:
+              - generic [ref=f13e506]: Frequently Asked Questions About Volcengine Video-to-Video Lip Sync API
+            - paragraph [ref=f13e509]: Find answers to common questions about our service.
+            - generic [ref=f13e511]:
+              - button "FAQ What is the Volcengine Video-to-Video Lip Sync API and how does it work?" [ref=f13e514] [cursor=pointer]:
+                - generic [ref=f13e515]:
+                  - img [ref=f13e517]
+                  - generic [ref=f13e519]:
+                    - generic [ref=f13e520]: FAQ
+                    - heading "What is the Volcengine Video-to-Video Lip Sync API and how does it work?" [level=3] [ref=f13e521]
+                - img [ref=f13e523]
+              - button "FAQ What languages does the Volcengine Lip Sync API support for video dubbing?" [ref=f13e529] [cursor=pointer]:
+                - generic [ref=f13e530]:
+                  - img [ref=f13e532]
+                  - generic [ref=f13e534]:
+                    - generic [ref=f13e535]: FAQ
+                    - heading "What languages does the Volcengine Lip Sync API support for video dubbing?" [level=3] [ref=f13e536]
+                - img [ref=f13e538]
+              - button "FAQ How does Volcengine Lip Sync API compare to HeyGen for AI video dubbing?" [ref=f13e544] [cursor=pointer]:
+                - generic [ref=f13e545]:
+                  - img [ref=f13e547]
+                  - generic [ref=f13e549]:
+                    - generic [ref=f13e550]: FAQ
+                    - heading "How does Volcengine Lip Sync API compare to HeyGen for AI video dubbing?" [level=3] [ref=f13e551]
+                - img [ref=f13e553]
+              - button "FAQ Does the Volcengine Lip Sync API support callback URL for result delivery?" [ref=f13e559] [cursor=pointer]:
+                - generic [ref=f13e560]:
+                  - img [ref=f13e562]
+                  - generic [ref=f13e564]:
+                    - generic [ref=f13e565]: FAQ
+                    - heading "Does the Volcengine Lip Sync API support callback URL for result delivery?" [level=3] [ref=f13e566]
+                - img [ref=f13e568]
+              - button "FAQ Why choose Kie.ai for Volcengine Lip Sync API access over other platforms?" [ref=f13e574] [cursor=pointer]:
+                - generic [ref=f13e575]:
+                  - img [ref=f13e577]
+                  - generic [ref=f13e579]:
+                    - generic [ref=f13e580]: FAQ
+                    - heading "Why choose Kie.ai for Volcengine Lip Sync API access over other platforms?" [level=3] [ref=f13e581]
+                - img [ref=f13e583]
+    - contentinfo [ref=f13e587]:
+      - generic [ref=f13e588]:
+        - generic [ref=f13e589]:
+          - generic [ref=f13e590]:
+            - paragraph [ref=f13e592]: COMPANY
+            - generic [ref=f13e593]:
+              - link "Blog" [ref=f13e594] [cursor=pointer]:
+                - /url: /blog
+              - link "Sitemap" [ref=f13e595] [cursor=pointer]:
+                - /url: https://kie.ai/sitemap.xml
+              - link "Terms of Use" [ref=f13e596] [cursor=pointer]:
+                - /url: https://kie.ai/terms-of-use
+              - link "Privacy Policy" [ref=f13e597] [cursor=pointer]:
+                - /url: https://kie.ai/privacy-policy
+          - generic [ref=f13e598]:
+            - paragraph [ref=f13e600]: RESOURCES
+            - generic [ref=f13e601]:
+              - link "Runway Gen-4 Turbo API – Free Trial for Fast, Affordable AI Video Generation" [ref=f13e602] [cursor=pointer]:
+                - /url: /features/gen4-turbo-api
+              - link "Runway AI Image-to-Video Generation Gets Smarter and Faster with Runway Gen4 Turbo" [ref=f13e603] [cursor=pointer]:
+                - /url: /runway-gen4-turbo
+              - 'link "Runway Gen-4 Released: New AI Model for Consistent Video Generation" [ref=f13e604] [cursor=pointer]':
+                - /url: /runway-gen4
+              - 'link "GPT-Image-1: OpenAI’s Latest Image Generation API — Free to Try on Kie.ai Today" [ref=f13e605] [cursor=pointer]':
+                - /url: /gpt-image-1
+              - link "The Most Affordable Veo 3 AI API by Kie.ai - Create High-Quality Videos with Audio and Visuals" [ref=f13e606] [cursor=pointer]:
+                - /url: /features/v3-api
+              - link "FLUX.1 Kontext API – Professional Image Editing at Half the Cost | Free Trial" [ref=f13e607] [cursor=pointer]:
+                - /url: /features/flux1-kontext
+              - link "Fast and Affordable Veo3 Fast API for Stunning Videos on Kie.ai" [ref=f13e608] [cursor=pointer]:
+                - /url: /features/v3-fast-api
+              - 'link "Veo 3 API Pricing Comparison: Most Affordable Google Veo 3 Access from $0.40/Video - Kie.ai" [ref=f13e609] [cursor=pointer]':
+                - /url: /v3-api-pricing
+              - 'link "FLUX.1 Kontext [dev] API: AI Image Editing by Black Forest Labs|Kie.ai" [ref=f13e610] [cursor=pointer]':
+                - /url: /features/flux-1-kontext-dev-api
+              - link "How to Use Nano Banana API (Gemini-2-5-flash-image-preview) – Free Online Test | Kie.ai" [ref=f13e611] [cursor=pointer]:
+                - /url: /features/gemini-2-5-flash-image-preview-via-api
+              - 'link "GLM-5.2 Release: What the First 24 Hours Show" [ref=f13e612] [cursor=pointer]':
+                - /url: /blog/T_glm-5.2_release
+              - 'link "Grok 4.3 Deep Dive: Release, Pricing, What We Know" [ref=f13e613] [cursor=pointer]':
+                - /url: /blog/T_grok_release
+              - 'link "GPT-5.6 Leak: What We Actually Know" [ref=f13e614] [cursor=pointer]':
+                - /url: /blog/gpt-5-6
+              - 'link "Grok 4.3 Release Deep Dive: What xAI Just Shipped" [ref=f13e615] [cursor=pointer]':
+                - /url: /blog/grok-4-3-xai-release-deep-dive
+              - 'link "Seedance 2.5 Release: What ByteDance Just Shipped" [ref=f13e616] [cursor=pointer]':
+                - /url: /blog/seedance-2-5-release-deep-dive
+              - 'link "OpenAI Bidi-1 Voice Model: Leak Deep Dive" [ref=f13e617] [cursor=pointer]':
+                - /url: /blog/openai-bidi-1-voice-model-deep-dive
+              - 'link "Claude Tag Release: Anthropic''s Slack Async Agent" [ref=f13e618] [cursor=pointer]':
+                - /url: /blog/claude-tag-anthropic-slack-async-agent
+              - link "GPT-5.5 Instant Refresh & Daybreak Deep Dive" [ref=f13e619] [cursor=pointer]:
+                - /url: /blog/gpt-5-5-instant-refresh-daybreak-security-deep-dive
+          - generic [ref=f13e620]:
+            - paragraph [ref=f13e622]: Market
+            - generic [ref=f13e623]:
+              - link "Imagen 4" [ref=f13e624] [cursor=pointer]:
+                - /url: /google/imagen4
+              - link "Wan V2.2 A14B" [ref=f13e625] [cursor=pointer]:
+                - /url: /wan/v2-2
+              - link "Ideogram V3" [ref=f13e626] [cursor=pointer]:
+                - /url: /ideogram/v3
+              - link "Kling V2.1" [ref=f13e627] [cursor=pointer]:
+                - /url: /kling/v2-1
+              - link "Seedance V1" [ref=f13e628] [cursor=pointer]:
+                - /url: /bytedance/seedance-v1
+              - link "Ideogram Character" [ref=f13e629] [cursor=pointer]:
+                - /url: /ideogram/character
+              - link "Qwen Image Edit" [ref=f13e630] [cursor=pointer]:
+                - /url: /qwen/image-edit
+              - link "Suno API" [ref=f13e631] [cursor=pointer]:
+                - /url: /suno-api
+              - link "Runway Video Generation" [ref=f13e632] [cursor=pointer]:
+                - /url: /runway-api
+              - link "NanoBanana-Gemini 2.5 Flash Image Preview" [ref=f13e633] [cursor=pointer]:
+                - /url: /nano-banana
+              - link "Qwen Image" [ref=f13e634] [cursor=pointer]:
+                - /url: /qwen-image
+              - link "Seedream" [ref=f13e635] [cursor=pointer]:
+                - /url: /seedream
+              - link "Wan 2.2 A14B Speech to Video Turbo" [ref=f13e636] [cursor=pointer]:
+                - /url: /wan-speech-to-video-turbo
+              - link "Elevenlabs Text to Speech" [ref=f13e637] [cursor=pointer]:
+                - /url: /elevenlabs-tts
+              - link "Recraft Crisp Upscale" [ref=f13e638] [cursor=pointer]:
+                - /url: /recraft-crisp-upscale
+              - link "Recraft Remove Background" [ref=f13e639] [cursor=pointer]:
+                - /url: /recraft-remove-background
+              - link "Infinitalk API-AI lip-sync generator" [ref=f13e640] [cursor=pointer]:
+                - /url: /infinitalk
+              - link "Seedream 4.0" [ref=f13e641] [cursor=pointer]:
+                - /url: /seedream-api
+        - generic [ref=f13e642]:
+          - button [ref=f13e644] [cursor=pointer]:
+            - img [ref=f13e645]
+          - generic [ref=f13e649]:
+            - generic [ref=f13e652]: KIE AI
+            - paragraph [ref=f13e653]: © 2025 kie.ai Inc. All rights reserved.
+  - alert [ref=f13e654]
+  - generic [ref=f13e655]:
+    - alert
+    - alert

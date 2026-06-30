@@ -1,0 +1,96 @@
+{
+ "meta": {
+  "datetime": "2026-06-30T13:40:24",
+  "run_id": "2026-06-30_13-40-09",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/(8).xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-06-30T13:40:15",
+   "run_id": "2026-06-30_13-40-09",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45624,
+   "sku": "",
+   "name": "Урал ВВ 25 неон динамик автозвук",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "web search",
+   "fields": {
+    "images": {
+     "old": [
+      42814,
+      45623
+     ],
+     "new": [
+      53592
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T13:40:19",
+   "run_id": "2026-06-30_13-40-09",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45729,
+   "sku": "",
+   "name": "Урал АК-74 коаксиальная акустика",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "web search",
+   "fields": {
+    "images": {
+     "old": [
+      45725,
+      45728
+     ],
+     "new": [
+      53593
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-06-30T13:40:24",
+   "run_id": "2026-06-30_13-40-09",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/(8).xlsx",
+   "excel_row": 0,
+   "product_id": 45926,
+   "sku": "",
+   "name": "Урал Симфония 15 активный сабвуфер",
+   "brand": "Ural",
+   "action": "images_replaced",
+   "reason": "web search",
+   "fields": {
+    "images": {
+     "old": [
+      50379,
+      45925
+     ],
+     "new": [
+      53594
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

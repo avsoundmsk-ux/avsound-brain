@@ -208,5 +208,41 @@
   "name": "Hertz DCX 165.3",
   "opt": "images/generated/optimized/k_46057.webp",
   "src": "extremecaraudio.com"
+ },
+ {
+  "pid": 46062,
+  "name": "Hertz CK 165",
+  "opt": "images/generated/optimized/k_46062.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46064,
+  "name": "Твитеры Hertz C 26",
+  "opt": "images/generated/optimized/k_46064.webp",
+  "src": "globaltuning.com"
+ },
+ {
+  "pid": 46080,
+  "name": "Среднечастотная акустика Hertz MP 70.3 Pro",
+  "opt": "images/generated/optimized/k_46080.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 46082,
+  "name": "Твитера Hertz HT 25 без коробки",
+  "opt": "images/generated/optimized/k_46082.webp",
+  "src": "drive2.ru"
+ },
+ {
+  "pid": 44408,
+  "name": "Твитера Hertz HT 25",
+  "opt": "images/generated/optimized/k_44408.webp",
+  "src": "audio-tuning.ru"
+ },
+ {
+  "pid": 46092,
+  "name": "Пищалки Hertz ET26.5 без коробки",
+  "opt": "images/generated/optimized/k_46092.webp",
+  "src": "dixonik.com.ua"
  }
 ]

@@ -1,0 +1,84 @@
+[
+ {
+  "datetime": "2026-07-01T14:41:24",
+  "run_id": "2026-07-01_14-40-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46062,
+  "sku": "",
+  "name": "Hertz CK 165",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46050,
+     46059,
+     46058
+    ],
+    "new": [
+     53821
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:41:30",
+  "run_id": "2026-07-01_14-40-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46064,
+  "sku": "",
+  "name": "Твитеры Hertz C 26",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46049,
+     42942
+    ],
+    "new": [
+     53822
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:41:36",
+  "run_id": "2026-07-01_14-40-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46080,
+  "sku": "",
+  "name": "Среднечастотная акустика Hertz MP 70.3 Pro",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46079,
+     46900
+    ],
+    "new": [
+     53823
+    ]
+   }
+  }
+ }
+]

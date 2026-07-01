@@ -460,5 +460,41 @@
   "name": "Высокочастотная акустика Focal K2 Power tkmx",
   "opt": "images/generated/optimized/k_46202.webp",
   "src": "1h.by"
+ },
+ {
+  "pid": 44466,
+  "name": "Focal PS-165X2",
+  "opt": "images/generated/optimized/k_44466.webp",
+  "src": "manuals.plus"
+ },
+ {
+  "pid": 46216,
+  "name": "Focal PS 165 V1",
+  "opt": "images/generated/optimized/k_46216.webp",
+  "src": "pasmag.com"
+ },
+ {
+  "pid": 46217,
+  "name": "Focal PS 165 V1 оригинал",
+  "opt": "images/generated/optimized/k_46217.webp",
+  "src": "pacificstereo.com"
+ },
+ {
+  "pid": 44463,
+  "name": "Комплект проводов Focal на 2х канальный Усилитель",
+  "opt": "images/generated/optimized/k_44463.webp",
+  "src": "storeaudio.ru"
+ },
+ {
+  "pid": 46242,
+  "name": "Сабвуфер Focal Performance P 25 FSE",
+  "opt": "images/generated/optimized/k_46242.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 46237,
+  "name": "Сабвуфер Focal 27 K",
+  "opt": "images/generated/optimized/k_46237.webp",
+  "src": "globaltuning.com"
  }
 ]

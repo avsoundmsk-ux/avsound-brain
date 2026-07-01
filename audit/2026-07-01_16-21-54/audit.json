@@ -1,0 +1,100 @@
+{
+ "meta": {
+  "datetime": "2026-07-01T16:22:10",
+  "run_id": "2026-07-01_16-21-54",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-01T16:21:59",
+   "run_id": "2026-07-01_16-21-54",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44466,
+   "sku": "",
+   "name": "Focal PS-165X2",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44454,
+      44464,
+      44465,
+      44163,
+      44055
+     ],
+     "new": [
+      53962
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T16:22:05",
+   "run_id": "2026-07-01_16-21-54",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46216,
+   "sku": "",
+   "name": "Focal PS 165 V1",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44163,
+      42942
+     ],
+     "new": [
+      53963
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T16:22:10",
+   "run_id": "2026-07-01_16-21-54",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46217,
+   "sku": "",
+   "name": "Focal PS 165 V1 оригинал",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44163,
+      42942,
+      44464
+     ],
+     "new": [
+      53964
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

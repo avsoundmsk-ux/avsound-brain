@@ -1,0 +1,168 @@
+[
+ {
+  "datetime": "2026-07-01T15:07:24",
+  "run_id": "2026-07-01_15-07-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46102,
+  "sku": "",
+  "name": "2-компонентная акустика Hertz ESK 165.5",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46099,
+     46084
+    ],
+    "new": [
+     53829
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:07:29",
+  "run_id": "2026-07-01_15-07-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 43684,
+  "sku": "",
+  "name": "Hertz MPX 165.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     43681,
+     51004,
+     44055
+    ],
+    "new": [
+     53830
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:07:34",
+  "run_id": "2026-07-01_15-07-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 43838,
+  "sku": "",
+  "name": "Hertz MP 165.3 Pro",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     43836,
+     43837,
+     42942,
+     49178
+    ],
+    "new": [
+     53831
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:07:39",
+  "run_id": "2026-07-01_15-07-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46119,
+  "sku": "",
+  "name": "Hertz ECX 690",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46109,
+     46115,
+     46118
+    ],
+    "new": [
+     53832
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:07:44",
+  "run_id": "2026-07-01_15-07-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44415,
+  "sku": "",
+  "name": "Hertz ECX 165",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44413
+    ],
+    "new": [
+     53833
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:07:49",
+  "run_id": "2026-07-01_15-07-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46113,
+  "sku": "",
+  "name": "Hertz dcx 100.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46110,
+     44163,
+     42942
+    ],
+    "new": [
+     53834
+    ]
+   }
+  }
+ }
+]

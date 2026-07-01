@@ -280,5 +280,41 @@
   "name": "Hertz cento c 165 L",
   "opt": "images/generated/optimized/k_46098.webp",
   "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46102,
+  "name": "2-компонентная акустика Hertz ESK 165.5",
+  "opt": "images/generated/optimized/k_46102.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 43684,
+  "name": "Hertz MPX 165.3",
+  "opt": "images/generated/optimized/k_43684.webp",
+  "src": "freemanscarstereo.com"
+ },
+ {
+  "pid": 43838,
+  "name": "Hertz MP 165.3 Pro",
+  "opt": "images/generated/optimized/k_43838.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46119,
+  "name": "Hertz ECX 690",
+  "opt": "images/generated/optimized/k_46119.webp",
+  "src": "safeandsoundhq.com"
+ },
+ {
+  "pid": 44415,
+  "name": "Hertz ECX 165",
+  "opt": "images/generated/optimized/k_44415.webp",
+  "src": "audiopipe.de"
+ },
+ {
+  "pid": 46113,
+  "name": "Hertz dcx 100.3",
+  "opt": "images/generated/optimized/k_46113.webp",
+  "src": "pacificstereo.com"
  }
 ]

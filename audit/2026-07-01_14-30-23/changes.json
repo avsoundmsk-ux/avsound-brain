@@ -1,0 +1,166 @@
+[
+ {
+  "datetime": "2026-07-01T14:30:28",
+  "run_id": "2026-07-01_14-30-23",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46041,
+  "sku": "",
+  "name": "Hertz DSK 165.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     42892
+    ],
+    "new": [
+     53815
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:30:38",
+  "run_id": "2026-07-01_14-30-23",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46046,
+  "sku": "",
+  "name": "Hertz DSK 130.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44163
+    ],
+    "new": [
+     53816
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:30:43",
+  "run_id": "2026-07-01_14-30-23",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46040,
+  "sku": "",
+  "name": "Hertz DPK 165.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44380,
+     44378,
+     44465
+    ],
+    "new": [
+     53817
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:30:48",
+  "run_id": "2026-07-01_14-30-23",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44382,
+  "sku": "",
+  "name": "Hertz DPK 165.3 копия",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44378,
+     44380,
+     44465
+    ],
+    "new": [
+     53818
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:30:53",
+  "run_id": "2026-07-01_14-30-23",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46055,
+  "sku": "",
+  "name": "Hertz DCX 130.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46054,
+     42942
+    ],
+    "new": [
+     53819
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:30:58",
+  "run_id": "2026-07-01_14-30-23",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46057,
+  "sku": "",
+  "name": "Hertz DCX 165.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44525,
+     46052,
+     46056,
+     42942
+    ],
+    "new": [
+     53820
+    ]
+   }
+  }
+ }
+]

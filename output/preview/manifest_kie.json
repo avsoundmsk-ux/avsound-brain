@@ -172,5 +172,41 @@
   "name": "Hertz Uno X 130",
   "opt": "images/generated/optimized/k_46037.webp",
   "src": "safeandsoundhq.com"
+ },
+ {
+  "pid": 46041,
+  "name": "Hertz DSK 165.3",
+  "opt": "images/generated/optimized/k_46041.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46046,
+  "name": "Hertz DSK 130.3",
+  "opt": "images/generated/optimized/k_46046.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46040,
+  "name": "Hertz DPK 165.3",
+  "opt": "images/generated/optimized/k_46040.webp",
+  "src": "bigsoundslowskirts.com"
+ },
+ {
+  "pid": 44382,
+  "name": "Hertz DPK 165.3 копия",
+  "opt": "images/generated/optimized/k_44382.webp",
+  "src": "rgsound.it"
+ },
+ {
+  "pid": 46055,
+  "name": "Hertz DCX 130.3",
+  "opt": "images/generated/optimized/k_46055.webp",
+  "src": "safeandsoundhq.com"
+ },
+ {
+  "pid": 46057,
+  "name": "Hertz DCX 165.3",
+  "opt": "images/generated/optimized/k_46057.webp",
+  "src": "extremecaraudio.com"
  }
 ]

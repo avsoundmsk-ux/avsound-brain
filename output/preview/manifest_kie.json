@@ -244,5 +244,41 @@
   "name": "Пищалки Hertz ET26.5 без коробки",
   "opt": "images/generated/optimized/k_46092.webp",
   "src": "dixonik.com.ua"
+ },
+ {
+  "pid": 46091,
+  "name": "Hertz Uno X 690",
+  "opt": "images/generated/optimized/k_46091.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46090,
+  "name": "Hertz ESK 165L",
+  "opt": "images/generated/optimized/k_46090.webp",
+  "src": "rgsound.it"
+ },
+ {
+  "pid": 46094,
+  "name": "Hertz CX 165",
+  "opt": "images/generated/optimized/k_46094.webp",
+  "src": "soundconnectioninc.com"
+ },
+ {
+  "pid": 44420,
+  "name": "Hertz CX 100",
+  "opt": "images/generated/optimized/k_44420.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46106,
+  "name": "Hertz CPK 165",
+  "opt": "images/generated/optimized/k_46106.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46098,
+  "name": "Hertz cento c 165 L",
+  "opt": "images/generated/optimized/k_46098.webp",
+  "src": "hertz-audio.com"
  }
 ]

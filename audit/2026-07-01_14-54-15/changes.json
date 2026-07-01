@@ -1,0 +1,141 @@
+[
+ {
+  "datetime": "2026-07-01T14:54:20",
+  "run_id": "2026-07-01_14-54-15",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46091,
+  "sku": "",
+  "name": "Hertz Uno X 690",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     43995
+    ],
+    "new": [
+     53824
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:54:24",
+  "run_id": "2026-07-01_14-54-15",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46094,
+  "sku": "",
+  "name": "Hertz CX 165",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46086,
+     49431,
+     31795,
+     44091
+    ],
+    "new": [
+     53825
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:54:29",
+  "run_id": "2026-07-01_14-54-15",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44420,
+  "sku": "",
+  "name": "Hertz CX 100",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44414,
+     44416,
+     44419,
+     42942
+    ],
+    "new": [
+     53826
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:54:34",
+  "run_id": "2026-07-01_14-54-15",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46106,
+  "sku": "",
+  "name": "Hertz CPK 165",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     49446,
+     46101,
+     46104
+    ],
+    "new": [
+     53827
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T14:54:39",
+  "run_id": "2026-07-01_14-54-15",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46098,
+  "sku": "",
+  "name": "Hertz cento c 165 L",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     50200,
+     42942
+    ],
+    "new": [
+     53828
+    ]
+   }
+  }
+ }
+]

@@ -640,5 +640,35 @@
   "name": "BLAM L165S",
   "opt": "images/generated/optimized/k_46342.webp",
   "src": "studio-messe.com"
+ },
+ {
+  "pid": 46356,
+  "name": "BLAM LW165A",
+  "opt": "images/generated/optimized/k_46356.webp",
+  "src": "mms-store.ru"
+ },
+ {
+  "pid": 44554,
+  "name": "Blam R80",
+  "opt": "images/generated/optimized/k_44554.webp",
+  "src": "mms-store.ru"
+ },
+ {
+  "pid": 46354,
+  "name": "BLAM LFR52",
+  "opt": "images/generated/optimized/k_46354.webp",
+  "src": "xn--80apmfcl1ao.xn--p1ai"
+ },
+ {
+  "pid": 46358,
+  "name": "BLAM T20HR",
+  "opt": "images/generated/optimized/k_46358.webp",
+  "src": "incartec.co.uk"
+ },
+ {
+  "pid": 46350,
+  "name": "BLAM LT25",
+  "opt": "images/generated/optimized/k_46350.webp",
+  "src": "audiotehnica.com.ua"
  }
 ]

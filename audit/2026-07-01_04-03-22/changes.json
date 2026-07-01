@@ -1,0 +1,82 @@
+[
+ {
+  "datetime": "2026-07-01T04:03:27",
+  "run_id": "2026-07-01_04-03-22",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 45137,
+  "sku": "",
+  "name": "Динамики Pioneer TS-A6994S 6Х9",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44163
+    ],
+    "new": [
+     53643
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T04:03:32",
+  "run_id": "2026-07-01_04-03-22",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 45152,
+  "sku": "",
+  "name": "Динамики овальные Pioneer TS-A6996S 6Х9",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44163,
+     42814
+    ],
+    "new": [
+     53644
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T04:03:37",
+  "run_id": "2026-07-01_04-03-22",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 45924,
+  "sku": "",
+  "name": "Автомагнитола pionerr-GB GRS-882DP5",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     45911,
+     44163
+    ],
+    "new": [
+     53645
+    ]
+   }
+  }
+ }
+]

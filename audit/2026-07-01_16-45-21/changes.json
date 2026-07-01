@@ -1,0 +1,52 @@
+[
+ {
+  "datetime": "2026-07-01T16:45:32",
+  "run_id": "2026-07-01_16-45-21",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46277,
+  "sku": "",
+  "name": "Среднечастотная акустика Morel CDM880 Китай 1x1",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [],
+    "new": [
+     53969
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:45:37",
+  "run_id": "2026-07-01_16-45-21",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46306,
+  "sku": "",
+  "name": "Morel Dotech Ovation 5W",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46305
+    ],
+    "new": [
+     53970
+    ]
+   }
+  }
+ }
+]

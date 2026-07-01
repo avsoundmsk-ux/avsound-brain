@@ -1,0 +1,145 @@
+[
+ {
+  "datetime": "2026-07-01T11:59:20",
+  "run_id": "2026-07-01_11-59-14",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44333,
+  "sku": "",
+  "name": "Сабвуфер Pioneer TS-BM250MA",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44326,
+     44328,
+     44332,
+     44525
+    ],
+    "new": [
+     53655
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T11:59:25",
+  "run_id": "2026-07-01_11-59-14",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 45968,
+  "sku": "",
+  "name": "Активный сабвуфер Pioneer TS-WX70DA",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     45960,
+     45962,
+     45967
+    ],
+    "new": [
+     53656
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T11:59:30",
+  "run_id": "2026-07-01_11-59-14",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 45985,
+  "sku": "",
+  "name": "Активный сабвуфер Pioneer v-us80",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     45975,
+     45980,
+     45976,
+     44328,
+     45957
+    ],
+    "new": [
+     53657
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T11:59:35",
+  "run_id": "2026-07-01_11-59-14",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46004,
+  "sku": "",
+  "name": "Усилитель для android магнитолы Pioneer TS-D2",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     45990,
+     45996,
+     46001
+    ],
+    "new": [
+     53658
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T11:59:40",
+  "run_id": "2026-07-01_11-59-14",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 45998,
+  "sku": "",
+  "name": "Усилитель для android магнитолы Planeor PLA-A21",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     45991,
+     45994,
+     44163
+    ],
+    "new": [
+     53659
+    ]
+   }
+  }
+ }
+]

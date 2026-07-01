@@ -36,7 +36,12 @@ def optimize(src: str | Path, size: int = TARGET, quality: int = WEBP_QUALITY) -
 
     # вписать в квадрат с сохранением пропорций (без растягивания)
     im.thumbnail((size, size), Image.LANCZOS)
-    canvas = Image.new("RGB", (size, size), DARK_BG)
+    # цвет паддинга = медиана 4 углов исходника (бесшовно, без "квадрата в квадрате")
+    w, h = im.size
+    corners = [im.getpixel((0, 0)), im.getpixel((w - 1, 0)),
+               im.getpixel((0, h - 1)), im.getpixel((w - 1, h - 1))]
+    pad = tuple(sorted(c[i] for c in corners)[1] for i in range(3))  # 2-й по величине = устойчивая медиана
+    canvas = Image.new("RGB", (size, size), pad)
     off = ((size - im.width) // 2, (size - im.height) // 2)
     canvas.paste(im, off)
 

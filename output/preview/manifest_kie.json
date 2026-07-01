@@ -136,5 +136,59 @@
   "name": "Сабвуфер под сиденье Pioneer TS-WX110A",
   "opt": "images/generated/optimized/k_45965.webp",
   "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 45738,
+  "name": "Сабвуфер под сиденье Pioneer TS-BW200LA",
+  "opt": "images/generated/optimized/k_45738.webp",
+  "src": "izap24.ru"
+ },
+ {
+  "pid": 45968,
+  "name": "Активный сабвуфер Pioneer TS-WX70DA",
+  "opt": "images/generated/optimized/k_45968.webp",
+  "src": "stereo.ru"
+ },
+ {
+  "pid": 45989,
+  "name": "Сабвуфер с встроеным усилителем Pioneer",
+  "opt": "images/generated/optimized/k_45989.webp",
+  "src": "rozetka.com.ua"
+ },
+ {
+  "pid": 44333,
+  "name": "Сабвуфер Pioneer TS-BM250MA",
+  "opt": "images/generated/optimized/k_44333.webp",
+  "src": "azvuk.ua"
+ },
+ {
+  "pid": 45985,
+  "name": "Активный сабвуфер Pioneer v-us80",
+  "opt": "images/generated/optimized/k_45985.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 46004,
+  "name": "Усилитель для android магнитолы Pioneer TS-D2",
+  "opt": "images/generated/optimized/k_46004.webp",
+  "src": "merotech.ru"
+ },
+ {
+  "pid": 45998,
+  "name": "Усилитель для android магнитолы Planeor PLA-A21",
+  "opt": "images/generated/optimized/k_45998.webp",
+  "src": "boxberry.ru"
+ },
+ {
+  "pid": 46005,
+  "name": "Усилитель Sony XM-N1004 4х70",
+  "opt": "images/generated/optimized/k_46005.webp",
+  "src": "soundwavestore.ru"
+ },
+ {
+  "pid": 46020,
+  "name": "Усилитель Sony XM-N502",
+  "opt": "images/generated/optimized/k_46020.webp",
+  "src": "fotosklad.ru"
  }
 ]

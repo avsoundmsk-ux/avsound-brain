@@ -1,0 +1,260 @@
+{
+ "meta": {
+  "datetime": "2026-07-01T04:33:46",
+  "run_id": "2026-07-01_04-30-19",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-01T04:30:47",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44971,
+   "sku": "",
+   "name": "Автомагнитола pionerr-GB GRS-881DP5",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44969,
+      44970
+     ],
+     "new": [
+      53646
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:30:52",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44303,
+   "sku": "",
+   "name": "Автомагнитола AVH-P6650",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44300,
+      44302
+     ],
+     "new": [
+      53647
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:30:57",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45701,
+   "sku": "",
+   "name": "Автомагнитола DV-Pioneer.ok AHD-1902 7'",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46900
+     ],
+     "new": [
+      53648
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:31:17",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45954,
+   "sku": "",
+   "name": "Магнитола AS.Pioneer AS-1006 10\" 3/32GB",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      45942,
+      45952,
+      45953
+     ],
+     "new": [
+      53649
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:31:22",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44319,
+   "sku": "",
+   "name": "Магнитола AS.Pioneer AS-1007 10\" 3/32GB",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44163,
+      44309,
+      44313,
+      45942,
+      46900
+     ],
+     "new": [
+      53650
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:32:09",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44316,
+   "sku": "",
+   "name": "PIONEER FH-S725BT ориг",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44306,
+      44310,
+      44311,
+      44163,
+      42814
+     ],
+     "new": [
+      53651
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:32:14",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45947,
+   "sku": "",
+   "name": "PIONEER MVH-S520BT ориг",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      42814
+     ],
+     "new": [
+      53652
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:33:17",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44315,
+   "sku": "",
+   "name": "PIONEER MVH-S325BT ориг",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44312,
+      44465
+     ],
+     "new": [
+      53653
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T04:33:46",
+   "run_id": "2026-07-01_04-30-19",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45965,
+   "sku": "",
+   "name": "Сабвуфер под сиденье Pioneer TS-WX110A",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53654
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

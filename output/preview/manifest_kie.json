@@ -352,5 +352,47 @@
   "name": "Сабвуфер Hertz ES 300D.5 12\"",
   "opt": "images/generated/optimized/k_44426.webp",
   "src": "globaltuning.com"
+ },
+ {
+  "pid": 46137,
+  "name": "Сабвуфер Hertz MPS 250 S2",
+  "opt": "images/generated/optimized/k_46137.webp",
+  "src": "veteraudio.com"
+ },
+ {
+  "pid": 46149,
+  "name": "Сабвуфер Hertz MP 250 D4.3 Pro",
+  "opt": "images/generated/optimized/k_46149.webp",
+  "src": "globaltuning.com"
+ },
+ {
+  "pid": 44370,
+  "name": "Focal Access-165AS",
+  "opt": "images/generated/optimized/k_44370.webp",
+  "src": "safeandsoundhq.com"
+ },
+ {
+  "pid": 46152,
+  "name": "Focal Access 165AC",
+  "opt": "images/generated/optimized/k_46152.webp",
+  "src": "studioincar.co.uk"
+ },
+ {
+  "pid": 46171,
+  "name": "Focal Auditor RSE-165",
+  "opt": "images/generated/optimized/k_46171.webp",
+  "src": "trikux.com"
+ },
+ {
+  "pid": 44444,
+  "name": "Focal Auditor RCX-165",
+  "opt": "images/generated/optimized/k_44444.webp",
+  "src": "listado.mercadolibre.com.mx"
+ },
+ {
+  "pid": 46167,
+  "name": "Focal ASE-165",
+  "opt": "images/generated/optimized/k_46167.webp",
+  "src": "pacificstereo.com"
  }
 ]

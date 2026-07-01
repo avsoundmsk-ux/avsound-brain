@@ -1,0 +1,171 @@
+{
+ "meta": {
+  "datetime": "2026-07-01T15:37:49",
+  "run_id": "2026-07-01_15-36-35",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-01T15:37:22",
+   "run_id": "2026-07-01_15-36-35",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46137,
+   "sku": "",
+   "name": "Сабвуфер Hertz MPS 250 S2",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53929
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:37:27",
+   "run_id": "2026-07-01_15-36-35",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46149,
+   "sku": "",
+   "name": "Сабвуфер Hertz MP 250 D4.3 Pro",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53930
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:37:33",
+   "run_id": "2026-07-01_15-36-35",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44370,
+   "sku": "",
+   "name": "Focal Access-165AS",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44359,
+      42942
+     ],
+     "new": [
+      53932
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:37:39",
+   "run_id": "2026-07-01_15-36-35",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46152,
+   "sku": "",
+   "name": "Focal Access 165AC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      31781,
+      44525
+     ],
+     "new": [
+      53933
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:37:44",
+   "run_id": "2026-07-01_15-36-35",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46171,
+   "sku": "",
+   "name": "Focal Auditor RSE-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46168
+     ],
+     "new": [
+      53934
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:37:49",
+   "run_id": "2026-07-01_15-36-35",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44444,
+   "sku": "",
+   "name": "Focal Auditor RCX-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44435,
+      44440,
+      44441
+     ],
+     "new": [
+      53935
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

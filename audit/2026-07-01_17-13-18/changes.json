@@ -1,0 +1,151 @@
+[
+ {
+  "datetime": "2026-07-01T17:13:25",
+  "run_id": "2026-07-01_17-13-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44536,
+  "sku": "",
+  "name": "Blam 200 RS",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44055,
+     43995,
+     49532
+    ],
+    "new": [
+     53976
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T17:13:30",
+  "run_id": "2026-07-01_17-13-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46336,
+  "sku": "",
+  "name": "BLAM LW165S",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46326,
+     46330,
+     46334,
+     50482,
+     44478,
+     46900,
+     46353
+    ],
+    "new": [
+     53977
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T17:13:36",
+  "run_id": "2026-07-01_17-13-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46344,
+  "sku": "",
+  "name": "BLAM SR165S",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46343,
+     50307,
+     44055,
+     44465,
+     43995
+    ],
+    "new": [
+     53978
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T17:13:43",
+  "run_id": "2026-07-01_17-13-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46341,
+  "sku": "",
+  "name": "BLAM 165RS LE",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46328,
+     46332,
+     44163
+    ],
+    "new": [
+     53979
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T17:13:49",
+  "run_id": "2026-07-01_17-13-18",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46340,
+  "sku": "",
+  "name": "BLAM W165R2 LE",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46333,
+     50298,
+     46328,
+     44437,
+     44478,
+     52361
+    ],
+    "new": [
+     53980
+    ]
+   }
+  }
+ }
+]

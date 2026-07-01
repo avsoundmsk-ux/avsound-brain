@@ -604,5 +604,41 @@
   "name": "BLAM 165 LSQ",
   "opt": "images/generated/optimized/k_46323.webp",
   "src": "fanaticaudio.com"
+ },
+ {
+  "pid": 44536,
+  "name": "Blam 200 RS",
+  "opt": "images/generated/optimized/k_44536.webp",
+  "src": "fanaticaudio.com"
+ },
+ {
+  "pid": 46336,
+  "name": "BLAM LW165S",
+  "opt": "images/generated/optimized/k_46336.webp",
+  "src": "harriox.com"
+ },
+ {
+  "pid": 46344,
+  "name": "BLAM SR165S",
+  "opt": "images/generated/optimized/k_46344.webp",
+  "src": "caraudiocentre.co.uk"
+ },
+ {
+  "pid": 46341,
+  "name": "BLAM 165RS LE",
+  "opt": "images/generated/optimized/k_46341.webp",
+  "src": "hifitest.de"
+ },
+ {
+  "pid": 46340,
+  "name": "BLAM W165R2 LE",
+  "opt": "images/generated/optimized/k_46340.webp",
+  "src": "onfires.ru"
+ },
+ {
+  "pid": 46342,
+  "name": "BLAM L165S",
+  "opt": "images/generated/optimized/k_46342.webp",
+  "src": "studio-messe.com"
  }
 ]

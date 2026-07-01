@@ -568,5 +568,41 @@
   "name": "Morel Dotech Ovation 5W",
   "opt": "images/generated/optimized/k_46306.webp",
   "src": "woofersetc.com"
+ },
+ {
+  "pid": 46299,
+  "name": "Blam 130 RFC",
+  "opt": "images/generated/optimized/k_46299.webp",
+  "src": "mbcaraudio.nl"
+ },
+ {
+  "pid": 44532,
+  "name": "Blam 165 ES",
+  "opt": "images/generated/optimized/k_44532.webp",
+  "src": "blam-audio.ee"
+ },
+ {
+  "pid": 44511,
+  "name": "Blam 165 EC",
+  "opt": "images/generated/optimized/k_44511.webp",
+  "src": "dbshop.ru"
+ },
+ {
+  "pid": 44450,
+  "name": "Blam 165 R2X",
+  "opt": "images/generated/optimized/k_44450.webp",
+  "src": "stereo-systems.ru"
+ },
+ {
+  "pid": 44479,
+  "name": "Blam 165 R2C",
+  "opt": "images/generated/optimized/k_44479.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 46323,
+  "name": "BLAM 165 LSQ",
+  "opt": "images/generated/optimized/k_46323.webp",
+  "src": "fanaticaudio.com"
  }
 ]

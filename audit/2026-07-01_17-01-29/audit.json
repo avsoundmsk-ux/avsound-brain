@@ -1,0 +1,148 @@
+{
+ "meta": {
+  "datetime": "2026-07-01T17:01:56",
+  "run_id": "2026-07-01_17-01-29",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-01T17:01:34",
+   "run_id": "2026-07-01_17-01-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46299,
+   "sku": "",
+   "name": "Blam 130 RFC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46297,
+      46353,
+      44478,
+      44055,
+      43995
+     ],
+     "new": [
+      53971
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T17:01:41",
+   "run_id": "2026-07-01_17-01-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44532,
+   "sku": "",
+   "name": "Blam 165 ES",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53972
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T17:01:46",
+   "run_id": "2026-07-01_17-01-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44511,
+   "sku": "",
+   "name": "Blam 165 EC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53973
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T17:01:51",
+   "run_id": "2026-07-01_17-01-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44450,
+   "sku": "",
+   "name": "Blam 165 R2X",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44437,
+      44442,
+      44055
+     ],
+     "new": [
+      53974
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T17:01:56",
+   "run_id": "2026-07-01_17-01-29",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46323,
+   "sku": "",
+   "name": "BLAM 165 LSQ",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      50482,
+      46334
+     ],
+     "new": [
+      53975
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

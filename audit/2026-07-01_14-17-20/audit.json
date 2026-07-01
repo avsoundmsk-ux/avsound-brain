@@ -1,0 +1,147 @@
+{
+ "meta": {
+  "datetime": "2026-07-01T14:17:47",
+  "run_id": "2026-07-01_14-17-20",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-01T14:17:25",
+   "run_id": "2026-07-01_14-17-20",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46027,
+   "sku": "",
+   "name": "Hertz hcx 165 coaxial",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      53810
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T14:17:30",
+   "run_id": "2026-07-01_14-17-20",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46033,
+   "sku": "",
+   "name": "Hertz Uno K 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46031,
+      42942
+     ],
+     "new": [
+      53811
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T14:17:35",
+   "run_id": "2026-07-01_14-17-20",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46044,
+   "sku": "",
+   "name": "Hertz UNO X 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46043,
+      42942
+     ],
+     "new": [
+      53812
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T14:17:41",
+   "run_id": "2026-07-01_14-17-20",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44067,
+   "sku": "",
+   "name": "Hertz Uno K 130",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44062,
+      44465,
+      42942
+     ],
+     "new": [
+      53813
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T14:17:47",
+   "run_id": "2026-07-01_14-17-20",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46037,
+   "sku": "",
+   "name": "Hertz Uno X 130",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      42942
+     ],
+     "new": [
+      53814
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

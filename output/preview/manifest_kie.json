@@ -160,5 +160,17 @@
   "name": "Hertz UNO X 165",
   "opt": "images/generated/optimized/k_46044.webp",
   "src": "safeandsoundhq.com"
+ },
+ {
+  "pid": 44067,
+  "name": "Hertz Uno K 130",
+  "opt": "images/generated/optimized/k_44067.webp",
+  "src": "pazarama.com"
+ },
+ {
+  "pid": 46037,
+  "name": "Hertz Uno X 130",
+  "opt": "images/generated/optimized/k_46037.webp",
+  "src": "safeandsoundhq.com"
  }
 ]

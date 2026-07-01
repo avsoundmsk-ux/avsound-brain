@@ -1,0 +1,180 @@
+{
+ "meta": {
+  "datetime": "2026-07-01T15:54:05",
+  "run_id": "2026-07-01_15-53-06",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-01T15:53:12",
+   "run_id": "2026-07-01_15-53-06",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46167,
+   "sku": "",
+   "name": "Focal ASE-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46157,
+      42942,
+      47005
+     ],
+     "new": [
+      53951
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:53:18",
+   "run_id": "2026-07-01_15-53-06",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46164,
+   "sku": "",
+   "name": "Focal ACX-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46156,
+      46158
+     ],
+     "new": [
+      53952
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:53:23",
+   "run_id": "2026-07-01_15-53-06",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46174,
+   "sku": "",
+   "name": "Focal 690AC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      50227,
+      44465,
+      42942
+     ],
+     "new": [
+      53953
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:53:29",
+   "run_id": "2026-07-01_15-53-06",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44449,
+   "sku": "",
+   "name": "Focal RCX-690",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      44448
+     ],
+     "new": [
+      53954
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:53:36",
+   "run_id": "2026-07-01_15-53-06",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46173,
+   "sku": "",
+   "name": "Focal Access 165 AS3 midrange",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46185,
+      46220,
+      42942
+     ],
+     "new": [
+      53955
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-01T15:54:05",
+   "run_id": "2026-07-01_15-53-06",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46184,
+   "sku": "",
+   "name": "Коаксиальная акустика Focal ICU165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46176,
+      46179,
+      46183
+     ],
+     "new": [
+      53956
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

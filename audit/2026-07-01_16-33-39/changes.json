@@ -1,0 +1,111 @@
+[
+ {
+  "datetime": "2026-07-01T16:33:45",
+  "run_id": "2026-07-01_16-33-39",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46233,
+  "sku": "",
+  "name": "Focal FP Dual monitor",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46227
+    ],
+    "new": [
+     53965
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:33:52",
+  "run_id": "2026-07-01_16-33-39",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46256,
+  "sku": "",
+  "name": "Morel tempo ultra 602",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46246,
+     46255,
+     42892
+    ],
+    "new": [
+     53966
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:33:58",
+  "run_id": "2026-07-01_16-33-39",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44486,
+  "sku": "",
+  "name": "Morel Maximo 6 1/2\"",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     42892,
+     46245
+    ],
+    "new": [
+     53967
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:34:04",
+  "run_id": "2026-07-01_16-33-39",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46253,
+  "sku": "",
+  "name": "Morel Maximo Coax 6 1/2",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46245,
+     46251,
+     42892
+    ],
+    "new": [
+     53968
+    ]
+   }
+  }
+ }
+]

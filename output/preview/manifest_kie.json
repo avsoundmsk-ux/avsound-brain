@@ -496,5 +496,41 @@
   "name": "Сабвуфер Focal 27 K",
   "opt": "images/generated/optimized/k_46237.webp",
   "src": "globaltuning.com"
+ },
+ {
+  "pid": 44476,
+  "name": "Focal Sub 10 Slim",
+  "opt": "images/generated/optimized/k_44476.webp",
+  "src": "advancedcaraudiosolutions.com"
+ },
+ {
+  "pid": 46235,
+  "name": "2-канальный усилитель Focal Solid 2 Black",
+  "opt": "images/generated/optimized/k_46235.webp",
+  "src": "auto-hifi.ru"
+ },
+ {
+  "pid": 46233,
+  "name": "Focal FP Dual monitor",
+  "opt": "images/generated/optimized/k_46233.webp",
+  "src": "manualslib.com"
+ },
+ {
+  "pid": 46256,
+  "name": "Morel tempo ultra 602",
+  "opt": "images/generated/optimized/k_46256.webp",
+  "src": "houstoncarstereo.com"
+ },
+ {
+  "pid": 44486,
+  "name": "Morel Maximo 6 1/2\"",
+  "opt": "images/generated/optimized/k_44486.webp",
+  "src": "thewinkel.com"
+ },
+ {
+  "pid": 46253,
+  "name": "Morel Maximo Coax 6 1/2",
+  "opt": "images/generated/optimized/k_46253.webp",
+  "src": "tpdhifi.com"
  }
 ]

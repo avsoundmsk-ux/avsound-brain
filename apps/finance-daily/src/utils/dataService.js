@@ -224,6 +224,28 @@ export function getChartData(limitDays = 60) {
  * Синхронизация из Google Sheets в localStorage.
  * Пока — заглушка. Реализовать когда накопится история.
  */
+// Google Sheets auto-converts date strings — normalize back to YYYY-MM-DD
+function normalizeDayId(raw) {
+  const s = String(raw || '')
+  if (s.match(/^\d{4}-\d{2}-\d{2}T/)) return s.slice(0, 10) // ISO → YYYY-MM-DD
+  if (s.match(/^\d{4}-\d{2}-\d{2}$/)) return s
+  if (s.match(/^\d{2}\.\d{2}\.\d{4}$/)) { const [d,m,y] = s.split('.'); return `${y}-${m}-${d}` }
+  return s
+}
+
+// Normalize дата to DD.MM.YYYY
+function normalizeDата(raw) {
+  const s = String(raw || '')
+  if (s.match(/^\d{4}-\d{2}-\d{2}T/)) {
+    const dt = new Date(s)
+    return `${String(dt.getUTCDate()).padStart(2,'0')}.${String(dt.getUTCMonth()+1).padStart(2,'0')}.${dt.getUTCFullYear()}`
+  }
+  if (s.match(/^\d{4}-\d{2}-\d{2}$/)) {
+    const [y,m,d] = s.split('-'); return `${d}.${m}.${y}`
+  }
+  return s
+}
+
 export async function syncFromSheets() {
   // 1. Получить список дней из Sheets
   const { history } = await sheetsHistory()
@@ -233,18 +255,19 @@ export async function syncFromSheets() {
   const localIds = new Set(localDays.map(d => d.dayId))
 
   // 2. Найти дни которых нет в localStorage
-  const missing = history.filter(h => !localIds.has(h.dayId))
+  const missing = history.filter(h => !localIds.has(normalizeDayId(h.dayId)))
   if (missing.length === 0) return { synced: 0 }
 
   // 3. Загрузить детализацию каждого отсутствующего дня
   const fetched = []
   for (const h of missing) {
     try {
-      const detail = await getDayDetail(h.dayId)
+      const dayId = normalizeDayId(h.dayId)
+      const detail = await getDayDetail(dayId)
       const ds = (detail.daily_summary || [])[0] || {}
       fetched.push({
-        dayId: h.dayId,
-        дата: h.дата,
+        dayId,
+        дата: normalizeDата(h.дата || ds.дата),
         savedAt: new Date().toISOString(),
         summary: {
           реализация:    ds.реализация    || 0,

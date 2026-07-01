@@ -137,10 +137,10 @@ function doGet(e) {
     if (!sheet || sheet.getLastRow() < 2) {
       return json({ history: [] })
     }
-    const data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 2).getValues()
+    const data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 2).getDisplayValues()
     const history = data
       .filter(r => r[0])
-      .map(r => ({ dayId: r[0], дата: r[1] }))
+      .map(r => ({ dayId: String(r[0]), дата: String(r[1]) }))
       .reverse()
     return json({ history })
   }
@@ -152,14 +152,17 @@ function doGet(e) {
     sheets.forEach(name => {
       const sheet = ss().getSheetByName(name)
       if (!sheet) return
-      const all = sheet.getDataRange().getValues()
+      const all = sheet.getDataRange().getDisplayValues()
       const headers = all[0]
       const dayCol = headers.indexOf('day_id')
       if (dayCol === -1) return
-      const rows = all.slice(1).filter(r => r[dayCol] === dayId)
+      const rows = all.slice(1).filter(r => String(r[dayCol]) === String(dayId))
       result[name] = rows.map(r => {
         const obj = {}
-        headers.forEach((h, i) => { obj[h] = r[i] })
+        headers.forEach((h, i) => {
+          // Numbers back to float, rest stay string
+          obj[h] = isNaN(r[i]) || r[i] === '' ? r[i] : parseFloat(String(r[i]).replace(/\s/g, '').replace(',', '.'))
+        })
         return obj
       })
     })

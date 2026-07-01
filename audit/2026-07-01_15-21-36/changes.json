@@ -1,0 +1,134 @@
+[
+ {
+  "datetime": "2026-07-01T15:21:41",
+  "run_id": "2026-07-01_15-21-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46117,
+  "sku": "",
+  "name": "Моноблок Hertz HCP 1DK",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [],
+    "new": [
+     53878
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:21:46",
+  "run_id": "2026-07-01_15-21-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46126,
+  "sku": "",
+  "name": "5-канальный усилитель Hertz ML Power 5",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46124,
+     46125,
+     43568
+    ],
+    "new": [
+     53880
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:21:51",
+  "run_id": "2026-07-01_15-21-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44433,
+  "sku": "",
+  "name": "Активный сабвуфер Hertz DBA 200.3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     42942,
+     44429,
+     44432
+    ],
+    "new": [
+     53882
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:21:56",
+  "run_id": "2026-07-01_15-21-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46139,
+  "sku": "",
+  "name": "Сабвуфер Hertz ES 200.5 8\"",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46128,
+     52103,
+     46138
+    ],
+    "new": [
+     53883
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T15:22:01",
+  "run_id": "2026-07-01_15-21-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46131,
+  "sku": "",
+  "name": "Сабвуфер Hertz ES 250.5 10\"",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [],
+    "new": [
+     53884
+    ]
+   }
+  }
+ }
+]

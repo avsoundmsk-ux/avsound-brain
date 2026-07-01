@@ -316,5 +316,41 @@
   "name": "Hertz dcx 100.3",
   "opt": "images/generated/optimized/k_46113.webp",
   "src": "pacificstereo.com"
+ },
+ {
+  "pid": 46117,
+  "name": "Моноблок Hertz HCP 1DK",
+  "opt": "images/generated/optimized/k_46117.webp",
+  "src": "kotofoto.ru"
+ },
+ {
+  "pid": 46126,
+  "name": "5-канальный усилитель Hertz ML Power 5",
+  "opt": "images/generated/optimized/k_46126.webp",
+  "src": "splaudio.com.ua"
+ },
+ {
+  "pid": 44433,
+  "name": "Активный сабвуфер Hertz DBA 200.3",
+  "opt": "images/generated/optimized/k_44433.webp",
+  "src": "audio-tuning.ru"
+ },
+ {
+  "pid": 46139,
+  "name": "Сабвуфер Hertz ES 200.5 8\"",
+  "opt": "images/generated/optimized/k_46139.webp",
+  "src": "avtomelody.ru"
+ },
+ {
+  "pid": 46131,
+  "name": "Сабвуфер Hertz ES 250.5 10\"",
+  "opt": "images/generated/optimized/k_46131.webp",
+  "src": "fotosklad.ru"
+ },
+ {
+  "pid": 44426,
+  "name": "Сабвуфер Hertz ES 300D.5 12\"",
+  "opt": "images/generated/optimized/k_44426.webp",
+  "src": "globaltuning.com"
  }
 ]

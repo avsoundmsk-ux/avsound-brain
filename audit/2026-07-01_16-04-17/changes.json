@@ -1,0 +1,136 @@
+[
+ {
+  "datetime": "2026-07-01T16:04:22",
+  "run_id": "2026-07-01_16-04-17",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 44439,
+  "sku": "",
+  "name": "Focal Access 165A-GL копия AS",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     44438,
+     44359,
+     42942
+    ],
+    "new": [
+     53957
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:04:27",
+  "run_id": "2026-07-01_16-04-17",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46188,
+  "sku": "",
+  "name": "Focal Access 165-AS3",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46185,
+     42942
+    ],
+    "new": [
+     53958
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:04:32",
+  "run_id": "2026-07-01_16-04-17",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46181,
+  "sku": "",
+  "name": "Focal ISU 690",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [],
+    "new": [
+     53959
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:04:36",
+  "run_id": "2026-07-01_16-04-17",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46194,
+  "sku": "",
+  "name": "Компонентная акустика Focal ISU 165",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46192
+    ],
+    "new": [
+     53960
+    ]
+   }
+  }
+ },
+ {
+  "datetime": "2026-07-01T16:04:42",
+  "run_id": "2026-07-01_16-04-17",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 46202,
+  "sku": "",
+  "name": "Высокочастотная акустика Focal K2 Power tkmx",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     46198,
+     46200,
+     49723,
+     46222
+    ],
+    "new": [
+     53961
+    ]
+   }
+  }
+ }
+]

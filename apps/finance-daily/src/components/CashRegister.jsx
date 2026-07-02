@@ -119,6 +119,25 @@ export default function CashRegister({
 
   return (
     <div className="space-y-4">
+      {/* Период отчёта — аренда считается за все дни периода */}
+      <div className="bg-white rounded-xl border border-gray-200 p-4 flex items-end gap-4 flex-wrap">
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-500 uppercase tracking-wide">Период с</label>
+          <input type="date" value={periodFrom || ''}
+            onChange={e => setAux('periodFrom', e.target.value)}
+            className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-500 uppercase tracking-wide">по</label>
+          <input type="date" value={periodTo || ''}
+            onChange={e => setAux('periodTo', e.target.value)}
+            className="border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-400" />
+        </div>
+        <div className="pb-2 text-sm text-gray-600">
+          <b>{rentDays}</b> {rentDays === 1 ? 'день' : rentDays < 5 ? 'дня' : 'дней'} · аренда <b>{fmt(аренда)}</b>
+        </div>
+      </div>
+
       <div className="grid grid-cols-2 gap-6">
         {/* Левая: суммы в кассе */}
         <div className="bg-white rounded-xl border border-gray-200 p-5">
@@ -152,7 +171,7 @@ export default function CashRegister({
             <Row label="Расходы"        value={расходы}       sign="−" color="text-red-500" />
             <Row label="Зарплата выпл." value={зарплата}      sign="−" color="text-orange-500" />
             <Row label="Закупка склад"  value={закупка}       sign="−" color="text-purple-600" />
-            <Row label="Аренда (авто)"  value={аренда}        sign="−" color="text-gray-400" />
+            <Row label={`Аренда (${rentDays} дн. × 5 000)`} value={аренда} sign="−" color="text-gray-400" />
           </div>
 
           <div className="mt-3 pt-3 border-t-2 border-gray-200 flex justify-between items-center">

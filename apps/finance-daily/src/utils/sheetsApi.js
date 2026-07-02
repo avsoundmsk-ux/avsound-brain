@@ -1,5 +1,5 @@
 // Замени SCRIPT_URL на новый URL после переустановки Apps Script v2
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbya-otMwqIOGIm1clRmuwuNcX9n9NdDBkJLgDLOpY1-BojfSz9kBfYBrExIhekXy802/exec'
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw4_tjMTMuqIoY6rkxjb86Kh-L40CD6tIFkBX3sKoYF17EMJkrixdBO03jUKvDFFvCZ/exec'
 
 async function call(method, data) {
   if (method === 'GET') {

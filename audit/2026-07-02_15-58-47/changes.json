@@ -1,0 +1,28 @@
+[
+ {
+  "datetime": "2026-07-02T15:59:11",
+  "run_id": "2026-07-02_15-58-47",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx",
+  "excel_row": 0,
+  "product_id": 41554,
+  "sku": "PRIDE-USILITEL-PRIDE-QUATTRO-PLU-0065-7E036D",
+  "name": "Усилитель Pride Quattro plus ver.2",
+  "brand": "",
+  "action": "images_replaced",
+  "reason": "KIE sklad9",
+  "fields": {
+   "images": {
+    "old": [
+     53049
+    ],
+    "new": [
+     54552
+    ]
+   }
+  }
+ }
+]

@@ -227,7 +227,11 @@ export function getChartData(limitDays = 60) {
 // Google Sheets auto-converts date strings — normalize back to YYYY-MM-DD
 function normalizeDayId(raw) {
   const s = String(raw || '')
-  if (s.match(/^\d{4}-\d{2}-\d{2}T/)) return s.slice(0, 10) // ISO → YYYY-MM-DD
+  if (s.match(/^\d{4}-\d{2}-\d{2}T/)) {
+    // ISO с таймзоной — берём ЛОКАЛЬНУЮ дату (Sheets отдаёт полночь по Москве как 21:00 UTC накануне)
+    const dt = new Date(s)
+    return `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')}`
+  }
   if (s.match(/^\d{4}-\d{2}-\d{2}$/)) return s
   if (s.match(/^\d{2}\.\d{2}\.\d{4}$/)) { const [d,m,y] = s.split('.'); return `${y}-${m}-${d}` }
   return s
@@ -238,7 +242,7 @@ function normalizeDата(raw) {
   const s = String(raw || '')
   if (s.match(/^\d{4}-\d{2}-\d{2}T/)) {
     const dt = new Date(s)
-    return `${String(dt.getUTCDate()).padStart(2,'0')}.${String(dt.getUTCMonth()+1).padStart(2,'0')}.${dt.getUTCFullYear()}`
+    return `${String(dt.getDate()).padStart(2,'0')}.${String(dt.getMonth()+1).padStart(2,'0')}.${dt.getFullYear()}`
   }
   if (s.match(/^\d{4}-\d{2}-\d{2}$/)) {
     const [y,m,d] = s.split('-'); return `${d}.${m}.${y}`
@@ -254,8 +258,11 @@ export async function syncFromSheets() {
   const localDays = loadDays()
   const localIds = new Set(localDays.map(d => d.dayId))
 
-  // 2. Найти дни которых нет в localStorage
-  const missing = history.filter(h => !localIds.has(normalizeDayId(h.dayId)))
+  // 2. Найти дни которых нет в localStorage (мусорные строки пропускаем)
+  const missing = history.filter(h => {
+    const id = normalizeDayId(h.dayId)
+    return /^\d{4}-\d{2}-\d{2}$/.test(id) && !localIds.has(id)
+  })
   if (missing.length === 0) return { synced: 0 }
 
   // 3. Загрузить детализацию каждого отсутствующего дня

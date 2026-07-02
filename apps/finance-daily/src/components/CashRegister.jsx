@@ -32,6 +32,7 @@ const CASH_FIELDS = [
 export default function CashRegister({
   totals, salesItems = [], workItems = [], expenseItems = [], salaryItems = [], stockItems = [],
   cashDraft = {}, onUpdateCash, onClearCash,
+  rentDays = 1, periodFrom = null, periodTo = null,
 }) {
   const { реализация = 0, работа = 0, расходы = 0, зарплата = 0, закупка = 0, себестоимость = 0 } = totals
 
@@ -53,7 +54,7 @@ export default function CashRegister({
   function setAux(key, val)       { onUpdateCash(key, val) }
 
   const итогоВКассе = CASH_FIELDS.reduce((s, f) => s + (cash[f.key] || 0), 0)
-  const аренда = 5000
+  const аренда = 5000 * rentDays
 
   // Расчётный остаток — движение кассы (включает зарплату и закупку как кассовые выплаты)
   const расчётный = остатокВчера + реализация + работа + приходОзон + приходЯндекс

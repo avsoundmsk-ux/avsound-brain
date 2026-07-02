@@ -187,6 +187,9 @@ export default function App() {
           cashDraft={cashDraft}
           onUpdateCash={updateCash}
           onClearCash={clearCash}
+          rentDays={rentDays}
+          periodFrom={periodFrom}
+          periodTo={periodTo}
         />
       </div>
 

@@ -1,0 +1,113 @@
+{
+ "meta": {
+  "datetime": "2026-07-03T00:57:57",
+  "run_id": "2026-07-03_00-57-36",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-03T00:57:40",
+   "run_id": "2026-07-03_00-57-36",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 47022,
+   "sku": "",
+   "name": "Магнитола BOS-mini Q70 7\" дюймов 6/64",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54733
+     ],
+     "new": [
+      54775
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T00:57:48",
+   "run_id": "2026-07-03_00-57-36",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45140,
+   "sku": "",
+   "name": "Динамики Pioneer TS-A1396S",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      54776
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T00:57:52",
+   "run_id": "2026-07-03_00-57-36",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45046,
+   "sku": "",
+   "name": "DV-Pioneer.ok TS-A1095",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      54777
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T00:57:57",
+   "run_id": "2026-07-03_00-57-36",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 41614,
+   "sku": "",
+   "name": "Кабель PP-BMW 1.7 RAM UP 8DSP",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      54778
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

@@ -14,7 +14,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from core.logger import get_logger  # noqa: E402
@@ -34,16 +34,12 @@ def optimize(src: str | Path, size: int = TARGET, quality: int = WEBP_QUALITY) -
     src = Path(src)
     im = Image.open(src).convert("RGB")  # convert убирает альфу/EXIF-ориентацию
 
-    # вписать в квадрат с сохранением пропорций (без растягивания)
-    im.thumbnail((size, size), Image.LANCZOS)
-    # цвет паддинга = медиана 4 углов исходника (бесшовно, без "квадрата в квадрате")
-    w, h = im.size
-    corners = [im.getpixel((0, 0)), im.getpixel((w - 1, 0)),
-               im.getpixel((0, h - 1)), im.getpixel((w - 1, h - 1))]
-    pad = tuple(sorted(c[i] for c in corners)[1] for i in range(3))  # 2-й по величине = устойчивая медиана
-    canvas = Image.new("RGB", (size, size), pad)
-    off = ((size - im.width) // 2, (size - im.height) // 2)
-    canvas.paste(im, off)
+    # cover-crop кадра в квадрат: весь квадрат = контент KIE → полноценный фон, без "квадрата в квадрате"
+    ow, oh = im.size
+    scale = size / min(ow, oh)
+    cov = im.resize((round(ow * scale), round(oh * scale)), Image.LANCZOS)
+    cx, cy = (cov.width - size) // 2, (cov.height - size) // 2
+    canvas = cov.crop((cx, cy, cx + size, cy + size))
 
     OPTIMIZED_DIR.mkdir(parents=True, exist_ok=True)
     dst = OPTIMIZED_DIR / f"{src.stem}.webp"

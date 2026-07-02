@@ -1,0 +1,2823 @@
+{
+ "meta": {
+  "datetime": "2026-07-02T14:18:15",
+  "run_id": "2026-07-02_14-07-05",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-02T14:07:15",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44233,
+   "sku": "",
+   "name": "Pioneer TS-F650C",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54213
+     ],
+     "new": [
+      54325
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:20",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45063,
+   "sku": "",
+   "name": "Динамики Pioneer TS-F690",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54215
+     ],
+     "new": [
+      54326
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:25",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45077,
+   "sku": "",
+   "name": "Pioneer TS-m800pro",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54216
+     ],
+     "new": [
+      54327
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:30",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45110,
+   "sku": "",
+   "name": "Pioneer TS-FR160C",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54217
+     ],
+     "new": [
+      54328
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:35",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45120,
+   "sku": "",
+   "name": "Pioneer TS-6900PRO Овалы 6x9",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54218
+     ],
+     "new": [
+      54329
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:40",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45175,
+   "sku": "",
+   "name": "Разъем для магнитолы DVD Pioneer оригинал",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54220
+     ],
+     "new": [
+      54330
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:46",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45137,
+   "sku": "",
+   "name": "Динамики Pioneer TS-A6994S 6Х9",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54221
+     ],
+     "new": [
+      54331
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:51",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45152,
+   "sku": "",
+   "name": "Динамики овальные Pioneer TS-A6996S 6Х9",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54222
+     ],
+     "new": [
+      54332
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:07:56",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45924,
+   "sku": "",
+   "name": "Автомагнитола pionerr-GB GRS-882DP5",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54223
+     ],
+     "new": [
+      54333
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:02",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44971,
+   "sku": "",
+   "name": "Автомагнитола pionerr-GB GRS-881DP5",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54224
+     ],
+     "new": [
+      54334
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:07",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44303,
+   "sku": "",
+   "name": "Автомагнитола AVH-P6650",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54225
+     ],
+     "new": [
+      54335
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:28",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45701,
+   "sku": "",
+   "name": "Автомагнитола DV-Pioneer.ok AHD-1902 7'",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54226
+     ],
+     "new": [
+      54336
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:32",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45954,
+   "sku": "",
+   "name": "Магнитола AS.Pioneer AS-1006 10\" 3/32GB",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54227
+     ],
+     "new": [
+      54337
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:37",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44319,
+   "sku": "",
+   "name": "Магнитола AS.Pioneer AS-1007 10\" 3/32GB",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54228
+     ],
+     "new": [
+      54338
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:42",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44316,
+   "sku": "",
+   "name": "PIONEER FH-S725BT ориг",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54229
+     ],
+     "new": [
+      54339
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:47",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45947,
+   "sku": "",
+   "name": "PIONEER MVH-S520BT ориг",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54230
+     ],
+     "new": [
+      54340
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:51",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44315,
+   "sku": "",
+   "name": "PIONEER MVH-S325BT ориг",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54231
+     ],
+     "new": [
+      54341
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:08:56",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45965,
+   "sku": "",
+   "name": "Сабвуфер под сиденье Pioneer TS-WX110A",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54232
+     ],
+     "new": [
+      54342
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:01",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45968,
+   "sku": "",
+   "name": "Активный сабвуфер Pioneer TS-WX70DA",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54233
+     ],
+     "new": [
+      54343
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:06",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44333,
+   "sku": "",
+   "name": "Сабвуфер Pioneer TS-BM250MA",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54234
+     ],
+     "new": [
+      54344
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:11",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45985,
+   "sku": "",
+   "name": "Активный сабвуфер Pioneer v-us80",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54235
+     ],
+     "new": [
+      54345
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:16",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46004,
+   "sku": "",
+   "name": "Усилитель для android магнитолы Pioneer TS-D2",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54236
+     ],
+     "new": [
+      54346
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:21",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 45998,
+   "sku": "",
+   "name": "Усилитель для android магнитолы Planeor PLA-A21",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54237
+     ],
+     "new": [
+      54347
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:25",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44366,
+   "sku": "",
+   "name": "Hertz HSK 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54238
+     ],
+     "new": [
+      54348
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:30",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46027,
+   "sku": "",
+   "name": "Hertz hcx 165 coaxial",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54239
+     ],
+     "new": [
+      54349
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:34",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46033,
+   "sku": "",
+   "name": "Hertz Uno K 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54240
+     ],
+     "new": [
+      54350
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:39",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46044,
+   "sku": "",
+   "name": "Hertz UNO X 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54241
+     ],
+     "new": [
+      54351
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:44",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44067,
+   "sku": "",
+   "name": "Hertz Uno K 130",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54242
+     ],
+     "new": [
+      54352
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:09:49",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46037,
+   "sku": "",
+   "name": "Hertz Uno X 130",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54243
+     ],
+     "new": [
+      54353
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:10:22",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46041,
+   "sku": "",
+   "name": "Hertz DSK 165.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54244
+     ],
+     "new": [
+      54354
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:10:28",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46046,
+   "sku": "",
+   "name": "Hertz DSK 130.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54245
+     ],
+     "new": [
+      54355
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:09",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46040,
+   "sku": "",
+   "name": "Hertz DPK 165.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54246
+     ],
+     "new": [
+      54356
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:14",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44382,
+   "sku": "",
+   "name": "Hertz DPK 165.3 копия",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54247
+     ],
+     "new": [
+      54357
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:18",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46055,
+   "sku": "",
+   "name": "Hertz DCX 130.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54248
+     ],
+     "new": [
+      54358
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:23",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46057,
+   "sku": "",
+   "name": "Hertz DCX 165.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54249
+     ],
+     "new": [
+      54359
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:28",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46062,
+   "sku": "",
+   "name": "Hertz CK 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54250
+     ],
+     "new": [
+      54360
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:33",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46064,
+   "sku": "",
+   "name": "Твитеры Hertz C 26",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54251
+     ],
+     "new": [
+      54361
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:38",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46080,
+   "sku": "",
+   "name": "Среднечастотная акустика Hertz MP 70.3 Pro",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54252
+     ],
+     "new": [
+      54362
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:44",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46082,
+   "sku": "",
+   "name": "Твитера Hertz HT 25 без коробки",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54253
+     ],
+     "new": [
+      54363
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:50",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44408,
+   "sku": "",
+   "name": "Твитера Hertz HT 25",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54254
+     ],
+     "new": [
+      54364
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:11:55",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46092,
+   "sku": "",
+   "name": "Пищалки Hertz ET26.5 без коробки",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54255
+     ],
+     "new": [
+      54365
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:00",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46091,
+   "sku": "",
+   "name": "Hertz Uno X 690",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54256
+     ],
+     "new": [
+      54366
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:05",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46090,
+   "sku": "",
+   "name": "Hertz ESK 165L",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54257
+     ],
+     "new": [
+      54367
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:10",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46094,
+   "sku": "",
+   "name": "Hertz CX 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54258
+     ],
+     "new": [
+      54368
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:15",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44420,
+   "sku": "",
+   "name": "Hertz CX 100",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54259
+     ],
+     "new": [
+      54369
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:20",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46106,
+   "sku": "",
+   "name": "Hertz CPK 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54260
+     ],
+     "new": [
+      54370
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:25",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46098,
+   "sku": "",
+   "name": "Hertz cento c 165 L",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54261
+     ],
+     "new": [
+      54371
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:30",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46102,
+   "sku": "",
+   "name": "2-компонентная акустика Hertz ESK 165.5",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54262
+     ],
+     "new": [
+      54372
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:36",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 43684,
+   "sku": "",
+   "name": "Hertz MPX 165.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54263
+     ],
+     "new": [
+      54373
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:42",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 43838,
+   "sku": "",
+   "name": "Hertz MP 165.3 Pro",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54264
+     ],
+     "new": [
+      54374
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:48",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46119,
+   "sku": "",
+   "name": "Hertz ECX 690",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54265
+     ],
+     "new": [
+      54375
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:52",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44415,
+   "sku": "",
+   "name": "Hertz ECX 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54266
+     ],
+     "new": [
+      54376
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:12:57",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46113,
+   "sku": "",
+   "name": "Hertz dcx 100.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54267
+     ],
+     "new": [
+      54377
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:13:02",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46117,
+   "sku": "",
+   "name": "Моноблок Hertz HCP 1DK",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54268
+     ],
+     "new": [
+      54378
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:13:07",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46126,
+   "sku": "",
+   "name": "5-канальный усилитель Hertz ML Power 5",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54269
+     ],
+     "new": [
+      54379
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:13:12",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44433,
+   "sku": "",
+   "name": "Активный сабвуфер Hertz DBA 200.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54270
+     ],
+     "new": [
+      54380
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:13:17",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46139,
+   "sku": "",
+   "name": "Сабвуфер Hertz ES 200.5 8\"",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54271
+     ],
+     "new": [
+      54381
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:13:43",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46131,
+   "sku": "",
+   "name": "Сабвуфер Hertz ES 250.5 10\"",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54272
+     ],
+     "new": [
+      54382
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:12",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44426,
+   "sku": "",
+   "name": "Сабвуфер Hertz ES 300D.5 12\"",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54273
+     ],
+     "new": [
+      54383
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:16",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46137,
+   "sku": "",
+   "name": "Сабвуфер Hertz MPS 250 S2",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54274
+     ],
+     "new": [
+      54384
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:22",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46149,
+   "sku": "",
+   "name": "Сабвуфер Hertz MP 250 D4.3 Pro",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54275
+     ],
+     "new": [
+      54385
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:27",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44370,
+   "sku": "",
+   "name": "Focal Access-165AS",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54276
+     ],
+     "new": [
+      54386
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:32",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46152,
+   "sku": "",
+   "name": "Focal Access 165AC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54277
+     ],
+     "new": [
+      54387
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:36",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46171,
+   "sku": "",
+   "name": "Focal Auditor RSE-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54278
+     ],
+     "new": [
+      54388
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:41",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44444,
+   "sku": "",
+   "name": "Focal Auditor RCX-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54279
+     ],
+     "new": [
+      54389
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:46",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46167,
+   "sku": "",
+   "name": "Focal ASE-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54280
+     ],
+     "new": [
+      54390
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:50",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46164,
+   "sku": "",
+   "name": "Focal ACX-165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54281
+     ],
+     "new": [
+      54391
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:14:56",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46174,
+   "sku": "",
+   "name": "Focal 690AC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54282
+     ],
+     "new": [
+      54392
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:00",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44449,
+   "sku": "",
+   "name": "Focal RCX-690",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54283
+     ],
+     "new": [
+      54393
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:06",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46173,
+   "sku": "",
+   "name": "Focal Access 165 AS3 midrange",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54284
+     ],
+     "new": [
+      54394
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:11",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46184,
+   "sku": "",
+   "name": "Коаксиальная акустика Focal ICU165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54285
+     ],
+     "new": [
+      54395
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:16",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44439,
+   "sku": "",
+   "name": "Focal Access 165A-GL копия AS",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54286
+     ],
+     "new": [
+      54396
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:20",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46188,
+   "sku": "",
+   "name": "Focal Access 165-AS3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54287
+     ],
+     "new": [
+      54397
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:25",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46181,
+   "sku": "",
+   "name": "Focal ISU 690",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54288
+     ],
+     "new": [
+      54398
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:30",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46194,
+   "sku": "",
+   "name": "Компонентная акустика Focal ISU 165",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54289
+     ],
+     "new": [
+      54399
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:34",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46205,
+   "sku": "",
+   "name": "Focal ISU 165 миды",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54290
+     ],
+     "new": [
+      54400
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:39",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46202,
+   "sku": "",
+   "name": "Высокочастотная акустика Focal K2 Power tkmx",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54291
+     ],
+     "new": [
+      54401
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:45",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44466,
+   "sku": "",
+   "name": "Focal PS-165X2",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54292
+     ],
+     "new": [
+      54402
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:49",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46216,
+   "sku": "",
+   "name": "Focal PS 165 V1",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54293
+     ],
+     "new": [
+      54403
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:54",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46217,
+   "sku": "",
+   "name": "Focal PS 165 V1 оригинал",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54294
+     ],
+     "new": [
+      54404
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:15:59",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46233,
+   "sku": "",
+   "name": "Focal FP Dual monitor",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54295
+     ],
+     "new": [
+      54405
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:09",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46256,
+   "sku": "",
+   "name": "Morel tempo ultra 602",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54296
+     ],
+     "new": [
+      54406
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:14",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44486,
+   "sku": "",
+   "name": "Morel Maximo 6 1/2\"",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54297
+     ],
+     "new": [
+      54407
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:19",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46253,
+   "sku": "",
+   "name": "Morel Maximo Coax 6 1/2",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54298
+     ],
+     "new": [
+      54408
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:23",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46277,
+   "sku": "",
+   "name": "Среднечастотная акустика Morel CDM880 Китай 1x1",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54299
+     ],
+     "new": [
+      54409
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:28",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46306,
+   "sku": "",
+   "name": "Morel Dotech Ovation 5W",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54300
+     ],
+     "new": [
+      54411
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:33",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46299,
+   "sku": "",
+   "name": "Blam 130 RFC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54301
+     ],
+     "new": [
+      54412
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:38",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44532,
+   "sku": "",
+   "name": "Blam 165 ES",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54302
+     ],
+     "new": [
+      54414
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:43",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44511,
+   "sku": "",
+   "name": "Blam 165 EC",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54303
+     ],
+     "new": [
+      54415
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:48",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44450,
+   "sku": "",
+   "name": "Blam 165 R2X",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54304
+     ],
+     "new": [
+      54417
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:52",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46323,
+   "sku": "",
+   "name": "BLAM 165 LSQ",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54305
+     ],
+     "new": [
+      54419
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:16:57",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44536,
+   "sku": "",
+   "name": "Blam 200 RS",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54306
+     ],
+     "new": [
+      54420
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:02",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46336,
+   "sku": "",
+   "name": "BLAM LW165S",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54307
+     ],
+     "new": [
+      54421
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:07",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46344,
+   "sku": "",
+   "name": "BLAM SR165S",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54308
+     ],
+     "new": [
+      54422
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:12",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46341,
+   "sku": "",
+   "name": "BLAM 165RS LE",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54309
+     ],
+     "new": [
+      54424
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:16",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46340,
+   "sku": "",
+   "name": "BLAM W165R2 LE",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54310
+     ],
+     "new": [
+      54425
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:21",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46356,
+   "sku": "",
+   "name": "BLAM LW165A",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54311
+     ],
+     "new": [
+      54427
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:25",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44554,
+   "sku": "",
+   "name": "Blam R80",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54312
+     ],
+     "new": [
+      54429
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:30",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46354,
+   "sku": "",
+   "name": "BLAM LFR52",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54313
+     ],
+     "new": [
+      54430
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:35",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46358,
+   "sku": "",
+   "name": "BLAM T20HR",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54314
+     ],
+     "new": [
+      54432
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:40",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46350,
+   "sku": "",
+   "name": "BLAM LT25",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54315
+     ],
+     "new": [
+      54433
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:46",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46189,
+   "sku": "",
+   "name": "Focal ES Power PC2.5 динамик первый + второй",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54318
+     ],
+     "new": [
+      54435
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:50",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46291,
+   "sku": "",
+   "name": "Morel Tempo Ultra 502 Integra MkII",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54319
+     ],
+     "new": [
+      54436
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:17:55",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44503,
+   "sku": "",
+   "name": "Morel Maximo Ultra Coax 502 MkII",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54320
+     ],
+     "new": [
+      54437
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:18:00",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46293,
+   "sku": "",
+   "name": "Morel maximo ultra 602 coax mkii",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54321
+     ],
+     "new": [
+      54439
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:18:05",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46287,
+   "sku": "",
+   "name": "Morel maximo ultra 603 mkii",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54322
+     ],
+     "new": [
+      54440
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:18:10",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46296,
+   "sku": "",
+   "name": "Morel Tempo Ultra 602 Integra MKII",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54323
+     ],
+     "new": [
+      54442
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T14:18:15",
+   "run_id": "2026-07-02_14-07-05",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44504,
+   "sku": "",
+   "name": "Morel maximo ultra 602 mkii",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      54324
+     ],
+     "new": [
+      54444
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

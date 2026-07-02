@@ -1,0 +1,15 @@
+{
+ "datetime": "2026-07-02T14:18:15",
+ "run_id": "2026-07-02_14-07-05",
+ "program_version": "0.1.0",
+ "docs_version": "spec-2026-06",
+ "user": "AI Agent",
+ "mode": "live",
+ "excel_file": "input/sklad9.xlsx",
+ "summary": {
+  "kie": 108
+ },
+ "changes": 108,
+ "images": 0,
+ "errors": 0
+}

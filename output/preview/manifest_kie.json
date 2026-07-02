@@ -670,5 +670,59 @@
   "name": "BLAM LT25",
   "opt": "images/generated/optimized/k_46350.webp",
   "src": "audiotehnica.com.ua"
+ },
+ {
+  "pid": 45070,
+  "name": "Автомобильные динамики Pioneer TS-A1696S 16см",
+  "opt": "images/generated/optimized/k_45070.webp",
+  "src": "avtoray.by"
+ },
+ {
+  "pid": 46189,
+  "name": "Focal ES Power PC2.5 динамик первый + второй",
+  "opt": "images/generated/optimized/k_46189.webp",
+  "src": "focal-shop.ru"
+ },
+ {
+  "pid": 46291,
+  "name": "Morel Tempo Ultra 502 Integra MkII",
+  "opt": "images/generated/optimized/k_46291.webp",
+  "src": "gigautosound.com"
+ },
+ {
+  "pid": 44503,
+  "name": "Morel Maximo Ultra Coax 502 MkII",
+  "opt": "images/generated/optimized/k_44503.webp",
+  "src": "tpdhifi.com"
+ },
+ {
+  "pid": 46295,
+  "name": "Morel Maximo 6 MKII",
+  "opt": "images/generated/optimized/k_46295.webp",
+  "src": "morelcarhifi.nl"
+ },
+ {
+  "pid": 46293,
+  "name": "Morel maximo ultra 602 coax mkii",
+  "opt": "images/generated/optimized/k_46293.webp",
+  "src": "tpdhifi.com"
+ },
+ {
+  "pid": 46287,
+  "name": "Morel maximo ultra 603 mkii",
+  "opt": "images/generated/optimized/k_46287.webp",
+  "src": "thewinkel.com"
+ },
+ {
+  "pid": 46296,
+  "name": "Morel Tempo Ultra 602 Integra MKII",
+  "opt": "images/generated/optimized/k_46296.webp",
+  "src": "manua.ls"
+ },
+ {
+  "pid": 44504,
+  "name": "Morel maximo ultra 602 mkii",
+  "opt": "images/generated/optimized/k_44504.webp",
+  "src": "thewinkel.com"
  }
 ]

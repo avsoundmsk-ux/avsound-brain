@@ -1,0 +1,202 @@
+{
+ "meta": {
+  "datetime": "2026-07-02T13:18:06",
+  "run_id": "2026-07-02_13-16-38",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-02T13:16:46",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46189,
+   "sku": "",
+   "name": "Focal ES Power PC2.5 динамик первый + второй",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      54318
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T13:16:50",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46291,
+   "sku": "",
+   "name": "Morel Tempo Ultra 502 Integra MkII",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46289,
+      46290,
+      43995,
+      44478
+     ],
+     "new": [
+      54319
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T13:16:55",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44503,
+   "sku": "",
+   "name": "Morel Maximo Ultra Coax 502 MkII",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      43995,
+      44501,
+      44478
+     ],
+     "new": [
+      54320
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T13:17:28",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46293,
+   "sku": "",
+   "name": "Morel maximo ultra 602 coax mkii",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46292
+     ],
+     "new": [
+      54321
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T13:17:32",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46287,
+   "sku": "",
+   "name": "Morel maximo ultra 603 mkii",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46284,
+      46285,
+      46286,
+      44478
+     ],
+     "new": [
+      54322
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T13:17:37",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46296,
+   "sku": "",
+   "name": "Morel Tempo Ultra 602 Integra MKII",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      42892,
+      46246
+     ],
+     "new": [
+      54323
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-02T13:18:06",
+   "run_id": "2026-07-02_13-16-38",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 44504,
+   "sku": "",
+   "name": "Morel maximo ultra 602 mkii",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [],
+     "new": [
+      54324
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

@@ -27,7 +27,7 @@ function SectionTitle({ children }) {
   )
 }
 
-export default function SummaryCards({ salesItems, workItems, expenseItems, salaryItems, stockItems }) {
+export default function SummaryCards({ salesItems, workItems, expenseItems, salaryItems, stockItems, rentDays = 1 }) {
   const реализация    = salesItems.reduce((s, i) => s + i.реализация, 0)
   const себестоимость = salesItems.reduce((s, i) => s + i.закупка, 0)
   const маржа         = реализация - себестоимость
@@ -37,7 +37,7 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
   const выплатаЗарплаты = salaryItems.reduce((s, i) => s + i.сумма, 0)
   const закупкаСклада   = stockItems.reduce((s, i) => s + i.сумма, 0)
   const pct           = реализация ? Math.round((маржа / реализация) * 100) : 0
-  const аренда        = 5000
+  const аренда        = 5000 * rentDays
 
   // Прибыль дня = маржа + работа - расходы - аренда
   // Зарплатные выплаты и закупка — только кассовое движение

@@ -73,6 +73,19 @@ export default function App() {
     закупка:       g('закупка').reduce((s, i) => s + i.сумма, 0),
   }
 
+  // Период отчёта: авто из дат в файлах, можно переопределить в кассе
+  const allDates = Object.values(data).flat()
+    .map(i => i.date)
+    .filter(d => /^\d{2}\.\d{2}\.\d{4}$/.test(d || ''))
+    .map(d => { const [dd, mm, yy] = d.split('.'); return `${yy}-${mm}-${dd}` })
+    .sort()
+  const periodFrom = cashDraft.periodFrom || allDates[0] || null
+  const periodTo   = cashDraft.periodTo   || allDates[allDates.length - 1] || null
+  let rentDays = 1
+  if (periodFrom && periodTo) {
+    rentDays = Math.max(1, Math.round((new Date(periodTo) - new Date(periodFrom)) / 86400000) + 1)
+  }
+
   const [syncing, setSyncing] = useState(false)
   const [syncMsg, setSyncMsg] = useState(null)
 
@@ -151,6 +164,7 @@ export default function App() {
             expenseItems={g('расходы')}
             salaryItems={g('зарплата')}
             stockItems={g('закупка')}
+            rentDays={rentDays}
           />
           {data.работа   && <WorkSection items={g('работа')} />}
           {data.расходы  && <ExpensesSection items={g('расходы')} title="Расходы" color="red" />}

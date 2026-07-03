@@ -832,5 +832,59 @@
   "name": "Кабель PP-BMW 1.7 RAM UP 8DSP",
   "opt": "images/generated/optimized/k_41614.webp",
   "src": "carhifi-store-buende.de"
+ },
+ {
+  "pid": 46136,
+  "name": "Пульт управления для процессором Hertz DRC HE",
+  "opt": "images/generated/optimized/k_46136.webp",
+  "src": "ru.hertz-audio.com"
+ },
+ {
+  "pid": 46123,
+  "name": "Процессор Hertz H8 DSP",
+  "opt": "images/generated/optimized/k_46123.webp",
+  "src": "pacificstereo.com"
+ },
+ {
+  "pid": 46107,
+  "name": "Твитеры Hertz MP 25.3 Pro",
+  "opt": "images/generated/optimized/k_46107.webp",
+  "src": "safeandsoundhq.com"
+ },
+ {
+  "pid": 46085,
+  "name": "Пищалки Hertz ET20 без коробки",
+  "opt": "images/generated/optimized/k_46085.webp",
+  "src": "diymobileaudio.com"
+ },
+ {
+  "pid": 46083,
+  "name": "Твитера Hertz HT 25 без коробки с черной полосой",
+  "opt": "images/generated/optimized/k_46083.webp",
+  "src": "vodnik.ru"
+ },
+ {
+  "pid": 46078,
+  "name": "Среднечастотная акустика Hertz DPF 60.3",
+  "opt": "images/generated/optimized/k_46078.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 46074,
+  "name": "Твитера Hertz HZ-3.0",
+  "opt": "images/generated/optimized/k_46074.webp",
+  "src": "en.wikipedia.org"
+ },
+ {
+  "pid": 46060,
+  "name": "Компонентная акустика Hertz CK 165 L",
+  "opt": "images/generated/optimized/k_46060.webp",
+  "src": "hertz-audio.com"
+ },
+ {
+  "pid": 44396,
+  "name": "Твитера Hertz HT 25 без коробки с серой полосой",
+  "opt": "images/generated/optimized/k_44396.webp",
+  "src": "ru.hertz-audio.com"
  }
 ]

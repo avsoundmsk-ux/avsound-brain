@@ -1,0 +1,20 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "audio": null,
+  "crossfade": 15,
+  "items": [
+    { "src": "w8/01_ext.mp4",    "type": "video", "durationInFrames": 90 },
+    { "src": "w8/02_head.mp4",   "type": "video", "durationInFrames": 75 },
+    { "src": "w8/03_wheel.mp4",  "type": "video", "durationInFrames": 78 },
+    { "src": "w8/04_trunk.mp4",  "type": "video", "durationInFrames": 90 },
+    { "src": "w8/05_helix.mp4",  "type": "video", "durationInFrames": 78 },
+    { "src": "w8/06_deaden.mp4", "type": "video", "durationInFrames": 78 },
+    { "src": "w8/07_wire.mp4",   "type": "video", "durationInFrames": 78 },
+    { "src": "w8/08_tune.mp4",   "type": "video", "durationInFrames": 84 },
+    { "src": "w8/09_tail.mp4",   "type": "video", "durationInFrames": 75 },
+    { "src": "w8/10_studio.mp4", "type": "video", "durationInFrames": 96 }
+  ],
+  "captions": []
+}

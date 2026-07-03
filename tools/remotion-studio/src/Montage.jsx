@@ -15,14 +15,22 @@ function Clip({ item, fade = FADE, isFirst = false, isLast = false }) {
   const frame = useCurrentFrame();
   const { durationInFrames } = item;
   // вход/выход по fade; первый клип не проявляем из чёрного, последний не гасим
-  const inFade = isFirst ? 0 : fade;
-  const outFade = isLast ? 0 : fade;
-  const opacity = interpolate(
-    frame,
-    [0, inFade, durationInFrames - outFade, durationInFrames],
-    [isFirst ? 1 : 0, 1, 1, isLast ? 1 : 0],
-    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
-  );
+  // строим строго возрастающие точки; нулевой фейд на краях просто не добавляем
+  const times = [];
+  const vals = [];
+  if (isFirst) {
+    times.push(0); vals.push(1);
+  } else {
+    times.push(0, fade); vals.push(0, 1);
+  }
+  if (isLast) {
+    times.push(durationInFrames); vals.push(1);
+  } else {
+    times.push(durationInFrames - fade, durationInFrames); vals.push(1, 0);
+  }
+  const opacity = interpolate(frame, times, vals, {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
   const src = resolve(item.src);
   const fit = item.fit || 'cover';
   // kenburns только если явно включён (item.kenburns), по умолчанию — чистая картинка

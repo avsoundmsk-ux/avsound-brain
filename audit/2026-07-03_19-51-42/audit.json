@@ -1,0 +1,157 @@
+{
+ "meta": {
+  "datetime": "2026-07-03T19:52:07",
+  "run_id": "2026-07-03_19-51-42",
+  "program_version": "0.1.0",
+  "docs_version": "spec-2026-06",
+  "user": "AI Agent",
+  "mode": "live",
+  "excel_file": "input/sklad9.xlsx"
+ },
+ "changes": [
+  {
+   "datetime": "2026-07-03T19:51:47",
+   "run_id": "2026-07-03_19-51-42",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46136,
+   "sku": "",
+   "name": "Пульт управления для процессором Hertz DRC HE",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46132,
+      43995,
+      44465,
+      44478,
+      44055
+     ],
+     "new": [
+      54884
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T19:51:52",
+   "run_id": "2026-07-03_19-51-42",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46123,
+   "sku": "",
+   "name": "Процессор Hertz H8 DSP",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46120,
+      46122
+     ],
+     "new": [
+      54885
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T19:51:57",
+   "run_id": "2026-07-03_19-51-42",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46107,
+   "sku": "",
+   "name": "Твитеры Hertz MP 25.3 Pro",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46097,
+      46103
+     ],
+     "new": [
+      54886
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T19:52:02",
+   "run_id": "2026-07-03_19-51-42",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46078,
+   "sku": "",
+   "name": "Среднечастотная акустика Hertz DPF 60.3",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46066,
+      46070,
+      46076,
+      44380,
+      43837
+     ],
+     "new": [
+      54887
+     ]
+    }
+   }
+  },
+  {
+   "datetime": "2026-07-03T19:52:07",
+   "run_id": "2026-07-03_19-51-42",
+   "program_version": "0.1.0",
+   "docs_version": "spec-2026-06",
+   "user": "AI Agent",
+   "mode": "live",
+   "excel_file": "input/sklad9.xlsx",
+   "excel_row": 0,
+   "product_id": 46060,
+   "sku": "",
+   "name": "Компонентная акустика Hertz CK 165 L",
+   "brand": "",
+   "action": "images_replaced",
+   "reason": "KIE sklad9",
+   "fields": {
+    "images": {
+     "old": [
+      46050,
+      46058,
+      46059
+     ],
+     "new": [
+      54888
+     ]
+    }
+   }
+  }
+ ],
+ "images": [],
+ "errors": []
+}

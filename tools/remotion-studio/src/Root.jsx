@@ -3,7 +3,10 @@ import { Montage } from './Montage.jsx';
 
 // Длительность/размер берём из props (calculateMetadata) — динамически под клипы.
 const calc = ({ props }) => {
-  const total = (props.items || []).reduce((s, i) => s + (i.durationInFrames || 0), 0);
+  const items = props.items || [];
+  const sum = items.reduce((s, i) => s + (i.durationInFrames || 0), 0);
+  const cf = Math.max(0, props.crossfade || 0);
+  const total = sum - cf * Math.max(items.length - 1, 0); // вычитаем наложения
   return {
     durationInFrames: Math.max(total, 60),
     fps: props.fps || 30,

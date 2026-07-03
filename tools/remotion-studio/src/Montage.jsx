@@ -11,25 +11,30 @@ function resolve(src) {
   return /^https?:\/\//.test(src) ? src : staticFile(src);
 }
 
-function Clip({ item }) {
+function Clip({ item, fade = FADE, isFirst = false, isLast = false }) {
   const frame = useCurrentFrame();
   const { durationInFrames } = item;
+  // вход/выход по fade; первый клип не проявляем из чёрного, последний не гасим
+  const inFade = isFirst ? 0 : fade;
+  const outFade = isLast ? 0 : fade;
   const opacity = interpolate(
     frame,
-    [0, FADE, durationInFrames - FADE, durationInFrames],
-    [0, 1, 1, 0],
+    [0, inFade, durationInFrames - outFade, durationInFrames],
+    [isFirst ? 1 : 0, 1, 1, isLast ? 1 : 0],
     { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
   );
   const src = resolve(item.src);
   const fit = item.fit || 'cover';
-  // лёгкий kenburns-зум для статики/динамики
-  const scale = interpolate(frame, [0, durationInFrames], [1.06, 1.12], { extrapolateRight: 'clamp' });
+  // kenburns только если явно включён (item.kenburns), по умолчанию — чистая картинка
+  const scale = item.kenburns
+    ? interpolate(frame, [0, durationInFrames], [1.0, 1.05], { extrapolateRight: 'clamp' })
+    : 1;
   return (
     <AbsoluteFill style={{ opacity }}>
       {item.type === 'image' ? (
         <AbsoluteFill>
           {/* блюр-фон, чтобы не было чёрных полей */}
-          <Img src={src} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'blur(28px) brightness(.5)', transform: `scale(${scale})` }} />
+          <Img src={src} style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'blur(28px) brightness(.5)', transform: 'scale(1.08)' }} />
           <Img src={src} style={{ width: '100%', height: '100%', objectFit: fit === 'cover' ? 'cover' : 'contain' }} />
         </AbsoluteFill>
       ) : (
@@ -73,17 +78,19 @@ function Caption({ text, accent = false }) {
  *  audio:    путь/URL музыки (накладывается на весь ролик)
  *  captions: [{ text, fromFrame, toFrame }]
  */
-export const Montage = ({ items = [], audio = null, captions = [] }) => {
+export const Montage = ({ items = [], audio = null, captions = [], crossfade = 0 }) => {
+  const cf = Math.max(0, crossfade);
   let start = 0;
   return (
     <AbsoluteFill style={{ backgroundColor: 'black' }}>
       {audio ? <Audio src={resolve(audio)} /> : null}
       {items.map((it, i) => {
         const from = start;
-        start += it.durationInFrames;
+        // следующий клип стартует с наложением cf → настоящий кросс-фейд
+        start += it.durationInFrames - (i < items.length - 1 ? cf : 0);
         return (
           <Sequence key={i} from={from} durationInFrames={it.durationInFrames}>
-            <Clip item={it} />
+            <Clip item={it} fade={cf || FADE} isFirst={i === 0} isLast={i === items.length - 1} />
           </Sequence>
         );
       })}

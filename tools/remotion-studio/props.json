@@ -2,15 +2,21 @@
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "audio": "vo.mp3",
+  "audio": null,
   "items": [
-    { "src": "clip1.mp4", "type": "video", "durationInFrames": 452, "muted": true },
-    { "src": "clip2.mp4", "type": "video", "durationInFrames": 671, "muted": true }
+    { "src": "porsche/01_hero.mp4",    "type": "video", "durationInFrames": 102 },
+    { "src": "porsche/02_install.mp4", "type": "video", "durationInFrames": 90 },
+    { "src": "porsche/03_wiring.mp4",  "type": "video", "durationInFrames": 72 },
+    { "src": "porsche/04_amp.mp4",     "type": "video", "durationInFrames": 84 },
+    { "src": "porsche/05_pioneer.mp4", "type": "video", "durationInFrames": 90 },
+    { "src": "porsche/06_store.jpg",   "type": "image", "durationInFrames": 90, "fit": "contain" }
   ],
   "captions": [
-    { "text": "AVSound", "fromFrame": 24, "toFrame": 150 },
-    { "text": "звук под твою машину", "fromFrame": 160, "toFrame": 360 },
-    { "text": "подбор · монтаж · настройка", "fromFrame": 380, "toFrame": 620 },
-    { "text": "Москва · запись на консультацию", "fromFrame": 980, "toFrame": 1123 }
+    { "text": "Porsche Cayman",       "fromFrame": 12,  "toFrame": 96,  "accent": true },
+    { "text": "Меняем штатную голову", "fromFrame": 114, "toFrame": 180 },
+    { "text": "Проводка как надо",     "fromFrame": 204, "toFrame": 252 },
+    { "text": "Усилитель + процессор", "fromFrame": 276, "toFrame": 336 },
+    { "text": "Pioneer в подкапотке",  "fromFrame": 360, "toFrame": 426 },
+    { "text": "av-sound.ru",           "fromFrame": 450, "toFrame": 516, "accent": true }
   ]
 }

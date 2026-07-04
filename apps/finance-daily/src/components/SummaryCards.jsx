@@ -45,9 +45,9 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
   const автоАренда    = 5000 * rentDays
   const аренда        = помещенияРасх + автоАренда
 
-  // Прибыль дня = маржа + работа - операционные расходы
-  // Аренда/гаражи, вычет, зарплата, закупка, возвраты — только кассовое движение
-  const прибыльДня = маржа + работа - расходыОпер
+  // Прибыль дня = маржа + работа - операционные расходы - аренда/гаражи
+  // Вычет, зарплата, закупка, возвраты — только кассовое движение
+  const прибыльДня = маржа + работа - расходыОпер - аренда
 
   return (
     <div className="mb-6 space-y-4">
@@ -63,7 +63,7 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
             sub={pct + '% от реализации'} />
           <Card label="Работа студии"   value={fmt(работа)} color="text-blue-600" />
           <Card label="Расходы (опер.)" value={fmt(расходыОпер)} color="text-red-500" />
-          <Card label="Аренда / гаражи" value={fmt(аренда)} color="text-gray-400" sub={`5000×${rentDays}дн + гаражи · касса`} />
+          <Card label="Аренда / гаражи" value={fmt(аренда)} color="text-gray-400" sub={`5000×${rentDays}дн + гаражи · из зп`} />
         </div>
         <div className="grid grid-cols-6 gap-3 mt-2">
           <div className="col-span-4" />
@@ -73,7 +73,7 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
           <Card
             label="Зарплата / прибыль дня"
             value={fmt(прибыльДня)}
-            sub="маржа + работа − расходы(опер.)"
+            sub="маржа + работа − расходы(опер.) − аренда"
             color={прибыльДня >= 0 ? 'text-green-400' : 'text-red-400'}
             dark
           />

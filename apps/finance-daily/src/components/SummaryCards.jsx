@@ -38,10 +38,12 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
   const закупкаСклада   = stockItems.reduce((s, i) => s + i.сумма, 0)
   const возвраты        = returnItems.reduce((s, i) => s + i.сумма, 0)
   const pct           = реализация ? Math.round((маржа / реализация) * 100) : 0
-  // Аренда / гаражи из файла Расходы — только касса, не режут прибыль дня
+  // Аренда / гаражи — только касса, не режут прибыль дня
   const isПомещение   = c => /аренд|гараж/i.test(c || '')
-  const аренда        = expenseItems.filter(i => isПомещение(i.comment)).reduce((s, i) => s + i.сумма, 0)
-  const расходыОпер   = расходы - аренда
+  const помещенияРасх = expenseItems.filter(i => isПомещение(i.comment)).reduce((s, i) => s + i.сумма, 0)
+  const расходыОпер   = расходы - помещенияРасх
+  const автоАренда    = 5000 * rentDays
+  const аренда        = помещенияРасх + автоАренда
 
   // Прибыль дня = маржа + работа - операционные расходы
   // Аренда/гаражи, вычет, зарплата, закупка, возвраты — только кассовое движение
@@ -61,7 +63,7 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
             sub={pct + '% от реализации'} />
           <Card label="Работа студии"   value={fmt(работа)} color="text-blue-600" />
           <Card label="Расходы (опер.)" value={fmt(расходыОпер)} color="text-red-500" />
-          <Card label="Аренда / гаражи" value={fmt(аренда)} color="text-gray-400" sub="только касса" />
+          <Card label="Аренда / гаражи" value={fmt(аренда)} color="text-gray-400" sub={`5000×${rentDays}дн + гаражи · касса`} />
         </div>
         <div className="grid grid-cols-6 gap-3 mt-2">
           <div className="col-span-4" />

@@ -17,6 +17,7 @@ const SHEET = {
   EXPENSES:  'expenses',
   SALARY:    'salary',
   PURCHASES: 'purchases',
+  RETURNS:   'returns',
   CASHBOX:   'cashbox',
   MONTHLY:   'monthly_report',
   SETTINGS:  'settings',
@@ -25,7 +26,7 @@ const SHEET = {
 const HEADERS = {
   daily_summary: [
     'day_id','дата','реализация','себестоимость','маржа','%маржи',
-    'работа','расходы','зарплата','закупка','аренда','прибыль_дня',
+    'работа','расходы','зарплата','закупка','возвраты','вычет','аренда','прибыль_дня',
     'остаток_вчера','приход_озон','приход_яндекс','расчётный','итого_касса','расхождение',
   ],
   sales: [
@@ -36,6 +37,7 @@ const HEADERS = {
   expenses:     ['record_id','day_id','дата','описание','сумма'],
   salary:       ['record_id','day_id','дата','описание','сумма'],
   purchases:    ['record_id','day_id','дата','описание','сумма'],
+  returns:      ['record_id','day_id','дата','описание','сумма'],
   cashbox: [
     'record_id','day_id','дата',
     'наличные','тБизнес','тинькофф','тБизнес2','тЯндекс','другое',
@@ -148,7 +150,7 @@ function doGet(e) {
   if (action === 'day') {
     const dayId = e.parameter.dayId
     const result = {}
-    const sheets = [SHEET.DAILY, SHEET.SALES, SHEET.WORK, SHEET.EXPENSES, SHEET.SALARY, SHEET.PURCHASES, SHEET.CASHBOX]
+    const sheets = [SHEET.DAILY, SHEET.SALES, SHEET.WORK, SHEET.EXPENSES, SHEET.SALARY, SHEET.PURCHASES, SHEET.RETURNS, SHEET.CASHBOX]
     sheets.forEach(name => {
       const sheet = ss().getSheetByName(name)
       if (!sheet) return
@@ -176,7 +178,7 @@ function doGet(e) {
 
 function doPost(e) {
   const payload = JSON.parse(e.postData.contents)
-  const { дата, forceOverwrite, summary, продажи, работа, расходы, зарплата, закупка, касса } = payload
+  const { дата, forceOverwrite, summary, продажи, работа, расходы, зарплата, закупка, возвраты, касса } = payload
 
   const dayId = toDayId(дата)
   const dailySheet = getOrCreate(SHEET.DAILY)
@@ -189,7 +191,7 @@ function doPost(e) {
 
   // Если перезапись — удалить старые данные по day_id из всех листов
   if (forceOverwrite) {
-    [SHEET.DAILY, SHEET.SALES, SHEET.WORK, SHEET.EXPENSES, SHEET.SALARY, SHEET.PURCHASES, SHEET.CASHBOX]
+    [SHEET.DAILY, SHEET.SALES, SHEET.WORK, SHEET.EXPENSES, SHEET.SALARY, SHEET.PURCHASES, SHEET.RETURNS, SHEET.CASHBOX]
       .forEach(name => {
         const sh = getOrCreate(name)
         // daily_summary: day_id в col 1
@@ -209,7 +211,7 @@ function doPost(e) {
   dailySheet.appendRow([
     dayId, дата,
     n(s.реализация), n(s.себестоимость), n(s.маржа), n(s.pct),
-    n(s.работа), n(s.расходы), n(s.зарплата), n(s.закупка), n(s.аренда) || 5000, n(s.прибыльДня),
+    n(s.работа), n(s.расходы), n(s.зарплата), n(s.закупка), n(s.возвраты), n(s.вычет), n(s.аренда) || 5000, n(s.прибыльДня),
     n(k.остатокВчера), n(k.приходОзон), n(k.приходЯндекс),
     n(k.расчётный), n(k.итогоВКассе), n(k.расхождение),
   ])
@@ -247,6 +249,12 @@ function doPost(e) {
   const purSheet = getOrCreate(SHEET.PURCHASES)
   ;(закупка || []).forEach((item, i) => {
     purSheet.appendRow([`${dayId}_pu_${i + 1}`, dayId, дата, item.comment || '', n(item.сумма)])
+  })
+
+  // --- returns ---
+  const retSheet = getOrCreate(SHEET.RETURNS)
+  ;(возвраты || []).forEach((item, i) => {
+    retSheet.appendRow([`${dayId}_rt_${i + 1}`, dayId, дата, item.comment || '', n(item.сумма)])
   })
 
   // --- cashbox (1 строка) ---

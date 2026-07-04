@@ -19,6 +19,7 @@ const SLOTS = [
   { key: 'расходы',  label: 'Расходы.xlsx' },
   { key: 'зарплата', label: 'Зарплата.xlsx' },
   { key: 'закупка',  label: 'Закупка.xlsx' },
+  { key: 'возвраты', label: 'Возвраты.xlsx' },
 ]
 
 const DRAFT_KEY = 'avsound_cash_draft'

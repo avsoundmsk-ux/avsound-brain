@@ -35,6 +35,7 @@ export async function parseFile(file) {
   if (title.includes('установка'))      return { type: 'работа',   items: simpleItems() }
   if (title.includes('зарплата'))        return { type: 'зарплата', items: simpleItems() }
   if (title.includes('закупка'))         return { type: 'закупка',  items: simpleItems() }
+  if (title.includes('возврат'))         return { type: 'возвраты', items: simpleItems() }
   if (title.includes('рабочие покупки')) return { type: 'расходы',  items: simpleItems() }
 
   if (title.includes('продажи')) {

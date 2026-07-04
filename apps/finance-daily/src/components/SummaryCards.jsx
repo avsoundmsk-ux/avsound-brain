@@ -38,11 +38,14 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
   const закупкаСклада   = stockItems.reduce((s, i) => s + i.сумма, 0)
   const возвраты        = returnItems.reduce((s, i) => s + i.сумма, 0)
   const pct           = реализация ? Math.round((маржа / реализация) * 100) : 0
-  const аренда        = 5000 * rentDays
+  // Аренда / гаражи из файла Расходы — только касса, не режут прибыль дня
+  const isПомещение   = c => /аренд|гараж/i.test(c || '')
+  const аренда        = expenseItems.filter(i => isПомещение(i.comment)).reduce((s, i) => s + i.сумма, 0)
+  const расходыОпер   = расходы - аренда
 
-  // Прибыль дня = маржа + работа - расходы - аренда - вычет
-  // Зарплатные выплаты, закупка и возвраты — только кассовое движение
-  const прибыльДня = маржа + работа - расходы - аренда - вычет
+  // Прибыль дня = маржа + работа - операционные расходы - вычет
+  // Аренда/гаражи, зарплата, закупка, возвраты — только кассовое движение
+  const прибыльДня = маржа + работа - расходыОпер - вычет
 
   return (
     <div className="mb-6 space-y-4">
@@ -57,8 +60,8 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
             color={маржа >= 0 ? 'text-green-600' : 'text-red-500'}
             sub={pct + '% от реализации'} />
           <Card label="Работа студии"   value={fmt(работа)} color="text-blue-600" />
-          <Card label="Расходы"         value={fmt(расходы)} color="text-red-500" />
-          <Card label="Аренда"          value={fmt(аренда)} color="text-gray-400" sub="5 000 ₽/день" />
+          <Card label="Расходы (опер.)" value={fmt(расходыОпер)} color="text-red-500" />
+          <Card label="Аренда / гаражи" value={fmt(аренда)} color="text-gray-400" sub="только касса" />
         </div>
         <div className="grid grid-cols-6 gap-3 mt-2">
           <div className="col-span-4" />
@@ -68,7 +71,7 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
           <Card
             label="Зарплата / прибыль дня"
             value={fmt(прибыльДня)}
-            sub={вычет > 0 ? 'маржа + работа − расходы − аренда − вычет' : 'маржа + работа − расходы − аренда'}
+            sub={вычет > 0 ? 'маржа + работа − расходы(опер.) − вычет' : 'маржа + работа − расходы(опер.)'}
             color={прибыльДня >= 0 ? 'text-green-400' : 'text-red-400'}
             dark
           />

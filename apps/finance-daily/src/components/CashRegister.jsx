@@ -55,19 +55,23 @@ export default function CashRegister({
   function setAux(key, val)       { onUpdateCash(key, val) }
 
   const итогоВКассе = CASH_FIELDS.reduce((s, f) => s + (cash[f.key] || 0), 0)
-  const аренда = 5000 * rentDays
 
-  // Расчётный остаток — движение кассы (включает зарплату, закупку, возвраты и вычет как кассовые выплаты)
+  // Аренда / гаражи — берём из файла Расходы, вычитаем ТОЛЬКО из кассы, не из зарплаты дня
+  const isПомещение = c => /аренд|гараж/i.test(c || '')
+  const аренда = expenseItems.filter(i => isПомещение(i.comment)).reduce((s, i) => s + i.сумма, 0)
+  const расходыОпер = расходы - аренда
+
+  // Расчётный остаток — движение кассы (включает всё: зарплату, закупку, возвраты, вычет, аренду)
   const расчётный = остатокВчера + реализация + работа + приходОзон + приходЯндекс
-                  - расходы - зарплата - закупка - возвраты - вычет - аренда
+                  - расходы - зарплата - закупка - возвраты - вычет
   const расхождение = итогоВКассе - расчётный
   const сходится = Math.abs(расхождение) < 1
 
   const маржа = реализация - себестоимость
   const pct = реализация ? Math.round((маржа / реализация) * 100) : 0
   const валоваяПрибыль = маржа + работа
-  // Зарплата дня = маржа + работа - расходы - аренда - вычет (файлы зарплата/закупка/возвраты = кассовое движение)
-  const зарплатаДня = валоваяПрибыль - расходы - аренда - вычет
+  // Зарплата дня = маржа + работа - операционные расходы - вычет (аренда/гараж, закупка, возвраты = только касса)
+  const зарплатаДня = валоваяПрибыль - расходыОпер - вычет
 
   function buildPayload() {
     const [y, m, d] = selectedDate.split('-')
@@ -171,12 +175,12 @@ export default function CashRegister({
             <Row label="Работа студии"  value={работа}        sign="+" color="text-blue-600" />
             <Row label="Приход Озон"    value={приходОзон}    sign="+" color="text-green-600" />
             <Row label="Приход Яндекс" value={приходЯндекс}  sign="+" color="text-green-600" />
-            <Row label="Расходы"        value={расходы}       sign="−" color="text-red-500" />
+            <Row label="Расходы (опер.)" value={расходыОпер}  sign="−" color="text-red-500" />
+            {аренда > 0 && <Row label="Аренда / гаражи" value={аренда} sign="−" color="text-gray-400" />}
             <Row label="Зарплата выпл." value={зарплата}      sign="−" color="text-orange-500" />
             <Row label="Закупка склад"  value={закупка}       sign="−" color="text-purple-600" />
             {возвраты > 0 && <Row label="Возвраты" value={возвраты} sign="−" color="text-purple-600" />}
             {вычет > 0 && <Row label="Вычет" value={вычет} sign="−" color="text-red-500" />}
-            <Row label={`Аренда (${rentDays} дн. × 5 000)`} value={аренда} sign="−" color="text-gray-400" />
           </div>
 
           <div className="mt-3 pt-3 border-t-2 border-gray-200 flex justify-between items-center">

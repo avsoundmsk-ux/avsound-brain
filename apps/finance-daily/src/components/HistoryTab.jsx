@@ -12,6 +12,15 @@ function fmt(n) {
   return (n || 0).toLocaleString('ru-RU') + ' ₽'
 }
 
+// Пересчёт прибыли дня по ТЕКУЩЕЙ формуле (не доверяем замороженному значению)
+// Прибыль = маржа + работа − расходы(опер.) − авто-аренда(5000/дн)
+function calcProfit(s) {
+  const помещ = s.помещенияРасх || 0
+  const расходыОпер = (s.расходы || 0) - помещ
+  const автоАренда = s.аренда || 0
+  return (s.маржа || 0) + (s.работа || 0) - расходыОпер - автоАренда
+}
+
 function DayDetail({ entry }) {
   const p = entry.payload || entry
   const s = p.summary || {}
@@ -45,7 +54,7 @@ function DayDetail({ entry }) {
           { label: 'Расходы',         value: s.расходы,          color: 'text-red-500' },
           { label: 'Зарплата',        value: s.зарплата,         color: 'text-orange-500' },
           { label: 'Аренда',          value: s.аренда ?? 5000,   color: 'text-gray-400' },
-          { label: 'Прибыль дня',     value: s.прибыльДня,       color: (s.прибыльДня||0) >= 0 ? 'text-green-700' : 'text-red-500' },
+          { label: 'Прибыль дня',     value: calcProfit(s),      color: calcProfit(s) >= 0 ? 'text-green-700' : 'text-red-500' },
         ].map(c => (
           <div key={c.label} className={`rounded-lg p-3 ${c.label === 'Прибыль дня' ? 'bg-gray-900' : 'bg-gray-50'}`}>
             <p className={`text-xs uppercase tracking-wide ${c.label === 'Прибыль дня' ? 'text-gray-400' : 'text-gray-500'}`}>{c.label}</p>
@@ -239,7 +248,7 @@ export default function HistoryTab() {
                   <span className="text-gray-500">Реализация: <b className="text-gray-800">{fmt(s.реализация)}</b></span>
                   <span className="text-gray-500">Маржа: <b className={(s.маржа||0) >= 0 ? 'text-green-600' : 'text-red-500'}>{fmt(s.маржа)}</b></span>
                   <span className="text-gray-500">Работа: <b className="text-blue-600">{fmt(s.работа)}</b></span>
-                  <span className="text-gray-500">Прибыль дня: <b className={(s.прибыльДня||0) >= 0 ? 'text-green-700' : 'text-red-500'}>{fmt(s.прибыльДня)}</b></span>
+                  <span className="text-gray-500">Прибыль дня: <b className={calcProfit(s) >= 0 ? 'text-green-700' : 'text-red-500'}>{fmt(calcProfit(s))}</b></span>
                 </div>
               </div>
               <div className="flex items-center gap-3">

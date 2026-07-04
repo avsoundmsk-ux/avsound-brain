@@ -13,13 +13,14 @@ function fmt(n) {
 }
 
 function DayDetail({ entry }) {
-  const p = entry.payload
+  const p = entry.payload || entry
   const s = p.summary || {}
   const sales = p.продажи || []
   const work = p.работа || []
   const expenses = p.расходы || []
   const salary = p.зарплата || []
   const purchases = p.закупка || []
+  const returns = p.возвраты || []
   const k = p.касса || {}
 
   return (
@@ -109,6 +110,9 @@ function DayDetail({ entry }) {
         )}
         {purchases.length > 0 && (
           <SimpleList title="Закупка" items={purchases} color="text-purple-600" />
+        )}
+        {returns.length > 0 && (
+          <SimpleList title="Возвраты" items={returns} color="text-purple-600" />
         )}
       </div>
 
@@ -217,7 +221,7 @@ export default function HistoryTab() {
       </div>
 
       {history.map(entry => {
-        const s = entry.payload?.summary || {}
+        const s = (entry.payload || entry).summary || {}
         const isOpen = openId === entry.dayId
         return (
           <div

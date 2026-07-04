@@ -43,9 +43,9 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
   const аренда        = expenseItems.filter(i => isПомещение(i.comment)).reduce((s, i) => s + i.сумма, 0)
   const расходыОпер   = расходы - аренда
 
-  // Прибыль дня = маржа + работа - операционные расходы - вычет
-  // Аренда/гаражи, зарплата, закупка, возвраты — только кассовое движение
-  const прибыльДня = маржа + работа - расходыОпер - вычет
+  // Прибыль дня = маржа + работа - операционные расходы
+  // Аренда/гаражи, вычет, зарплата, закупка, возвраты — только кассовое движение
+  const прибыльДня = маржа + работа - расходыОпер
 
   return (
     <div className="mb-6 space-y-4">
@@ -66,12 +66,12 @@ export default function SummaryCards({ salesItems, workItems, expenseItems, sala
         <div className="grid grid-cols-6 gap-3 mt-2">
           <div className="col-span-4" />
           {вычет > 0 ? (
-            <Card label="Вычет" value={fmt(вычет)} color="text-red-500" sub="минус из зарплаты дня" small />
+            <Card label="Вычет" value={fmt(вычет)} color="text-red-500" sub="только из кассы" small />
           ) : <div />}
           <Card
             label="Зарплата / прибыль дня"
             value={fmt(прибыльДня)}
-            sub={вычет > 0 ? 'маржа + работа − расходы(опер.) − вычет' : 'маржа + работа − расходы(опер.)'}
+            sub="маржа + работа − расходы(опер.)"
             color={прибыльДня >= 0 ? 'text-green-400' : 'text-red-400'}
             dark
           />

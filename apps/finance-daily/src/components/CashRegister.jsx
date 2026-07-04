@@ -70,8 +70,8 @@ export default function CashRegister({
   const маржа = реализация - себестоимость
   const pct = реализация ? Math.round((маржа / реализация) * 100) : 0
   const валоваяПрибыль = маржа + работа
-  // Зарплата дня = маржа + работа - операционные расходы - вычет (аренда/гараж, закупка, возвраты = только касса)
-  const зарплатаДня = валоваяПрибыль - расходыОпер - вычет
+  // Зарплата дня = маржа + работа - операционные расходы (аренда/гараж, вычет, закупка, возвраты = только касса)
+  const зарплатаДня = валоваяПрибыль - расходыОпер
 
   function buildPayload() {
     const [y, m, d] = selectedDate.split('-')
@@ -167,7 +167,7 @@ export default function CashRegister({
           <NumInput label="Остаток на начало дня" value={остатокВчера} onChange={v => setAux('остатокВчера', v)} />
           <NumInput label="Приход Озон"            value={приходОзон}   onChange={v => setAux('приходОзон', v)} />
           <NumInput label="Приход Яндекс"          value={приходЯндекс} onChange={v => setAux('приходЯндекс', v)} />
-          <NumInput label="Вычет (минус из зарплаты и кассы)" value={вычет} onChange={v => setAux('вычет', v)} />
+          <NumInput label="Вычет (только из кассы)" value={вычет} onChange={v => setAux('вычет', v)} />
 
           <div className="mt-4 space-y-0.5 border-t border-gray-100 pt-3">
             <Row label="Остаток вчера"  value={остатокВчера} sign="+" color="text-gray-500" />

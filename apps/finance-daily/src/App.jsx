@@ -72,6 +72,7 @@ export default function App() {
     расходы:       g('расходы').reduce((s, i) => s + i.сумма, 0),
     зарплата:      g('зарплата').reduce((s, i) => s + i.сумма, 0),
     закупка:       g('закупка').reduce((s, i) => s + i.сумма, 0),
+    возвраты:      g('возвраты').reduce((s, i) => s + i.сумма, 0),
   }
 
   // Период отчёта: авто из дат в файлах, можно переопределить в кассе
@@ -131,7 +132,7 @@ export default function App() {
       </div>
 
       {/* Слоты загрузки */}
-      <div className="grid grid-cols-5 gap-3 mb-6">
+      <div className="grid grid-cols-6 gap-3 mb-6">
         {SLOTS.map(s => (
           <DropZone key={s.key} label={s.label} onFile={handleFile} loaded={!!data[s.key]} />
         ))}
@@ -165,12 +166,15 @@ export default function App() {
             expenseItems={g('расходы')}
             salaryItems={g('зарплата')}
             stockItems={g('закупка')}
+            returnItems={g('возвраты')}
             rentDays={rentDays}
+            вычет={parseFloat(cashDraft.вычет) || 0}
           />
           {data.работа   && <WorkSection items={g('работа')} />}
           {data.расходы  && <ExpensesSection items={g('расходы')} title="Расходы" color="red" />}
           {data.зарплата && <ExpensesSection items={g('зарплата')} title="Зарплата (выплачено из кассы)" color="orange" />}
           {data.закупка  && <ExpensesSection items={g('закупка')} title="Закупка (движение кассы)" color="purple" />}
+          {data.возвраты && <ExpensesSection items={g('возвраты')} title="Возвраты (движение кассы)" color="purple" />}
           {data.продажи  && <ChannelBreakdown items={g('продажи')} />}
           {data.продажи  && <SalesTable items={g('продажи')} />}
         </>
@@ -185,6 +189,7 @@ export default function App() {
           expenseItems={g('расходы')}
           salaryItems={g('зарплата')}
           stockItems={g('закупка')}
+          returnItems={g('возвраты')}
           cashDraft={cashDraft}
           onUpdateCash={updateCash}
           onClearCash={clearCash}

@@ -30,11 +30,11 @@ const CASH_FIELDS = [
 ]
 
 export default function CashRegister({
-  totals, salesItems = [], workItems = [], expenseItems = [], salaryItems = [], stockItems = [],
+  totals, salesItems = [], workItems = [], expenseItems = [], salaryItems = [], stockItems = [], returnItems = [],
   cashDraft = {}, onUpdateCash, onClearCash,
   rentDays = 1, periodFrom = null, periodTo = null,
 }) {
-  const { реализация = 0, работа = 0, расходы = 0, зарплата = 0, закупка = 0, себестоимость = 0 } = totals
+  const { реализация = 0, работа = 0, расходы = 0, зарплата = 0, закупка = 0, возвраты = 0, себестоимость = 0 } = totals
 
   const [saveStatus, setSaveStatus] = useState(null)
   const [pendingPayload, setPendingPayload] = useState(null)
@@ -46,6 +46,7 @@ export default function CashRegister({
   const остатокВчера = cashDraft.остатокВчера || 0
   const приходОзон   = cashDraft.приходОзон   || 0
   const приходЯндекс = cashDraft.приходЯндекс || 0
+  const вычет        = cashDraft.вычет        || 0
   const selectedDate = cashDraft.selectedDate || defaultDate
 
   const cash = cashDraft.cash || {}
@@ -56,17 +57,17 @@ export default function CashRegister({
   const итогоВКассе = CASH_FIELDS.reduce((s, f) => s + (cash[f.key] || 0), 0)
   const аренда = 5000 * rentDays
 
-  // Расчётный остаток — движение кассы (включает зарплату и закупку как кассовые выплаты)
+  // Расчётный остаток — движение кассы (включает зарплату, закупку, возвраты и вычет как кассовые выплаты)
   const расчётный = остатокВчера + реализация + работа + приходОзон + приходЯндекс
-                  - расходы - зарплата - закупка - аренда
+                  - расходы - зарплата - закупка - возвраты - вычет - аренда
   const расхождение = итогоВКассе - расчётный
   const сходится = Math.abs(расхождение) < 1
 
   const маржа = реализация - себестоимость
   const pct = реализация ? Math.round((маржа / реализация) * 100) : 0
   const валоваяПрибыль = маржа + работа
-  // Зарплата дня = маржа + работа - расходы - аренда (файл зарплата = кассовое движение, не вычитается)
-  const зарплатаДня = валоваяПрибыль - расходы - аренда
+  // Зарплата дня = маржа + работа - расходы - аренда - вычет (файлы зарплата/закупка/возвраты = кассовое движение)
+  const зарплатаДня = валоваяПрибыль - расходы - аренда - вычет
 
   function buildPayload() {
     const [y, m, d] = selectedDate.split('-')
@@ -75,7 +76,7 @@ export default function CashRegister({
       дата,
       summary: {
         реализация, себестоимость, маржа, pct,
-        работа, валоваяПрибыль, расходы, зарплата, закупка, аренда,
+        работа, валоваяПрибыль, расходы, зарплата, закупка, возвраты, вычет, аренда,
         прибыльДня: зарплатаДня,
       },
       продажи: salesItems.map(i => ({ name: i.name, channel: i.channel, реализация: i.реализация, закупка: i.закупка, маржа: i.маржа })),
@@ -83,6 +84,7 @@ export default function CashRegister({
       расходы: expenseItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       зарплата: salaryItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       закупка:  stockItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
+      возвраты: returnItems.map(i => ({ comment: i.comment, сумма: i.сумма })),
       касса: {
         наличные: cash.наличные || 0, тБизнес: cash.тБизнес || 0,
         тинькофф: cash.тинькофф || 0, тБизнес2: cash.тБизнес2 || 0,
@@ -161,6 +163,7 @@ export default function CashRegister({
           <NumInput label="Остаток на начало дня" value={остатокВчера} onChange={v => setAux('остатокВчера', v)} />
           <NumInput label="Приход Озон"            value={приходОзон}   onChange={v => setAux('приходОзон', v)} />
           <NumInput label="Приход Яндекс"          value={приходЯндекс} onChange={v => setAux('приходЯндекс', v)} />
+          <NumInput label="Вычет (минус из зарплаты и кассы)" value={вычет} onChange={v => setAux('вычет', v)} />
 
           <div className="mt-4 space-y-0.5 border-t border-gray-100 pt-3">
             <Row label="Остаток вчера"  value={остатокВчера} sign="+" color="text-gray-500" />
@@ -171,6 +174,8 @@ export default function CashRegister({
             <Row label="Расходы"        value={расходы}       sign="−" color="text-red-500" />
             <Row label="Зарплата выпл." value={зарплата}      sign="−" color="text-orange-500" />
             <Row label="Закупка склад"  value={закупка}       sign="−" color="text-purple-600" />
+            {возвраты > 0 && <Row label="Возвраты" value={возвраты} sign="−" color="text-purple-600" />}
+            {вычет > 0 && <Row label="Вычет" value={вычет} sign="−" color="text-red-500" />}
             <Row label={`Аренда (${rentDays} дн. × 5 000)`} value={аренда} sign="−" color="text-gray-400" />
           </div>
 

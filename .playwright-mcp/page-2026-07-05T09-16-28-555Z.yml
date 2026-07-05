@@ -1,0 +1,581 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - text:    
+        - generic [ref=e7]:
+          - text:      
+          - link "Открыть мобильное меню" [ref=e10] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e11]: 
+          - link "Логотип сайта" [ref=e14] [cursor=pointer]:
+            - /url: https://av-sound.ru/
+          - link " 0" [ref=e17] [cursor=pointer]:
+            - /url: https://av-sound.ru/cart/
+            - generic [ref=e18]:
+              - text: 
+              - generic [ref=e19]: "0"
+    - main [ref=e23]:
+      - article [ref=e24]:
+        - generic [ref=e26]:
+          - generic [ref=e32]:
+            - generic [ref=e40]:
+              - heading "Раскрой силу звука" [level=4] [ref=e45]
+              - heading "Ваш звук. Ваш стиль." [level=4] [ref=e50]
+              - paragraph [ref=e54]: Широкий выбор аудиосистем, сабвуферов, усилителей и аксессуаров — мы поможем создать идеальное звучание вашего авто. Преобразите свою поездку с каждым аккордом!
+              - link "К ТОВАРАМ" [ref=e59] [cursor=pointer]:
+                - /url: https://av-sound.ru/shop/
+                - generic [ref=e60]: К ТОВАРАМ
+            - generic:
+              - generic:
+                - generic: 
+              - generic:
+                - generic: 
+          - generic [ref=e67]:
+            - generic [ref=e69]:
+              - generic [ref=e72]:
+                - link "Изображение категории" [ref=e74] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+                  - img "Заполнитель" [ref=e75]
+                - generic [ref=e76]:
+                  - heading "Автозвук" [level=3] [ref=e77]
+                  - link "7 товаров" [ref=e79] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+                - link "Категория товара %d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba" [ref=e80] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+              - generic [ref=e83]:
+                - link "Изображение категории" [ref=e85] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b/
+                  - img "Заполнитель" [ref=e86]
+                - generic [ref=e87]:
+                  - heading "Аксессуары" [level=3] [ref=e88]
+                  - link "32 товара" [ref=e90] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b/
+                - link "Категория товара %d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b" [ref=e91] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b/
+              - generic [ref=e94]:
+                - link "Изображение категории" [ref=e96] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f/
+                  - img "Заполнитель" [ref=e97]
+                - generic [ref=e98]:
+                  - heading "Виброшумоизоляция" [level=3] [ref=e99]
+                  - link "25 товаров" [ref=e101] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f/
+                - link "Категория товара %d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f" [ref=e102] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d1%88%d1%83%d0%bc%d0%be%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d1%8f/
+              - generic [ref=e105]:
+                - link "Изображение категории" [ref=e107] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+                  - img "Заполнитель" [ref=e108]
+                - generic [ref=e109]:
+                  - heading "Видеооборудование" [level=3] [ref=e110]
+                  - link "38 товаров" [ref=e112] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+                - link "Категория товара %d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5" [ref=e113] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+              - generic [ref=e116]:
+                - link "Изображение категории" [ref=e118] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b/
+                  - img "Заполнитель" [ref=e119]
+                - generic [ref=e120]:
+                  - heading "Кабели и разъёмы" [level=3] [ref=e121]
+                  - link "97 товаров" [ref=e123] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b/
+                - link "Категория товара %d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b" [ref=e124] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d0%b8-%d0%b8-%d1%80%d0%b0%d0%b7%d1%8a%d1%91%d0%bc%d1%8b/
+              - generic [ref=e127]:
+                - link "Изображение категории" [ref=e129] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5/
+                  - img "Заполнитель" [ref=e130]
+                - generic [ref=e131]:
+                  - heading "Питание" [level=3] [ref=e132]
+                  - link "64 товара" [ref=e134] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5/
+                - link "Категория товара %d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5" [ref=e135] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bf%d0%b8%d1%82%d0%b0%d0%bd%d0%b8%d0%b5/
+              - generic [ref=e138]:
+                - link "Изображение категории" [ref=e140] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                  - img "Заполнитель" [ref=e141]
+                - generic [ref=e142]:
+                  - heading "Автоакустика" [level=3] [ref=e143]
+                  - link "16 товаров" [ref=e145] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                - link "Категория товара %d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0" [ref=e146] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+              - generic [ref=e149]:
+                - link "Изображение категории" [ref=e151] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8/
+                  - img "Заполнитель" [ref=e152]
+                - generic [ref=e153]:
+                  - heading "Аксессуары для автоакустики" [level=3] [ref=e154]
+                  - link "19 товаров" [ref=e156] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8/
+                - link "Категория товара %d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8" [ref=e157] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80%d1%8b-%d0%b4%d0%bb%d1%8f-%d0%b0%d0%b2%d1%82%d0%be%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b8/
+              - generic [ref=e160]:
+                - link "Изображение категории" [ref=e162] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/accessories/
+                - generic [ref=e163]:
+                  - heading "Акустика" [level=3] [ref=e164]
+                  - link "540 товаров" [ref=e166] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/accessories/
+                - link "Категория товара accessories" [ref=e167] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/accessories/
+              - generic [ref=e170]:
+                - link "Изображение категории" [ref=e172] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+                  - img "Магнитолы, Андроид" [ref=e173]
+                - generic [ref=e174]:
+                  - heading "Магнитолы" [level=3] [ref=e175]
+                  - link "289 товаров" [ref=e177] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+                - link "Категория товара %d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b" [ref=e178] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+              - generic [ref=e181]:
+                - link "Изображение категории" [ref=e183] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/subwufer/
+                - generic [ref=e184]:
+                  - heading "Сабвуферы" [level=3] [ref=e185]
+                  - link "247 товаров" [ref=e187] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                - link "Категория товара subwufer" [ref=e188] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/subwufer/
+              - generic [ref=e191]:
+                - link "Изображение категории" [ref=e193] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/clocks/
+                - generic [ref=e194]:
+                  - heading "Усилители" [level=3] [ref=e195]
+                  - link "231 товар" [ref=e197] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/clocks/
+                - link "Категория товара clocks" [ref=e198] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/clocks/
+              - generic [ref=e201]:
+                - link "Изображение категории" [ref=e203] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                  - img "Штатная акустика" [ref=e204]
+                - generic [ref=e205]:
+                  - heading "Штатная акустика" [level=3] [ref=e206]
+                  - link "0 товаров" [ref=e208] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+                - link "Категория товара %d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0" [ref=e209] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d1%88%d1%82%d0%b0%d1%82%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0/
+            - generic:
+              - generic [ref=e211]: 
+              - generic [ref=e213] [cursor=pointer]: 
+          - generic [ref=e215]:
+            - generic [ref=e218]:
+              - heading "ПОПУЛЯРНЫЕ ТОВАРЫ" [level=4] [ref=e220]
+              - paragraph [ref=e222]: Мы предлагаем широкий ассортимент оборудования для автозвука, которое преобразит ваше автомобильное аудио.
+            - generic [ref=e226]:
+              - generic [ref=e228]:
+                - generic [ref=e229]:
+                  - link [ref=e230] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/bos-mini-360s/
+                  - generic [ref=e231]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e233] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Камеры кругового обзора Bos-mini 360s”" [ref=e235] [cursor=pointer]: 
+                - heading "Камеры кругового обзора Bos-mini 360s" [level=3] [ref=e236]:
+                  - link "Камеры кругового обзора Bos-mini 360s" [ref=e237] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/bos-mini-360s/
+                - link "Видеооборудование" [ref=e239] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product-category/%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d0%be%d0%b1%d0%be%d1%80%d1%83%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+                - generic [ref=e242]: 4.200,00 ₽
+              - generic [ref=e244]:
+                - generic [ref=e245]:
+                  - link [ref=e246] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/bos-mini-ts18-10-6-128/
+                  - generic [ref=e247]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e249] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Магнитола BOS-mini TS18 10\" дюймов 6/128”" [ref=e251] [cursor=pointer]: 
+                - heading "Магнитола BOS-mini TS18 10″ дюймов 6/128" [level=3] [ref=e252]:
+                  - link "Магнитола BOS-mini TS18 10″ дюймов 6/128" [ref=e253] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/bos-mini-ts18-10-6-128/
+                - generic [ref=e254]:
+                  - link "Магнитолы" [ref=e255] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+                  - text: ","
+                  - link "Магнитолы" [ref=e256] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b-%d0%bc%d0%b0%d0%b3%d0%bd%d0%b8%d1%82%d0%be%d0%bb%d1%8b/
+                - generic [ref=e259]: 14.600,00 ₽
+              - generic [ref=e261]:
+                - generic [ref=e262]:
+                  - link [ref=e263] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-machete-ms-15-d2-d4/
+                  - generic [ref=e264]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e266] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Сабвуфер machete MS-15 D2/D4”" [ref=e268] [cursor=pointer]: 
+                - heading "Сабвуфер machete MS-15 D2/D4" [level=3] [ref=e269]:
+                  - link "Сабвуфер machete MS-15 D2/D4" [ref=e270] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-machete-ms-15-d2-d4/
+                - generic [ref=e271]:
+                  - link "Сабвуферы" [ref=e272] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                  - text: ","
+                  - link "Сабвуферы" [ref=e273] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80%d1%8b/
+                - generic [ref=e276]: 4.800,00 ₽
+              - generic [ref=e278]:
+                - generic [ref=e279]:
+                  - link [ref=e280] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-15s-d2-d4/
+                  - generic [ref=e281]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e283] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Machete MF-15S D2/D4”" [ref=e285] [cursor=pointer]: 
+                - heading "Machete MF-15S D2/D4" [level=3] [ref=e286]:
+                  - link "Machete MF-15S D2/D4" [ref=e287] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-15s-d2-d4/
+                - generic [ref=e288]:
+                  - link "Сабвуферы" [ref=e289] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                  - text: ","
+                  - link "Сабвуферы" [ref=e290] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80%d1%8b/
+                - generic [ref=e293]: 10.590,00 ₽
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - link [ref=e297] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-15r-d2-d4/
+                  - generic [ref=e298]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e300] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Machete MF-15R D2/D4”" [ref=e302] [cursor=pointer]: 
+                - heading "Machete MF-15R D2/D4" [level=3] [ref=e303]:
+                  - link "Machete MF-15R D2/D4" [ref=e304] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-15r-d2-d4/
+                - generic [ref=e305]:
+                  - link "Сабвуферы" [ref=e306] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                  - text: ","
+                  - link "Сабвуферы" [ref=e307] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80%d1%8b/
+                - generic [ref=e310]: 12.990,00 ₽
+              - generic [ref=e312]:
+                - generic [ref=e313]:
+                  - link [ref=e314] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-12s-d2-d4/
+                  - generic [ref=e315]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e317] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Machete MF-12S D2/D4”" [ref=e319] [cursor=pointer]: 
+                - heading "Machete MF-12S D2/D4" [level=3] [ref=e320]:
+                  - link "Machete MF-12S D2/D4" [ref=e321] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-12s-d2-d4/
+                - generic [ref=e322]:
+                  - link "Сабвуферы" [ref=e323] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                  - text: ","
+                  - link "Сабвуферы" [ref=e324] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80%d1%8b/
+                - generic [ref=e327]: 9.990,00 ₽
+              - generic [ref=e329]:
+                - generic [ref=e330]:
+                  - link [ref=e331] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-12r-d2-d4/
+                  - generic [ref=e332]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e334] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Machete MF-12R D2/D4”" [ref=e336] [cursor=pointer]: 
+                - heading "Machete MF-12R D2/D4" [level=3] [ref=e337]:
+                  - link "Machete MF-12R D2/D4" [ref=e338] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/machete-mf-12r-d2-d4/
+                - generic [ref=e339]:
+                  - link "Сабвуферы" [ref=e340] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                  - text: ","
+                  - link "Сабвуферы" [ref=e341] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80%d1%8b/
+                - generic [ref=e344]: 11.990,00 ₽
+              - generic [ref=e346]:
+                - generic [ref=e347]:
+                  - link [ref=e348] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/apocalypse-db-sa305-d1-d2/
+                  - generic [ref=e349]:
+                    - text: 
+                    - link " Добавить в избранное" [ref=e351] [cursor=pointer]:
+                      - /url: https://av-sound.ru/wishlist/
+                      - text: 
+                      - generic: Добавить в избранное
+                  - button "Добавить в корзину “Apocalypse DB-SA305 D1/D2”" [ref=e353] [cursor=pointer]: 
+                - heading "Apocalypse DB-SA305 D1/D2" [level=3] [ref=e354]:
+                  - link "Apocalypse DB-SA305 D1/D2" [ref=e355] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product/apocalypse-db-sa305-d1-d2/
+                - generic [ref=e356]:
+                  - link "Сабвуферы" [ref=e357] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/
+                  - text: ","
+                  - link "Сабвуферы" [ref=e358] [cursor=pointer]:
+                    - /url: https://av-sound.ru/product-category/subwufer/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80%d1%8b/
+                - generic [ref=e361]: 27.990,00 ₽
+          - generic [ref=e363]:
+            - generic [ref=e364]:
+              - generic [ref=e367]:
+                - heading "КАЧЕСТВЕННЫЙ ЗВУК" [level=4] [ref=e369]:
+                  - text: КАЧЕСТВЕННЫЙ
+                  - text: ЗВУК
+                - paragraph [ref=e371]: Подготовьте своё авто к новым впечатлениям с нашей продукцией. Независимо от того, хотите ли вы улучшить базовую систему или создать настоящий звуковой концерт в салоне, у нас есть всё для автозвука
+              - generic [ref=e373]:
+                - link "О компании" [ref=e377] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e378]: О компании
+                - link "Каталог" [ref=e382] [cursor=pointer]:
+                  - /url: https://av-sound.ru/shop/
+                  - generic [ref=e383]: Каталог
+            - generic [ref=e387]:
+              - generic [ref=e391]: 
+              - link [ref=e392] [cursor=pointer]:
+                - /url: "#6a49da80dcc0e"
+          - generic [ref=e394]:
+            - generic [ref=e395]:
+              - generic [ref=e401]:
+                - heading "Pride Solo 300 competition" [level=4] [ref=e406]
+                - list [ref=e409]:
+                  - listitem [ref=e410]:
+                    - img [ref=e411]
+                    - generic [ref=e413]: Мощность - 300 Вт
+                  - listitem [ref=e414]:
+                    - img [ref=e415]
+                    - generic [ref=e417]: Чувствительность - 93 дБ
+                  - listitem [ref=e418]:
+                    - img [ref=e419]
+                    - generic [ref=e421]: Импеданс - 4 ОМ
+                - link "Подробнее" [ref=e425] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e426]: Подробнее
+              - generic [ref=e432]:
+                - heading "Активный сабвуфер Kicx AP301BPA" [level=4] [ref=e437]
+                - list [ref=e440]:
+                  - listitem [ref=e441]:
+                    - img [ref=e442]
+                    - generic [ref=e444]: Количество полос - 1
+                  - listitem [ref=e445]:
+                    - img [ref=e446]
+                    - generic [ref=e448]: Мощность - 300 Вт
+                  - listitem [ref=e449]:
+                    - img [ref=e450]
+                    - generic [ref=e452]: Чувствительность - 90 Дб
+                - link "Подробнее" [ref=e456] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e457]: Подробнее
+            - generic [ref=e458]:
+              - generic [ref=e464]:
+                - heading "Акустическая система Ural урал АС-М200" [level=4] [ref=e469]: Акустическая система Ural урал АС-М200
+                - list [ref=e472]:
+                  - listitem [ref=e473]:
+                    - img [ref=e474]
+                    - generic [ref=e476]: Мощность - 10 Вт
+                  - listitem [ref=e477]:
+                    - img [ref=e478]
+                    - generic [ref=e480]: Чувствительность - 95Дб
+                  - listitem [ref=e481]:
+                    - img [ref=e482]
+                    - generic [ref=e484]: Импеданс - 4 Ом
+                - link "О товаре" [ref=e488] [cursor=pointer]:
+                  - /url: https://av-sound.ru/product/%d1%83%d1%80%d0%b0%d0%bb-%d0%b0%d1%81-%d0%bc200-%d0%bc%d0%be%d0%bb%d0%be%d1%82/
+                  - generic [ref=e489]: О товаре
+              - generic [ref=e495]:
+                - heading "Преобразователь Aura RHL-LD01" [level=4] [ref=e500]
+                - list [ref=e503]:
+                  - listitem [ref=e504]:
+                    - img [ref=e505]
+                    - generic [ref=e507]: Конвертер сигнала
+                - link "ПОДРОБНЕЕ" [ref=e511] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e512]: ПОДРОБНЕЕ
+          - generic [ref=e526]:
+            - heading "СИЛА И КРОСОТА" [level=4] [ref=e531]
+            - generic [ref=e534]:
+              - heading "В ОДНОМ КОМПЛЕКТЕ" [level=3] [ref=e536]
+              - paragraph [ref=e538]: У нас в студии мы объединяем мощь и стиль, предлагая высококачественные автозвуковые системы, которые подчеркнут индивидуальность вашего автомобиля. Мы уверены, что каждый автомобиль заслуживает своего идеального звучания!"
+            - paragraph [ref=e541]:
+              - emphasis [ref=e542]: “Откройте для себя эксклюзивные продукты, которые помогут вам создать аудиосистему мечты для вашего авто. Наши товары — это комбинация передовых технологий и безупречного дизайна..”
+            - paragraph [ref=e547]:
+              - strong [ref=e548]: Михаил Автономов
+          - generic [ref=e553]:
+            - generic [ref=e556]:
+              - heading "АКТУАЛЬНЫЕ НОВОСТИ" [level=4] [ref=e558]
+              - paragraph [ref=e560]: Следите за последними трендами, новинками оборудования и экспертными советами – чтобы ваш автомобиль звучал идеально!
+            - generic [ref=e564]:
+              - article [ref=e568]:
+                - generic [ref=e569]:
+                  - generic [ref=e570]:
+                    - figure [ref=e571]:
+                      - link [ref=e573] [cursor=pointer]:
+                        - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+                    - generic [ref=e574]:
+                      - generic [ref=e575]: "18"
+                      - generic [ref=e576]: Ноя
+                  - generic [ref=e577]:
+                    - link "Автозвук" [ref=e580] [cursor=pointer]:
+                      - /url: https://av-sound.ru/category/%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba/
+                    - 'heading "Простая система автозвука: возможно ли качественное звучание в вашем авто?" [level=3] [ref=e581]':
+                      - 'link "Простая система автозвука: возможно ли качественное звучание в вашем авто?" [ref=e582] [cursor=pointer]':
+                        - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+                    - list [ref=e584]:
+                      - listitem:
+                        - time: 18 ноября, 2024
+                      - listitem [ref=e585]:
+                        - img "author-avatar" [ref=e586]
+                        - link "admin" [ref=e587] [cursor=pointer]:
+                          - /url: https://av-sound.ru/author/admin/
+                          - generic [ref=e588]: admin
+                      - listitem [ref=e589]:
+                        - link "0 " [ref=e590] [cursor=pointer]:
+                          - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/#respond
+                          - generic [ref=e591]: "0"
+                          - text: 
+                    - generic [ref=e592]: 
+                    - generic [ref=e593]: Автозвук – слово, которое знакомо практически каждому автовладельцу. Но что на самом дел...
+                    - paragraph [ref=e594]:
+                      - link "Продолжить чтение " [ref=e595] [cursor=pointer]:
+                        - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+              - generic:
+                - generic:
+                  - generic: 
+                - generic:
+                  - generic: 
+    - contentinfo [ref=e596]:
+      - complementary [ref=e598]:
+        - generic [ref=e602]:
+          - link "Ссылка на изображение" [ref=e606] [cursor=pointer]:
+            - /url: "#"
+            - img "Group 137" [ref=e607]
+          - paragraph [ref=e611]: Студия автозвука в Москве
+        - generic [ref=e613]:
+          - heading "Новости" [level=5] [ref=e614]
+          - list [ref=e615]:
+            - listitem [ref=e616]:
+              - link "Изображение записи" [ref=e617] [cursor=pointer]:
+                - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+              - generic [ref=e618]:
+                - 'link "Простая система автозвука: возможно ли качественное звучание в вашем авто?" [ref=e620] [cursor=pointer]':
+                  - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/
+                - time [ref=e621]: 18 ноября, 2024
+                - link "Нет комментариев" [ref=e622] [cursor=pointer]:
+                  - /url: https://av-sound.ru/2024/11/18/%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%b0%d1%8f-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b0%d0%b2%d1%82%d0%be%d0%b7%d0%b2%d1%83%d0%ba%d0%b0-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bb/#respond
+        - generic [ref=e625]:
+          - heading "Компания" [level=5] [ref=e626]
+          - list [ref=e628]:
+            - listitem [ref=e629]:
+              - link "Политика конфендициальность" [ref=e630] [cursor=pointer]:
+                - /url: https://av-sound.ru/refund_returns
+            - listitem [ref=e631]:
+              - link "Блог" [ref=e632] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e636]:
+        - generic [ref=e637]: AV-SOUND 2025
+        - img "payments" [ref=e639]
+  - link "Кнопка наверх":
+    - /url: "#"
+    - text: 
+  - generic [ref=e640]:
+    - search [ref=e642]:
+      - textbox "Поиск" [ref=e643]
+      - button "Поиск " [ref=e644] [cursor=pointer]:
+        - generic: Поиск
+        - text: 
+    - list [ref=e645]:
+      - listitem [ref=e646]:
+        - link "Главная" [ref=e647] [cursor=pointer]:
+          - /url: https://av-sound.ru/
+          - generic [ref=e648]: Главная
+        - text: 
+      - listitem [ref=e649]:
+        - link "Каталог товара" [ref=e650] [cursor=pointer]:
+          - /url: https://av-sound.ru/shop/
+          - generic [ref=e651]: Каталог товара
+      - listitem [ref=e652]:
+        - link "Новости" [ref=e653] [cursor=pointer]:
+          - /url: https://av-sound.ru/blog/
+          - generic [ref=e654]: Новости
+      - listitem [ref=e655]:
+        - link "Кейсы" [ref=e656] [cursor=pointer]:
+          - /url: https://av-sound.ru/portfolio/
+          - generic [ref=e657]: Кейсы
+      - listitem [ref=e658]:
+        - link "О Компании" [ref=e659] [cursor=pointer]:
+          - /url: https://av-sound.ru/about-us/
+          - generic [ref=e660]: О Компании
+      - listitem [ref=e661]:
+        - link "Найти/Связаться" [ref=e662] [cursor=pointer]:
+          - /url: https://av-sound.ru/contact-us/
+          - generic [ref=e663]: Найти/Связаться
+      - listitem [ref=e664]:
+        - link " Избранное" [ref=e665] [cursor=pointer]:
+          - /url: https://av-sound.ru/wishlist/
+          - text: 
+          - generic [ref=e666]: Избранное
+      - listitem [ref=e667]:
+        - link " Сравнить" [ref=e668] [cursor=pointer]:
+          - /url: https://av-sound.ru/compare/
+      - listitem [ref=e669]:
+        - link " Вход / Регистрация" [ref=e670] [cursor=pointer]:
+          - /url: https://av-sound.ru/my-account/
+  - generic [ref=e672]:
+    - generic [ref=e673]: Корзина
+    - link " Закрыть" [ref=e675] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e678]:
+    - generic [ref=e679]:
+      - generic [ref=e680]: Войти
+      - link " Закрыть" [ref=e682] [cursor=pointer]:
+        - /url: "#"
+    - text: 
+    - generic [ref=e683]:
+      - text: 
+      - paragraph [ref=e684]: Еще нет аккаунта?
+      - link "Создать аккаунт" [ref=e685] [cursor=pointer]:
+        - /url: https://av-sound.ru/my-account/?action=register
+  - text:    
+  - generic [ref=e687]:
+    - generic [ref=e688]: Мы используем файлы cookie, чтобы улучшить ваше впечатление от нашего сайта. Просматривая этот сайт, вы соглашаетесь с использованием нами файлов cookie.
+    - link "Принять" [ref=e690] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e691]:
+    - link " Магазин" [ref=e693] [cursor=pointer]:
+      - /url: https://av-sound.ru/shop/
+      - generic [ref=e694]: 
+      - generic [ref=e695]: Магазин
+    - generic "Избранные товары" [ref=e696]:
+      - link " Избранное" [ref=e697] [cursor=pointer]:
+        - /url: https://av-sound.ru/wishlist/
+        - generic [ref=e698]: 
+        - generic [ref=e699]: Избранное
+    - generic "Корзина" [ref=e700]:
+      - link " 0 Корзина" [ref=e701] [cursor=pointer]:
+        - /url: https://av-sound.ru/cart/
+        - generic [ref=e702]:
+          - text: 
+          - generic [ref=e703]: "0"
+        - generic [ref=e704]: Корзина
+    - link " Мой аккаунт" [ref=e706] [cursor=pointer]:
+      - /url: https://av-sound.ru/my-account/
+      - generic [ref=e707]: 
+      - generic [ref=e708]: Мой аккаунт
+  - generic [ref=e709]: tablet
+  - status

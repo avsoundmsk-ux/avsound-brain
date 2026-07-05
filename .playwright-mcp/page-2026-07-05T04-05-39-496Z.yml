@@ -1,0 +1,34 @@
+- generic [ref=f41e1]:
+  - generic [ref=f41e2]:
+    - search "Поиск в интернете" [ref=f41e4]:
+      - generic [ref=f41e5]:
+        - generic [ref=f41e7]:
+          - generic "Яндекс"
+          - combobox "Запрос" [active] [ref=f41e11]
+        - button "Найти" [ref=f41e13] [cursor=pointer]:
+          - generic: Найти
+        - generic: Найдётся всё
+    - generic [ref=f41e15]:
+      - heading "Ошибка 404. Нет такой страницы" [level=1] [ref=f41e16]
+      - generic [ref=f41e17]:
+        - text: Если вы считаете, что страницы нет по нашей вине,
+        - link "напишите нам" [ref=f41e18] [cursor=pointer]:
+          - /url: //yandex.ru/support/not-found/?form1969-url404=https%3A%2F%2Fyandex.ru%2F%2Fprofile%2Forg%2Favsound%2F226688810161%2Freviews%2F&form1969-fromurl404=
+        - text: .
+      - generic [ref=f41e19]: "Вероятно, в ссылке опечатка. Похожие варианты:"
+      - list [ref=f41e20]:
+        - listitem [ref=f41e21]:
+          - link "yandex.ru/profile" [ref=f41e22] [cursor=pointer]:
+            - /url: https://yandex.ru/profile
+          - text: — Карты
+      - generic [ref=f41e23]:
+        - text: Установите
+        - link "Punto Switcher" [ref=f41e24] [cursor=pointer]:
+          - /url: https://yandex.ru/soft/punto/
+        - text: ", чтобы легко исправлять адрес с одного языка на другой."
+  - generic [ref=f41e25]:
+    - link "О компании" [ref=f41e26] [cursor=pointer]:
+      - /url: https://yandex.ru/company/
+    - text: ©
+    - link "Яндекс" [ref=f41e27] [cursor=pointer]:
+      - /url: //ya.ru/

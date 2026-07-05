@@ -1,0 +1,606 @@
+- generic [active] [ref=f42e1]:
+  - generic [ref=f42e2]:
+    - generic:
+      - generic:
+        - banner
+      - complementary [ref=f42e7]:
+        - generic [ref=f42e10]:
+          - generic [ref=f42e11]:
+            - generic [ref=f42e14]:
+              - heading "Avsound" [level=1] [ref=f42e17]:
+                - text: Avsound
+                - img [ref=f42e20]
+              - generic [ref=f42e21]:
+                - generic [ref=f42e23]:
+                  - generic [ref=f42e24]:
+                    - generic "Оценка 5 Из 5" [ref=f42e25]:
+                      - img [ref=f42e27]
+                      - img [ref=f42e29]
+                      - img [ref=f42e31]
+                      - img [ref=f42e33]
+                      - img [ref=f42e35]
+                    - generic [ref=f42e36]:
+                      - generic [ref=f42e37]: Рейтинг
+                      - text: 5,0
+                  - button "183 оценки" [ref=f42e38] [cursor=pointer]
+                - generic [ref=f42e40]:
+                  - generic: "Награды:"
+                  - button "Хорошее место" [ref=f42e41] [cursor=pointer]:
+                    - img [ref=f42e44]
+                    - generic [ref=f42e45]: Хорошее место 2026
+              - generic [ref=f42e46]:
+                - button "Закрыто до 11:00" [ref=f42e48] [cursor=pointer]:
+                  - generic [ref=f42e50]: Закрыто до 11:00
+                  - img [ref=f42e53]
+                - button [ref=f42e56]:
+                  - generic [ref=f42e57]: +7 (916) 245-16-47
+                  - button [ref=f42e58] [cursor=pointer]: Показать телефон
+                - link "Московская область, Люберцы, улица Кирова, 4 на карте Люберец" [ref=f42e59]:
+                  - generic [ref=f42e60]: ул. Кирова, 4, Люберцы
+              - generic [ref=f42e63]:
+                - list [ref=f42e64]:
+                  - listitem [ref=f42e65]:
+                    - button "Поделиться" [ref=f42e67] [cursor=pointer]:
+                      - img [ref=f42e70]
+                  - listitem [ref=f42e71]:
+                    - button "Маршрут" [ref=f42e73] [cursor=pointer]:
+                      - img [ref=f42e76]
+                      - generic [ref=f42e77]: Маршрут
+                  - listitem [ref=f42e78]:
+                    - button "Получить консультацию" [ref=f42e80] [cursor=pointer]:
+                      - generic [ref=f42e81]: Получить консультацию
+                  - iframe [ref=f42e82]
+                - img [ref=f42e85] [cursor=pointer]
+              - generic [ref=f42e87]:
+                - generic:
+                  - img "Логотип"
+                - button "Добавить фото или видео" [ref=f42e88] [cursor=pointer]:
+                  - img [ref=f42e90]
+                  - heading "Добавить фото или видео" [level=2] [ref=f42e91]
+                - generic [ref=f42e92]:
+                  - list [ref=f42e93]:
+                    - listitem [ref=f42e94]:
+                      - img [ref=f42e97] [cursor=pointer]
+                    - listitem [ref=f42e98]
+                    - listitem [ref=f42e106]
+                    - listitem [ref=f42e110]:
+                      - img [ref=f42e115] [cursor=pointer]
+                    - listitem [ref=f42e116]:
+                      - img [ref=f42e121] [cursor=pointer]
+                    - listitem [ref=f42e122]
+                    - listitem [ref=f42e126]:
+                      - img [ref=f42e131] [cursor=pointer]
+                    - listitem [ref=f42e132]:
+                      - img [ref=f42e137] [cursor=pointer]
+                    - listitem [ref=f42e138]:
+                      - img [ref=f42e143] [cursor=pointer]
+                    - listitem [ref=f42e144]:
+                      - generic [ref=f42e145]:
+                        - img [ref=f42e149] [cursor=pointer]
+                        - generic [ref=f42e150] [cursor=pointer]:
+                          - img [ref=f42e152]
+                          - generic [ref=f42e153]: Еще 149
+                    - iframe [ref=f42e154]
+                  - img [ref=f42e157] [cursor=pointer]
+              - button "Индивидуальная скидка при покупке и установки от 5% Подробнее" [ref=f42e158] [cursor=pointer]:
+                - generic [ref=f42e159]:
+                  - img [ref=f42e162]
+                  - generic [ref=f42e163]: Индивидуальная скидка при покупке и установки от 5%
+                - generic [ref=f42e164]:
+                  - text: Подробнее
+                  - img [ref=f42e166]
+              - generic [ref=f42e169]:
+                - generic [ref=f42e173]:
+                  - tablist [ref=f42e174]:
+                    - tab "Обзор," [selected] [ref=f42e176]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/
+                        - text: Обзор
+                    - tab "Товары и услуги," [ref=f42e178]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/prices/
+                        - text: Товары и услуги
+                    - tab "Новости, 19" [ref=f42e180]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/?tab=posts
+                        - text: Новости
+                      - generic: "19"
+                    - tab "Фото, 159" [ref=f42e182]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/gallery/
+                        - text: Фото
+                      - generic: "159"
+                    - tab "Отзывы, 120" [ref=f42e184]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/reviews/
+                        - text: Отзывы
+                      - generic: "120"
+                    - tab "Филиалы," [ref=f42e186]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/?tab=chain
+                        - text: Филиалы
+                    - tab "Особенности," [ref=f42e188]:
+                      - link:
+                        - /url: /profile/org/avsound/226688810161/?tab=features
+                        - text: Особенности
+                    - iframe [ref=f42e189]
+                  - img [ref=f42e192] [cursor=pointer]
+                - generic [ref=f42e196]:
+                  - generic [ref=f42e198]:
+                    - generic [ref=f42e200]:
+                      - heading "Витрина" [level=2] [ref=f42e203]
+                      - generic [ref=f42e204]:
+                        - list [ref=f42e205]:
+                          - listitem [ref=f42e206]:
+                            - link "Автозвук" [ref=f42e207] [cursor=pointer]:
+                              - /url: https://av-sound.ru/
+                              - button [ref=f42e209]
+                              - generic [ref=f42e212]: Автозвук
+                          - listitem [ref=f42e213]:
+                            - link "Шумоизоляция" [ref=f42e214] [cursor=pointer]:
+                              - /url: https://av-sound.ru/
+                              - button [ref=f42e216]
+                              - generic [ref=f42e219]: Шумоизоляция
+                          - listitem [ref=f42e220]:
+                            - link "Подсветка салона" [ref=f42e221] [cursor=pointer]:
+                              - /url: https://av-sound.ru/
+                              - button [ref=f42e223]
+                              - generic [ref=f42e226]: Подсветка салона
+                          - listitem [ref=f42e227]:
+                            - link "Перетяжка салона" [ref=f42e228] [cursor=pointer]:
+                              - /url: https://av-sound.ru/
+                              - button [ref=f42e230]
+                              - generic [ref=f42e233]: Перетяжка салона
+                          - listitem [ref=f42e234]:
+                            - link "Пассивные сабвуферы для авто" [ref=f42e235] [cursor=pointer]:
+                              - /url: https://wa.me/79162451647?erid=3MtFQRkqfB2huzBcHHttGHwYiYX3uf
+                              - button [ref=f42e237]
+                              - generic [ref=f42e240]: Пассивные сабвуферы для авто
+                          - listitem [ref=f42e241]:
+                            - link "Сабвуферы под сиденье для авто" [ref=f42e242] [cursor=pointer]:
+                              - /url: https://wa.me/79162451647?erid=3MtFQRkqfB2huzBcHHttGHwYiYX3ug
+                              - button [ref=f42e244]
+                              - generic [ref=f42e247]: Сабвуферы под сиденье для авто
+                          - listitem [ref=f42e248]:
+                            - link "Сабвуферы в запаску для авто" [ref=f42e249] [cursor=pointer]:
+                              - /url: https://wa.me/79162451647?erid=3MtFQRkqfB2huzBcHHttGHwYiYX3uh
+                              - button [ref=f42e251]
+                              - generic [ref=f42e254]: Сабвуферы в запаску для авто
+                          - listitem [ref=f42e255]:
+                            - link "Активные сабвуферы для авто" [ref=f42e256] [cursor=pointer]:
+                              - /url: https://wa.me/79162451647?erid=3MtFQRkqfB2huzBcHHttGHwYiYX3ui
+                              - button [ref=f42e258]
+                              - generic [ref=f42e261]: Активные сабвуферы для авто
+                          - listitem [ref=f42e262]:
+                            - link "Рупора для авто" [ref=f42e263] [cursor=pointer]:
+                              - /url: https://wa.me/79162451647?erid=3MtFQRkqfB2huzBcHHttGHwYiYX3yy
+                              - button [ref=f42e265]
+                              - generic [ref=f42e268]: Рупора для авто
+                          - listitem [ref=f42e269]:
+                            - link "Широкополосная акустика для авто" [ref=f42e270] [cursor=pointer]:
+                              - /url: https://wa.me/79162451647?erid=3MtFQRkqfB2huzBcHHttGHwYiYX3yz
+                              - button [ref=f42e272]
+                              - generic [ref=f42e275]: Широкополосная акустика для авто
+                          - iframe [ref=f42e276]
+                        - img [ref=f42e279] [cursor=pointer]
+                    - button "Посмотреть все товары и услуги" [ref=f42e281] [cursor=pointer]:
+                      - generic [ref=f42e283]:
+                        - img [ref=f42e286]
+                        - generic [ref=f42e288]: Посмотреть все товары и услуги
+                  - generic [ref=f42e291]:
+                    - heading "Новости" [level=2] [ref=f42e293]
+                    - generic [ref=f42e294]:
+                      - generic [ref=f42e296]:
+                        - list [ref=f42e297]:
+                          - listitem [ref=f42e298]:
+                            - button "Не устраивает звук в автомобиле? если музыка звучит плоско, не хватает баса или приходится делать громче из-за шума — не спешите покупать о... 26 июня, 12:47" [ref=f42e299]:
+                              - generic [ref=f42e300]:
+                                - generic [ref=f42e302]: Не устраивает звук в автомобиле? если музыка звучит плоско, не хватает баса или приходится делать громче из-за шума — не спешите покупать о...
+                                - generic [ref=f42e304]: 26 июня, 12:47
+                          - listitem [ref=f42e305]:
+                            - button "Шумоизоляция автомобиля - комфорт, который слышно сразу Если в машине приходится повышать голос и громкость музыки - значит лишний шум заби... 4 марта, 06:56" [ref=f42e306]:
+                              - generic [ref=f42e307]:
+                                - generic [ref=f42e309]: Шумоизоляция автомобиля - комфорт, который слышно сразу Если в машине приходится повышать голос и громкость музыки - значит лишний шум заби...
+                                - generic [ref=f42e311]: 4 марта, 06:56
+                          - iframe [ref=f42e312]
+                        - img [ref=f42e315] [cursor=pointer]
+                      - button "Все новости (19)" [ref=f42e317] [cursor=pointer]:
+                        - generic [ref=f42e319]:
+                          - img [ref=f42e322]
+                          - generic [ref=f42e324]: Все новости (19)
+                  - generic [ref=f42e326]:
+                    - generic [ref=f42e327]:
+                      - generic [ref=f42e328]:
+                        - img [ref=f42e331]
+                        - heading "Адрес" [level=3] [ref=f42e333]
+                      - generic [ref=f42e339]:
+                        - generic [ref=f42e340]: ул. Кирова, 4, Люберцы
+                        - generic [ref=f42e341]:
+                          - button "Показать входы" [ref=f42e342] [cursor=pointer]
+                          - generic [ref=f42e343]: "|"
+                          - button "Маршрут" [ref=f42e344] [cursor=pointer]
+                    - generic [ref=f42e345]:
+                      - generic [ref=f42e346]:
+                        - img [ref=f42e349]
+                        - heading "Контакты" [level=3] [ref=f42e351]
+                      - generic [ref=f42e363]:
+                        - text: +7 (916) 245-16-47
+                        - button "Показать телефон" [ref=f42e364] [cursor=pointer]:
+                          - generic [ref=f42e365]: Показать телефон
+                      - link "avsound-auto.ru" [ref=f42e376] [cursor=pointer]:
+                        - /url: https://avsound-auto.ru/?utm_source=yandex
+                      - generic [ref=f42e382]:
+                        - button "Соцсети, vkontakte" [ref=f42e384] [cursor=pointer]:
+                          - img [ref=f42e387]
+                        - button "Соцсети, whatsapp" [ref=f42e389] [cursor=pointer]:
+                          - img [ref=f42e392]
+                        - button "Соцсети, telegram" [ref=f42e394] [cursor=pointer]:
+                          - img [ref=f42e397]
+                    - generic [ref=f42e398]:
+                      - generic [ref=f42e399]:
+                        - img [ref=f42e402]
+                        - heading "Время работы" [level=3] [ref=f42e404]
+                      - button "Закрыто до 11:00" [ref=f42e408] [cursor=pointer]:
+                        - generic [ref=f42e409]:
+                          - generic "Закрыто до 11:00" [ref=f42e415]
+                          - generic [ref=f42e416]:
+                            - generic [ref=f42e417]: График
+                            - img [ref=f42e420]
+                    - button "Исправить неточность" [ref=f42e422] [cursor=pointer]:
+                      - img [ref=f42e425]
+                      - generic [ref=f42e426]: Исправить неточность
+                  - generic "Как добраться" [ref=f42e429]:
+                    - heading "Как добраться" [level=2] [ref=f42e431]
+                    - button "Метро рядом" [ref=f42e435] [cursor=pointer]:
+                      - generic [ref=f42e436]:
+                        - generic [ref=f42e437]:
+                          - generic "На метро" [ref=f42e440]:
+                            - img [ref=f42e441]
+                          - generic [ref=f42e444]:
+                            - generic [ref=f42e445]: Жулебино
+                            - button "Жулебино Построить маршрут Пешком 1,03 км" [ref=f42e446]:
+                              - img [ref=f42e448]
+                              - generic [ref=f42e449]: 1,03 км
+                        - generic [ref=f42e450]:
+                          - generic [ref=f42e451]: "2"
+                          - img [ref=f42e454]
+                    - button "Остановки рядом" [ref=f42e458] [cursor=pointer]:
+                      - generic [ref=f42e459]:
+                        - generic [ref=f42e460]:
+                          - generic "На автобусе" [ref=f42e463]:
+                            - img [ref=f42e464]
+                          - generic [ref=f42e467]:
+                            - generic [ref=f42e468]: Улица Генерала Кузнецова
+                            - button "Улица Генерала Кузнецова Построить маршрут Пешком 296 м" [ref=f42e469]:
+                              - img [ref=f42e471]
+                              - generic [ref=f42e472]: 296 м
+                        - generic [ref=f42e473]:
+                          - generic [ref=f42e474]: "4"
+                          - img [ref=f42e477]
+                    - button [ref=f42e478] [cursor=pointer]:
+                      - generic [ref=f42e480]:
+                        - img [ref=f42e483]
+                        - generic [ref=f42e485]: Показать парковки
+                  - generic [ref=f42e488]:
+                    - heading "Особенности" [level=2] [ref=f42e490]
+                    - generic [ref=f42e491]:
+                      - link "Автоакустика" [ref=f42e492]:
+                        - button [ref=f42e494] [cursor=pointer]:
+                          - generic [ref=f42e495]: Автоакустика
+                      - link "студия тюнинга" [ref=f42e496]:
+                        - button [ref=f42e498] [cursor=pointer]:
+                          - generic [ref=f42e499]: Студия тюнинга
+                      - link "автоаксессуары" [ref=f42e500]:
+                        - button [ref=f42e502] [cursor=pointer]:
+                          - generic [ref=f42e503]: Автоаксессуары
+                    - generic [ref=f42e504]:
+                      - generic [ref=f42e506]:
+                        - img [ref=f42e509]
+                        - generic [ref=f42e510]: Оплата картой
+                      - generic [ref=f42e512]:
+                        - img [ref=f42e515]
+                        - generic [ref=f42e516]: Парковка
+                      - generic [ref=f42e518]:
+                        - img [ref=f42e521]
+                        - generic [ref=f42e522]: Предварительная запись
+                      - generic [ref=f42e524]:
+                        - img [ref=f42e527]
+                        - generic [ref=f42e528]: Шумоизоляция авто
+                      - generic [ref=f42e530]:
+                        - img [ref=f42e533]
+                        - generic [ref=f42e534]: Установка автозвука
+                      - generic [ref=f42e536]:
+                        - img [ref=f42e539]
+                        - generic [ref=f42e540]: Установка выхлопных систем
+                      - generic [ref=f42e542]:
+                        - img [ref=f42e545]
+                        - generic [ref=f42e546]: Самовывоз
+                      - generic [ref=f42e548]:
+                        - img [ref=f42e551]
+                        - generic [ref=f42e552]: Доставка
+                      - generic [ref=f42e554]:
+                        - img [ref=f42e557]
+                        - generic [ref=f42e558]: Подарочный сертификат
+                    - generic [ref=f42e559]:
+                      - generic [ref=f42e561]:
+                        - generic [ref=f42e562]: "Посещение с животными:"
+                        - text: разрешено со всеми животными
+                      - generic [ref=f42e564]:
+                        - generic [ref=f42e565]: "Марка автомобиля:"
+                        - text: китайские, отечественные, европейские, японские, корейские, импортные, легковые, коммерческие, гибридные, электрические
+                      - generic [ref=f42e567]:
+                        - generic [ref=f42e568]: "Способ оплаты:"
+                        - text: дисконтная система скидок, наличными, банковским переводом, СБП, QR-код, онлайн, безналичная, оплата картой, оплата кредитной картой, бесконтактная оплата
+                      - generic [ref=f42e570]:
+                        - generic [ref=f42e571]: "Акции:"
+                        - text: спецпредложения, акции, скидки
+                    - generic [ref=f42e575]:
+                      - img [ref=f42e578]
+                      - generic [ref=f42e579]: Парковка для людей с инвалидностью
+                    - generic [ref=f42e580]:
+                      - generic [ref=f42e582]:
+                        - generic [ref=f42e583]: "Доступность входа на инвалидной коляске:"
+                        - text: недоступно
+                      - generic [ref=f42e585]:
+                        - generic [ref=f42e586]: "Доступность помещения на инвалидной коляске:"
+                        - text: частично доступно
+                    - button "Подробнее об организации" [ref=f42e587] [cursor=pointer]:
+                      - generic [ref=f42e589]:
+                        - img [ref=f42e592]
+                        - link [ref=f42e595]:
+                          - /url: /profile/org/avsound/226688810161/?tab=features
+                          - text: Подробнее об организации
+                  - button "Акция" [ref=f42e600] [cursor=pointer]:
+                    - generic [ref=f42e601]:
+                      - img [ref=f42e604]
+                      - generic [ref=f42e605]: Акция
+                    - img [ref=f42e608]
+                  - generic [ref=f42e611]:
+                    - button "Панорама — автоакустика Avsound, Люберцы" [ref=f42e612] [cursor=pointer]:
+                      - img "Панорама — автоакустика Avsound, Люберцы" [ref=f42e615]
+                      - generic:
+                        - img
+                      - generic: Панорама
+                    - link "Панорама":
+                      - /url: /profile/org/avsound/226688810161/panorama/
+                  - button "Рекламировать компанию в Яндекс Картах" [ref=f42e622] [cursor=pointer]:
+                    - generic [ref=f42e623]:
+                      - generic [ref=f42e624]:
+                        - img [ref=f42e627]
+                        - generic [ref=f42e630]: Рекламировать компанию в Яндекс Картах
+                      - img [ref=f42e634]
+                  - generic [ref=f42e637]:
+                    - heading "Посещаемость и график работы" [level=2] [ref=f42e639]
+                    - generic [ref=f42e640]:
+                      - generic [ref=f42e641]:
+                        - generic [ref=f42e642]: 07:00
+                        - text: Закрыто
+                      - generic [ref=f42e643]:
+                        - button "Понедельник" [ref=f42e644] [cursor=pointer]: Пн
+                        - button "Вторник" [ref=f42e645] [cursor=pointer]: Вт
+                        - button "Среда" [ref=f42e646] [cursor=pointer]: Ср
+                        - button "Четверг" [ref=f42e647] [cursor=pointer]: Чт
+                        - button "Пятница" [ref=f42e648] [cursor=pointer]: Пт
+                        - button "Суббота" [ref=f42e649] [cursor=pointer]: Сб
+                        - button "Воскресенье" [ref=f42e650] [cursor=pointer]: Вс
+                      - generic [ref=f42e651]:
+                        - text: 00:00 04:00 08:00
+                        - button "11:00" [ref=f42e652] [cursor=pointer]
+                        - button "12:00" [ref=f42e654] [cursor=pointer]: 12:00
+                        - button "13:00" [ref=f42e656] [cursor=pointer]
+                        - button "14:00" [ref=f42e658] [cursor=pointer]
+                        - button "15:00" [ref=f42e660] [cursor=pointer]
+                        - button "16:00" [ref=f42e662] [cursor=pointer]: 16:00
+                        - button "17:00" [ref=f42e664] [cursor=pointer]
+                        - button "18:00" [ref=f42e666] [cursor=pointer]
+                        - button "19:00" [ref=f42e668] [cursor=pointer]
+                        - button "20:00" [ref=f42e670] [cursor=pointer]: 20:00
+                        - button "21:00" [ref=f42e672] [cursor=pointer]
+                        - button "22:00" [ref=f42e674] [cursor=pointer]
+                        - text: 00:00
+                  - generic [ref=f42e677]:
+                    - generic [ref=f42e679]:
+                      - heading "Награды" [level=2] [ref=f42e680]
+                      - link "Хорошее место 2026 Награда для любимых мест пользователей Яндекс Карт" [ref=f42e681] [cursor=pointer]:
+                        - /url: https://yandex.ru/project/maps/goodplace/
+                        - img [ref=f42e684]
+                        - generic [ref=f42e685]:
+                          - generic [ref=f42e686]: Хорошее место 2026
+                          - generic [ref=f42e687]: Награда для любимых мест пользователей Яндекс Карт
+                    - generic [ref=f42e690]:
+                      - generic [ref=f42e695]:
+                        - generic [ref=f42e697]:
+                          - generic [ref=f42e698]:
+                            - generic [ref=f42e699]: Рейтинг
+                            - text: 5,0
+                          - generic [ref=f42e700]:
+                            - generic "Оценка 5 Из 5" [ref=f42e702]:
+                              - img [ref=f42e704]
+                              - img [ref=f42e706]
+                              - img [ref=f42e708]
+                              - img [ref=f42e710]
+                              - img [ref=f42e712]
+                            - generic [ref=f42e713]: 183 оценки
+                        - generic [ref=f42e718]:
+                          - generic [ref=f42e719]: Оцените это место
+                          - generic [ref=f42e720]:
+                            - button "1 звезда" [ref=f42e721] [cursor=pointer]:
+                              - img [ref=f42e722]
+                            - button "2 звезды" [ref=f42e723] [cursor=pointer]:
+                              - img [ref=f42e724]
+                            - button "3 звезды" [ref=f42e725] [cursor=pointer]:
+                              - img [ref=f42e726]
+                            - button "4 звезды" [ref=f42e727] [cursor=pointer]:
+                              - img [ref=f42e728]
+                            - button "5 звезд" [ref=f42e729] [cursor=pointer]:
+                              - img [ref=f42e730]
+                      - generic [ref=f42e732]:
+                        - generic [ref=f42e733]:
+                          - generic [ref=f42e735]:
+                            - heading "120 отзывов" [level=2] [ref=f42e736]
+                            - button "По умолчанию" [ref=f42e739]:
+                              - text: По умолчанию
+                              - img [ref=f42e741]
+                          - menu [ref=f42e743]:
+                            - generic [ref=f42e744]:
+                              - list [ref=f42e745]:
+                                - listitem [ref=f42e746]:
+                                  - menuitem "Персонал · 95% положительный 88 отзывов" [ref=f42e747] [cursor=pointer]:
+                                    - generic [ref=f42e749]:
+                                      - generic [ref=f42e750]:
+                                        - text: Персонал · 95%
+                                        - generic [ref=f42e751]: положительный
+                                        - img [ref=f42e752]
+                                      - generic [ref=f42e753]: 88 отзывов
+                                - listitem [ref=f42e754]:
+                                  - menuitem "Ремонт · 92% положительный 51 отзыв" [ref=f42e755] [cursor=pointer]:
+                                    - generic [ref=f42e757]:
+                                      - generic [ref=f42e758]:
+                                        - text: Ремонт · 92%
+                                        - generic [ref=f42e759]: положительный
+                                        - img [ref=f42e760]
+                                      - generic [ref=f42e761]: 51 отзыв
+                                - listitem [ref=f42e762]:
+                                  - menuitem "Время ожидания · 96% положительный 46 отзывов" [ref=f42e763] [cursor=pointer]:
+                                    - generic [ref=f42e765]:
+                                      - generic [ref=f42e766]:
+                                        - text: Время ожидания · 96%
+                                        - generic [ref=f42e767]: положительный
+                                        - img [ref=f42e768]
+                                      - generic [ref=f42e769]: 46 отзывов
+                                - listitem [ref=f42e770]:
+                                  - menuitem "Качество товаров · 93% положительный 41 отзыв" [ref=f42e771] [cursor=pointer]:
+                                    - generic [ref=f42e773]:
+                                      - generic [ref=f42e774]:
+                                        - text: Качество товаров · 93%
+                                        - generic [ref=f42e775]: положительный
+                                        - img [ref=f42e776]
+                                      - generic [ref=f42e777]: 41 отзыв
+                                - iframe [ref=f42e778]
+                              - img [ref=f42e781] [cursor=pointer]
+                        - list [ref=f42e782]:
+                          - listitem [ref=f42e783]:
+                            - generic [ref=f42e785]:
+                              - generic [ref=f42e786]:
+                                - generic:
+                                  - link "Аватар":
+                                    - /url: https://reviews.yandex.ru/user/nzeq754rnuxvx6eup9jejqc434
+                                - generic [ref=f42e787]:
+                                  - link "Абрамов И." [ref=f42e789] [cursor=pointer]:
+                                    - /url: https://reviews.yandex.ru/user/nzeq754rnuxvx6eup9jejqc434
+                                  - generic [ref=f42e790]: Знаток города 4 уровня
+                                - button "Подписаться" [ref=f42e793] [cursor=pointer]:
+                                  - generic [ref=f42e794]: Подписаться
+                              - generic [ref=f42e795]:
+                                - generic "Оценка 5 Из 5" [ref=f42e798]:
+                                  - img [ref=f42e800]
+                                  - img [ref=f42e802]
+                                  - img [ref=f42e804]
+                                  - img [ref=f42e806]
+                                  - img [ref=f42e808]
+                                - generic [ref=f42e809]: 29 мая 2025
+                              - generic [ref=f42e812]: Обратился с проблемой в усилителе, мастера не только оперативно разобрались в проблеме, все заняло около часа, но и профессионально помогли подобрать качественные динамики и новый усилитель. Приятно порадовало, что специалисты не просто механически заменили оборудование, а действительно вникли в суть проблемы и предложили грамотное решение. Такой подход - когда быстро находят причину неисправности, дают дельные советы по выбору оборудования и качественно выполняют работу - встречается нечасто.
+                              - generic [ref=f42e814]:
+                                - button "Лайк" [ref=f42e815]:
+                                  - img [ref=f42e817]
+                                - button "Дизлайк" [ref=f42e819]:
+                                  - img [ref=f42e821]
+                              - button "Посмотреть ответ организации" [ref=f42e823]
+                          - listitem [ref=f42e824]:
+                            - generic [ref=f42e826]:
+                              - generic [ref=f42e827]:
+                                - generic:
+                                  - link "Аватар":
+                                    - /url: https://reviews.yandex.ru/user/ak1tdnkz584jk61d64j0x394mw
+                                - generic [ref=f42e828]:
+                                  - link "Artur D." [ref=f42e830] [cursor=pointer]:
+                                    - /url: https://reviews.yandex.ru/user/ak1tdnkz584jk61d64j0x394mw
+                                  - generic [ref=f42e831]: Знаток города 2 уровня
+                                - button "Подписаться" [ref=f42e834] [cursor=pointer]:
+                                  - generic [ref=f42e835]: Подписаться
+                              - generic [ref=f42e836]:
+                                - generic "Оценка 5 Из 5" [ref=f42e839]:
+                                  - img [ref=f42e841]
+                                  - img [ref=f42e843]
+                                  - img [ref=f42e845]
+                                  - img [ref=f42e847]
+                                  - img [ref=f42e849]
+                                - generic [ref=f42e850]: 4 июля
+                              - generic [ref=f42e853]: Сделали все очень хорошо, в срок. Цены очень комфортные. Мужики молодцы. Рекомендую!
+                              - generic [ref=f42e855]:
+                                - button "Лайк" [ref=f42e856]:
+                                  - img [ref=f42e858]
+                                - button "Дизлайк" [ref=f42e860]:
+                                  - img [ref=f42e862]
+                          - listitem [ref=f42e864]:
+                            - generic [ref=f42e866]:
+                              - generic [ref=f42e867]:
+                                - generic:
+                                  - link "Аватар":
+                                    - /url: https://reviews.yandex.ru/user/kx9qp45uk2k1pw6amnp4ydq9m0
+                                - generic [ref=f42e868]:
+                                  - link "Александр Ёлушкин" [ref=f42e870] [cursor=pointer]:
+                                    - /url: https://reviews.yandex.ru/user/kx9qp45uk2k1pw6amnp4ydq9m0
+                                  - generic [ref=f42e871]: Знаток города 20 уровня
+                                - button "Подписаться" [ref=f42e874] [cursor=pointer]:
+                                  - generic [ref=f42e875]: Подписаться
+                              - generic [ref=f42e876]:
+                                - generic "Оценка 5 Из 5" [ref=f42e879]:
+                                  - img [ref=f42e881]
+                                  - img [ref=f42e883]
+                                  - img [ref=f42e885]
+                                  - img [ref=f42e887]
+                                  - img [ref=f42e889]
+                                - generic [ref=f42e890]: 26 января 2025
+                              - generic [ref=f42e893]: "Хочу сказать огромное спасибо студии автозвука AV за отличную работу! Я пришёл к ним, чтобы улучшить звук в своей тачке, и не прогадал. Ребята — настоящие профи, сделали всё быстро и качественно. Что мне понравилось: Индивидуальный подход. Мастера выслушали все мои пожелания и предложили несколько вариантов, учитывая мои предпочтения и бюджет. Качество работы. Они использовали только качественные материалы и оборудование, поэтому система получилась надёжной и долговечной. Звук стал намного лучше, добавилось больше басов и высоких частот. Оперативность. Мастера сделали всё в рекордные сроки, и я сразу почувствовал разницу. Ещё хочу отметить, что ребята вежливые и профессиональные. Они всегда готовы ответить на вопросы и помочь с выбором. В общем, я доволен сотрудничеством со студией. Рекомендую всем, кто хочет улучшить звук в своей тачке. Мастер Алексей, всегда на связи и вовлечён в проект от и до, это отдельная благодарность."
+                              - generic [ref=f42e895]:
+                                - list [ref=f42e896]:
+                                  - listitem [ref=f42e897]
+                                  - listitem [ref=f42e898]
+                                  - listitem [ref=f42e899]
+                                  - listitem [ref=f42e900]
+                                  - listitem [ref=f42e901]
+                                  - listitem [ref=f42e902]
+                                  - iframe [ref=f42e903]
+                                - img [ref=f42e906] [cursor=pointer]
+                              - generic [ref=f42e908]:
+                                - button "Лайк" [ref=f42e909]:
+                                  - img [ref=f42e911]
+                                - button "Дизлайк" [ref=f42e913]:
+                                  - img [ref=f42e915]
+                                  - generic [ref=f42e917]: "1"
+                              - button "Посмотреть ответ организации" [ref=f42e918]
+                          - button "Посмотреть все 120 отзывов" [ref=f42e921] [cursor=pointer]:
+                            - generic [ref=f42e922]: Посмотреть все 120 отзывов
+            - iframe [ref=f42e923]:
+              
+          - iframe [ref=f42e924]:
+            
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=f42e931]:
+                - button "Приблизить" [ref=f42e933] [cursor=pointer]:
+                  - generic:
+                    - generic:
+                      - img
+                - button "Отдалить" [ref=f42e935] [cursor=pointer]:
+                  - generic:
+                    - generic:
+                      - img
+              - button "Моё местоположение" [ref=f42e939] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - img
+      - contentinfo:
+        - generic [ref=f42e943]:
+          - generic [ref=f42e944]: © Яндекс
+          - link "Условия" [ref=f42e945] [cursor=pointer]:
+            - /url: https://yandex.ru/legal/maps_termsofuse/?lang=ru
+      - iframe [ref=f42e947]:
+        
+    - iframe [ref=f42e948]:
+      
+  - iframe [ref=f42e949]:
+    

@@ -1,0 +1,19 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - link [ref=e5] [cursor=pointer]:
+      - /url: //telegram.org/
+      - img [ref=e6]
+    - link "Download" [ref=e11] [cursor=pointer]:
+      - /url: //telegram.org/dl?tme=289edf41babf39edd6_5344966475951439838
+  - generic [ref=e13]:
+    - link [ref=e15] [cursor=pointer]:
+      - /url: tg://join?invite=oAterI3CeX4xNjQy
+      - img [ref=e16]
+    - generic [ref=e17]: Первый Финансист [Набор партнеров]
+    - generic [ref=e18]: 10 695 subscribers
+    - generic [ref=e19]:
+      - text: Покажу как получать от торговли деньги и удовольствие🙂 А не стресс и недосып😣
+      - text: Вывел команду в общем на $9,6 млн дохода
+      - text: Жми и голосуй какая сумма изменит твою жизнь?👇
+    - link "Join Channel" [ref=e22] [cursor=pointer]:
+      - /url: tg://join?invite=oAterI3CeX4xNjQy

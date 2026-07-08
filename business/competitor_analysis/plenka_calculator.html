@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVSound — Калькулятор плёнки</title>
+<style>
+  :root{
+    --bg:#0e1116; --panel:#161b22; --panel2:#1c2230; --line:#2a3140;
+    --txt:#e6edf3; --dim:#8b98a8; --acc:#ff5a1f; --acc2:#ffb020;
+    --good:#3fb950; --bad:#f85149; --blue:#4a9eff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;padding:24px;max-width:1080px;margin:0 auto}
+  h1{font-size:22px;font-weight:800;letter-spacing:-.3px;margin-bottom:2px}
+  h1 span{color:var(--acc)}
+  .sub{color:var(--dim);font-size:13px;margin-bottom:20px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--dim);margin-bottom:14px;font-weight:700}
+  label{display:block;font-size:13px;color:var(--dim);margin:12px 0 5px}
+  input,select{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:9px;color:var(--txt);padding:10px 12px;font-size:15px;outline:none}
+  input:focus,select:focus{border-color:var(--acc)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .presets{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:6px}
+  .presets button{background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:20px;padding:6px 12px;font-size:12px;cursor:pointer;transition:.15s}
+  .presets button:hover{border-color:var(--acc);color:var(--txt)}
+  .presets button.on{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+  .modes{display:flex;gap:8px;margin-bottom:4px}
+  .modes button{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:9px;padding:9px;font-size:13px;cursor:pointer;font-weight:600}
+  .modes button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+  .out{background:linear-gradient(160deg,#1c2230,#141824);border:1px solid var(--line)}
+  .big{font-size:34px;font-weight:800;letter-spacing:-1px;margin:2px 0}
+  .line{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+  .line:last-child{border:0}
+  .line .v{font-weight:700}
+  .muted{color:var(--dim)}
+  .pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700;margin-top:8px}
+  .pill.g{background:rgba(63,185,80,.15);color:var(--good)}
+  .pill.b{background:rgba(248,81,73,.15);color:var(--bad)}
+  .pill.n{background:rgba(74,158,255,.15);color:var(--blue)}
+  .hint{font-size:11px;color:var(--dim);margin-top:3px}
+  .marg{color:var(--good)} .neg{color:var(--bad)}
+  .foot{color:var(--dim);font-size:11px;margin-top:16px;text-align:center}
+  .slider-val{float:right;color:var(--acc2);font-weight:700}
+</style>
+</head>
+<body>
+  <h1>AV<span>Sound</span> · Калькулятор плёнки</h1>
+  <div class="sub">Себестоимость → цена → маржа. Пресеты и цены рынка — из анализа конкурентов (Чертаново, 2026).</div>
+
+  <div class="modes">
+    <button id="mOut" class="on" onclick="setMode('out')">Под ключ / аутсорс</button>
+    <button id="mRef" onclick="setMode('ref')">Реферал (откат %)</button>
+  </div>
+
+  <div class="grid" style="margin-top:14px">
+    <!-- INPUTS -->
+    <div class="card">
+      <h2>Услуга</h2>
+      <div class="presets" id="presets"></div>
+
+      <div id="outInputs">
+        <div class="row">
+          <div>
+            <label>Расход плёнки, пог.м</label>
+            <input id="metры" type="number" step="0.1" value="6" oninput="calc()">
+          </div>
+          <div>
+            <label>Закупка плёнки, ₽/пог.м</label>
+            <input id="цм" type="number" step="10" value="1500" oninput="calc()">
+          </div>
+        </div>
+        <label>Материал (подставит закупку)</label>
+        <select id="mat" onchange="setMat()">
+          <option value="1500">PPF полиуретан (TPU) ~1500 ₽/м</option>
+          <option value="800">Винил Oracal 970 (cast) ~800 ₽/м</option>
+          <option value="1500">Винил премиум 3M/Avery ~1500 ₽/м</option>
+          <option value="350">Винил Oracal 641 (бюджет) ~350 ₽/м</option>
+          <option value="0">— своя цена (ввожу вручную) —</option>
+        </select>
+
+        <div class="row" style="margin-top:12px">
+          <div>
+            <label>Работа бригады, ₽</label>
+            <input id="работа" type="number" step="500" value="20000" oninput="calc()">
+          </div>
+          <div>
+            <label>Расходники, ₽</label>
+            <input id="расх" type="number" step="100" value="1500" oninput="calc()">
+          </div>
+        </div>
+
+        <label>Наценка на себестоимость <span class="slider-val" id="nacV">40%</span></label>
+        <input id="nac" type="range" min="0" max="150" value="40" oninput="calc()">
+
+        <label>Или цена клиенту вручную, ₽ <span class="hint">(0 = считать по наценке)</span></label>
+        <input id="ручцена" type="number" step="500" value="0" oninput="calc()">
+      </div>
+
+      <div id="refInputs" style="display:none">
+        <label>Сумма заказа у бригады, ₽</label>
+        <input id="сумзак" type="number" step="1000" value="60000" oninput="calc()">
+        <label>Твой откат <span class="slider-val" id="otkV">15%</span></label>
+        <input id="otk" type="range" min="5" max="40" value="15" oninput="calc()">
+        <div class="hint">Реферал = ноль вложений и работы. Клиента передал → получил % с чека.</div>
+      </div>
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="card out">
+      <h2>Результат</h2>
+      <div id="outResult">
+        <div class="muted" style="font-size:13px">Цена клиенту</div>
+        <div class="big" id="oЦена">—</div>
+        <div id="oPos"></div>
+        <div style="margin-top:16px">
+          <div class="line"><span class="muted">Плёнка (расход×закупка)</span><span class="v" id="oПлёнка">—</span></div>
+          <div class="line"><span class="muted">Работа бригады</span><span class="v" id="oРабота">—</span></div>
+          <div class="line"><span class="muted">Расходники</span><span class="v" id="oРасх">—</span></div>
+          <div class="line"><span class="muted">Себестоимость</span><span class="v" id="oСебес">—</span></div>
+          <div class="line"><span class="muted">Маржа ₽</span><span class="v marg" id="oМаржаР">—</span></div>
+          <div class="line"><span class="muted">Маржа %</span><span class="v marg" id="oМаржаП">—</span></div>
+          <div class="line"><span class="muted">Рынок (типично)</span><span class="v" id="oРынок">—</span></div>
+        </div>
+      </div>
+
+      <div id="refResult" style="display:none">
+        <div class="muted" style="font-size:13px">Твой доход с реферала</div>
+        <div class="big marg" id="rДоход">—</div>
+        <div class="pill n" id="rPill">ноль работы, ноль риска</div>
+        <div style="margin-top:16px">
+          <div class="line"><span class="muted">Чек клиента у бригады</span><span class="v" id="rЧек">—</span></div>
+          <div class="line"><span class="muted">Откат %</span><span class="v" id="rOtk">—</span></div>
+          <div class="line"><span class="muted">Доход av-sound</span><span class="v marg" id="rДох2">—</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Цены рынка и расход — ориентир из business/competitor_analysis. Проверяй закупку и работу под реальные условия бригады/поставщика.</div>
+
+<script>
+// пресет: [расход м, материал ₽/м, работа ₽, расходники ₽, рынок ₽]
+const P = {
+  "Фары (пара)":      [1.0, 1500, 3000, 500, 5000],
+  "Зеркала":          [0.6, 1500, 2000, 300, 8000],
+  "Капот PPF":        [2.5, 1500, 12000,800, 20000],
+  "Зоны риска (передок)":[6, 1500, 30000,1500,50000],
+  "Полный PPF · седан":[18, 1500, 90000,4000,180000],
+  "Полный PPF · кроссовер":[22,1500,110000,5000,230000],
+  "Винил цвет · седан":[19, 800, 45000,3000,90000],
+  "Винил цвет · кроссовер":[24,800, 55000,3500,120000],
+  "Антихром (винил)": [3, 800, 8000, 500, 30000],
+  "Крыша (винил)":    [5, 800, 6000, 500, 15000],
+};
+let mode='out', curPreset='Зоны риска (передок)';
+
+const $=id=>document.getElementById(id);
+const f=n=>Math.round(n).toLocaleString('ru-RU')+' ₽';
+
+// build presets
+const pc=$('presets');
+Object.keys(P).forEach(k=>{
+  const b=document.createElement('button');
+  b.textContent=k; if(k===curPreset)b.className='on';
+  b.onclick=()=>{curPreset=k;[...pc.children].forEach(c=>c.className='');b.className='on';applyPreset(k)};
+  pc.appendChild(b);
+});
+function applyPreset(k){const p=P[k];$('metры').value=p[0];$('цм').value=p[1];$('работа').value=p[2];$('расх').value=p[3];
+  // set material dropdown
+  $('mat').value = (p[1]==800)?'800':(p[1]==1500?'1500':'0');
+  $('сумзак').value=p[4]; calc();}
+function setMat(){const v=$('mat').value; if(v!=='0'){$('цм').value=v;} calc();}
+function setMode(m){mode=m;
+  $('mOut').className=m==='out'?'on':''; $('mRef').className=m==='ref'?'on':'';
+  $('outInputs').style.display=m==='out'?'':'none';
+  $('refInputs').style.display=m==='ref'?'':'none';
+  $('outResult').style.display=m==='out'?'':'none';
+  $('refResult').style.display=m==='ref'?'':'none';
+  calc();}
+
+function calc(){
+  if(mode==='ref'){
+    const chk=+$('сумзак').value||0, o=+$('otk').value;
+    $('otkV').textContent=o+'%';
+    const d=chk*o/100;
+    $('rДоход').textContent=f(d);
+    $('rЧек').textContent=f(chk);
+    $('rOtk').textContent=o+'%';
+    $('rДох2').textContent=f(d);
+    return;
+  }
+  const m=+$('metры').value||0, cm=+$('цм').value||0, rab=+$('работа').value||0, rx=+$('расх').value||0;
+  const nac=+$('nac').value; $('nacV').textContent=nac+'%';
+  const plen=m*cm;
+  const sebes=plen+rab+rx;
+  const ruch=+$('ручцена').value||0;
+  const price = ruch>0 ? ruch : sebes*(1+nac/100);
+  const marg=price-sebes, margP=price>0?marg/price*100:0;
+  const rynok=P[curPreset]?P[curPreset][4]:0;
+
+  $('oПлёнка').textContent=f(plen);
+  $('oРабота').textContent=f(rab);
+  $('oРасх').textContent=f(rx);
+  $('oСебес').textContent=f(sebes);
+  $('oЦена').textContent=f(price);
+  $('oМаржаР').textContent=f(marg);
+  $('oМаржаР').className='v '+(marg>=0?'marg':'neg');
+  $('oМаржаП').textContent=margP.toFixed(0)+'%';
+  $('oМаржаП').className='v '+(marg>=0?'marg':'neg');
+  $('oРынок').textContent=rynok?f(rynok):'—';
+
+  // позиционирование vs рынок
+  const pos=$('oPos');
+  if(rynok){
+    const diff=price-rynok, pct=Math.round(diff/rynok*100);
+    if(price<rynok*0.9) pos.innerHTML='<span class="pill g">ниже рынка на '+Math.abs(pct)+'% — конкурентно</span>';
+    else if(price>rynok*1.1) pos.innerHTML='<span class="pill b">выше рынка на '+pct+'% — нужен премиум-аргумент</span>';
+    else pos.innerHTML='<span class="pill n">на уровне рынка</span>';
+  } else pos.innerHTML='';
+}
+applyPreset(curPreset);
+</script>
+</body>
+</html>
